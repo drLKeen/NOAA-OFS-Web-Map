@@ -1,0 +1,14 @@
+Dataset {
+    Float32 time[time = 54];
+    Float32 lon[ny = 40][nx = 126];
+    Float32 lat[ny = 40][nx = 126];
+    Float32 mask[ny = 40][nx = 126];
+    Float32 depth[ny = 40][nx = 126];
+    Float32 sigma[sigma = 7];
+    Float32 zeta[time = 54][ny = 40][nx = 126];
+    Float32 air_u[time = 54][ny = 40][nx = 126];
+    Float32 air_v[time = 54][ny = 40][nx = 126];
+    Float32 u[time = 54][sigma = 7][ny = 40][nx = 126];
+    Float32 v[time = 54][sigma = 7][ny = 40][nx = 126];
+    Float32 w[time = 54][sigma = 7][ny = 40][nx = 126];
+} NOAA/NYOFS/MODELS/2026/10/21/nyofs_fg.t17z.20261021.fields.forecast.nc;

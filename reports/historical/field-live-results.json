@@ -1,0 +1,141 @@
+{
+  "origin": "http://127.0.0.1:65369",
+  "models": [
+    {
+      "model": "CBOFS",
+      "field": "salt",
+      "status": "CBOFS salinity | 2026-10-21T19:00:00.000Z | sigma -0.025",
+      "tiles": 8,
+      "opaquePixels": 56897,
+      "legendVisible": true,
+      "legendLoaded": true
+    },
+    {
+      "model": "CBOFS",
+      "field": "temp",
+      "status": "CBOFS temperature | 2026-10-21T19:00:00.000Z | sigma -0.025",
+      "tiles": 8,
+      "opaquePixels": 56897,
+      "legendVisible": true,
+      "legendLoaded": true
+    },
+    {
+      "model": "CBOFS",
+      "field": "zeta",
+      "status": "CBOFS water level | 2026-10-21T19:00:00.000Z",
+      "tiles": 8,
+      "opaquePixels": 56897,
+      "legendVisible": true,
+      "legendLoaded": true
+    },
+    {
+      "model": "CIOFS",
+      "field": "salt",
+      "status": "CIOFS salinity | 2026-10-21T19:00:00.000Z | sigma -0.016666666666666666",
+      "tiles": 12,
+      "opaquePixels": 236147,
+      "legendVisible": true,
+      "legendLoaded": true
+    },
+    {
+      "model": "CIOFS",
+      "field": "temp",
+      "status": "CIOFS temperature | 2026-10-21T19:00:00.000Z | sigma -0.016666666666666666",
+      "tiles": 12,
+      "opaquePixels": 236147,
+      "legendVisible": true,
+      "legendLoaded": true
+    },
+    {
+      "model": "CIOFS",
+      "field": "zeta",
+      "status": "CIOFS water level | 2026-10-21T19:00:00.000Z",
+      "tiles": 12,
+      "opaquePixels": 740062,
+      "legendVisible": true,
+      "legendLoaded": true
+    },
+    {
+      "model": "DBOFS",
+      "field": "salt",
+      "status": "DBOFS salinity | 2026-10-21T19:00:00.000Z | sigma -0.05",
+      "tiles": 6,
+      "opaquePixels": 89544,
+      "legendVisible": true,
+      "legendLoaded": true
+    },
+    {
+      "model": "DBOFS",
+      "field": "temp",
+      "status": "DBOFS temperature | 2026-10-21T19:00:00.000Z | sigma -0.05",
+      "tiles": 6,
+      "opaquePixels": 89544,
+      "legendVisible": true,
+      "legendLoaded": true
+    },
+    {
+      "model": "DBOFS",
+      "field": "zeta",
+      "status": "DBOFS water level | 2026-10-21T19:00:00.000Z",
+      "tiles": 6,
+      "opaquePixels": 89544,
+      "legendVisible": true,
+      "legendLoaded": true
+    },
+    {
+      "model": "GOMOFS",
+      "field": "salt",
+      "status": "GOMOFS salinity | 2026-10-21T18:00:00.000Z | sigma -0.016666666666666666",
+      "tiles": 8,
+      "opaquePixels": 403004,
+      "legendVisible": true,
+      "legendLoaded": true
+    },
+    {
+      "model": "GOMOFS",
+      "field": "temp",
+      "status": "GOMOFS temperature | 2026-10-21T18:00:00.000Z | sigma -0.016666666666666666",
+      "tiles": 8,
+      "opaquePixels": 403004,
+      "legendVisible": true,
+      "legendLoaded": true
+    },
+    {
+      "model": "GOMOFS",
+      "field": "zeta",
+      "status": "GOMOFS water level | 2026-10-21T18:00:00.000Z",
+      "tiles": 8,
+      "opaquePixels": 494017,
+      "legendVisible": true,
+      "legendLoaded": true
+    },
+    {
+      "model": "TBOFS",
+      "field": "salt",
+      "status": "TBOFS salinity | 2026-10-21T19:00:00.000Z | sigma -0.045454545454545456",
+      "tiles": 12,
+      "opaquePixels": 16519,
+      "legendVisible": true,
+      "legendLoaded": true
+    },
+    {
+      "model": "TBOFS",
+      "field": "temp",
+      "status": "TBOFS temperature | 2026-10-21T19:00:00.000Z | sigma -0.045454545454545456",
+      "tiles": 12,
+      "opaquePixels": 16519,
+      "legendVisible": true,
+      "legendLoaded": true
+    },
+    {
+      "model": "TBOFS",
+      "field": "zeta",
+      "status": "TBOFS water level | 2026-10-21T19:00:00.000Z",
+      "tiles": 12,
+      "opaquePixels": 20083,
+      "legendVisible": true,
+      "legendLoaded": true
+    }
+  ],
+  "mapReady": true
+}

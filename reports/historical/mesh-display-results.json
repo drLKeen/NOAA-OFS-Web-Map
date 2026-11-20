@@ -1,0 +1,12 @@
+{
+  "checks": [
+    {
+      "model": "SFBOFS",
+      "field": "temp",
+      "rendering": "mesh",
+      "count": 46014,
+      "status": "SFBOFS temperature | 2026-10-21T19:00:00Z"
+    }
+  ],
+  "errors": []
+}

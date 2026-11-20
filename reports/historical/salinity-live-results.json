@@ -1,0 +1,46 @@
+{
+  "origin": "http://127.0.0.1:64718",
+  "models": [
+    {
+      "model": "CBOFS",
+      "status": "CBOFS salinity \u00b7 2026-10-21T18:00:00.000Z \u00b7 sigma -0.025",
+      "tiles": 8,
+      "opaquePixels": 56897,
+      "legendVisible": true,
+      "legendLoaded": true
+    },
+    {
+      "model": "CIOFS",
+      "status": "CIOFS salinity \u00b7 2026-10-21T18:00:00.000Z \u00b7 sigma -0.016666666666666666",
+      "tiles": 12,
+      "opaquePixels": 236147,
+      "legendVisible": true,
+      "legendLoaded": true
+    },
+    {
+      "model": "DBOFS",
+      "status": "DBOFS salinity \u00b7 2026-10-21T18:00:00.000Z \u00b7 sigma -0.05",
+      "tiles": 6,
+      "opaquePixels": 89544,
+      "legendVisible": true,
+      "legendLoaded": true
+    },
+    {
+      "model": "GOMOFS",
+      "status": "GOMOFS salinity \u00b7 2026-10-21T18:00:00.000Z \u00b7 sigma -0.016666666666666666",
+      "tiles": 8,
+      "opaquePixels": 403004,
+      "legendVisible": true,
+      "legendLoaded": true
+    },
+    {
+      "model": "TBOFS",
+      "status": "TBOFS salinity \u00b7 2026-10-21T18:00:00.000Z \u00b7 sigma -0.045454545454545456",
+      "tiles": 12,
+      "opaquePixels": 16519,
+      "legendVisible": true,
+      "legendLoaded": true
+    }
+  ],
+  "mapReady": true
+}

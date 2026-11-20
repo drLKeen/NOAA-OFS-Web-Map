@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>NOAA OFS national map — local preview</title>
+  <!-- Load the modified local script before setting the NOAA asset/link base. -->
+  <script src="display_ofsmap.js"></script>
+  <script src="thredds-salinity.js"></script>
+  <script src="vector-arrows.js"></script>
+  <script src="mesh-layer.js"></script>
+  <base href="https://tidesandcurrents.noaa.gov/">
+  <link rel="stylesheet" href="/leaflet/leaflet.css">
+  <link rel="stylesheet" href="/leaflet/leaflet.label.css">
+  <script src="https://cdn.tidesandcurrents.noaa.gov/assets/js/jquery/jquery-latest.js"></script>
+  <script src="/leaflet/leaflet.js"></script>
+  <script src="/leaflet/esri-leaflet.js"></script>
+  <script src="/leaflet/leaflet.label.js"></script>
+  <script src="/ofs/js/shp.js"></script>
+  <style>
+    body { margin: 0; font: 16px system-ui, sans-serif; }
+    header { padding: 12px 20px; }
+    h1 { font-size: 20px; margin: 0 0 6px; }
+    p { margin: 0; }
+    #map { height: calc(100vh - 100px); min-height: 400px; }
+    #map img { max-width: inherit; }
+    .leaflet-label:before, .leaflet-label:after { display: none; }
+  </style>
+</head>
+<body>
+  <header><h1>NOAA OFS national map — local preview</h1>
+    <p>Zoom in to see forecast stations (zoom 9+). Hover for names; click for forecasts.</p>
+  </header>
+  <div id="map" aria-label="NOAA forecast regions and stations"></div>
+  <script>mapit(); addThreddsSalinity(map);</script>
+</body>
+</html>

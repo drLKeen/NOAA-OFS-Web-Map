@@ -1,0 +1,88 @@
+{
+  "checks": [
+    {
+      "model": "CBOFS",
+      "field": "currents",
+      "visibleArrows": 213,
+      "points": 655,
+      "maxSpeed": 1.0840020954065233,
+      "time": "2026-10-21T18:00:00Z"
+    },
+    {
+      "model": "CBOFS",
+      "field": "wind",
+      "visibleArrows": 229,
+      "points": 790,
+      "maxSpeed": 14.382379666124969,
+      "time": "2026-10-21T18:00:00Z"
+    },
+    {
+      "model": "CIOFS",
+      "field": "currents",
+      "visibleArrows": 237,
+      "points": 781,
+      "maxSpeed": 2.06042181940917,
+      "time": "2026-10-21T18:00:00Z"
+    },
+    {
+      "model": "CIOFS",
+      "field": "wind",
+      "visibleArrows": 272,
+      "points": 1242,
+      "maxSpeed": 15.540296793438545,
+      "time": "2026-10-21T18:00:00Z"
+    },
+    {
+      "model": "DBOFS",
+      "field": "currents",
+      "visibleArrows": 61,
+      "points": 84,
+      "maxSpeed": 0.9457544916298957,
+      "time": "2026-10-21T18:00:00Z"
+    },
+    {
+      "model": "DBOFS",
+      "field": "wind",
+      "visibleArrows": 64,
+      "points": 95,
+      "maxSpeed": 17.534616055832558,
+      "time": "2026-10-21T18:00:00Z"
+    },
+    {
+      "model": "GOMOFS",
+      "field": "currents",
+      "visibleArrows": 1016,
+      "points": 3315,
+      "maxSpeed": 1.6536701989871212,
+      "time": "2026-10-21T18:00:00Z"
+    },
+    {
+      "model": "GOMOFS",
+      "field": "wind",
+      "visibleArrows": 1021,
+      "points": 3332,
+      "maxSpeed": 20.91222978324714,
+      "time": "2026-10-21T18:00:00Z"
+    },
+    {
+      "model": "TBOFS",
+      "field": "currents",
+      "visibleArrows": 49,
+      "points": 1762,
+      "maxSpeed": 0.8394525410628293,
+      "time": "2026-10-21T18:00:00Z"
+    },
+    {
+      "model": "TBOFS",
+      "field": "wind",
+      "visibleArrows": 50,
+      "points": 1917,
+      "maxSpeed": 7.130110081496416,
+      "time": "2026-10-21T18:00:00Z"
+    }
+  ],
+  "errors": [],
+  "geometry": "PASS: east/right, north/up, lengths 24/48, different speed colors",
+  "paletteSwitch": true,
+  "scalarSwitch": true
+}

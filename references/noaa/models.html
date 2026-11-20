@@ -1,0 +1,959 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="/ofs/css/ofs_map2.css" type="text/css">
+  <link rel="stylesheet" href="/ofs/css/ofs_css.css" type="text/css">
+  <script type="text/javascript" src="/ofs/js/display_ofsmap.js"></script>
+  <script type="text/javascript" src="/ofs/js/shp.js"></script>
+  <meta charset="utf-8">
+  <!-- Remove the next line to disable mobile mode -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="NOAA/NOS Operational Forecast System">
+  <meta name="keywords" content="forecast, nowcast, tides, winds, currents, OFS, operational forecast system">
+  <link href="/css/bootstrap.css" rel="stylesheet">
+  <link href="/css/bootstrap-responsive.css" rel="stylesheet">
+  <link href="/leaflet/leaflet.css" rel="stylesheet" type="text/css">
+  <link href="/leaflet/leaflet.label.css" rel="stylesheet" type="text/css">
+  <title>Operational Forecast System</title>
+  <script type="text/javascript" src="https://cdn.tidesandcurrents.noaa.gov/assets/js/jquery/jquery-latest.js"></script>
+  <script type="text/javascript" src="/bootstrap.min.js"></script>
+  <script type="text/javascript" src="/js/latest/menus_sub.js"></script>
+  <script type="text/javascript" src="/leaflet/leaflet.js"></script>
+  <script type="text/javascript" src="/leaflet/esri-leaflet.js"></script>
+  <script type="text/javascript" src="/leaflet/leaflet.label.js"></script>
+  <style type="text/css">
+    #map img {
+      max-width: inherit;
+    }
+
+    .leaflet-label:before {
+      display: none;
+    }
+
+    .leaflet-label:after {
+      display: none;
+    }
+  </style>
+  <link href="/css/frontpage.css" rel="stylesheet">
+</head>
+
+<body>
+  <link href="https://cdn.tidesandcurrents.noaa.gov/assets/css/tac-custom.css" rel="stylesheet" />
+<!-- GA4 - Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-FHLZQ78JLV"></script>
+<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag() {
+		dataLayer.push(arguments);
+	}
+	gtag("js", new Date());
+
+	gtag("config", "G-FHLZQ78JLV");
+</script>
+<!-- end GA4 - Global site tag (gtag.js) - Google Analytics -->
+<style type="text/css">
+	#about ul {
+		list-style-type: none;
+		padding: 0;
+		margin: 0;
+	}
+
+	#about .sub-menu-dropdown {
+		display: block;
+		padding: 0.25rem 1.5rem 0.25rem 1.5rem !important;
+	}
+
+	#about .mission-dropdown-box {
+		display: none;
+		top: 100%;
+		left: 0;
+		background-color: white !important;
+	}
+
+	#about:hover .sub-menu-dropdown:hover .mission-dropdown-box {
+		display: block;
+		background-color: #eeeeee;
+	}
+
+	#about .mission-dropdown-box li {
+		padding: 0.25rem 1.5rem 0.25rem 1.5rem !important;
+		white-space: nowrap;
+	}
+</style>
+<nav class="bodyfont">
+	<!-- Navigation starts -->
+	<div id="header" class="navbarbox navbarbottom">
+		<!-- Desktop Display -->
+		<div class="hidden-phone hidden-tablet">
+			<div id="buttoncontainer" class="container-fluid navi">
+				<div class="row-fluid" style="margin-left: 0; margin-right: 0">
+					<!-- navigation logos-->
+					<div class="navbar-brand">
+						<a href="https://www.noaa.gov/"><img class="logoimg"
+								src="https://cdn.tidesandcurrents.noaa.gov/assets/logos/logo_separate/noaa.jpg"
+								alt="NOAA" />
+						</a>
+					</div>
+					<div class="navbar-brand">
+						<a href="/"><img class="logoimg"
+								src="https://cdn.tidesandcurrents.noaa.gov/assets/logos/logo_separate/tidesandcurrentslogo.jpg"
+								alt="Tides &amp; Currents" /></a>
+					</div>
+					<!-- Right side navigation -->
+					<div class="floatboxright">
+						<!-- Home -->
+						<div class="span1 navi-item" id="homebutton">
+							<a href="/" class="navtext nav-underline">Home</a>
+						</div>
+						<!-- About Us -->
+						<div class="span1 navi-item panebutton" id="aboutbutton">
+							<a class="navtext nav-underline">About<span class="caret"></span></a>
+							<div id="about" class="pane about pulldown dropdownbox dropdownboxabout">
+								<div class="row-fluid">
+									<div class="span12">
+										<ul class="nav nav-list dropdownpadding sub-menu-dropdown">
+											<li><a href="/about_us.html">Overview</a></li>
+											<div class="dropdown-divider"></div>
+
+											<li class="sub-menu-header mission-area-header">
+												Mission Areas
+												<div class="mission-items-box">
+													<ul
+														class="nav nav-list dropdownpadding sub-dropdown-item mission-dropdown-box">
+														<li>
+															<a href="/navigation_services.html">Navigation Services</a>
+															<div class="dropdown-divider"></div>
+														</li>
+														<li>
+															<a href="/coastal_hazards.html">Coastal Hazards</a>
+															<div class="dropdown-divider"></div>
+														</li>
+														<li>
+															<a href="/mapping_and_charting.html">Mapping and
+																Charting</a>
+														</li>
+													</ul>
+												</div>
+											</li>
+
+											<div class="dropdown-divider"></div>
+											<li>
+												<a href="/news/strategic-plan-2019-2023.html">Strategic Plan</a>
+											</li>
+											<div class="dropdown-divider"></div>
+											<li><a href="/contact.html">Contact Us</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- What we Do -->
+						<div class="span1 navi-item panebutton" id="productbutton">
+							<a class="navtext nav-underline">Data and Products<span class="caret"></span></a>
+							<div id="products" class="pane products pulldown dropdownbox">
+								<div id="productspacer" class="hidden-phone"></div>
+								<div class="row-fluid">
+									<div class="span12">
+										<ul class="nav nav-list dropdownpadding">
+											<li>
+												<a href="/water_level_info.html">Tides and Water Levels</a>
+											</li>
+											<div class="dropdown-divider"></div>
+											<li><a href="/currents_info.html">Currents</a></li>
+											<div class="dropdown-divider"></div>
+											<li>
+												<a href="/ports_info.html">PORTS<sup>®</sup></a>
+											</li>
+											<div class="dropdown-divider"></div>
+											<li>
+												<a href="/sea_level_info.html">Sea Level and Coastal Flooding</a>
+											</li>
+											<div class="dropdown-divider"></div>
+											<li>
+												<a href="/met_info.html">Meteorological and Oceanographic Data</a>
+											</li>
+											<div class="dropdown-divider"></div>
+											<li>
+												<a href="/forecast_info.html" style="padding-right: 30px">Coastal and
+													Great Lakes Forecasts</a>
+											</li>
+											<div class="dropdown-divider"></div>
+
+											<li>
+												<a href="/web_services_info.html">GIS and Web Services</a>
+											</li>
+											<div class="dropdown-divider"></div>
+											<li>
+												<a href="/datum-updates/">Datum Updates</a>
+												<div class="dropdown-divider"></div>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- News -->
+						<div class="span1 navi-item panebutton" id="partnerbutton">
+							<a href="/tac_news.html" class="navtext nav-underline">News</a>
+						</div>
+						<!-- Education -->
+						<div class="span1 navi-item panebutton" id="educationbutton">
+							<a class="navtext nav-underline">Education and Outreach<span class="caret"></span></a>
+							<div id="education" class="pane education pulldown dropdownbox dropdownboxeducation">
+								<div class="row-fluid">
+									<div class="span12">
+										<ul class="nav nav-list dropdownpadding">
+											<li>
+												<a href="/education/videolib/tac-videos.html">Videos</a>
+											</li>
+											<div class="dropdown-divider"></div>
+											<li><a href="/pub.html">CO-OPS Publications</a></li>
+											<div class="dropdown-divider"></div>
+											<li>
+												<a href="/fieldlibrary/Welcome">CO-OPS Field Library</a>
+											</li>
+											<div class="dropdown-divider"></div>
+											<li>
+												<a class="dropdown-item custom-dropdown-item"
+													href="/education/tech-assist/">Technical Assistance</a>
+											</li>
+											<div class="dropdown-divider"></div>
+											<li>
+												<a class="dropdown-item custom-dropdown-item"
+													href="/education/tech-assist/partnerships">Partnerships</a>
+											</li>
+											<div class="dropdown-divider"></div>
+											<li>
+												<a href="/glossary.html">Glossary</a>
+											</li>
+											<div class="dropdown-divider"></div>
+
+											<li><a href="/faq.html">FAQs</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- Search Bar -->
+						<div class="hidden-phone searchfloat">
+							<form id="searchForm" name="searchForm" accept-charset="UTF-8" action="/search_results.html"
+								method="get" class="form-search searchbar">
+								<div style="margin: 0; padding: 0; display: inline">
+									<input name="utf8" type="hidden" value="&#x2713;" />
+								</div>
+								<div class="controls">
+									<div class="input-append">
+										<input placeholder="Search" autocomplete="on" type="text"
+											class="search-query searchboxtext form-control" id="query" name="query"
+											aria-label="Search Text Box" />
+										<button type="submit" class="btn btn-outline-success searchbutton"
+											aria-label="Mobile Search Text Box">
+											<img class="searchicon"
+												src="https://cdn.tidesandcurrents.noaa.gov/assets/icons/search.png"
+												alt="Search Button" />
+										</button>
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- visible-phone navigation and search box show-->
+		<div class="visible-tablet visible-phone">
+			<div id="buttoncontainermobile" class="container-fluid navi">
+				<div class="row-fluid">
+					<!-- Logo Section-->
+					<a class="navbar-brand brand-custom" href="https://www.noaa.gov/">
+						<img class="logoimg"
+							src="https://cdn.tidesandcurrents.noaa.gov/assets/logos/logo_separate/noaa.jpg"
+							alt="NOAA" />
+					</a>
+					<a class="navbar-brand brand-custom" href="/">
+						<img class="logoimg"
+							src="https://cdn.tidesandcurrents.noaa.gov/assets/logos/logo_separate/tidesandcurrentslogo.jpg"
+							alt="Tides &amp; Current" />
+					</a>
+					<!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+					<a class="btn-navbar navbar-toggler collapsed" type="button" data-toggle="collapse"
+						data-target=".nav-collapse">
+						<span class="navbar-toggler-icon"></span>
+					</a>
+					<!-- Everything you want hidden at 940px or less, place within here -->
+					<div class="nav-collapse collapse-box collapse" style="overflow: hidden; height: 0">
+						<!-- Search Bar -->
+						<div class="navbar-search navbarmobile-search" style="border: 0">
+							<form id="searchForm2" name="searchForm2" accept-charset="UTF-8"
+								action="/search_results.html" method="get"
+								class="form-search form-horizontal searchbox-mobile">
+								<div style="margin: 0; padding: 0; display: inline">
+									<input name="utf8" type="hidden" value="&#x2713;" />
+								</div>
+								<div class="controls" style="margin-left: 0px">
+									<div class="input-append">
+										<input placeholder="Search" autocomplete="on" type="text"
+											class="search-query searchboxtext form-control" id="query2" name="query2"
+											aria-label="Search Text Box" />
+										<button type="submit" class="btn btn-outline-success searchbutton"
+											aria-label="Mobile Search Text Box">
+											<img class="searchicon"
+												src="https://cdn.tidesandcurrents.noaa.gov/assets/icons/search.png"
+												alt="Search Button" />
+										</button>
+									</div>
+								</div>
+							</form>
+						</div>
+						<!-- .nav, .navbar-search, .navbar-form, etc -->
+						<ul class="nav navbox-mobile">
+							<!-- About Us-->
+							<li class="dropdown dropdownbox">
+								<a class="dropdown-toggle dropdown-mobile" data-toggle="dropdown">About<span
+										class="caret"></span></a>
+								<ul class="dropdown-menu dropdownbox-mobile">
+									<li><a href="/about_us.html">Overview</a></li>
+									<div class="dropdown-divider"></div>
+									<li class="sub-menu-header">
+										<p>Mission Areas</p>
+									</li>
+									<ul class="nav nav-list sub-menu-dropdown">
+										<li>
+											<a href="/navigation_services.html">Navigation Services</a>
+											<div class="dropdown-divider"></div>
+										</li>
+										<li>
+											<a href="/coastal_hazards.html">Coastal Hazards</a>
+											<div class="dropdown-divider"></div>
+										</li>
+										<li>
+											<a href="/mapping_and_charting.html">Mapping and Charting</a>
+										</li>
+									</ul>
+									<div class="dropdown-divider"></div>
+									<li>
+										<a href="/news/strategic-plan-2019-2023.html">Strategic Plan</a>
+									</li>
+									<div class="dropdown-divider"></div>
+									<li><a href="/contact.html">Contact Us</a></li>
+								</ul>
+							</li>
+							<!-- What we Do -->
+							<li class="dropdown dropdownbox">
+								<a href="#a" class="dropdown-toggle dropdown-mobile" data-toggle="dropdown">Data and
+									Products<span class="caret"></span></a>
+								<ul class="dropdown-menu dropdownbox-mobile megamenu">
+									<li>
+										<a href="/water_level_info.html">Tides and Water Levels</a>
+									</li>
+									<div class="dropdown-divider"></div>
+									<li><a href="/currents_info.html">Currents</a></li>
+									<div class="dropdown-divider"></div>
+									<li>
+										<a href="/ports_info.html">PORTS<sup>®</sup></a>
+									</li>
+									<div class="dropdown-divider"></div>
+									<li>
+										<a href="/sea_level_info.html">Sea Level and Coastal Flooding</a>
+									</li>
+									<div class="dropdown-divider"></div>
+									<li>
+										<a href="/met_info.html">Meteorological and Oceanographic Data</a>
+									</li>
+									<div class="dropdown-divider"></div>
+									<li>
+										<a href="/forecast_info.html" style="padding-right: 30px">Coastal Forecasts</a>
+									</li>
+									<div class="dropdown-divider"></div>
+
+									<li>
+										<a href="/web_services_info.html">GIS and Web Services</a>
+									</li>
+									<div class="dropdown-divider"></div>
+									<li>
+										<a href="/datum-updates/">Tidal/Water Level Datum Updates</a>
+										<div class="dropdown-divider"></div>
+									</li>
+								</ul>
+							</li>
+							<!-- News -->
+							<li><a class="dropdown-mobile" href="/tac_news.html">News</a></li>
+							<!-- Education -->
+							<li class="dropdown dropdownbox">
+								<a href="#a" class="dropdown-toggle dropdown-mobile" data-toggle="dropdown">Education
+									and Outreach<span class="caret"></span></a>
+								<ul class="dropdown-menu dropdownbox-mobile">
+									<li>
+										<a href="/education/videolib/tac-videos.html">Videos</a>
+									</li>
+									<div class="dropdown-divider"></div>
+									<li><a href="/pub.html">CO-OPS Publications</a></li>
+									<div class="dropdown-divider"></div>
+									<li>
+										<a href="/fieldlibrary/Welcome">CO-OPS Field Library</a>
+									</li>
+									<div class="dropdown-divider"></div>
+									<li>
+										<a class="dropdown-item custom-dropdown-item"
+											href="/education/tech-assist/">Technical Assistance</a>
+									</li>
+									<div class="dropdown-divider"></div>
+									<li>
+										<a class="dropdown-item custom-dropdown-item"
+											href="/education/tech-assist/partnerships">Partnerships</a>
+									</li>
+									<div class="dropdown-divider"></div>
+									<li>
+										<a href="/glossary.html">Glossary</a>
+									</li>
+									<div class="dropdown-divider"></div>
+
+									<li><a href="/faq.html">FAQs</a></li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</nav>
+<div class="headlinebarnav"></div>
+
+<!-- End menu header -->
+
+<!-- Sitewide Alert -->
+<div id="sitewideAlert" class="row-fluid"></div>
+
+<!-- Start the alert -->
+<div class="alert alert-error sitewide row-fluid stormalert-text mb-0 align-middle" id="stormAlert" style="
+		background-color: rgba(179, 0, 3, 1);
+		color: white;
+		font-size: 1rem;
+		text-align: center;
+		display: none;
+		padding: 0 10px 0 10px;
+		margin: 0 50% 0 50%;
+		width: 100%;
+	" role="alert"></div>
+<!-- Alert End-->
+
+<!-- Start Div Content Container -->
+<div class="container-fluid custom-padding">
+	<!-- Breadcrumbs -->
+	<ul class="breadcrumb">
+		<li id="home"></li>
+	</ul>
+	<hr />
+	<!-- breadcrumb script-->
+	<script>
+		if (window.location.pathname == '/') {
+			//we're on index
+			$('#home').html('Tides & Currents Home');
+		} else {
+			$('#home').html('<a href="/">Home</a><span class="divider">/</span>');
+		}
+	</script>
+  <!-- Page content starts here -->
+  <div class="row-fluid">
+    <div class="span2" style="margin-top: 20px;">
+      <ul class="nav nav-list well quicknav">
+        <li class="nav-header" style="color:black">OFS Regions</li>
+        <li class="nav-header" style="color:black">Atlantic</li>
+        <li><a href="/ofs/cbofs/cbofs.html"><abbr title="Chesapeake Bay OFS">CBOFS</abbr></a></li>
+        <li><a href="/ofs/dbofs/dbofs.html"><abbr title="Delaware Bay OFS">DBOFS</abbr></a></li>
+        <li><a href="/ofs/gomofs/gomofs.html"><abbr title="Gulf of Maine OFS">GoMOFS</abbr></a></li>
+        <li><a href="/ofs/nyofs/nyofs.html"><abbr title="New York/New Jersey OFS">NYOFS</abbr></a></li>
+        <li><a href="/ofs/sjofs/sjofs.html"><abbr title="St. Johns River OFS">SJROFS</abbr></a></li>
+        <li class="nav-header" style="color:black">Gulf of America</li>
+        <li><a href="/ofs/ngofs2/ngofs2.html"><abbr title="Northern Gulf of America OFS">NGOFS2</abbr></a></li>
+        <li><a href="/ofs/tbofs/tbofs.html"><abbr title="Tampa Bay OFS">TBOFS</abbr></a></li>
+        <li class="nav-header" style="color:black">Great Lakes</li>
+        <li><a href="/ofs/leofs/leofs.html"><abbr title="Lake Eric OFS">LEOFS</abbr></a></li>
+        <li><a href="/ofs/lmhofs/lmhofs.html"><abbr title="Lake Michigan and Huron OFS">LMHOFS</abbr></a></li>
+        <li><a href="/ofs/loofs/loofs.html"><abbr title="Lake America OFS">LOOFS</abbr></a></li>
+        <li><a href="/ofs/lsofs/lsofs.html"><abbr title="Lake Superior OFS">LSOFS</abbr></a></li>
+        <li class="nav-header" style="color:black">Pacific</li>
+        <li><a href="/ofs/ciofs/ciofs.html"><abbr title="Cook Inlet OFS">CIOFS</abbr></a></li>
+        <li><a href="/ofs/sscofs/sscofs.html"><abbr title="Salish Sea and Columbia River OFS">SSCOFS</abbr></a></li>
+        <li><a href="/ofs/sfbofs/sfbofs.html"><abbr title="San Francisco Bay OFS">SFBOFS</abbr></a></li>
+        <li><a href="/ofs/wcofs/wcofs.html"><abbr title="West Coast OFS">WCOFS</abbr></a></li>
+      </ul>
+      <p><!-- space break --></p>
+      <ul class="nav nav-list well">
+        <li class="nav-header" style="color:black">Marine Channels Forecast</li>
+        <li><a href="/ofs/ngofs2/mbmcf.html">Mobile Bay</a></li>
+        <li><a href="/ofs/tbofs/tbmcf.html">Tampa Bay</a></li>
+      </ul>
+      <p><!-- space break --></p>
+      <ul class="nav nav-list well">
+        <li class="nav-header" style="color:black">OFS Information</li>
+        <li><a href="/ofs/model_publications.html">Model Publications</a></li>
+        <li><a href="/ofs/ofs_faq.html">OFS FAQ</a></li>
+      </ul>
+    </div> <!-- end of span2 -->
+
+    <div class="span10">
+      <h3 style="text-align:center">Operational Forecast System</h3><br>
+      <!--<style>
+p {
+  font-size: 14px;
+  color: black;
+}
+</style>
+
+<div class="alert alert-warning">
+  <p>CO-OPS will replace the existing operational modeling server for system updates starting at 5:00 AM EST on February 18, 2026. 
+     Operational modeling products will not be updated during the transition. This transition should be completed by 11:00 AM EST
+     of the same day.
+  </p>
+</div>-->
+
+      <div class="row-fluid">
+        <div id="map" style="height: 800px"></div>
+      </div>
+      <br>
+      <h4>Operational Forecast System Description</h4><br>
+      <p>The primary objective of the National Operational Coastal Modeling Program (<abbr
+          title="National Operational Coastal Modeling Program">NOCMP</abbr>)
+        is to develop and operate a national network of Operational Nowcast and Forecast Hydrodynamic Model Systems
+        (called <abbr title="Operational Forecast System">OFS</abbr>) to support NOAA&#039;s mission goals and
+        priorities. An <abbr title="Operational Forecast System">OFS</abbr> consists of the automated integration of
+        observing system data streams, hydrodynamic model predictions, product dissemination and continuous
+        quality-control
+        monitoring. State-of-the-art numerical hydrodynamic models driven by real-time data and meteorological,
+        oceanographic, and/or river flow rate forecasts
+        will form the core of these end-to-end systems. The <abbr title="Operational Forecast System">OFS</abbr> will
+        perform nowcast and short-term (0 hr. - 48 hr.)
+        forecast predictions of pertinent parameters (e.g., water levels, currents, salinity, temperature, waves) and
+        disseminate them to users.</p>
+
+      <p>Nowcasts and forecasts are scientific predictions about the present and future states of water levels (and
+        possibly currents and other relevant oceanographic variables,
+        such as salinity and temperature) in a coastal area. These predictions rely on either observed data or forecasts
+        from a numerical model. A nowcast incorporates recent (and often near
+        real-time) observed meteorological, oceanographic, and/or river flow rate data. A nowcast covers the period of
+        time from the recent past (e.g., the past few days) to the present, and it can
+        make predictions for locations where observational data are not available. A forecast incorporates
+        meteorological, oceanographic, and/or river flow rate forecasts and makes predictions for
+        times where observational data will not be available. A forecast is usually initiated by the results of a
+        nowcast.</p>
+
+      <p>OFS are being implemented in critical ports, harbors, estuaries, Great Lakes and coastal waters of the United
+        States, and will join the National Ocean Service&#039;s operational
+        oceanographic capabilities to form a national backbone of real-time data, tidal predictions, data management and
+        operational modeling.</p>
+
+      <p>The National Ocean Service&#039;s Operational Data Acquisition and Archiving System (ODAAS) acquires, subsets
+        and archives real-time observations and the National Weather
+        Service&#039;s (NWS) forecast model guidance in support the suite of real-time nowcast/forecast systems listed
+        below.
+        Below, click on each OFS region to display or close a list of OFS.</p>
+
+      <h4>Operational Forecast System Regions: Atlantic</h4><br>
+      <div id="Atlantic">
+        <div class="row-fluid">
+          <div class="span2">
+            <ul class="thumbnails hidden-phone">
+              <li class="span12">
+                <a href="/ofs/cbofs/cbofs.html" class="thumbnail"><img src="/images/cbofs2_icon.png"
+                    alt="Chesapeake Bay Operational Forecast System"></a>
+              </li>
+            </ul>
+          </div>
+          <div class="span10">
+            <p>NOAA&#039;s National Ocean Service (NOS) has upgraded its <a
+                href="/ofs/cbofs/cbofs.html"><strong>Chesapeake Bay Operational Forecast System (CBOFS)</strong></a>.
+              The new higher resolution CBOFS is now based on a three-dimensional ROMS model
+              that runs on NOAA&#039;s High Performance Computers (HPC). In addition to providing water level nowcast
+              and forecast guidance, the new CBOFS now also provides currents, water temperature
+              and salinity as well as interpolated winds from National Weather Service products. CBOFS runs four times
+              per day and generates 6-hour nowcasts and 48-hour forecast guidance. CBOFS products
+              include time series graphics at station locations and aerial animations of the whole Chesapeake Bay for
+              all five parameters (wind, water level, currents, temperature and salinity).</p>
+          </div>
+        </div>
+        <div class="row-fluid">
+          <div class="span2">
+            <ul class="thumbnails hidden-phone">
+              <li class="span12">
+                <a href="/ofs/dbofs/dbofs.html" class="thumbnail"><img src="/images/dbofs_icon.png"
+                    alt="Delaware Bay Operational Forecast System"></a>
+              </li>
+            </ul>
+          </div>
+          <div class="span10">
+            <p>NOAA&#039;s National Ocean Service (NOS) has developed a <a href="/ofs/dbofs/dbofs.html"><strong>Delaware
+                  Bay Operational Forecast System (DBOFS)</strong></a>. DBOFS is based on a three-dimensional ROMS
+              model that runs on NOAA&#039;s High Performance Computers (HPC). DBOFS provides water level, currents,
+              water temperature and salinity nowcast and
+              forecast guidance as well as interpolated winds from National Weather Service products. DBOFS runs four
+              times per day and generates 6-hour
+              nowcasts and 48-hour forecast guidance. DBOFS products include time series graphics at station locations
+              and aerial animations of the whole Delaware Bay
+              for all five parameters (wind, water level, currents, temperature and salinity).</p>
+          </div>
+        </div>
+        <div class="row-fluid">
+          <div class="span2">
+            <ul class="thumbnails hidden-phone">
+              <li class="span12">
+                <a href="/ofs/gomofs/gomofs.html" class="thumbnail"><img src="/images/gomofs_icon.png"
+                    alt="Gulf of Maine Operational Forecast System"></a>
+              </li>
+            </ul>
+          </div>
+          <div class="span10">
+            <p>NOAA&#039;s National Ocean Service (NOS) has developed a <a href="/ofs/gomofs/gomofs.html"><strong>Gulf
+                  of Maine Operational Forecast System (GoMOFS)</strong></a>. Based on Rutgers University&#039;s
+              Regional Ocean Modeling System (ROMS), this OFS is to forecast water levels, currents, temperature and
+              salinity for Gulf of Maine and its adjacent coastal area. The forecasts, which extend out to 72 hours,
+              will support the maritime user community in navigation, emergency response, ecological forecasts and so
+              forth. GoMOFS runs on NOAA&#039;s High Performance Computers (HPC) in a new Coastal Ocean Modeling
+              Framework
+              (COMF) developed by CO-OPS. As a result, GoMOFS has direct access to National Weather Service operational
+              meteorological products that it needs to run reliably.</p>
+          </div>
+        </div>
+        <div class="row-fluid">
+          <div class="span2">
+            <ul class="thumbnails hidden-phone">
+              <li class="span12">
+                <a href="/ofs/nyofs/nyofs.html" class="thumbnail"><img src="/images/nyofs_icon.jpg"
+                    alt="New York and New Jersey Operational Forecast System"></a>
+              </li>
+            </ul>
+          </div>
+          <div class="span10">
+            <p>NOS created the <a href="/ofs/nyofs/nyofs.html">Port of <strong>New York and New Jersey Operational
+                  Forecast System (NYOFS)</strong></a> to provide the maritime community with improved short-term
+              predictions of water levels
+              and currents in the Port of New York and New Jersey. Be advised that these predictions are based on a
+              hydrodynamic model and, as such, should be considered as computer-generated forecast
+              guidance.</p>
+          </div>
+        </div>
+        <div class="row-fluid">
+          <div class="span2">
+            <ul class="thumbnails hidden-phone">
+              <li class="span12">
+                <a href="/ofs/sjofs/sjofs.html" class="thumbnail"><img src="/images/sjofs_link.png"
+                    alt="St. John&#039;s River Operational Forecast System"></a>
+              </li>
+            </ul>
+          </div>
+          <div class="span10">
+            <p>NOS created the <a href="/ofs/sjofs/sjofs.html"><strong>St. John&#039;s River Operational Forecast System
+                  (SJROFS)</strong></a> to provide the maritime community with improved short-term predictions of water
+              levels and currents
+              in St. John's River. Be advised that these predictions are based on a hydrodynamic model and, as such,
+              should be considered as computer-generated forecast guidance.</p>
+          </div>
+        </div>
+      </div>
+
+      <h4>Operational Forecast System Regions: Gulf of America</h4><br>
+      <div id="GulfOfAmerica">
+        <div class="row-fluid">
+          <div class="span2">
+            <ul class="thumbnails hidden-phone">
+              <li class="span12">
+                <a href="/ofs/ngofs2/ngofs2.html" class="thumbnail"><img src="/images/ofs/ngofs2_icon.png"
+                    alt="Northern Gulf of America Operational Forecast System"></a>
+              </li>
+            </ul>
+          </div>
+          <div class="span10">
+            <p>NOAA&#039;s National Ocean Service (NOS) has upgraded the existing Northern Gulf of America Operational
+              Forecast System (NGOFS, NEGOFS, and NWGOFS) to the
+              new <a href="/ofs/ngofs2/ngofs2.html"><strong>Northern Gulf of America Operational Forecast System
+                  (NGOFS2)</strong></a> which extends the model domain
+              to cover Lower Mississippi River, Barataria Bay, Lake Pontchartrain, Corpus Christi Bay, and Mexican
+              coastal water without sacrificing model resolutions.
+              NGOFS2 is the same hydrodynamic model of a three-dimensional FVCOM. NGOFS2 runs 4 time per day and
+              provides water levels, currents, water temperature
+              and salinity nowcast and forecast guidance out to 48 hours for the northern Gulf of America including nine
+              ports at Matagorda Bay, Galveston Bay,
+              Sabine Neches, Calcasieu/Lake Charles, Gulfport, Pascagoula Bay, Mobile Bay, Corpus Christi Bay, and Lake
+              Pontchartrain.</p>
+          </div>
+        </div>
+        <div class="row-fluid">
+          <div class="span2">
+            <ul class="thumbnails hidden-phone">
+              <li class="span12">
+                <a href="/ofs/tbofs/tbofs.html" class="thumbnail"><img src="/images/tbofs_icon.png"
+                    alt="Tampa Bay Operational Forecast System"></a>
+              </li>
+            </ul>
+          </div>
+          <div class="span10">
+            <p>NOAA&#039;s National Ocean Service (NOS) has developed a <a href="/ofs/tbofs/tbofs.html"><strong>Tampa
+                  Bay Operational Forecast System (TBOFS)</strong></a>. TBOFS is based on a three-dimensional ROMS model
+              that runs on NOAA&#039;s High Performance
+              Computers (HPC). TBOFS provides water level, currents, water temperature and salinity nowcast and forecast
+              guidance as well as interpolated winds from National Weather Service products.
+              TBOFS runs four times per day and generates 6-hour nowcasts and 48-hour forecast guidance. TBOFS products
+              include time series graphics at station locations and aerial animations of the whole
+              Tampa Bay for all five parameters (wind, water level, currents, temperature and salinity).</p>
+          </div>
+        </div>
+      </div>
+      <h4>Operational Forecast System Regions: Great Lakes</h4><br>
+      <div id="GreatLakes">
+        <div class="row-fluid">
+          <div class="span2">
+            <ul class="thumbnails hidden-phone">
+              <li class="span12">
+                <a href="/ofs/leofs/leofs.html" class="thumbnail"><img src="/images/leofs_icon2.png"
+                    alt="Lake Erie Operational Forecast System"></a>
+              </li>
+            </ul>
+          </div>
+          <div class="span10">
+            <p>NOAA&#039;s National Ocean Service (NOS) collaborated with the Great Lakes Environmental Research
+              Laboratory (GLERL) in developing
+              and transitioning the new generation of <a href="/ofs/leofs/leofs.html"><strong>Lake Erie Operational
+                  Forecast System (LEOFS)</strong></a>
+              to operations. The upgraded LEOFS uses the Finite Volume Community Ocean Model (FVCOM) as its core
+              circulation model and has extended the
+              forecast horizon to 120 hours. It will provide higher-resolution forecast guidance of water level,
+              currents and water temperature to support
+              the maritime user community in navigation, emergency response, ecological forecasts and so forth.</p>
+          </div>
+        </div>
+        <div class="row-fluid">
+          <div class="span2">
+            <ul class="thumbnails hidden-phone">
+              <li class="span12">
+                <a href="/ofs/lmhofs/lmhofs.html" class="thumbnail"><img src="/images/lmhofs_logo.png"
+                    alt="Lake Michigan and Huron Operational Forecast System"></a>
+              </li>
+            </ul>
+          </div>
+          <div class="span10">
+            <p>NOAA&#039;s National Ocean Service (NOS) collaborated with the Great Lakes Environmental Research
+              Laboratory (GLERL) in developing and transitioning the
+              <a href="/ofs/lmhofs/lmhofs.html"><strong>Lake Michigan and Huron Operational Forecast System
+                  (LMHOFS)</strong></a> to operations, to provide higher-resolution
+              forecast guidance of water level, currents and water temperature. The upgraded LMHOFS, combining Lake
+              Michigan and Lake Huron into one model grid, uses the Finite
+              Volume Community Ocean Model (FVCOM) as its core ocean circulation model and has extended the forecast
+              horizon to 120 hours. It is expected to generate a more accurate
+              model output than the former LMOFS and LHOFS, which have separate model domains based on the Princeton
+              Ocean Model (POM).
+            </p>
+          </div>
+        </div>
+        <div class="row-fluid">
+          <div class="span2">
+            <ul class="thumbnails hidden-phone">
+              <li class="span12">
+                <a href="/ofs/loofs/loofs.html" class="thumbnail"><img src="/images/loofs_link.png"
+                    alt="Lake America Operational Forecast System"></a>
+              </li>
+            </ul>
+          </div>
+          <div class="span10">
+            <p>NOS created the <a href="/ofs/loofs/loofs.html"><strong>Lake America Operational Forecast System
+                  (LOOFS)</strong></a> to provide the maritime community with improved short-term predictions of water
+              levels and
+              currents in the Lake America. Be advised that these predictions are based on a hydrodynamic model and, as
+              such, should be considered as computer-generated forecast guidance.</p>
+          </div>
+        </div>
+        <div class="row-fluid">
+          <div class="span2">
+            <ul class="thumbnails hidden-phone">
+              <li class="span12">
+                <a href="/ofs/lsofs/lsofs.html" class="thumbnail"><img src="/images/lsofs_link.png"
+                    alt="Lake Superior Operational Forecast System"></a>
+              </li>
+            </ul>
+          </div>
+          <div class="span10">
+            <p>NOS created the <a href="/ofs/lsofs/lsofs.html"><strong>Lake Superior Operational Forecast System
+                  (LSOFS)</strong></a> to provide the maritime community with improved short-term predictions of water
+              levels and
+              currents in the Lake Superior. Be advised that these predictions are based on a hydrodynamic model and, as
+              such, should be considered as computer-generated forecast guidance.</p>
+          </div>
+        </div>
+      </div>
+
+      <h4>Operational Forecast System Regions: Pacific</h4><br>
+      <div id="Pacific">
+
+        <div class="row-fluid">
+          <div class="span2">
+            <ul class="thumbnails hidden-phone">
+              <li class="span12">
+                <a href="/ofs/ciofs/ciofs.html" class="thumbnail"><img src="/images/ciofs_logo.png"
+                    alt="Cook Inlet Operational Forecast System (CIOFS)"></a>
+              </li>
+            </ul>
+          </div>
+          <div class="span10">
+            <p><a href="/ofs/ciofs/ciofs.html">Cook Inlet Operational Forecast System (CIOFS)</a> was developed by the
+              NOAA/National Ocean Service/Office of Coast Survey in a joint project with the
+              NOAA/NOS/Center for Operational Oceanographic Products and Services (CO-OPS) and the NOAA/National Weather
+              Service/National Centers for Environmental Prediction (NCEP) Central Operations
+              (NCO) using Rutgers University&#039;s Regional Ocean Modeling System (ROMS). CIOFS generates water level,
+              wind, water temperature, salinity, and current nowcast and forecast guidance out
+              to 48 hours, four times per day.</p>
+          </div>
+        </div>
+
+        <div class="row-fluid">
+          <div class="span2">
+            <ul class="thumbnails hidden-phone">
+              <li class="span12">
+                <a href="/ofs/sscofs/sscofs.html" class="thumbnail"><img src="/images/ofs/sscofs_icon.png"
+                    alt="Salish Sea and Columbia River Operational Forecast System"></a>
+              </li>
+            </ul>
+          </div>
+          <div class="span10">
+            <p>The <a href="/ofs/sscofs/sscofs.html"><strong>Salish Sea and Columbia River Operational Forecast System
+                  (SSCOFS)</strong></a> was developed as part of a joint project of the NOAA/National
+              Ocean Service&#039;s Center for Operational Oceanographic Products and Services (CO-OPS) and Office of
+              Coast Survey, the NOAA/National Weather Service&#039;s (NWS) National Centers for Environmental Prediction
+              Central Operations, the Battelle - Pacific Northwest National Laboratory, and the University of
+              Massachusetts-Dartmouth.</p>
+
+            <p>The SSCOFS runs on NOAA&#039;s Weather and Climate Operational Supercomputing System (WCOSS) in a Coastal
+              Ocean Modeling Framework developed by CO-OPS, and it provides the maritime user community with nowcast
+              (analyses of present conditions) and forecast guidance of water levels, currents, water temperature, and
+              salinity out to 72 hours, four times per day.</p>
+          </div>
+        </div>
+
+
+        <div class="row-fluid">
+          <div class="span2">
+            <ul class="thumbnails hidden-phone">
+              <li class="span12">
+                <a href="/ofs/sfbofs/sfbofs.html" class="thumbnail"><img src="/images/sfbofs_icon.png"
+                    alt="San Francisco Bay Operational Forecast System"></a>
+              </li>
+            </ul>
+          </div>
+          <div class="span10">
+            <p>NOAA&#039;s National Ocean Service (NOS) has developed a <a href="/ofs/sfbofs/sfbofs.html"><strong>San
+                  Francisco Bay Operational Forecast System (SFBOFS)</strong></a>. SFBOFS is based
+              on a three-dimensional FVCOM model that runs on NOAA&#039;s High Performance Computing System (HPCS).
+              SFBOFS provides water levels, currents, water temperature and salinity nowcast and
+              forecast guidance as well as interpolated winds from National Weather Service products for two subdomains:
+              the San Francisco Bay and the San Francisco Bay Entrance. SFBOFS runs four times
+              per day and generates 6-hour nowcasts and 48-hour forecast guidance. SFBOFS products include time series
+              graphics at station locations and aerial animations of the San Francisco Bay for
+              all five parameters (winds, water levels, currents, temperature and salinity).</p>
+          </div>
+        </div>
+
+        <div class="row-fluid">
+          <div class="span2">
+            <ul class="thumbnails hidden-phone">
+              <li class="span12">
+                <a href="/ofs/wcofs/wcofs.html" class="thumbnail"><img src="/images/ofs/wcofs_icon.png"
+                    alt="West Coast Bay Operational Forecast System"></a>
+              </li>
+            </ul>
+          </div>
+          <div class="span10">
+            <p>NOAA&#039;s National Ocean Service (NOS) collaborated with the National Environmental Satellite, Data,
+              and Information Service (NESDIS) in developing
+              and transitioning the new <a href="/ofs/wcofs/wcofs.html"><strong>West Coast Operational Forecast System
+                  (WCOFS)</strong></a> to operations. WCOFS is
+              based on the Regional Ocean Modeling System (ROMS). It assimilates real-time observation using ROMS&#039;
+              4DVAR and provides water level, currents,
+              water temperature, and salinity nowcast and forecast guidance out to 72 hours.</p>
+          </div>
+        </div>
+      </div> <!-- end of Pacific div -->
+    </div> <!-- end of span10 -->
+  </div>
+  <!-- Page content ends here -->
+  <hr>
+  <!-- Closing Div for Container-->
+</div>
+
+<!-- Footer section -->
+<div class="push"></div>
+<footer>
+	<div class="footer-container">
+		<div class="row-fluid copyright_box">
+			<div class="container footer-wrapper">
+				<div class="copyright-p">
+					<h6 class="copyright-header" style="font-size: 1rem; font-weight: 500">
+						Website Owner: Center for Operational Oceanographic Products and Services
+					</h6>
+					<p style="font-size: 14px">
+						<a class="copyrightText" href="http://www.noaa.gov">National Oceanic and Atmospheric
+							Administration</a>
+						<a class="footerbox" style="margin: 0 1rem">•</a>
+						<br class="break" />
+						<a class="copyrightText" href="http://oceanservice.noaa.gov">National Ocean Service</a>
+						<a class="footerbox" style="margin: 0 1rem">•</a>
+						<br class="break" />
+						<a class="copyrightText" href="/privacy.html">Privacy Policy</a>
+						<a class="footerbox" style="margin: 0 1rem">•</a>
+						<br />
+						<a class="copyrightText" href="/disclaimers.html">Disclaimer</a>
+						<a class="footerbox" style="margin: 0 1rem">•</a>
+						<br class="break" />
+						<a class="copyrightText" href="/survey.html">Take Our Survey </a>
+						<a class="footerbox" style="margin: 0 1rem">•</a>
+						<br class="break" />
+						<a class="copyrightText" href="https://www.noaa.gov/foia-freedom-of-information-act">Freedom of
+							Information Act</a>
+						<a class="footerbox" style="margin: 0 1rem">•</a>
+						<br class="break" />
+						<a class="copyrightText" href="/contact.html">Contact Us</a>
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
+
+<!-- jQuery-UI includes: widget.js, position.js, keycode.js, unique-id.js, widgets/autocomplete.js, widgets/menu.js -->
+<script src="https://cdn.tidesandcurrents.noaa.gov/assets/js/jquery/jquery-ui.min.js"></script>
+
+<!-- Bootstrap Version: v2.0 -->
+<script src="https://cdn.tidesandcurrents.noaa.gov/assets/js/bootstrap.min.js"></script>
+
+<!-- hoverIntent Version: r7 compatible with jQuery 1.5.1+ -->
+<script src="https://cdn.tidesandcurrents.noaa.gov/assets/js/hoverintent.min.js"></script>
+
+<!-- Chosen Version: 0.12.1 -->
+<script src="https://cdn.tidesandcurrents.noaa.gov/assets/js/chosen.min.js"></script>
+
+<!-- Redirect modal for external links -->
+<script src="/js/check-redirect.js"></script>
+
+<script
+	src="https://dap.digitalgov.gov/Universal-Federated-Analytics-Min.js?agency=DOC&subagency=NOAA&pua=UA-47217314-1"
+	id="_fed_an_ua_tag"></script>
+
+<!-- Search Bar Autocomplete -->
+<script type="text/javascript" src="https://cdn.tidesandcurrents.noaa.gov/assets/js/latest/searchbox.js"></script>
+<script type="text/javascript" src="https://cdn.tidesandcurrents.noaa.gov/assets/js/custom_v1.js"></script>
+<script type="text/javascript" src="https://cdn.tidesandcurrents.noaa.gov/assets/js/js-bs4/scroller.js"></script>
+
+<!-- Alert Bars -->
+<script type="text/javascript"
+	src="https://cdn.tidesandcurrents.noaa.gov/assets/js/storm_alert_panel_bs2.js"></script>
+<script type="text/javascript" src="https://cdn.tidesandcurrents.noaa.gov/assets/js/sitewide_alert.js"></script>
+  <script>
+    mapit();
+  </script>
+  <script type="text/javascript">
+    var bc = new breadcrumb();
+    bc.appendPath("<a href='/products.html'>Products</a>");
+    bc.appendLocation("Operational Forecast System");
+  </script>
+</body>
+
+</html>

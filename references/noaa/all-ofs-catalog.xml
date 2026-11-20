@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog xmlns="http://www.unidata.ucar.edu/namespaces/thredds/InvCatalog/v1.0" xmlns:xlink="http://www.w3.org/1999/xlink" name="CO-OPS THREDDS Data Server" version="1.2">
+  <service name="allServices" serviceType="compound" base="">
+    <service name="dapService" serviceType="OpenDAP" base="/thredds/dodsC/" />
+    <service name="httpService" serviceType="HTTPServer" base="/thredds/fileServer/" />
+    <service name="wms" serviceType="WMS" base="/thredds/wms/" />
+    <service name="ncss" serviceType="NetcdfSubset" base="/thredds/ncss/grid/" />
+  </service>
+  <catalogRef xlink:href="cbofs_catalog.xml" xlink:title="NOAA CBOFS NetCDF Files Catalog" name="NOAA CBOFS NetCDF Files Catalog" />
+  <catalogRef xlink:href="ciofs_catalog.xml" xlink:title="NOAA CIOFS NetCDF Files Catalog" name="NOAA CIOFS NetCDF Files Catalog" />
+  <catalogRef xlink:href="dbofs_catalog.xml" xlink:title="NOAA DBOFS NetCDF Files Catalog" name="NOAA DBOFS NetCDF Files Catalog" />
+  <catalogRef xlink:href="gomofs_catalog.xml" xlink:title="NOAA GOMOFS NetCDF Files Catalog" name="NOAA GOMOFS NetCDF Files Catalog" />
+  <catalogRef xlink:href="leofs_catalog.xml" xlink:title="NOAA LEOFS NetCDF Files Catalog" name="NOAA LEOFS NetCDF Files Catalog" />
+  <catalogRef xlink:href="lmhofs_catalog.xml" xlink:title="NOAA LMHOFS NetCDF Files Catalog" name="NOAA LMHOFS NetCDF Files Catalog" />
+  <catalogRef xlink:href="loofs_catalog.xml" xlink:title="NOAA LOOFS NetCDF Files Catalog" name="NOAA LOOFS NetCDF Files Catalog" />
+  <catalogRef xlink:href="lsofs_catalog.xml" xlink:title="NOAA LSOFS NetCDF Files Catalog" name="NOAA LSOFS NetCDF Files Catalog" />
+  <catalogRef xlink:href="ngofs2_catalog.xml" xlink:title="NOAA NGOFS2 NetCDF Files Catalog" name="NOAA NGOFS2 NetCDF Files Catalog" />
+  <catalogRef xlink:href="nyofs_catalog.xml" xlink:title="NOAA NYOFS NetCDF Files Catalog" name="NOAA NYOFS NetCDF Files Catalog" />
+  <catalogRef xlink:href="sfbofs_catalog.xml" xlink:title="NOAA SFBOFS NetCDF Files Catalog" name="NOAA SFBOFS NetCDF Files Catalog" />
+  <catalogRef xlink:href="sjrofs_catalog.xml" xlink:title="NOAA SJROFS NetCDF Files Catalog" name="NOAA SJROFS NetCDF Files Catalog" />
+  <catalogRef xlink:href="sscofs_catalog.xml" xlink:title="NOAA SSCOFS NetCDF Files Catalog" name="NOAA SSCOFS NetCDF Files Catalog" />
+  <catalogRef xlink:href="tbofs_catalog.xml" xlink:title="NOAA TBOFS NetCDF Files Catalog" name="NOAA TBOFS NetCDF Files Catalog" />
+  <catalogRef xlink:href="wcofs_catalog.xml" xlink:title="NOAA WCOFS NetCDF Files Catalog" name="NOAA WCOFS NetCDF Files Catalog" />
+  <catalogRef xlink:href="cbofs_agg.xml" xlink:title="Aggregated 7 day CBOFS Fields Forecast" name="Aggregated 7 day CBOFS Fields Forecast" />
+  <catalogRef xlink:href="ciofs_agg.xml" xlink:title="Aggregated 7 day CIOFS Fields Forecast" name="Aggregated 7 day CIOFS Fields Forecast" />
+  <catalogRef xlink:href="dbofs_agg.xml" xlink:title="Aggregated 7 day DBOFS Fields Forecast" name="Aggregated 7 day DBOFS Fields Forecast" />
+  <catalogRef xlink:href="gomofs_agg.xml" xlink:title="Aggregated 7 day GOMOFS Fields Forecast" name="Aggregated 7 day GOMOFS Fields Forecast" />
+  <catalogRef xlink:href="nyofs_agg.xml" xlink:title="Aggregated 7 day NYOFS Fields Forecast" name="Aggregated 7 day NYOFS Fields Forecast" />
+  <catalogRef xlink:href="sjrofs_agg.xml" xlink:title="Aggregated 7 day SJROFS Fields Forecast" name="Aggregated 7 day SJROFS Fields Forecast" />
+  <catalogRef xlink:href="tbofs_agg.xml" xlink:title="Aggregated 7 day TBOFS Fields Forecast" name="Aggregated 7 day TBOFS Fields Forecast" />
+</catalog>

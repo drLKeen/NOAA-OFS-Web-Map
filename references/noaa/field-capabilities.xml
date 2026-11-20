@@ -1,0 +1,1746 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE WMT_MS_Capabilities SYSTEM "http://schemas.opengis.net/wms/1.1.1/capabilities_1_1_1.dtd">
+<WMT_MS_Capabilities
+        version="1.1.1"
+        updateSequence="2026-10-21T18:39:53.206Z" >
+    <Service>
+        <Name>OGC:WMS</Name>
+        <Title>CO-OPS NetCDF Data Models</Title>
+        <Abstract>Scientific Data</Abstract>
+        <KeywordList>
+        </KeywordList>
+        <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://opendap.co-ops.nos.noaa.gov/thredds/wms/CBOFS/fmrc/Aggregated_7_day_CBOFS_Fields_Forecast_best.ncd"/>
+        <ContactInformation>
+            <ContactPersonPrimary>
+                <ContactPerson>Support</ContactPerson>
+                <ContactOrganization>CO-OPS/NOS/NOAA</ContactOrganization>
+            </ContactPersonPrimary>
+            <ContactVoiceTelephone></ContactVoiceTelephone>
+            <ContactElectronicMailAddress>Tide.Predictions@noaa.gov</ContactElectronicMailAddress>
+        </ContactInformation>
+        <Fees>none</Fees>
+        <AccessConstraints>none</AccessConstraints>
+    </Service>
+    <Capability>
+        <Request>
+            <GetCapabilities>
+                <Format>application/vnd.ogc.wms_xml</Format>
+                <DCPType>
+                    <HTTP>
+                        <Get>
+                            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://opendap.co-ops.nos.noaa.gov/thredds/wms/CBOFS/fmrc/Aggregated_7_day_CBOFS_Fields_Forecast_best.ncd"/>
+                        </Get>
+                    </HTTP>
+                </DCPType>
+            </GetCapabilities>
+            <GetMap>
+                <Format>image/png</Format>
+                <Format>image/png;mode=32bit</Format>
+                <Format>image/gif</Format>
+                <Format>image/jpeg</Format>
+                <Format>application/vnd.google-earth.kmz</Format>
+                <DCPType>
+                    <HTTP>
+                        <Get>
+                            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://opendap.co-ops.nos.noaa.gov/thredds/wms/CBOFS/fmrc/Aggregated_7_day_CBOFS_Fields_Forecast_best.ncd"/>
+                        </Get>
+                    </HTTP>
+                </DCPType>
+            </GetMap>
+            <GetFeatureInfo>
+                <Format>text/plain</Format>
+                <Format>text/xml</Format>
+                <Format>text/html</Format>
+                <DCPType>
+                    <HTTP>
+                        <Get>
+                            <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://opendap.co-ops.nos.noaa.gov/thredds/wms/CBOFS/fmrc/Aggregated_7_day_CBOFS_Fields_Forecast_best.ncd"/>
+                        </Get>
+                    </HTTP>
+                </DCPType>
+            </GetFeatureInfo>
+        </Request>
+        <Exception>
+            <Format>application/vnd.ogc.wms_xml</Format>
+        </Exception>
+        <Layer>
+            <Title>CO-OPS NetCDF Data Models</Title>
+            <SRS>EPSG:4326</SRS>
+            <SRS>CRS:84</SRS>
+            <SRS>EPSG:41001</SRS>
+            <SRS>EPSG:27700</SRS>
+            <SRS>EPSG:3408</SRS>
+            <SRS>EPSG:3409</SRS>
+            <SRS>EPSG:3857</SRS>
+            <SRS>EPSG:5041</SRS>
+            <SRS>EPSG:5042</SRS>
+            <SRS>EPSG:32661</SRS>
+            <SRS>EPSG:32761</SRS>
+            <Layer>
+                <Title>CBOFS - Chesapeake Bay Operational Forecast System - NOAA CO-OPS - POM</Title>
+    <Layer queryable="1">
+        <Name>h</Name>
+        <Title>time-independent bathymetry</Title>
+        <Abstract>time-independent bathymetry</Abstract>
+        <LatLonBoundingBox minx="-81.17435455322266" maxx="-74.23077392578125" miny="36.1903575" maxy="39.6118175"/>
+        <BoundingBox SRS="CRS:84" minx="-81.17435455322266" maxx="-74.23077392578125" miny="36.1903575" maxy="39.6118175"/>
+    
+        <Style>
+            <Name>default-scalar/default</Name>
+            <Title>default-scalar/default</Title>
+            <Abstract>default-scalar style, using the default palette.  Available palettes can be found in the response to https://opendap.co-ops.nos.noaa.gov/thredds/wms/CBOFS/fmrc/Aggregated_7_day_CBOFS_Fields_Forecast_best.ncd?request=GetMetadata&amp;item=layerDetails&amp;layerName=h</Abstract>
+            <LegendURL width="110" height="264">
+                <Format>image/png</Format>
+                <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://opendap.co-ops.nos.noaa.gov/thredds/wms/CBOFS/fmrc/Aggregated_7_day_CBOFS_Fields_Forecast_best.ncd?REQUEST=GetLegendGraphic&amp;PALETTE=default&amp;LAYERS=h&amp;STYLES=default-scalar/default"/>
+            </LegendURL>
+        </Style>
+        <Style>
+            <Name>colored_contours/default</Name>
+            <Title>colored_contours/default</Title>
+            <Abstract>colored_contours style, using the default palette.  Available palettes can be found in the response to https://opendap.co-ops.nos.noaa.gov/thredds/wms/CBOFS/fmrc/Aggregated_7_day_CBOFS_Fields_Forecast_best.ncd?request=GetMetadata&amp;item=layerDetails&amp;layerName=h</Abstract>
+            <LegendURL width="110" height="264">
+                <Format>image/png</Format>
+                <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://opendap.co-ops.nos.noaa.gov/thredds/wms/CBOFS/fmrc/Aggregated_7_day_CBOFS_Fields_Forecast_best.ncd?REQUEST=GetLegendGraphic&amp;PALETTE=default&amp;LAYERS=h&amp;STYLES=colored_contours/default"/>
+            </LegendURL>
+        </Style>
+        <Style>
+            <Name>contours</Name>
+            <Title>contours</Title>
+            <Abstract>contours style</Abstract>
+        </Style>
+        <Style>
+            <Name>raster/default</Name>
+            <Title>raster/default</Title>
+            <Abstract>raster style, using the default palette.  Available palettes can be found in the response to https://opendap.co-ops.nos.noaa.gov/thredds/wms/CBOFS/fmrc/Aggregated_7_day_CBOFS_Fields_Forecast_best.ncd?request=GetMetadata&amp;item=layerDetails&amp;layerName=h</Abstract>
+            <LegendURL width="110" height="264">
+                <Format>image/png</Format>
+                <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://opendap.co-ops.nos.noaa.gov/thredds/wms/CBOFS/fmrc/Aggregated_7_day_CBOFS_Fields_Forecast_best.ncd?REQUEST=GetLegendGraphic&amp;PALETTE=default&amp;LAYERS=h&amp;STYLES=raster/default"/>
+            </LegendURL>
+        </Style>
+</Layer>
+    <Layer queryable="1">
+        <Name>h:face</Name>
+        <Title>time-independent bathymetry (Unstaggered)</Title>
+        <Abstract>time-independent bathymetry</Abstract>
+        <LatLonBoundingBox minx="-81.09811401367188" maxx="-74.24929809570312" miny="36.2036025" maxy="39.61108"/>
+        <BoundingBox SRS="CRS:84" minx="-81.09811401367188" maxx="-74.24929809570312" miny="36.2036025" maxy="39.61108"/>
+    
+        <Style>
+            <Name>default-scalar/default</Name>
+            <Title>default-scalar/default</Title>
+            <Abstract>default-scalar style, using the default palette.  Available palettes can be found in the response to https://opendap.co-ops.nos.noaa.gov/thredds/wms/CBOFS/fmrc/Aggregated_7_day_CBOFS_Fields_Forecast_best.ncd?request=GetMetadata&amp;item=layerDetails&amp;layerName=h:face</Abstract>
+            <LegendURL width="110" height="264">
+                <Format>image/png</Format>
+                <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://opendap.co-ops.nos.noaa.gov/thredds/wms/CBOFS/fmrc/Aggregated_7_day_CBOFS_Fields_Forecast_best.ncd?REQUEST=GetLegendGraphic&amp;PALETTE=default&amp;LAYERS=h:face&amp;STYLES=default-scalar/default"/>
+            </LegendURL>
+        </Style>
+        <Style>
+            <Name>colored_contours/default</Name>
+            <Title>colored_contours/default</Title>
+            <Abstract>colored_contours style, using the default palette.  Available palettes can be found in the response to https://opendap.co-ops.nos.noaa.gov/thredds/wms/CBOFS/fmrc/Aggregated_7_day_CBOFS_Fields_Forecast_best.ncd?request=GetMetadata&amp;item=layerDetails&amp;layerName=h:face</Abstract>
+            <LegendURL width="110" height="264">
+                <Format>image/png</Format>
+                <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://opendap.co-ops.nos.noaa.gov/thredds/wms/CBOFS/fmrc/Aggregated_7_day_CBOFS_Fields_Forecast_best.ncd?REQUEST=GetLegendGraphic&amp;PALETTE=default&amp;LAYERS=h:face&amp;STYLES=colored_contours/default"/>
+            </LegendURL>
+        </Style>
+        <Style>
+            <Name>contours</Name>
+            <Title>contours</Title>
+            <Abstract>contours style</Abstract>
+        </Style>
+        <Style>
+            <Name>raster/default</Name>
+            <Title>raster/default</Title>
+            <Abstract>raster style, using the default palette.  Available palettes can be found in the response to https://opendap.co-ops.nos.noaa.gov/thredds/wms/CBOFS/fmrc/Aggregated_7_day_CBOFS_Fields_Forecast_best.ncd?request=GetMetadata&amp;item=layerDetails&amp;layerName=h:face</Abstract>
+            <LegendURL width="110" height="264">
+                <Format>image/png</Format>
+                <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://opendap.co-ops.nos.noaa.gov/thredds/wms/CBOFS/fmrc/Aggregated_7_day_CBOFS_Fields_Forecast_best.ncd?REQUEST=GetLegendGraphic&amp;PALETTE=default&amp;LAYERS=h:face&amp;STYLES=raster/default"/>
+            </LegendURL>
+        </Style>
+</Layer>
+    <Layer queryable="1">
+        <Name>f</Name>
+        <Title>Coriolis parameter</Title>
+        <Abstract>Coriolis parameter</Abstract>
+        <LatLonBoundingBox minx="-81.17435455322266" maxx="-74.23077392578125" miny="36.1903575" maxy="39.6118175"/>
+        <BoundingBox SRS="CRS:84" minx="-81.17435455322266" maxx="-74.23077392578125" miny="36.1903575" maxy="39.6118175"/>
+    
+        <Style>
+            <Name>default-scalar/default</Name>
+            <Title>default-scalar/default</Title>
+            <Abstract>default-scalar style, using the default palette.  Available palettes can be found in the response to https://opendap.co-ops.nos.noaa.gov/thredds/wms/CBOFS/fmrc/Aggregated_7_day_CBOFS_Fields_Forecast_best.ncd?request=GetMetadata&amp;item=layerDetails&amp;layerName=f</Abstract>
+            <LegendURL width="110" height="264">
+                <Format>image/png</Format>
+                <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://opendap.co-ops.nos.noaa.gov/thredds/wms/CBOFS/fmrc/Aggregated_7_day_CBOFS_Fields_Forecast_best.ncd?REQUEST=GetLegendGraphic&amp;PALETTE=default&amp;LAYERS=f&amp;STYLES=default-scalar/default"/>
+            </LegendURL>
+        </Style>
+        <Style>
+            <Name>colored_contours/default</Name>
+            <Title>colored_contours/default</Title>
+            <Abstract>colored_contours style, using the default palette.  Available palettes can be found in the response to https://opendap.co-ops.nos.noaa.gov/thredds/wms/CBOFS/fmrc/Aggregated_7_day_CBOFS_Fields_Forecast_best.ncd?request=GetMetadata&amp;item=layerDetails&amp;layerName=f</Abstract>
+            <LegendURL width="110" height="264">
+                <Format>image/png</Format>
+                <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://opendap.co-ops.nos.noaa.gov/thredds/wms/CBOFS/fmrc/Aggregated_7_day_CBOFS_Fields_Forecast_best.ncd?REQUEST=GetLegendGraphic&amp;PALETTE=default&amp;LAYERS=f&amp;STYLES=colored_contours/default"/>
+            </LegendURL>
+        </Style>
+        <Style>
+            <Name>contours</Name>
+            <Title>contours</Title>
+            <Abstract>contours style</Abstract>
+        </Style>
+        <Style>
+            <Name>raster/default</Name>
+            <Title>raster/default</Title>
+            <Abstract>raster style, using the default palette.  Available palettes can be found in the response to https://opendap.co-ops.nos.noaa.gov/thredds/wms/CBOFS/fmrc/Aggregated_7_day_CBOFS_Fields_Forecast_best.ncd?request=GetMetadata&amp;item=layerDetails&amp;layerName=f</Abstract>
+            <LegendURL width="110" height="264">
+                <Format>image/png</Format>
+                <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://opendap.co-ops.nos.noaa.gov/thredds/wms/CBOFS/fmrc/Aggregated_7_day_CBOFS_Fields_Forecast_best.ncd?REQUEST=GetLegendGraphic&amp;PALETTE=default&amp;LAYERS=f&amp;STYLES=raster/default"/>
+            </LegendURL>
+        </Style>
+</Layer>
+    <Layer queryable="1">
+        <Name>f:face</Name>
+        <Title>Coriolis parameter (Unstaggered)</Title>
+        <Abstract>Coriolis parameter</Abstract>
+        <LatLonBoundingBox minx="-81.09811401367188" maxx="-74.24929809570312" miny="36.2036025" maxy="39.61108"/>
+        <BoundingBox SRS="CRS:84" minx="-81.09811401367188" maxx="-74.24929809570312" miny="36.2036025" maxy="39.61108"/>
+    
+        <Style>
+            <Name>default-scalar/default</Name>
+            <Title>default-scalar/default</Title>
+            <Abstract>default-scalar style, using the default palette.  Available palettes can be found in the response to https://opendap.co-ops.nos.noaa.gov/thredds/wms/CBOFS/fmrc/Aggregated_7_day_CBOFS_Fields_Forecast_best.ncd?request=GetMetadata&amp;item=layerDetails&amp;layerName=f:face</Abstract>
+            <LegendURL width="110" height="264">
+                <Format>image/png</Format>
+                <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://opendap.co-ops.nos.noaa.gov/thredds/wms/CBOFS/fmrc/Aggregated_7_day_CBOFS_Fields_Forecast_best.ncd?REQUEST=GetLegendGraphic&amp;PALETTE=default&amp;LAYERS=f:face&amp;STYLES=default-scalar/default"/>
+            </LegendURL>
+        </Style>
+        <Style>
+            <Name>colored_contours/default</Name>
+            <Title>colored_contours/default</Title>
+            <Abstract>colored_contours style, using the default palette.  Available palettes can be found in the response to https://opendap.co-ops.nos.noaa.gov/thredds/wms/CBOFS/fmrc/Aggregated_7_day_CBOFS_Fields_Forecast_best.ncd?request=GetMetadata&amp;item=layerDetails&amp;layerName=f:face</Abstract>
+            <LegendURL width="110" height="264">
+                <Format>image/png</Format>
+                <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://opendap.co-ops.nos.noaa.gov/thredds/wms/CBOFS/fmrc/Aggregated_7_day_CBOFS_Fields_Forecast_best.ncd?REQUEST=GetLegendGraphic&amp;PALETTE=default&amp;LAYERS=f:face&amp;STYLES=colored_contours/default"/>
+            </LegendURL>
+        </Style>
+        <Style>
+            <Name>contours</Name>
+            <Title>contours</Title>
+            <Abstract>contours style</Abstract>
+        </Style>
+        <Style>
+            <Name>raster/default</Name>
+            <Title>raster/default</Title>
+            <Abstract>raster style, using the default palette.  Available palettes can be found in the response to https://opendap.co-ops.nos.noaa.gov/thredds/wms/CBOFS/fmrc/Aggregated_7_day_CBOFS_Fields_Forecast_best.ncd?request=GetMetadata&amp;item=layerDetails&amp;layerName=f:face</Abstract>
+            <LegendURL width="110" height="264">
+                <Format>image/png</Format>
+                <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://opendap.co-ops.nos.noaa.gov/thredds/wms/CBOFS/fmrc/Aggregated_7_day_CBOFS_Fields_Forecast_best.ncd?REQUEST=GetLegendGraphic&amp;PALETTE=default&amp;LAYERS=f:face&amp;STYLES=raster/default"/>
+            </LegendURL>
+        </Style>
+</Layer>
+    <Layer queryable="1">
+        <Name>pm</Name>
+        <Title>curvilinear coordinate metric in XI</Title>
+        <Abstract>curvilinear coordinate metric in XI</Abstract>
+        <LatLonBoundingBox minx="-81.17435455322266" maxx="-74.23077392578125" miny="36.1903575" maxy="39.6118175"/>
+        <BoundingBox SRS="CRS:84" minx="-81.17435455322266" maxx="-74.23077392578125" miny="36.1903575" maxy="39.6118175"/>
+    
+        <Style>
+            <Name>default-scalar/default</Name>
+            <Title>default-scalar/default</Title>
+            <Abstract>default-scalar style, using the default palette.  Available palettes can be found in the response to https://opendap.co-ops.nos.noaa.gov/thredds/wms/CBOFS/fmrc/Aggregated_7_day_CBOFS_Fields_Forecast_best.ncd?request=GetMetadata&amp;item=layerDetails&amp;layerName=pm</Abstract>
+            <LegendURL width="110" height="264">
+                <Format>image/png</Format>
+                <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://opendap.co-ops.nos.noaa.gov/thredds/wms/CBOFS/fmrc/Aggregated_7_day_CBOFS_Fields_Forecast_best.ncd?REQUEST=GetLegendGraphic&amp;PALETTE=default&amp;LAYERS=pm&amp;STYLES=default-scalar/default"/>
+            </LegendURL>
+        </Style>
+        <Style>
+            <Name>colored_contours/default</Name>
+            <Title>colored_contours/default</Title>
+            <Abstract>colored_contours style, using the default palette.  Available palettes can be found in the response to https://opendap.co-ops.nos.noaa.gov/thredds/wms/CBOFS/fmrc/Aggregated_7_day_CBOFS_Fields_Forecast_best.ncd?request=GetMetadata&amp;item=layerDetails&amp;layerName=pm</Abstract>
+            <LegendURL width="110" height="264">
+                <Format>image/png</Format>
+                <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://opendap.co-ops.nos.noaa.gov/thredds/wms/CBOFS/fmrc/Aggregated_7_day_CBOFS_Fields_Forecast_best.ncd?REQUEST=GetLegendGraphic&amp;PALETTE=default&amp;LAYERS=pm&amp;STYLES=colored_contours/default"/>
+            </LegendURL>
+        </Style>
+        <Style>
+            <Name>contours</Name>
+            <Title>contours</Title>
+            <Abstract>contours style</Abstract>
+        </Style>
+        <Style>
+            <Name>raster/default</Name>
+            <Title>raster/default</Title>
+            <Abstract>raster style, using the default palette.  Available palettes can be found in the response to https://opendap.co-ops.nos.noaa.gov/thredds/wms/CBOFS/fmrc/Aggregated_7_day_CBOFS_Fields_Forecast_best.ncd?request=GetMetadata&amp;item=layerDetails&amp;layerName=pm</Abstract>
+            <LegendURL width="110" height="264">
+                <Format>image/png</Format>
+                <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://opendap.co-ops.nos.noaa.gov/thredds/wms/CBOFS/fmrc/Aggregated_7_day_CBOFS_Fields_Forecast_best.ncd?REQUEST=GetLegendGraphic&amp;PALETTE=default&amp;LAYERS=pm&amp;STYLES=raster/default"/>
+            </LegendURL>
+        </Style>
+</Layer>
+    <Layer queryable="1">
+        <Name>pm:face</Name>
+        <Title>curvilinear coordinate metric in XI (Unstaggered)</Title>
+        <Abstract>curvilinear coordinate metric in XI</Abstract>
+        <LatLonBoundingBox minx="-81.09811401367188" maxx="-74.24929809570312" miny="36.2036025" maxy="39.61108"/>
+        <BoundingBox SRS="CRS:84" minx="-81.09811401367188" maxx="-74.24929809570312" miny="36.2036025" maxy="39.61108"/>
+    
+        <Style>
+            <Name>default-scalar/default</Name>
+            <Title>default-scalar/default</Title>
+            <Abstract>default-scalar style, using the default palette.  Available palettes can be found in the response to https://opendap.co-ops.nos.noaa.gov/thredds/wms/CBOFS/fmrc/Aggregated_7_day_CBOFS_Fields_Forecast_best.ncd?request=GetMetadata&amp;item=layerDetails&amp;layerName=pm:face</Abstract>
+            <LegendURL width="110" height="264">
+                <Format>image/png</Format>
+                <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://opendap.co-ops.nos.noaa.gov/thredds/wms/CBOFS/fmrc/Aggregated_7_day_CBOFS_Fields_Forecast_best.ncd?REQUEST=GetLegendGraphic&amp;PALETTE=default&amp;LAYERS=pm:face&amp;STYLES=default-scalar/default"/>
+            </LegendURL>
+        </Style>
+        <Style>
+            <Name>colored_contours/default</Name>
+            <Title>colored_contours/default</Title>
+            <Abstract>colored_contours style, using the default palette.  Available palettes can be found in the response to https://opendap.co-ops.nos.noaa.gov/thredds/wms/CBOFS/fmrc/Aggregated_7_day_CBOFS_Fields_Forecast_best.ncd?request=GetMetadata&amp;item=layerDetails&amp;layerName=pm:face</Abstract>
+            <LegendURL width="110" height="264">
+                <Format>image/png</Format>
+                <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://opendap.co-ops.nos.noaa.gov/thredds/wms/CBOFS/fmrc/Aggregated_7_day_CBOFS_Fields_Forecast_best.ncd?REQUEST=GetLegendGraphic&amp;PALETTE=default&amp;LAYERS=pm:face&amp;STYLES=colored_contours/default"/>
+            </LegendURL>
+        </Style>
+        <Style>
+            <Name>contours</Name>
+            <Title>contours</Title>
+            <Abstract>contours style</Abstract>
+        </Style>
+        <Style>
+            <Name>raster/default</Name>
+            <Title>raster/default</Title>
+            <Abstract>raster style, using the default palette.  Available palettes can be found in the response to https://opendap.co-ops.nos.noaa.gov/thredds/wms/CBOFS/fmrc/Aggregated_7_day_CBOFS_Fields_Forecast_best.ncd?request=GetMetadata&amp;item=layerDetails&amp;layerName=pm:face</Abstract>
+            <LegendURL width="110" height="264">
+                <Format>image/png</Format>
+                <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://opendap.co-ops.nos.noaa.gov/thredds/wms/CBOFS/fmrc/Aggregated_7_day_CBOFS_Fields_Forecast_best.ncd?REQUEST=GetLegendGraphic&amp;PALETTE=default&amp;LAYERS=pm:face&amp;STYLES=raster/default"/>
+            </LegendURL>
+        </Style>
+</Layer>
+    <Layer queryable="1">
+        <Name>pn</Name>
+        <Title>curvilinear coordinate metric in ETA</Title>
+        <Abstract>curvilinear coordinate metric in ETA</Abstract>
+        <LatLonBoundingBox minx="-81.17435455322266" maxx="-74.23077392578125" miny="36.1903575" maxy="39.6118175"/>
+        <BoundingBox SRS="CRS:84" minx="-81.17435455322266" maxx="-74.23077392578125" miny="36.1903575" maxy="39.6118175"/>
+    
+        <Style>
+            <Name>default-scalar/default</Name>
+            <Title>default-scalar/default</Title>
+            <Abstract>default-scalar style, using the default palette.  Available palettes can be found in the response to https://opendap.co-ops.nos.noaa.gov/thredds/wms/CBOFS/fmrc/Aggregated_7_day_CBOFS_Fields_Forecast_best.ncd?request=GetMetadata&amp;item=layerDetails&amp;layerName=pn</Abstract>
+            <LegendURL width="110" height="264">
+                <Format>image/png</Format>
+                <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://opendap.co-ops.nos.noaa.gov/thredds/wms/CBOFS/fmrc/Aggregated_7_day_CBOFS_Fields_Forecast_best.ncd?REQUEST=GetLegendGraphic&amp;PALETTE=default&amp;LAYERS=pn&amp;STYLES=default-scalar/default"/>
+            </LegendURL>
+        </Style>
+        <Style>
+            <Name>colored_contours/default</Name>
+            <Title>colored_contours/default</Title>
+            <Abstract>colored_contours style, using the default palette.  Available palettes can be found in the response to https://opendap.co-ops.nos.noaa.gov/thredds/wms/CBOFS/fmrc/Aggregated_7_day_CBOFS_Fields_Forecast_best.ncd?request=GetMetadata&amp;item=layerDetails&amp;layerName=pn</Abstract>
+            <LegendURL width="110" height="264">
+                <Format>image/png</Format>
+                <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://opendap.co-ops.nos.noaa.gov/thredds/wms/CBOFS/fmrc/Aggregated_7_day_CBOFS_Fields_Forecast_best.ncd?REQUEST=GetLegendGraphic&amp;PALETTE=default&amp;LAYERS=pn&amp;STYLES=colored_contours/default"/>
+            </LegendURL>
+        </Style>
+        <Style>
+            <Name>contours</Name>
+            <Title>contours</Title>
+            <Abstract>contours style</Abstract>
+        </Style>
+        <Style>
+            <Name>raster/default</Name>
+            <Title>raster/default</Title>
+            <Abstract>raster style, using the default palette.  Available palettes can be found in the response to https://opendap.co-ops.nos.noaa.gov/thredds/wms/CBOFS/fmrc/Aggregated_7_day_CBOFS_Fields_Forecast_best.ncd?request=GetMetadata&amp;item=layerDetails&amp;layerName=pn</Abstract>
+            <LegendURL width="110" height="264">
+                <Format>image/png</Format>
+                <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://opendap.co-ops.nos.noaa.gov/thredds/wms/CBOFS/fmrc/Aggregated_7_day_CBOFS_Fields_Forecast_best.ncd?REQUEST=GetLegendGraphic&amp;PALETTE=default&amp;LAYERS=pn&amp;STYLES=raster/default"/>
+            </LegendURL>
+        </Style>
+</Layer>
+    <Layer queryable="1">
+        <Name>pn:face</Name>
+        <Title>curvilinear coordinate metric in ETA (Unstaggered)</Title>
+        <Abstract>curvilinear coordinate metric in ETA</Abstract>
+        <LatLonBoundingBox minx="-81.09811401367188" maxx="-74.24929809570312" miny="36.2036025" maxy="39.61108"/>
+        <BoundingBox SRS="CRS:84" minx="-81.09811401367188" maxx="-74.24929809570312" miny="36.2036025" maxy="39.61108"/>
+    
+        <Style>
+            <Name>default-scalar/default</Name>
+            <Title>default-scalar/default</Title>
+            <Abstract>default-scalar style, using the default palette.  Available palettes can be found in the response to https://opendap.co-ops.nos.noaa.gov/thredds/wms/CBOFS/fmrc/Aggregated_7_day_CBOFS_Fields_Forecast_best.ncd?request=GetMetadata&amp;item=layerDetails&amp;layerName=pn:face</Abstract>
+            <LegendURL width="110" height="264">
+                <Format>image/png</Format>
+                <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://opendap.co-ops.nos.noaa.gov/thredds/wms/CBOFS/fmrc/Aggregated_7_day_CBOFS_Fields_Forecast_best.ncd?REQUEST=GetLegendGraphic&amp;PALETTE=default&amp;LAYERS=pn:face&amp;STYLES=default-scalar/default"/>
+            </LegendURL>
+        </Style>
+        <Style>
+            <Name>colored_contours/default</Name>
+            <Title>colored_contours/default</Title>
+            <Abstract>colored_contours style, using the default palette.  Available palettes can be found in the response to https://opendap.co-ops.nos.noaa.gov/thredds/wms/CBOFS/fmrc/Aggregated_7_day_CBOFS_Fields_Forecast_best.ncd?request=GetMetadata&amp;item=layerDetails&amp;layerName=pn:face</Abstract>
+            <LegendURL width="110" height="264">
+                <Format>image/png</Format>
+                <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://opendap.co-ops.nos.noaa.gov/thredds/wms/CBOFS/fmrc/Aggregated_7_day_CBOFS_Fields_Forecast_best.ncd?REQUEST=GetLegendGraphic&amp;PALETTE=default&amp;LAYERS=pn:face&amp;STYLES=colored_contours/default"/>
+            </LegendURL>
+        </Style>
+        <Style>
+            <Name>contours</Name>
+            <Title>contours</Title>
+            <Abstract>contours style</Abstract>
+        </Style>
+        <Style>
+            <Name>raster/default</Name>
+            <Title>raster/default</Title>
+            <Abstract>raster style, using the default palette.  Available palettes can be found in the response to https://opendap.co-ops.nos.noaa.gov/thredds/wms/CBOFS/fmrc/Aggregated_7_day_CBOFS_Fields_Forecast_best.ncd?request=GetMetadata&amp;item=layerDetails&amp;layerName=pn:face</Abstract>
+            <LegendURL width="110" height="264">
+                <Format>image/png</Format>
+                <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://opendap.co-ops.nos.noaa.gov/thredds/wms/CBOFS/fmrc/Aggregated_7_day_CBOFS_Fields_Forecast_best.ncd?REQUEST=GetLegendGraphic&amp;PALETTE=default&amp;LAYERS=pn:face&amp;STYLES=raster/default"/>
+            </LegendURL>
+        </Style>
+</Layer>
+    <Layer queryable="1">
+        <Name>angle</Name>
+        <Title>angle between XI-axis and EAST</Title>
+        <Abstract>angle between XI-axis and EAST</Abstract>
+        <LatLonBoundingBox minx="-81.17435455322266" maxx="-74.23077392578125" miny="36.1903575" maxy="39.6118175"/>
+        <BoundingBox SRS="CRS:84" minx="-81.17435455322266" maxx="-74.23077392578125" miny="36.1903575" maxy="39.6118175"/>
+    
+        <Style>
+            <Name>default-scalar/default</Name>
+            <Title>default-scalar/default</Title>
+            <Abstract>default-scalar style, using the default palette.  Available palettes can be found in the response to https://opendap.co-ops.nos.noaa.gov/thredds/wms/CBOFS/fmrc/Aggregated_7_day_CBOFS_Fields_Forecast_best.ncd?request=GetMetadata&amp;item=layerDetails&amp;layerName=angle</Abstract>
+            <LegendURL width="110" height="264">
+                <Format>image/png</Format>
+                <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://opendap.co-ops.nos.noaa.gov/thredds/wms/CBOFS/fmrc/Aggregated_7_day_CBOFS_Fields_Forecast_best.ncd?REQUEST=GetLegendGraphic&amp;PALETTE=default&amp;LAYERS=angle&amp;STYLES=default-scalar/default"/>
+            </LegendURL>
+        </Style>
+        <Style>
+            <Name>colored_contours/default</Name>
+            <Title>colored_contours/default</Title>
+            <Abstract>colored_contours style, using the default palette.  Available palettes can be found in the response to https://opendap.co-ops.nos.noaa.gov/thredds/wms/CBOFS/fmrc/Aggregated_7_day_CBOFS_Fields_Forecast_best.ncd?request=GetMetadata&amp;item=layerDetails&amp;layerName=angle</Abstract>
+            <LegendURL width="110" height="264">
+                <Format>image/png</Format>
+                <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://opendap.co-ops.nos.noaa.gov/thredds/wms/CBOFS/fmrc/Aggregated_7_day_CBOFS_Fields_Forecast_best.ncd?REQUEST=GetLegendGraphic&amp;PALETTE=default&amp;LAYERS=angle&amp;STYLES=colored_contours/default"/>
+            </LegendURL>
+        </Style>
+        <Style>
+            <Name>contours</Name>
+            <Title>contours</Title>
+            <Abstract>contours style</Abstract>
+        </Style>
+        <Style>
+            <Name>raster/default</Name>
+            <Title>raster/default</Title>
+            <Abstract>raster style, using the default palette.  Available palettes can be found in the response to https://opendap.co-ops.nos.noaa.gov/thredds/wms/CBOFS/fmrc/Aggregated_7_day_CBOFS_Fields_Forecast_best.ncd?request=GetMetadata&amp;item=layerDetails&amp;layerName=angle</Abstract>
+            <LegendURL width="110" height="264">
+                <Format>image/png</Format>
+                <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://opendap.co-ops.nos.noaa.gov/thredds/wms/CBOFS/fmrc/Aggregated_7_day_CBOFS_Fields_Forecast_best.ncd?REQUEST=GetLegendGraphic&amp;PALETTE=default&amp;LAYERS=angle&amp;STYLES=raster/default"/>
+            </LegendURL>
+        </Style>
+</Layer>
+    <Layer queryable="1">
+        <Name>angle:face</Name>
+        <Title>angle between XI-axis and EAST (Unstaggered)</Title>
+        <Abstract>angle between XI-axis and EAST</Abstract>
+        <LatLonBoundingBox minx="-81.09811401367188" maxx="-74.24929809570312" miny="36.2036025" maxy="39.61108"/>
+        <BoundingBox SRS="CRS:84" minx="-81.09811401367188" maxx="-74.24929809570312" miny="36.2036025" maxy="39.61108"/>
+    
+        <Style>
+            <Name>default-scalar/default</Name>
+            <Title>default-scalar/default</Title>
+            <Abstract>default-scalar style, using the default palette.  Available palettes can be found in the response to https://opendap.co-ops.nos.noaa.gov/thredds/wms/CBOFS/fmrc/Aggregated_7_day_CBOFS_Fields_Forecast_best.ncd?request=GetMetadata&amp;item=layerDetails&amp;layerName=angle:face</Abstract>
+            <LegendURL width="110" height="264">
+                <Format>image/png</Format>
+                <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://opendap.co-ops.nos.noaa.gov/thredds/wms/CBOFS/fmrc/Aggregated_7_day_CBOFS_Fields_Forecast_best.ncd?REQUEST=GetLegendGraphic&amp;PALETTE=default&amp;LAYERS=angle:face&amp;STYLES=default-scalar/default"/>
+            </LegendURL>
+        </Style>
+        <Style>
+            <Name>colored_contours/default</Name>
+            <Title>colored_contours/default</Title>
+            <Abstract>colored_contours style, using the default palette.  Available palettes can be found in the response to https://opendap.co-ops.nos.noaa.gov/thredds/wms/CBOFS/fmrc/Aggregated_7_day_CBOFS_Fields_Forecast_best.ncd?request=GetMetadata&amp;item=layerDetails&amp;layerName=angle:face</Abstract>
+            <LegendURL width="110" height="264">
+                <Format>image/png</Format>
+                <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://opendap.co-ops.nos.noaa.gov/thredds/wms/CBOFS/fmrc/Aggregated_7_day_CBOFS_Fields_Forecast_best.ncd?REQUEST=GetLegendGraphic&amp;PALETTE=default&amp;LAYERS=angle:face&amp;STYLES=colored_contours/default"/>
+            </LegendURL>
+        </Style>
+        <Style>
+            <Name>contours</Name>
+            <Title>contours</Title>
+            <Abstract>contours style</Abstract>
+        </Style>
+        <Style>
+            <Name>raster/default</Name>
+            <Title>raster/default</Title>
+            <Abstract>raster style, using the default palette.  Available palettes can be found in the response to https://opendap.co-ops.nos.noaa.gov/thredds/wms/CBOFS/fmrc/Aggregated_7_day_CBOFS_Fields_Forecast_best.ncd?request=GetMetadata&amp;item=layerDetails&amp;layerName=angle:face</Abstract>
+            <LegendURL width="110" height="264">
+                <Format>image/png</Format>
+                <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://opendap.co-ops.nos.noaa.gov/thredds/wms/CBOFS/fmrc/Aggregated_7_day_CBOFS_Fields_Forecast_best.ncd?REQUEST=GetLegendGraphic&amp;PALETTE=default&amp;LAYERS=angle:face&amp;STYLES=raster/default"/>
+            </LegendURL>
+        </Style>
+</Layer>
+    <Layer queryable="1">
+        <Name>mask_rho</Name>
+        <Title>mask on RHO-points</Title>
+        <Abstract>mask on RHO-points</Abstract>
+        <LatLonBoundingBox minx="-81.17435455322266" maxx="-74.23077392578125" miny="36.1903575" maxy="39.6118175"/>
+        <BoundingBox SRS="CRS:84" minx="-81.17435455322266" maxx="-74.23077392578125" miny="36.1903575" maxy="39.6118175"/>
+    
+        <Style>
+            <Name>default-categorical</Name>
+            <Title>default-categorical</Title>
+            <Abstract>default-categorical style</Abstract>
+        </Style>
+</Layer>
+    <Layer queryable="1">
+        <Name>mask_rho:face</Name>
+        <Title>mask on RHO-points (Unstaggered)</Title>
+        <Abstract>mask on RHO-points</Abstract>
+        <LatLonBoundingBox minx="-81.09811401367188" maxx="-74.24929809570312" miny="36.2036025" maxy="39.61108"/>
+        <BoundingBox SRS="CRS:84" minx="-81.09811401367188" maxx="-74.24929809570312" miny="36.2036025" maxy="39.61108"/>
+    
+        <Style>
+            <Name>default-categorical</Name>
+            <Title>default-categorical</Title>
+            <Abstract>default-categorical style</Abstract>
+        </Style>
+</Layer>
+    <Layer queryable="1">
+        <Name>mask_u</Name>
+        <Title>mask on U-points</Title>
+        <Abstract>mask on U-points</Abstract>
+        <LatLonBoundingBox minx="-81.15812683105469" maxx="-74.23746490478516" miny="36.1903575" maxy="39.6118175"/>
+        <BoundingBox SRS="CRS:84" minx="-81.15812683105469" maxx="-74.23746490478516" miny="36.1903575" maxy="39.6118175"/>
+    
+        <Style>
+            <Name>default-categorical</Name>
+            <Title>default-categorical</Title>
+            <Abstract>default-categorical style</Abstract>
+        </Style>
+</Layer>
+    <Layer queryable="1">
+        <Name>mask_u:face</Name>
+        <Title>mask on U-points (Unstaggered)</Title>
+        <Abstract>mask on U-points</Abstract>
+        <LatLonBoundingBox minx="-81.09811401367188" maxx="-74.24929809570312" miny="36.2036025" maxy="39.61108"/>
+        <BoundingBox SRS="CRS:84" minx="-81.09811401367188" maxx="-74.24929809570312" miny="36.2036025" maxy="39.61108"/>
+    
+        <Style>
+            <Name>default-categorical</Name>
+            <Title>default-categorical</Title>
+            <Abstract>default-categorical style</Abstract>
+        </Style>
+</Layer>
+    <Layer queryable="1">
+        <Name>mask_v</Name>
+        <Title>mask on V-points</Title>
+        <Abstract>mask on V-points</Abstract>
+        <LatLonBoundingBox minx="-81.1141357421875" maxx="-74.2426528930664" miny="36.2036025" maxy="39.61108"/>
+        <BoundingBox SRS="CRS:84" minx="-81.1141357421875" maxx="-74.2426528930664" miny="36.2036025" maxy="39.61108"/>
+    
+        <Style>
+            <Name>default-categorical</Name>
+            <Title>default-categorical</Title>
+            <Abstract>default-categorical style</Abstract>
+        </Style>
+</Layer>
+    <Layer queryable="1">
+        <Name>mask_v:face</Name>
+        <Title>mask on V-points (Unstaggered)</Title>
+        <Abstract>mask on V-points</Abstract>
+        <LatLonBoundingBox minx="-81.09811401367188" maxx="-74.24929809570312" miny="36.2036025" maxy="39.61108"/>
+        <BoundingBox SRS="CRS:84" minx="-81.09811401367188" maxx="-74.24929809570312" miny="36.2036025" maxy="39.61108"/>
+    
+        <Style>
+            <Name>default-categorical</Name>
+            <Title>default-categorical</Title>
+            <Abstract>default-categorical style</Abstract>
+        </Style>
+</Layer>
+    <Layer queryable="1">
+        <Name>mask_psi</Name>
+        <Title>mask on PSI-points</Title>
+        <Abstract>mask on PSI-points</Abstract>
+        <LatLonBoundingBox minx="-81.09811401367188" maxx="-74.24929809570312" miny="36.2036025" maxy="39.61108"/>
+        <BoundingBox SRS="CRS:84" minx="-81.09811401367188" maxx="-74.24929809570312" miny="36.2036025" maxy="39.61108"/>
+    
+        <Style>
+            <Name>default-categorical</Name>
+            <Title>default-categorical</Title>
+            <Abstract>default-categorical style</Abstract>
+        </Style>
+</Layer>
+    <Layer queryable="1">
+        <Name>mask_psi:face</Name>
+        <Title>mask on PSI-points (Unstaggered)</Title>
+        <Abstract>mask on PSI-points</Abstract>
+        <LatLonBoundingBox minx="-81.09811401367188" maxx="-74.24929809570312" miny="36.2036025" maxy="39.61108"/>
+        <BoundingBox SRS="CRS:84" minx="-81.09811401367188" maxx="-74.24929809570312" miny="36.2036025" maxy="39.61108"/>
+    
+        <Style>
+            <Name>default-categorical</Name>
+            <Title>default-categorical</Title>
+            <Abstract>default-categorical style</Abstract>
+        </Style>
+</Layer>
+    <Layer queryable="1">
+        <Name>zeta</Name>
+        <Title>free-surface</Title>
+        <Abstract>free-surface</Abstract>
+        <LatLonBoundingBox minx="-81.17435455322266" maxx="-74.23077392578125" miny="36.1903575" maxy="39.6118175"/>
+        <BoundingBox SRS="CRS:84" minx="-81.17435455322266" maxx="-74.23077392578125" miny="36.1903575" maxy="39.6118175"/>
+        <Dimension name="time" units="unknown"/>
+    
+        <Extent name="time" multipleValues="1" current="1" default="2026-10-21T19:00:00.000Z">
+            2026-10-13T01:00:00.000Z/2026-10-23T12:00:00.000Z/PT1H
+        </Extent>
+        <Style>
+            <Name>default-scalar/default</Name>
+            <Title>default-scalar/default</Title>
+            <Abstract>default-scalar style, using the default palette.  Available palettes can be found in the response to https://opendap.co-ops.nos.noaa.gov/thredds/wms/CBOFS/fmrc/Aggregated_7_day_CBOFS_Fields_Forecast_best.ncd?request=GetMetadata&amp;item=layerDetails&amp;layerName=zeta</Abstract>
+            <LegendURL width="110" height="264">
+                <Format>image/png</Format>
+                <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://opendap.co-ops.nos.noaa.gov/thredds/wms/CBOFS/fmrc/Aggregated_7_day_CBOFS_Fields_Forecast_best.ncd?REQUEST=GetLegendGraphic&amp;PALETTE=default&amp;LAYERS=zeta&amp;STYLES=default-scalar/default"/>
+            </LegendURL>
+        </Style>
+        <Style>
+            <Name>colored_contours/default</Name>
+            <Title>colored_contours/default</Title>
+            <Abstract>colored_contours style, using the default palette.  Available palettes can be found in the response to https://opendap.co-ops.nos.noaa.gov/thredds/wms/CBOFS/fmrc/Aggregated_7_day_CBOFS_Fields_Forecast_best.ncd?request=GetMetadata&amp;item=layerDetails&amp;layerName=zeta</Abstract>
+            <LegendURL width="110" height="264">
+                <Format>image/png</Format>
+                <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://opendap.co-ops.nos.noaa.gov/thredds/wms/CBOFS/fmrc/Aggregated_7_day_CBOFS_Fields_Forecast_best.ncd?REQUEST=GetLegendGraphic&amp;PALETTE=default&amp;LAYERS=zeta&amp;STYLES=colored_contours/default"/>
+            </LegendURL>
+        </Style>
+        <Style>
+            <Name>contours</Name>
+            <Title>contours</Title>
+            <Abstract>contours style</Abstract>
+        </Style>
+        <Style>
+            <Name>raster/default</Name>
+            <Title>raster/default</Title>
+            <Abstract>raster style, using the default palette.  Available palettes can be found in the response to https://opendap.co-ops.nos.noaa.gov/thredds/wms/CBOFS/fmrc/Aggregated_7_day_CBOFS_Fields_Forecast_best.ncd?request=GetMetadata&amp;item=layerDetails&amp;layerName=zeta</Abstract>
+            <LegendURL width="110" height="264">
+                <Format>image/png</Format>
+                <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://opendap.co-ops.nos.noaa.gov/thredds/wms/CBOFS/fmrc/Aggregated_7_day_CBOFS_Fields_Forecast_best.ncd?REQUEST=GetLegendGraphic&amp;PALETTE=default&amp;LAYERS=zeta&amp;STYLES=raster/default"/>
+            </LegendURL>
+        </Style>
+</Layer>
+    <Layer queryable="1">
+        <Name>zeta:face</Name>
+        <Title>free-surface (Unstaggered)</Title>
+        <Abstract>free-surface</Abstract>
+        <LatLonBoundingBox minx="-81.09811401367188" maxx="-74.24929809570312" miny="36.2036025" maxy="39.61108"/>
+        <BoundingBox SRS="CRS:84" minx="-81.09811401367188" maxx="-74.24929809570312" miny="36.2036025" maxy="39.61108"/>
+        <Dimension name="time" units="unknown"/>
+    
+        <Extent name="time" multipleValues="1" current="1" default="2026-10-21T19:00:00.000Z">
+            2026-10-13T01:00:00.000Z/2026-10-23T12:00:00.000Z/PT1H
+        </Extent>
+        <Style>
+            <Name>default-scalar/default</Name>
+            <Title>default-scalar/default</Title>
+            <Abstract>default-scalar style, using the default palette.  Available palettes can be found in the response to https://opendap.co-ops.nos.noaa.gov/thredds/wms/CBOFS/fmrc/Aggregated_7_day_CBOFS_Fields_Forecast_best.ncd?request=GetMetadata&amp;item=layerDetails&amp;layerName=zeta:face</Abstract>
+            <LegendURL width="110" height="264">
+                <Format>image/png</Format>
+                <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://opendap.co-ops.nos.noaa.gov/thredds/wms/CBOFS/fmrc/Aggregated_7_day_CBOFS_Fields_Forecast_best.ncd?REQUEST=GetLegendGraphic&amp;PALETTE=default&amp;LAYERS=zeta:face&amp;STYLES=default-scalar/default"/>
+            </LegendURL>
+        </Style>
+        <Style>
+            <Name>colored_contours/default</Name>
+            <Title>colored_contours/default</Title>
+            <Abstract>colored_contours style, using the default palette.  Available palettes can be found in the response to https://opendap.co-ops.nos.noaa.gov/thredds/wms/CBOFS/fmrc/Aggregated_7_day_CBOFS_Fields_Forecast_best.ncd?request=GetMetadata&amp;item=layerDetails&amp;layerName=zeta:face</Abstract>
+            <LegendURL width="110" height="264">
+                <Format>image/png</Format>
+                <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://opendap.co-ops.nos.noaa.gov/thredds/wms/CBOFS/fmrc/Aggregated_7_day_CBOFS_Fields_Forecast_best.ncd?REQUEST=GetLegendGraphic&amp;PALETTE=default&amp;LAYERS=zeta:face&amp;STYLES=colored_contours/default"/>
+            </LegendURL>
+        </Style>
+        <Style>
+            <Name>contours</Name>
+            <Title>contours</Title>
+            <Abstract>contours style</Abstract>
+        </Style>
+        <Style>
+            <Name>raster/default</Name>
+            <Title>raster/default</Title>
+            <Abstract>raster style, using the default palette.  Available palettes can be found in the response to https://opendap.co-ops.nos.noaa.gov/thredds/wms/CBOFS/fmrc/Aggregated_7_day_CBOFS_Fields_Forecast_best.ncd?request=GetMetadata&amp;item=layerDetails&amp;layerName=zeta:face</Abstract>
+            <LegendURL width="110" height="264">
+                <Format>image/png</Format>
+                <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://opendap.co-ops.nos.noaa.gov/thredds/wms/CBOFS/fmrc/Aggregated_7_day_CBOFS_Fields_Forecast_best.ncd?REQUEST=GetLegendGraphic&amp;PALETTE=default&amp;LAYERS=zeta:face&amp;STYLES=raster/default"/>
+            </LegendURL>
+        </Style>
+</Layer>
+    <Layer queryable="1">
+        <Name>u</Name>
+        <Title>u-momentum component</Title>
+        <Abstract>u-momentum component</Abstract>
+        <LatLonBoundingBox minx="-81.15812683105469" maxx="-74.23746490478516" miny="36.1903575" maxy="39.6118175"/>
+        <BoundingBox SRS="CRS:84" minx="-81.15812683105469" maxx="-74.23746490478516" miny="36.1903575" maxy="39.6118175"/>
+        <Dimension name="time" units="unknown"/>
+        <Dimension name="elevation" units="$zDomain.verticalCrs.units"/>
+    
+        <Extent name="time" multipleValues="1" current="1" default="2026-10-21T19:00:00.000Z">
+            2026-10-13T01:00:00.000Z/2026-10-23T12:00:00.000Z/PT1H
+        </Extent>
+        <Dimension name="elevation" units="ncwms:height" unitSymbol="" default="-0.025">
+            -0.9750000000000001,
+            -0.925,
+            -0.875,
+            -0.8250000000000001,
+            -0.775,
+            -0.7250000000000001,
+            -0.675,
+            -0.625,
+            -0.5750000000000001,
+            -0.525,
+            -0.47500000000000003,
+            -0.42500000000000004,
+            -0.375,
+            -0.325,
+            -0.275,
+            -0.225,
+            -0.17500000000000002,
+            -0.125,
+            -0.07500000000000001,
+            -0.025
+        </Dimension>
+        <Style>
+            <Name>default-scalar/default</Name>
+            <Title>default-scalar/default</Title>
+            <Abstract>default-scalar style, using the default palette.  Available palettes can be found in the response to https://opendap.co-ops.nos.noaa.gov/thredds/wms/CBOFS/fmrc/Aggregated_7_day_CBOFS_Fields_Forecast_best.ncd?request=GetMetadata&amp;item=layerDetails&amp;layerName=u</Abstract>
+            <LegendURL width="110" height="264">
+                <Format>image/png</Format>
+                <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://opendap.co-ops.nos.noaa.gov/thredds/wms/CBOFS/fmrc/Aggregated_7_day_CBOFS_Fields_Forecast_best.ncd?REQUEST=GetLegendGraphic&amp;PALETTE=default&amp;LAYERS=u&amp;STYLES=default-scalar/default"/>
+            </LegendURL>
+        </Style>
+        <Style>
+            <Name>colored_contours/default</Name>
+            <Title>colored_contours/default</Title>
+            <Abstract>colored_contours style, using the default palette.  Available palettes can be found in the response to https://opendap.co-ops.nos.noaa.gov/thredds/wms/CBOFS/fmrc/Aggregated_7_day_CBOFS_Fields_Forecast_best.ncd?request=GetMetadata&amp;item=layerDetails&amp;layerName=u</Abstract>
+            <LegendURL width="110" height="264">
+                <Format>image/png</Format>
+                <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://opendap.co-ops.nos.noaa.gov/thredds/wms/CBOFS/fmrc/Aggregated_7_day_CBOFS_Fields_Forecast_best.ncd?REQUEST=GetLegendGraphic&amp;PALETTE=default&amp;LAYERS=u&amp;STYLES=colored_contours/default"/>
+            </LegendURL>
+        </Style>
+        <Style>
+            <Name>contours</Name>
+            <Title>contours</Title>
+            <Abstract>contours style</Abstract>
+        </Style>
+        <Style>
+            <Name>raster/default</Name>
+            <Title>raster/default</Title>
+            <Abstract>raster style, using the default palette.  Available palettes can be found in the response to https://opendap.co-ops.nos.noaa.gov/thredds/wms/CBOFS/fmrc/Aggregated_7_day_CBOFS_Fields_Forecast_best.ncd?request=GetMetadata&amp;item=layerDetails&amp;layerName=u</Abstract>
+            <LegendURL width="110" height="264">
+                <Format>image/png</Format>
+                <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://opendap.co-ops.nos.noaa.gov/thredds/wms/CBOFS/fmrc/Aggregated_7_day_CBOFS_Fields_Forecast_best.ncd?REQUEST=GetLegendGraphic&amp;PALETTE=default&amp;LAYERS=u&amp;STYLES=raster/default"/>
+            </LegendURL>
+        </Style>
+</Layer>
+    <Layer queryable="1">
+        <Name>u:face</Name>
+        <Title>u-momentum component (Unstaggered)</Title>
+        <Abstract>u-momentum component</Abstract>
+        <LatLonBoundingBox minx="-81.09811401367188" maxx="-74.24929809570312" miny="36.2036025" maxy="39.61108"/>
+        <BoundingBox SRS="CRS:84" minx="-81.09811401367188" maxx="-74.24929809570312" miny="36.2036025" maxy="39.61108"/>
+        <Dimension name="time" units="unknown"/>
+        <Dimension name="elevation" units=""/>
+    
+        <Extent name="time" multipleValues="1" current="1" default="2026-10-21T19:00:00.000Z">
+            2026-10-13T01:00:00.000Z/2026-10-23T12:00:00.000Z/PT1H
+        </Extent>
+        <Dimension name="elevation" units="ncwms:height" unitSymbol="" default="-0.025">
+            -0.9750000000000001,
+            -0.925,
+            -0.875,
+            -0.8250000000000001,
+            -0.775,
+            -0.7250000000000001,
+            -0.675,
+            -0.625,
+            -0.5750000000000001,
+            -0.525,
+            -0.47500000000000003,
+            -0.42500000000000004,
+            -0.375,
+            -0.325,
+            -0.275,
+            -0.225,
+            -0.17500000000000002,
+            -0.125,
+            -0.07500000000000001,
+            -0.025
+        </Dimension>
+        <Style>
+            <Name>default-scalar/default</Name>
+            <Title>default-scalar/default</Title>
+            <Abstract>default-scalar style, using the default palette.  Available palettes can be found in the response to https://opendap.co-ops.nos.noaa.gov/thredds/wms/CBOFS/fmrc/Aggregated_7_day_CBOFS_Fields_Forecast_best.ncd?request=GetMetadata&amp;item=layerDetails&amp;layerName=u:face</Abstract>
+            <LegendURL width="110" height="264">
+                <Format>image/png</Format>
+                <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://opendap.co-ops.nos.noaa.gov/thredds/wms/CBOFS/fmrc/Aggregated_7_day_CBOFS_Fields_Forecast_best.ncd?REQUEST=GetLegendGraphic&amp;PALETTE=default&amp;LAYERS=u:face&amp;STYLES=default-scalar/default"/>
+            </LegendURL>
+        </Style>
+        <Style>
+            <Name>colored_contours/default</Name>
+            <Title>colored_contours/default</Title>
+            <Abstract>colored_contours style, using the default palette.  Available palettes can be found in the response to https://opendap.co-ops.nos.noaa.gov/thredds/wms/CBOFS/fmrc/Aggregated_7_day_CBOFS_Fields_Forecast_best.ncd?request=GetMetadata&amp;item=layerDetails&amp;layerName=u:face</Abstract>
+            <LegendURL width="110" height="264">
+                <Format>image/png</Format>
+                <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://opendap.co-ops.nos.noaa.gov/thredds/wms/CBOFS/fmrc/Aggregated_7_day_CBOFS_Fields_Forecast_best.ncd?REQUEST=GetLegendGraphic&amp;PALETTE=default&amp;LAYERS=u:face&amp;STYLES=colored_contours/default"/>
+            </LegendURL>
+        </Style>
+        <Style>
+            <Name>contours</Name>
+            <Title>contours</Title>
+            <Abstract>contours style</Abstract>
+        </Style>
+        <Style>
+            <Name>raster/default</Name>
+            <Title>raster/default</Title>
+            <Abstract>raster style, using the default palette.  Available palettes can be found in the response to https://opendap.co-ops.nos.noaa.gov/thredds/wms/CBOFS/fmrc/Aggregated_7_day_CBOFS_Fields_Forecast_best.ncd?request=GetMetadata&amp;item=layerDetails&amp;layerName=u:face</Abstract>
+            <LegendURL width="110" height="264">
+                <Format>image/png</Format>
+                <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://opendap.co-ops.nos.noaa.gov/thredds/wms/CBOFS/fmrc/Aggregated_7_day_CBOFS_Fields_Forecast_best.ncd?REQUEST=GetLegendGraphic&amp;PALETTE=default&amp;LAYERS=u:face&amp;STYLES=raster/default"/>
+            </LegendURL>
+        </Style>
+</Layer>
+    <Layer queryable="1">
+        <Name>v</Name>
+        <Title>v-momentum component</Title>
+        <Abstract>v-momentum component</Abstract>
+        <LatLonBoundingBox minx="-81.1141357421875" maxx="-74.2426528930664" miny="36.2036025" maxy="39.61108"/>
+        <BoundingBox SRS="CRS:84" minx="-81.1141357421875" maxx="-74.2426528930664" miny="36.2036025" maxy="39.61108"/>
+        <Dimension name="time" units="unknown"/>
+        <Dimension name="elevation" units=""/>
+    
+        <Extent name="time" multipleValues="1" current="1" default="2026-10-21T19:00:00.000Z">
+            2026-10-13T01:00:00.000Z/2026-10-23T12:00:00.000Z/PT1H
+        </Extent>
+        <Dimension name="elevation" units="ncwms:height" unitSymbol="" default="-0.025">
+            -0.9750000000000001,
+            -0.925,
+            -0.875,
+            -0.8250000000000001,
+            -0.775,
+            -0.7250000000000001,
+            -0.675,
+            -0.625,
+            -0.5750000000000001,
+            -0.525,
+            -0.47500000000000003,
+            -0.42500000000000004,
+            -0.375,
+            -0.325,
+            -0.275,
+            -0.225,
+            -0.17500000000000002,
+            -0.125,
+            -0.07500000000000001,
+            -0.025
+        </Dimension>
+        <Style>
+            <Name>default-scalar/default</Name>
+            <Title>default-scalar/default</Title>
+            <Abstract>default-scalar style, using the default palette.  Available palettes can be found in the response to https://opendap.co-ops.nos.noaa.gov/thredds/wms/CBOFS/fmrc/Aggregated_7_day_CBOFS_Fields_Forecast_best.ncd?request=GetMetadata&amp;item=layerDetails&amp;layerName=v</Abstract>
+            <LegendURL width="110" height="264">
+                <Format>image/png</Format>
+                <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://opendap.co-ops.nos.noaa.gov/thredds/wms/CBOFS/fmrc/Aggregated_7_day_CBOFS_Fields_Forecast_best.ncd?REQUEST=GetLegendGraphic&amp;PALETTE=default&amp;LAYERS=v&amp;STYLES=default-scalar/default"/>
+            </LegendURL>
+        </Style>
+        <Style>
+            <Name>colored_contours/default</Name>
+            <Title>colored_contours/default</Title>
+            <Abstract>colored_contours style, using the default palette.  Available palettes can be found in the response to https://opendap.co-ops.nos.noaa.gov/thredds/wms/CBOFS/fmrc/Aggregated_7_day_CBOFS_Fields_Forecast_best.ncd?request=GetMetadata&amp;item=layerDetails&amp;layerName=v</Abstract>
+            <LegendURL width="110" height="264">
+                <Format>image/png</Format>
+                <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://opendap.co-ops.nos.noaa.gov/thredds/wms/CBOFS/fmrc/Aggregated_7_day_CBOFS_Fields_Forecast_best.ncd?REQUEST=GetLegendGraphic&amp;PALETTE=default&amp;LAYERS=v&amp;STYLES=colored_contours/default"/>
+            </LegendURL>
+        </Style>
+        <Style>
+            <Name>contours</Name>
+            <Title>contours</Title>
+            <Abstract>contours style</Abstract>
+        </Style>
+        <Style>
+            <Name>raster/default</Name>
+            <Title>raster/default</Title>
+            <Abstract>raster style, using the default palette.  Available palettes can be found in the response to https://opendap.co-ops.nos.noaa.gov/thredds/wms/CBOFS/fmrc/Aggregated_7_day_CBOFS_Fields_Forecast_best.ncd?request=GetMetadata&amp;item=layerDetails&amp;layerName=v</Abstract>
+            <LegendURL width="110" height="264">
+                <Format>image/png</Format>
+                <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://opendap.co-ops.nos.noaa.gov/thredds/wms/CBOFS/fmrc/Aggregated_7_day_CBOFS_Fields_Forecast_best.ncd?REQUEST=GetLegendGraphic&amp;PALETTE=default&amp;LAYERS=v&amp;STYLES=raster/default"/>
+            </LegendURL>
+        </Style>
+</Layer>
+    <Layer queryable="1">
+        <Name>v:face</Name>
+        <Title>v-momentum component (Unstaggered)</Title>
+        <Abstract>v-momentum component</Abstract>
+        <LatLonBoundingBox minx="-81.09811401367188" maxx="-74.24929809570312" miny="36.2036025" maxy="39.61108"/>
+        <BoundingBox SRS="CRS:84" minx="-81.09811401367188" maxx="-74.24929809570312" miny="36.2036025" maxy="39.61108"/>
+        <Dimension name="time" units="unknown"/>
+        <Dimension name="elevation" units=""/>
+    
+        <Extent name="time" multipleValues="1" current="1" default="2026-10-21T19:00:00.000Z">
+            2026-10-13T01:00:00.000Z/2026-10-23T12:00:00.000Z/PT1H
+        </Extent>
+        <Dimension name="elevation" units="ncwms:height" unitSymbol="" default="-0.025">
+            -0.9750000000000001,
+            -0.925,
+            -0.875,
+            -0.8250000000000001,
+            -0.775,
+            -0.7250000000000001,
+            -0.675,
+            -0.625,
+            -0.5750000000000001,
+            -0.525,
+            -0.47500000000000003,
+            -0.42500000000000004,
+            -0.375,
+            -0.325,
+            -0.275,
+            -0.225,
+            -0.17500000000000002,
+            -0.125,
+            -0.07500000000000001,
+            -0.025
+        </Dimension>
+        <Style>
+            <Name>default-scalar/default</Name>
+            <Title>default-scalar/default</Title>
+            <Abstract>default-scalar style, using the default palette.  Available palettes can be found in the response to https://opendap.co-ops.nos.noaa.gov/thredds/wms/CBOFS/fmrc/Aggregated_7_day_CBOFS_Fields_Forecast_best.ncd?request=GetMetadata&amp;item=layerDetails&amp;layerName=v:face</Abstract>
+            <LegendURL width="110" height="264">
+                <Format>image/png</Format>
+                <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://opendap.co-ops.nos.noaa.gov/thredds/wms/CBOFS/fmrc/Aggregated_7_day_CBOFS_Fields_Forecast_best.ncd?REQUEST=GetLegendGraphic&amp;PALETTE=default&amp;LAYERS=v:face&amp;STYLES=default-scalar/default"/>
+            </LegendURL>
+        </Style>
+        <Style>
+            <Name>colored_contours/default</Name>
+            <Title>colored_contours/default</Title>
+            <Abstract>colored_contours style, using the default palette.  Available palettes can be found in the response to https://opendap.co-ops.nos.noaa.gov/thredds/wms/CBOFS/fmrc/Aggregated_7_day_CBOFS_Fields_Forecast_best.ncd?request=GetMetadata&amp;item=layerDetails&amp;layerName=v:face</Abstract>
+            <LegendURL width="110" height="264">
+                <Format>image/png</Format>
+                <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://opendap.co-ops.nos.noaa.gov/thredds/wms/CBOFS/fmrc/Aggregated_7_day_CBOFS_Fields_Forecast_best.ncd?REQUEST=GetLegendGraphic&amp;PALETTE=default&amp;LAYERS=v:face&amp;STYLES=colored_contours/default"/>
+            </LegendURL>
+        </Style>
+        <Style>
+            <Name>contours</Name>
+            <Title>contours</Title>
+            <Abstract>contours style</Abstract>
+        </Style>
+        <Style>
+            <Name>raster/default</Name>
+            <Title>raster/default</Title>
+            <Abstract>raster style, using the default palette.  Available palettes can be found in the response to https://opendap.co-ops.nos.noaa.gov/thredds/wms/CBOFS/fmrc/Aggregated_7_day_CBOFS_Fields_Forecast_best.ncd?request=GetMetadata&amp;item=layerDetails&amp;layerName=v:face</Abstract>
+            <LegendURL width="110" height="264">
+                <Format>image/png</Format>
+                <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://opendap.co-ops.nos.noaa.gov/thredds/wms/CBOFS/fmrc/Aggregated_7_day_CBOFS_Fields_Forecast_best.ncd?REQUEST=GetLegendGraphic&amp;PALETTE=default&amp;LAYERS=v:face&amp;STYLES=raster/default"/>
+            </LegendURL>
+        </Style>
+</Layer>
+    <Layer queryable="1">
+        <Name>w</Name>
+        <Title>vertical momentum component</Title>
+        <Abstract>vertical momentum component</Abstract>
+        <LatLonBoundingBox minx="-81.17435455322266" maxx="-74.23077392578125" miny="36.1903575" maxy="39.6118175"/>
+        <BoundingBox SRS="CRS:84" minx="-81.17435455322266" maxx="-74.23077392578125" miny="36.1903575" maxy="39.6118175"/>
+        <Dimension name="time" units="unknown"/>
+        <Dimension name="elevation" units=""/>
+    
+        <Extent name="time" multipleValues="1" current="1" default="2026-10-21T19:00:00.000Z">
+            2026-10-13T01:00:00.000Z/2026-10-23T12:00:00.000Z/PT1H
+        </Extent>
+        <Dimension name="elevation" units="ncwms:height" unitSymbol="" default="0.0">
+            -1.0,
+            -0.9500000000000001,
+            -0.9,
+            -0.8500000000000001,
+            -0.8,
+            -0.75,
+            -0.7000000000000001,
+            -0.65,
+            -0.6000000000000001,
+            -0.55,
+            -0.5,
+            -0.45,
+            -0.4,
+            -0.35000000000000003,
+            -0.30000000000000004,
+            -0.25,
+            -0.2,
+            -0.15000000000000002,
+            -0.1,
+            -0.05,
+            0.0
+        </Dimension>
+        <Style>
+            <Name>default-scalar/default</Name>
+            <Title>default-scalar/default</Title>
+            <Abstract>default-scalar style, using the default palette.  Available palettes can be found in the response to https://opendap.co-ops.nos.noaa.gov/thredds/wms/CBOFS/fmrc/Aggregated_7_day_CBOFS_Fields_Forecast_best.ncd?request=GetMetadata&amp;item=layerDetails&amp;layerName=w</Abstract>
+            <LegendURL width="110" height="264">
+                <Format>image/png</Format>
+                <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://opendap.co-ops.nos.noaa.gov/thredds/wms/CBOFS/fmrc/Aggregated_7_day_CBOFS_Fields_Forecast_best.ncd?REQUEST=GetLegendGraphic&amp;PALETTE=default&amp;LAYERS=w&amp;STYLES=default-scalar/default"/>
+            </LegendURL>
+        </Style>
+        <Style>
+            <Name>colored_contours/default</Name>
+            <Title>colored_contours/default</Title>
+            <Abstract>colored_contours style, using the default palette.  Available palettes can be found in the response to https://opendap.co-ops.nos.noaa.gov/thredds/wms/CBOFS/fmrc/Aggregated_7_day_CBOFS_Fields_Forecast_best.ncd?request=GetMetadata&amp;item=layerDetails&amp;layerName=w</Abstract>
+            <LegendURL width="110" height="264">
+                <Format>image/png</Format>
+                <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://opendap.co-ops.nos.noaa.gov/thredds/wms/CBOFS/fmrc/Aggregated_7_day_CBOFS_Fields_Forecast_best.ncd?REQUEST=GetLegendGraphic&amp;PALETTE=default&amp;LAYERS=w&amp;STYLES=colored_contours/default"/>
+            </LegendURL>
+        </Style>
+        <Style>
+            <Name>contours</Name>
+            <Title>contours</Title>
+            <Abstract>contours style</Abstract>
+        </Style>
+        <Style>
+            <Name>raster/default</Name>
+            <Title>raster/default</Title>
+            <Abstract>raster style, using the default palette.  Available palettes can be found in the response to https://opendap.co-ops.nos.noaa.gov/thredds/wms/CBOFS/fmrc/Aggregated_7_day_CBOFS_Fields_Forecast_best.ncd?request=GetMetadata&amp;item=layerDetails&amp;layerName=w</Abstract>
+            <LegendURL width="110" height="264">
+                <Format>image/png</Format>
+                <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://opendap.co-ops.nos.noaa.gov/thredds/wms/CBOFS/fmrc/Aggregated_7_day_CBOFS_Fields_Forecast_best.ncd?REQUEST=GetLegendGraphic&amp;PALETTE=default&amp;LAYERS=w&amp;STYLES=raster/default"/>
+            </LegendURL>
+        </Style>
+</Layer>
+    <Layer queryable="1">
+        <Name>w:face</Name>
+        <Title>vertical momentum component (Unstaggered)</Title>
+        <Abstract>vertical momentum component</Abstract>
+        <LatLonBoundingBox minx="-81.09811401367188" maxx="-74.24929809570312" miny="36.2036025" maxy="39.61108"/>
+        <BoundingBox SRS="CRS:84" minx="-81.09811401367188" maxx="-74.24929809570312" miny="36.2036025" maxy="39.61108"/>
+        <Dimension name="time" units="unknown"/>
+        <Dimension name="elevation" units=""/>
+    
+        <Extent name="time" multipleValues="1" current="1" default="2026-10-21T19:00:00.000Z">
+            2026-10-13T01:00:00.000Z/2026-10-23T12:00:00.000Z/PT1H
+        </Extent>
+        <Dimension name="elevation" units="ncwms:height" unitSymbol="" default="0.0">
+            -1.0,
+            -0.9500000000000001,
+            -0.9,
+            -0.8500000000000001,
+            -0.8,
+            -0.75,
+            -0.7000000000000001,
+            -0.65,
+            -0.6000000000000001,
+            -0.55,
+            -0.5,
+            -0.45,
+            -0.4,
+            -0.35000000000000003,
+            -0.30000000000000004,
+            -0.25,
+            -0.2,
+            -0.15000000000000002,
+            -0.1,
+            -0.05,
+            0.0
+        </Dimension>
+        <Style>
+            <Name>default-scalar/default</Name>
+            <Title>default-scalar/default</Title>
+            <Abstract>default-scalar style, using the default palette.  Available palettes can be found in the response to https://opendap.co-ops.nos.noaa.gov/thredds/wms/CBOFS/fmrc/Aggregated_7_day_CBOFS_Fields_Forecast_best.ncd?request=GetMetadata&amp;item=layerDetails&amp;layerName=w:face</Abstract>
+            <LegendURL width="110" height="264">
+                <Format>image/png</Format>
+                <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://opendap.co-ops.nos.noaa.gov/thredds/wms/CBOFS/fmrc/Aggregated_7_day_CBOFS_Fields_Forecast_best.ncd?REQUEST=GetLegendGraphic&amp;PALETTE=default&amp;LAYERS=w:face&amp;STYLES=default-scalar/default"/>
+            </LegendURL>
+        </Style>
+        <Style>
+            <Name>colored_contours/default</Name>
+            <Title>colored_contours/default</Title>
+            <Abstract>colored_contours style, using the default palette.  Available palettes can be found in the response to https://opendap.co-ops.nos.noaa.gov/thredds/wms/CBOFS/fmrc/Aggregated_7_day_CBOFS_Fields_Forecast_best.ncd?request=GetMetadata&amp;item=layerDetails&amp;layerName=w:face</Abstract>
+            <LegendURL width="110" height="264">
+                <Format>image/png</Format>
+                <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://opendap.co-ops.nos.noaa.gov/thredds/wms/CBOFS/fmrc/Aggregated_7_day_CBOFS_Fields_Forecast_best.ncd?REQUEST=GetLegendGraphic&amp;PALETTE=default&amp;LAYERS=w:face&amp;STYLES=colored_contours/default"/>
+            </LegendURL>
+        </Style>
+        <Style>
+            <Name>contours</Name>
+            <Title>contours</Title>
+            <Abstract>contours style</Abstract>
+        </Style>
+        <Style>
+            <Name>raster/default</Name>
+            <Title>raster/default</Title>
+            <Abstract>raster style, using the default palette.  Available palettes can be found in the response to https://opendap.co-ops.nos.noaa.gov/thredds/wms/CBOFS/fmrc/Aggregated_7_day_CBOFS_Fields_Forecast_best.ncd?request=GetMetadata&amp;item=layerDetails&amp;layerName=w:face</Abstract>
+            <LegendURL width="110" height="264">
+                <Format>image/png</Format>
+                <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://opendap.co-ops.nos.noaa.gov/thredds/wms/CBOFS/fmrc/Aggregated_7_day_CBOFS_Fields_Forecast_best.ncd?REQUEST=GetLegendGraphic&amp;PALETTE=default&amp;LAYERS=w:face&amp;STYLES=raster/default"/>
+            </LegendURL>
+        </Style>
+</Layer>
+    <Layer queryable="1">
+        <Name>temp</Name>
+        <Title>potential temperature</Title>
+        <Abstract>potential temperature</Abstract>
+        <LatLonBoundingBox minx="-81.17435455322266" maxx="-74.23077392578125" miny="36.1903575" maxy="39.6118175"/>
+        <BoundingBox SRS="CRS:84" minx="-81.17435455322266" maxx="-74.23077392578125" miny="36.1903575" maxy="39.6118175"/>
+        <Dimension name="time" units="unknown"/>
+        <Dimension name="elevation" units=""/>
+    
+        <Extent name="time" multipleValues="1" current="1" default="2026-10-21T19:00:00.000Z">
+            2026-10-13T01:00:00.000Z/2026-10-23T12:00:00.000Z/PT1H
+        </Extent>
+        <Dimension name="elevation" units="ncwms:height" unitSymbol="" default="-0.025">
+            -0.9750000000000001,
+            -0.925,
+            -0.875,
+            -0.8250000000000001,
+            -0.775,
+            -0.7250000000000001,
+            -0.675,
+            -0.625,
+            -0.5750000000000001,
+            -0.525,
+            -0.47500000000000003,
+            -0.42500000000000004,
+            -0.375,
+            -0.325,
+            -0.275,
+            -0.225,
+            -0.17500000000000002,
+            -0.125,
+            -0.07500000000000001,
+            -0.025
+        </Dimension>
+        <Style>
+            <Name>default-scalar/default</Name>
+            <Title>default-scalar/default</Title>
+            <Abstract>default-scalar style, using the default palette.  Available palettes can be found in the response to https://opendap.co-ops.nos.noaa.gov/thredds/wms/CBOFS/fmrc/Aggregated_7_day_CBOFS_Fields_Forecast_best.ncd?request=GetMetadata&amp;item=layerDetails&amp;layerName=temp</Abstract>
+            <LegendURL width="110" height="264">
+                <Format>image/png</Format>
+                <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://opendap.co-ops.nos.noaa.gov/thredds/wms/CBOFS/fmrc/Aggregated_7_day_CBOFS_Fields_Forecast_best.ncd?REQUEST=GetLegendGraphic&amp;PALETTE=default&amp;LAYERS=temp&amp;STYLES=default-scalar/default"/>
+            </LegendURL>
+        </Style>
+        <Style>
+            <Name>colored_contours/default</Name>
+            <Title>colored_contours/default</Title>
+            <Abstract>colored_contours style, using the default palette.  Available palettes can be found in the response to https://opendap.co-ops.nos.noaa.gov/thredds/wms/CBOFS/fmrc/Aggregated_7_day_CBOFS_Fields_Forecast_best.ncd?request=GetMetadata&amp;item=layerDetails&amp;layerName=temp</Abstract>
+            <LegendURL width="110" height="264">
+                <Format>image/png</Format>
+                <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://opendap.co-ops.nos.noaa.gov/thredds/wms/CBOFS/fmrc/Aggregated_7_day_CBOFS_Fields_Forecast_best.ncd?REQUEST=GetLegendGraphic&amp;PALETTE=default&amp;LAYERS=temp&amp;STYLES=colored_contours/default"/>
+            </LegendURL>
+        </Style>
+        <Style>
+            <Name>contours</Name>
+            <Title>contours</Title>
+            <Abstract>contours style</Abstract>
+        </Style>
+        <Style>
+            <Name>raster/default</Name>
+            <Title>raster/default</Title>
+            <Abstract>raster style, using the default palette.  Available palettes can be found in the response to https://opendap.co-ops.nos.noaa.gov/thredds/wms/CBOFS/fmrc/Aggregated_7_day_CBOFS_Fields_Forecast_best.ncd?request=GetMetadata&amp;item=layerDetails&amp;layerName=temp</Abstract>
+            <LegendURL width="110" height="264">
+                <Format>image/png</Format>
+                <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://opendap.co-ops.nos.noaa.gov/thredds/wms/CBOFS/fmrc/Aggregated_7_day_CBOFS_Fields_Forecast_best.ncd?REQUEST=GetLegendGraphic&amp;PALETTE=default&amp;LAYERS=temp&amp;STYLES=raster/default"/>
+            </LegendURL>
+        </Style>
+</Layer>
+    <Layer queryable="1">
+        <Name>temp:face</Name>
+        <Title>potential temperature (Unstaggered)</Title>
+        <Abstract>potential temperature</Abstract>
+        <LatLonBoundingBox minx="-81.09811401367188" maxx="-74.24929809570312" miny="36.2036025" maxy="39.61108"/>
+        <BoundingBox SRS="CRS:84" minx="-81.09811401367188" maxx="-74.24929809570312" miny="36.2036025" maxy="39.61108"/>
+        <Dimension name="time" units="unknown"/>
+        <Dimension name="elevation" units=""/>
+    
+        <Extent name="time" multipleValues="1" current="1" default="2026-10-21T19:00:00.000Z">
+            2026-10-13T01:00:00.000Z/2026-10-23T12:00:00.000Z/PT1H
+        </Extent>
+        <Dimension name="elevation" units="ncwms:height" unitSymbol="" default="-0.025">
+            -0.9750000000000001,
+            -0.925,
+            -0.875,
+            -0.8250000000000001,
+            -0.775,
+            -0.7250000000000001,
+            -0.675,
+            -0.625,
+            -0.5750000000000001,
+            -0.525,
+            -0.47500000000000003,
+            -0.42500000000000004,
+            -0.375,
+            -0.325,
+            -0.275,
+            -0.225,
+            -0.17500000000000002,
+            -0.125,
+            -0.07500000000000001,
+            -0.025
+        </Dimension>
+        <Style>
+            <Name>default-scalar/default</Name>
+            <Title>default-scalar/default</Title>
+            <Abstract>default-scalar style, using the default palette.  Available palettes can be found in the response to https://opendap.co-ops.nos.noaa.gov/thredds/wms/CBOFS/fmrc/Aggregated_7_day_CBOFS_Fields_Forecast_best.ncd?request=GetMetadata&amp;item=layerDetails&amp;layerName=temp:face</Abstract>
+            <LegendURL width="110" height="264">
+                <Format>image/png</Format>
+                <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://opendap.co-ops.nos.noaa.gov/thredds/wms/CBOFS/fmrc/Aggregated_7_day_CBOFS_Fields_Forecast_best.ncd?REQUEST=GetLegendGraphic&amp;PALETTE=default&amp;LAYERS=temp:face&amp;STYLES=default-scalar/default"/>
+            </LegendURL>
+        </Style>
+        <Style>
+            <Name>colored_contours/default</Name>
+            <Title>colored_contours/default</Title>
+            <Abstract>colored_contours style, using the default palette.  Available palettes can be found in the response to https://opendap.co-ops.nos.noaa.gov/thredds/wms/CBOFS/fmrc/Aggregated_7_day_CBOFS_Fields_Forecast_best.ncd?request=GetMetadata&amp;item=layerDetails&amp;layerName=temp:face</Abstract>
+            <LegendURL width="110" height="264">
+                <Format>image/png</Format>
+                <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://opendap.co-ops.nos.noaa.gov/thredds/wms/CBOFS/fmrc/Aggregated_7_day_CBOFS_Fields_Forecast_best.ncd?REQUEST=GetLegendGraphic&amp;PALETTE=default&amp;LAYERS=temp:face&amp;STYLES=colored_contours/default"/>
+            </LegendURL>
+        </Style>
+        <Style>
+            <Name>contours</Name>
+            <Title>contours</Title>
+            <Abstract>contours style</Abstract>
+        </Style>
+        <Style>
+            <Name>raster/default</Name>
+            <Title>raster/default</Title>
+            <Abstract>raster style, using the default palette.  Available palettes can be found in the response to https://opendap.co-ops.nos.noaa.gov/thredds/wms/CBOFS/fmrc/Aggregated_7_day_CBOFS_Fields_Forecast_best.ncd?request=GetMetadata&amp;item=layerDetails&amp;layerName=temp:face</Abstract>
+            <LegendURL width="110" height="264">
+                <Format>image/png</Format>
+                <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://opendap.co-ops.nos.noaa.gov/thredds/wms/CBOFS/fmrc/Aggregated_7_day_CBOFS_Fields_Forecast_best.ncd?REQUEST=GetLegendGraphic&amp;PALETTE=default&amp;LAYERS=temp:face&amp;STYLES=raster/default"/>
+            </LegendURL>
+        </Style>
+</Layer>
+    <Layer queryable="1">
+        <Name>salt</Name>
+        <Title>salinity</Title>
+        <Abstract>salinity</Abstract>
+        <LatLonBoundingBox minx="-81.17435455322266" maxx="-74.23077392578125" miny="36.1903575" maxy="39.6118175"/>
+        <BoundingBox SRS="CRS:84" minx="-81.17435455322266" maxx="-74.23077392578125" miny="36.1903575" maxy="39.6118175"/>
+        <Dimension name="time" units="unknown"/>
+        <Dimension name="elevation" units=""/>
+    
+        <Extent name="time" multipleValues="1" current="1" default="2026-10-21T19:00:00.000Z">
+            2026-10-13T01:00:00.000Z/2026-10-23T12:00:00.000Z/PT1H
+        </Extent>
+        <Dimension name="elevation" units="ncwms:height" unitSymbol="" default="-0.025">
+            -0.9750000000000001,
+            -0.925,
+            -0.875,
+            -0.8250000000000001,
+            -0.775,
+            -0.7250000000000001,
+            -0.675,
+            -0.625,
+            -0.5750000000000001,
+            -0.525,
+            -0.47500000000000003,
+            -0.42500000000000004,
+            -0.375,
+            -0.325,
+            -0.275,
+            -0.225,
+            -0.17500000000000002,
+            -0.125,
+            -0.07500000000000001,
+            -0.025
+        </Dimension>
+        <Style>
+            <Name>default-scalar/default</Name>
+            <Title>default-scalar/default</Title>
+            <Abstract>default-scalar style, using the default palette.  Available palettes can be found in the response to https://opendap.co-ops.nos.noaa.gov/thredds/wms/CBOFS/fmrc/Aggregated_7_day_CBOFS_Fields_Forecast_best.ncd?request=GetMetadata&amp;item=layerDetails&amp;layerName=salt</Abstract>
+            <LegendURL width="110" height="264">
+                <Format>image/png</Format>
+                <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://opendap.co-ops.nos.noaa.gov/thredds/wms/CBOFS/fmrc/Aggregated_7_day_CBOFS_Fields_Forecast_best.ncd?REQUEST=GetLegendGraphic&amp;PALETTE=default&amp;LAYERS=salt&amp;STYLES=default-scalar/default"/>
+            </LegendURL>
+        </Style>
+        <Style>
+            <Name>colored_contours/default</Name>
+            <Title>colored_contours/default</Title>
+            <Abstract>colored_contours style, using the default palette.  Available palettes can be found in the response to https://opendap.co-ops.nos.noaa.gov/thredds/wms/CBOFS/fmrc/Aggregated_7_day_CBOFS_Fields_Forecast_best.ncd?request=GetMetadata&amp;item=layerDetails&amp;layerName=salt</Abstract>
+            <LegendURL width="110" height="264">
+                <Format>image/png</Format>
+                <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://opendap.co-ops.nos.noaa.gov/thredds/wms/CBOFS/fmrc/Aggregated_7_day_CBOFS_Fields_Forecast_best.ncd?REQUEST=GetLegendGraphic&amp;PALETTE=default&amp;LAYERS=salt&amp;STYLES=colored_contours/default"/>
+            </LegendURL>
+        </Style>
+        <Style>
+            <Name>contours</Name>
+            <Title>contours</Title>
+            <Abstract>contours style</Abstract>
+        </Style>
+        <Style>
+            <Name>raster/default</Name>
+            <Title>raster/default</Title>
+            <Abstract>raster style, using the default palette.  Available palettes can be found in the response to https://opendap.co-ops.nos.noaa.gov/thredds/wms/CBOFS/fmrc/Aggregated_7_day_CBOFS_Fields_Forecast_best.ncd?request=GetMetadata&amp;item=layerDetails&amp;layerName=salt</Abstract>
+            <LegendURL width="110" height="264">
+                <Format>image/png</Format>
+                <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://opendap.co-ops.nos.noaa.gov/thredds/wms/CBOFS/fmrc/Aggregated_7_day_CBOFS_Fields_Forecast_best.ncd?REQUEST=GetLegendGraphic&amp;PALETTE=default&amp;LAYERS=salt&amp;STYLES=raster/default"/>
+            </LegendURL>
+        </Style>
+</Layer>
+    <Layer queryable="1">
+        <Name>salt:face</Name>
+        <Title>salinity (Unstaggered)</Title>
+        <Abstract>salinity</Abstract>
+        <LatLonBoundingBox minx="-81.09811401367188" maxx="-74.24929809570312" miny="36.2036025" maxy="39.61108"/>
+        <BoundingBox SRS="CRS:84" minx="-81.09811401367188" maxx="-74.24929809570312" miny="36.2036025" maxy="39.61108"/>
+        <Dimension name="time" units="unknown"/>
+        <Dimension name="elevation" units=""/>
+    
+        <Extent name="time" multipleValues="1" current="1" default="2026-10-21T19:00:00.000Z">
+            2026-10-13T01:00:00.000Z/2026-10-23T12:00:00.000Z/PT1H
+        </Extent>
+        <Dimension name="elevation" units="ncwms:height" unitSymbol="" default="-0.025">
+            -0.9750000000000001,
+            -0.925,
+            -0.875,
+            -0.8250000000000001,
+            -0.775,
+            -0.7250000000000001,
+            -0.675,
+            -0.625,
+            -0.5750000000000001,
+            -0.525,
+            -0.47500000000000003,
+            -0.42500000000000004,
+            -0.375,
+            -0.325,
+            -0.275,
+            -0.225,
+            -0.17500000000000002,
+            -0.125,
+            -0.07500000000000001,
+            -0.025
+        </Dimension>
+        <Style>
+            <Name>default-scalar/default</Name>
+            <Title>default-scalar/default</Title>
+            <Abstract>default-scalar style, using the default palette.  Available palettes can be found in the response to https://opendap.co-ops.nos.noaa.gov/thredds/wms/CBOFS/fmrc/Aggregated_7_day_CBOFS_Fields_Forecast_best.ncd?request=GetMetadata&amp;item=layerDetails&amp;layerName=salt:face</Abstract>
+            <LegendURL width="110" height="264">
+                <Format>image/png</Format>
+                <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://opendap.co-ops.nos.noaa.gov/thredds/wms/CBOFS/fmrc/Aggregated_7_day_CBOFS_Fields_Forecast_best.ncd?REQUEST=GetLegendGraphic&amp;PALETTE=default&amp;LAYERS=salt:face&amp;STYLES=default-scalar/default"/>
+            </LegendURL>
+        </Style>
+        <Style>
+            <Name>colored_contours/default</Name>
+            <Title>colored_contours/default</Title>
+            <Abstract>colored_contours style, using the default palette.  Available palettes can be found in the response to https://opendap.co-ops.nos.noaa.gov/thredds/wms/CBOFS/fmrc/Aggregated_7_day_CBOFS_Fields_Forecast_best.ncd?request=GetMetadata&amp;item=layerDetails&amp;layerName=salt:face</Abstract>
+            <LegendURL width="110" height="264">
+                <Format>image/png</Format>
+                <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://opendap.co-ops.nos.noaa.gov/thredds/wms/CBOFS/fmrc/Aggregated_7_day_CBOFS_Fields_Forecast_best.ncd?REQUEST=GetLegendGraphic&amp;PALETTE=default&amp;LAYERS=salt:face&amp;STYLES=colored_contours/default"/>
+            </LegendURL>
+        </Style>
+        <Style>
+            <Name>contours</Name>
+            <Title>contours</Title>
+            <Abstract>contours style</Abstract>
+        </Style>
+        <Style>
+            <Name>raster/default</Name>
+            <Title>raster/default</Title>
+            <Abstract>raster style, using the default palette.  Available palettes can be found in the response to https://opendap.co-ops.nos.noaa.gov/thredds/wms/CBOFS/fmrc/Aggregated_7_day_CBOFS_Fields_Forecast_best.ncd?request=GetMetadata&amp;item=layerDetails&amp;layerName=salt:face</Abstract>
+            <LegendURL width="110" height="264">
+                <Format>image/png</Format>
+                <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://opendap.co-ops.nos.noaa.gov/thredds/wms/CBOFS/fmrc/Aggregated_7_day_CBOFS_Fields_Forecast_best.ncd?REQUEST=GetLegendGraphic&amp;PALETTE=default&amp;LAYERS=salt:face&amp;STYLES=raster/default"/>
+            </LegendURL>
+        </Style>
+</Layer>
+    <Layer queryable="1">
+        <Name>oxygen</Name>
+        <Title>dissolved oxygen concentration</Title>
+        <Abstract>dissolved oxygen concentration</Abstract>
+        <LatLonBoundingBox minx="-81.17435455322266" maxx="-74.23077392578125" miny="36.1903575" maxy="39.6118175"/>
+        <BoundingBox SRS="CRS:84" minx="-81.17435455322266" maxx="-74.23077392578125" miny="36.1903575" maxy="39.6118175"/>
+        <Dimension name="time" units="unknown"/>
+        <Dimension name="elevation" units=""/>
+    
+        <Extent name="time" multipleValues="1" current="1" default="2026-10-21T19:00:00.000Z">
+            2026-10-13T01:00:00.000Z/2026-10-23T12:00:00.000Z/PT1H
+        </Extent>
+        <Dimension name="elevation" units="ncwms:height" unitSymbol="" default="-0.025">
+            -0.9750000000000001,
+            -0.925,
+            -0.875,
+            -0.8250000000000001,
+            -0.775,
+            -0.7250000000000001,
+            -0.675,
+            -0.625,
+            -0.5750000000000001,
+            -0.525,
+            -0.47500000000000003,
+            -0.42500000000000004,
+            -0.375,
+            -0.325,
+            -0.275,
+            -0.225,
+            -0.17500000000000002,
+            -0.125,
+            -0.07500000000000001,
+            -0.025
+        </Dimension>
+        <Style>
+            <Name>default-scalar/default</Name>
+            <Title>default-scalar/default</Title>
+            <Abstract>default-scalar style, using the default palette.  Available palettes can be found in the response to https://opendap.co-ops.nos.noaa.gov/thredds/wms/CBOFS/fmrc/Aggregated_7_day_CBOFS_Fields_Forecast_best.ncd?request=GetMetadata&amp;item=layerDetails&amp;layerName=oxygen</Abstract>
+            <LegendURL width="110" height="264">
+                <Format>image/png</Format>
+                <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://opendap.co-ops.nos.noaa.gov/thredds/wms/CBOFS/fmrc/Aggregated_7_day_CBOFS_Fields_Forecast_best.ncd?REQUEST=GetLegendGraphic&amp;PALETTE=default&amp;LAYERS=oxygen&amp;STYLES=default-scalar/default"/>
+            </LegendURL>
+        </Style>
+        <Style>
+            <Name>colored_contours/default</Name>
+            <Title>colored_contours/default</Title>
+            <Abstract>colored_contours style, using the default palette.  Available palettes can be found in the response to https://opendap.co-ops.nos.noaa.gov/thredds/wms/CBOFS/fmrc/Aggregated_7_day_CBOFS_Fields_Forecast_best.ncd?request=GetMetadata&amp;item=layerDetails&amp;layerName=oxygen</Abstract>
+            <LegendURL width="110" height="264">
+                <Format>image/png</Format>
+                <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://opendap.co-ops.nos.noaa.gov/thredds/wms/CBOFS/fmrc/Aggregated_7_day_CBOFS_Fields_Forecast_best.ncd?REQUEST=GetLegendGraphic&amp;PALETTE=default&amp;LAYERS=oxygen&amp;STYLES=colored_contours/default"/>
+            </LegendURL>
+        </Style>
+        <Style>
+            <Name>contours</Name>
+            <Title>contours</Title>
+            <Abstract>contours style</Abstract>
+        </Style>
+        <Style>
+            <Name>raster/default</Name>
+            <Title>raster/default</Title>
+            <Abstract>raster style, using the default palette.  Available palettes can be found in the response to https://opendap.co-ops.nos.noaa.gov/thredds/wms/CBOFS/fmrc/Aggregated_7_day_CBOFS_Fields_Forecast_best.ncd?request=GetMetadata&amp;item=layerDetails&amp;layerName=oxygen</Abstract>
+            <LegendURL width="110" height="264">
+                <Format>image/png</Format>
+                <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://opendap.co-ops.nos.noaa.gov/thredds/wms/CBOFS/fmrc/Aggregated_7_day_CBOFS_Fields_Forecast_best.ncd?REQUEST=GetLegendGraphic&amp;PALETTE=default&amp;LAYERS=oxygen&amp;STYLES=raster/default"/>
+            </LegendURL>
+        </Style>
+</Layer>
+    <Layer queryable="1">
+        <Name>oxygen:face</Name>
+        <Title>dissolved oxygen concentration (Unstaggered)</Title>
+        <Abstract>dissolved oxygen concentration</Abstract>
+        <LatLonBoundingBox minx="-81.09811401367188" maxx="-74.24929809570312" miny="36.2036025" maxy="39.61108"/>
+        <BoundingBox SRS="CRS:84" minx="-81.09811401367188" maxx="-74.24929809570312" miny="36.2036025" maxy="39.61108"/>
+        <Dimension name="time" units="unknown"/>
+        <Dimension name="elevation" units=""/>
+    
+        <Extent name="time" multipleValues="1" current="1" default="2026-10-21T19:00:00.000Z">
+            2026-10-13T01:00:00.000Z/2026-10-23T12:00:00.000Z/PT1H
+        </Extent>
+        <Dimension name="elevation" units="ncwms:height" unitSymbol="" default="-0.025">
+            -0.9750000000000001,
+            -0.925,
+            -0.875,
+            -0.8250000000000001,
+            -0.775,
+            -0.7250000000000001,
+            -0.675,
+            -0.625,
+            -0.5750000000000001,
+            -0.525,
+            -0.47500000000000003,
+            -0.42500000000000004,
+            -0.375,
+            -0.325,
+            -0.275,
+            -0.225,
+            -0.17500000000000002,
+            -0.125,
+            -0.07500000000000001,
+            -0.025
+        </Dimension>
+        <Style>
+            <Name>default-scalar/default</Name>
+            <Title>default-scalar/default</Title>
+            <Abstract>default-scalar style, using the default palette.  Available palettes can be found in the response to https://opendap.co-ops.nos.noaa.gov/thredds/wms/CBOFS/fmrc/Aggregated_7_day_CBOFS_Fields_Forecast_best.ncd?request=GetMetadata&amp;item=layerDetails&amp;layerName=oxygen:face</Abstract>
+            <LegendURL width="110" height="264">
+                <Format>image/png</Format>
+                <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://opendap.co-ops.nos.noaa.gov/thredds/wms/CBOFS/fmrc/Aggregated_7_day_CBOFS_Fields_Forecast_best.ncd?REQUEST=GetLegendGraphic&amp;PALETTE=default&amp;LAYERS=oxygen:face&amp;STYLES=default-scalar/default"/>
+            </LegendURL>
+        </Style>
+        <Style>
+            <Name>colored_contours/default</Name>
+            <Title>colored_contours/default</Title>
+            <Abstract>colored_contours style, using the default palette.  Available palettes can be found in the response to https://opendap.co-ops.nos.noaa.gov/thredds/wms/CBOFS/fmrc/Aggregated_7_day_CBOFS_Fields_Forecast_best.ncd?request=GetMetadata&amp;item=layerDetails&amp;layerName=oxygen:face</Abstract>
+            <LegendURL width="110" height="264">
+                <Format>image/png</Format>
+                <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://opendap.co-ops.nos.noaa.gov/thredds/wms/CBOFS/fmrc/Aggregated_7_day_CBOFS_Fields_Forecast_best.ncd?REQUEST=GetLegendGraphic&amp;PALETTE=default&amp;LAYERS=oxygen:face&amp;STYLES=colored_contours/default"/>
+            </LegendURL>
+        </Style>
+        <Style>
+            <Name>contours</Name>
+            <Title>contours</Title>
+            <Abstract>contours style</Abstract>
+        </Style>
+        <Style>
+            <Name>raster/default</Name>
+            <Title>raster/default</Title>
+            <Abstract>raster style, using the default palette.  Available palettes can be found in the response to https://opendap.co-ops.nos.noaa.gov/thredds/wms/CBOFS/fmrc/Aggregated_7_day_CBOFS_Fields_Forecast_best.ncd?request=GetMetadata&amp;item=layerDetails&amp;layerName=oxygen:face</Abstract>
+            <LegendURL width="110" height="264">
+                <Format>image/png</Format>
+                <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://opendap.co-ops.nos.noaa.gov/thredds/wms/CBOFS/fmrc/Aggregated_7_day_CBOFS_Fields_Forecast_best.ncd?REQUEST=GetLegendGraphic&amp;PALETTE=default&amp;LAYERS=oxygen:face&amp;STYLES=raster/default"/>
+            </LegendURL>
+        </Style>
+</Layer>
+    <Layer queryable="1">
+        <Name>Pair</Name>
+        <Title>surface air pressure</Title>
+        <Abstract>surface air pressure</Abstract>
+        <LatLonBoundingBox minx="-81.17435455322266" maxx="-74.23077392578125" miny="36.1903575" maxy="39.6118175"/>
+        <BoundingBox SRS="CRS:84" minx="-81.17435455322266" maxx="-74.23077392578125" miny="36.1903575" maxy="39.6118175"/>
+        <Dimension name="time" units="unknown"/>
+    
+        <Extent name="time" multipleValues="1" current="1" default="2026-10-21T19:00:00.000Z">
+            2026-10-13T01:00:00.000Z/2026-10-23T12:00:00.000Z/PT1H
+        </Extent>
+        <Style>
+            <Name>default-scalar/default</Name>
+            <Title>default-scalar/default</Title>
+            <Abstract>default-scalar style, using the default palette.  Available palettes can be found in the response to https://opendap.co-ops.nos.noaa.gov/thredds/wms/CBOFS/fmrc/Aggregated_7_day_CBOFS_Fields_Forecast_best.ncd?request=GetMetadata&amp;item=layerDetails&amp;layerName=Pair</Abstract>
+            <LegendURL width="110" height="264">
+                <Format>image/png</Format>
+                <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://opendap.co-ops.nos.noaa.gov/thredds/wms/CBOFS/fmrc/Aggregated_7_day_CBOFS_Fields_Forecast_best.ncd?REQUEST=GetLegendGraphic&amp;PALETTE=default&amp;LAYERS=Pair&amp;STYLES=default-scalar/default"/>
+            </LegendURL>
+        </Style>
+        <Style>
+            <Name>colored_contours/default</Name>
+            <Title>colored_contours/default</Title>
+            <Abstract>colored_contours style, using the default palette.  Available palettes can be found in the response to https://opendap.co-ops.nos.noaa.gov/thredds/wms/CBOFS/fmrc/Aggregated_7_day_CBOFS_Fields_Forecast_best.ncd?request=GetMetadata&amp;item=layerDetails&amp;layerName=Pair</Abstract>
+            <LegendURL width="110" height="264">
+                <Format>image/png</Format>
+                <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://opendap.co-ops.nos.noaa.gov/thredds/wms/CBOFS/fmrc/Aggregated_7_day_CBOFS_Fields_Forecast_best.ncd?REQUEST=GetLegendGraphic&amp;PALETTE=default&amp;LAYERS=Pair&amp;STYLES=colored_contours/default"/>
+            </LegendURL>
+        </Style>
+        <Style>
+            <Name>contours</Name>
+            <Title>contours</Title>
+            <Abstract>contours style</Abstract>
+        </Style>
+        <Style>
+            <Name>raster/default</Name>
+            <Title>raster/default</Title>
+            <Abstract>raster style, using the default palette.  Available palettes can be found in the response to https://opendap.co-ops.nos.noaa.gov/thredds/wms/CBOFS/fmrc/Aggregated_7_day_CBOFS_Fields_Forecast_best.ncd?request=GetMetadata&amp;item=layerDetails&amp;layerName=Pair</Abstract>
+            <LegendURL width="110" height="264">
+                <Format>image/png</Format>
+                <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://opendap.co-ops.nos.noaa.gov/thredds/wms/CBOFS/fmrc/Aggregated_7_day_CBOFS_Fields_Forecast_best.ncd?REQUEST=GetLegendGraphic&amp;PALETTE=default&amp;LAYERS=Pair&amp;STYLES=raster/default"/>
+            </LegendURL>
+        </Style>
+</Layer>
+    <Layer queryable="1">
+        <Name>Pair:face</Name>
+        <Title>surface air pressure (Unstaggered)</Title>
+        <Abstract>surface air pressure</Abstract>
+        <LatLonBoundingBox minx="-81.09811401367188" maxx="-74.24929809570312" miny="36.2036025" maxy="39.61108"/>
+        <BoundingBox SRS="CRS:84" minx="-81.09811401367188" maxx="-74.24929809570312" miny="36.2036025" maxy="39.61108"/>
+        <Dimension name="time" units="unknown"/>
+    
+        <Extent name="time" multipleValues="1" current="1" default="2026-10-21T19:00:00.000Z">
+            2026-10-13T01:00:00.000Z/2026-10-23T12:00:00.000Z/PT1H
+        </Extent>
+        <Style>
+            <Name>default-scalar/default</Name>
+            <Title>default-scalar/default</Title>
+            <Abstract>default-scalar style, using the default palette.  Available palettes can be found in the response to https://opendap.co-ops.nos.noaa.gov/thredds/wms/CBOFS/fmrc/Aggregated_7_day_CBOFS_Fields_Forecast_best.ncd?request=GetMetadata&amp;item=layerDetails&amp;layerName=Pair:face</Abstract>
+            <LegendURL width="110" height="264">
+                <Format>image/png</Format>
+                <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://opendap.co-ops.nos.noaa.gov/thredds/wms/CBOFS/fmrc/Aggregated_7_day_CBOFS_Fields_Forecast_best.ncd?REQUEST=GetLegendGraphic&amp;PALETTE=default&amp;LAYERS=Pair:face&amp;STYLES=default-scalar/default"/>
+            </LegendURL>
+        </Style>
+        <Style>
+            <Name>colored_contours/default</Name>
+            <Title>colored_contours/default</Title>
+            <Abstract>colored_contours style, using the default palette.  Available palettes can be found in the response to https://opendap.co-ops.nos.noaa.gov/thredds/wms/CBOFS/fmrc/Aggregated_7_day_CBOFS_Fields_Forecast_best.ncd?request=GetMetadata&amp;item=layerDetails&amp;layerName=Pair:face</Abstract>
+            <LegendURL width="110" height="264">
+                <Format>image/png</Format>
+                <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://opendap.co-ops.nos.noaa.gov/thredds/wms/CBOFS/fmrc/Aggregated_7_day_CBOFS_Fields_Forecast_best.ncd?REQUEST=GetLegendGraphic&amp;PALETTE=default&amp;LAYERS=Pair:face&amp;STYLES=colored_contours/default"/>
+            </LegendURL>
+        </Style>
+        <Style>
+            <Name>contours</Name>
+            <Title>contours</Title>
+            <Abstract>contours style</Abstract>
+        </Style>
+        <Style>
+            <Name>raster/default</Name>
+            <Title>raster/default</Title>
+            <Abstract>raster style, using the default palette.  Available palettes can be found in the response to https://opendap.co-ops.nos.noaa.gov/thredds/wms/CBOFS/fmrc/Aggregated_7_day_CBOFS_Fields_Forecast_best.ncd?request=GetMetadata&amp;item=layerDetails&amp;layerName=Pair:face</Abstract>
+            <LegendURL width="110" height="264">
+                <Format>image/png</Format>
+                <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://opendap.co-ops.nos.noaa.gov/thredds/wms/CBOFS/fmrc/Aggregated_7_day_CBOFS_Fields_Forecast_best.ncd?REQUEST=GetLegendGraphic&amp;PALETTE=default&amp;LAYERS=Pair:face&amp;STYLES=raster/default"/>
+            </LegendURL>
+        </Style>
+</Layer>
+    <Layer queryable="1">
+        <Name>Uwind</Name>
+        <Title>surface u-wind component</Title>
+        <Abstract>surface u-wind component</Abstract>
+        <LatLonBoundingBox minx="-81.17435455322266" maxx="-74.23077392578125" miny="36.1903575" maxy="39.6118175"/>
+        <BoundingBox SRS="CRS:84" minx="-81.17435455322266" maxx="-74.23077392578125" miny="36.1903575" maxy="39.6118175"/>
+        <Dimension name="time" units="unknown"/>
+    
+        <Extent name="time" multipleValues="1" current="1" default="2026-10-21T19:00:00.000Z">
+            2026-10-13T01:00:00.000Z/2026-10-23T12:00:00.000Z/PT1H
+        </Extent>
+        <Style>
+            <Name>default-scalar/default</Name>
+            <Title>default-scalar/default</Title>
+            <Abstract>default-scalar style, using the default palette.  Available palettes can be found in the response to https://opendap.co-ops.nos.noaa.gov/thredds/wms/CBOFS/fmrc/Aggregated_7_day_CBOFS_Fields_Forecast_best.ncd?request=GetMetadata&amp;item=layerDetails&amp;layerName=Uwind</Abstract>
+            <LegendURL width="110" height="264">
+                <Format>image/png</Format>
+                <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://opendap.co-ops.nos.noaa.gov/thredds/wms/CBOFS/fmrc/Aggregated_7_day_CBOFS_Fields_Forecast_best.ncd?REQUEST=GetLegendGraphic&amp;PALETTE=default&amp;LAYERS=Uwind&amp;STYLES=default-scalar/default"/>
+            </LegendURL>
+        </Style>
+        <Style>
+            <Name>colored_contours/default</Name>
+            <Title>colored_contours/default</Title>
+            <Abstract>colored_contours style, using the default palette.  Available palettes can be found in the response to https://opendap.co-ops.nos.noaa.gov/thredds/wms/CBOFS/fmrc/Aggregated_7_day_CBOFS_Fields_Forecast_best.ncd?request=GetMetadata&amp;item=layerDetails&amp;layerName=Uwind</Abstract>
+            <LegendURL width="110" height="264">
+                <Format>image/png</Format>
+                <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://opendap.co-ops.nos.noaa.gov/thredds/wms/CBOFS/fmrc/Aggregated_7_day_CBOFS_Fields_Forecast_best.ncd?REQUEST=GetLegendGraphic&amp;PALETTE=default&amp;LAYERS=Uwind&amp;STYLES=colored_contours/default"/>
+            </LegendURL>
+        </Style>
+        <Style>
+            <Name>contours</Name>
+            <Title>contours</Title>
+            <Abstract>contours style</Abstract>
+        </Style>
+        <Style>
+            <Name>raster/default</Name>
+            <Title>raster/default</Title>
+            <Abstract>raster style, using the default palette.  Available palettes can be found in the response to https://opendap.co-ops.nos.noaa.gov/thredds/wms/CBOFS/fmrc/Aggregated_7_day_CBOFS_Fields_Forecast_best.ncd?request=GetMetadata&amp;item=layerDetails&amp;layerName=Uwind</Abstract>
+            <LegendURL width="110" height="264">
+                <Format>image/png</Format>
+                <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://opendap.co-ops.nos.noaa.gov/thredds/wms/CBOFS/fmrc/Aggregated_7_day_CBOFS_Fields_Forecast_best.ncd?REQUEST=GetLegendGraphic&amp;PALETTE=default&amp;LAYERS=Uwind&amp;STYLES=raster/default"/>
+            </LegendURL>
+        </Style>
+</Layer>
+    <Layer queryable="1">
+        <Name>Uwind:face</Name>
+        <Title>surface u-wind component (Unstaggered)</Title>
+        <Abstract>surface u-wind component</Abstract>
+        <LatLonBoundingBox minx="-81.09811401367188" maxx="-74.24929809570312" miny="36.2036025" maxy="39.61108"/>
+        <BoundingBox SRS="CRS:84" minx="-81.09811401367188" maxx="-74.24929809570312" miny="36.2036025" maxy="39.61108"/>
+        <Dimension name="time" units="unknown"/>
+    
+        <Extent name="time" multipleValues="1" current="1" default="2026-10-21T19:00:00.000Z">
+            2026-10-13T01:00:00.000Z/2026-10-23T12:00:00.000Z/PT1H
+        </Extent>
+        <Style>
+            <Name>default-scalar/default</Name>
+            <Title>default-scalar/default</Title>
+            <Abstract>default-scalar style, using the default palette.  Available palettes can be found in the response to https://opendap.co-ops.nos.noaa.gov/thredds/wms/CBOFS/fmrc/Aggregated_7_day_CBOFS_Fields_Forecast_best.ncd?request=GetMetadata&amp;item=layerDetails&amp;layerName=Uwind:face</Abstract>
+            <LegendURL width="110" height="264">
+                <Format>image/png</Format>
+                <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://opendap.co-ops.nos.noaa.gov/thredds/wms/CBOFS/fmrc/Aggregated_7_day_CBOFS_Fields_Forecast_best.ncd?REQUEST=GetLegendGraphic&amp;PALETTE=default&amp;LAYERS=Uwind:face&amp;STYLES=default-scalar/default"/>
+            </LegendURL>
+        </Style>
+        <Style>
+            <Name>colored_contours/default</Name>
+            <Title>colored_contours/default</Title>
+            <Abstract>colored_contours style, using the default palette.  Available palettes can be found in the response to https://opendap.co-ops.nos.noaa.gov/thredds/wms/CBOFS/fmrc/Aggregated_7_day_CBOFS_Fields_Forecast_best.ncd?request=GetMetadata&amp;item=layerDetails&amp;layerName=Uwind:face</Abstract>
+            <LegendURL width="110" height="264">
+                <Format>image/png</Format>
+                <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://opendap.co-ops.nos.noaa.gov/thredds/wms/CBOFS/fmrc/Aggregated_7_day_CBOFS_Fields_Forecast_best.ncd?REQUEST=GetLegendGraphic&amp;PALETTE=default&amp;LAYERS=Uwind:face&amp;STYLES=colored_contours/default"/>
+            </LegendURL>
+        </Style>
+        <Style>
+            <Name>contours</Name>
+            <Title>contours</Title>
+            <Abstract>contours style</Abstract>
+        </Style>
+        <Style>
+            <Name>raster/default</Name>
+            <Title>raster/default</Title>
+            <Abstract>raster style, using the default palette.  Available palettes can be found in the response to https://opendap.co-ops.nos.noaa.gov/thredds/wms/CBOFS/fmrc/Aggregated_7_day_CBOFS_Fields_Forecast_best.ncd?request=GetMetadata&amp;item=layerDetails&amp;layerName=Uwind:face</Abstract>
+            <LegendURL width="110" height="264">
+                <Format>image/png</Format>
+                <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://opendap.co-ops.nos.noaa.gov/thredds/wms/CBOFS/fmrc/Aggregated_7_day_CBOFS_Fields_Forecast_best.ncd?REQUEST=GetLegendGraphic&amp;PALETTE=default&amp;LAYERS=Uwind:face&amp;STYLES=raster/default"/>
+            </LegendURL>
+        </Style>
+</Layer>
+    <Layer queryable="1">
+        <Name>Vwind</Name>
+        <Title>surface v-wind component</Title>
+        <Abstract>surface v-wind component</Abstract>
+        <LatLonBoundingBox minx="-81.17435455322266" maxx="-74.23077392578125" miny="36.1903575" maxy="39.6118175"/>
+        <BoundingBox SRS="CRS:84" minx="-81.17435455322266" maxx="-74.23077392578125" miny="36.1903575" maxy="39.6118175"/>
+        <Dimension name="time" units="unknown"/>
+    
+        <Extent name="time" multipleValues="1" current="1" default="2026-10-21T19:00:00.000Z">
+            2026-10-13T01:00:00.000Z/2026-10-23T12:00:00.000Z/PT1H
+        </Extent>
+        <Style>
+            <Name>default-scalar/default</Name>
+            <Title>default-scalar/default</Title>
+            <Abstract>default-scalar style, using the default palette.  Available palettes can be found in the response to https://opendap.co-ops.nos.noaa.gov/thredds/wms/CBOFS/fmrc/Aggregated_7_day_CBOFS_Fields_Forecast_best.ncd?request=GetMetadata&amp;item=layerDetails&amp;layerName=Vwind</Abstract>
+            <LegendURL width="110" height="264">
+                <Format>image/png</Format>
+                <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://opendap.co-ops.nos.noaa.gov/thredds/wms/CBOFS/fmrc/Aggregated_7_day_CBOFS_Fields_Forecast_best.ncd?REQUEST=GetLegendGraphic&amp;PALETTE=default&amp;LAYERS=Vwind&amp;STYLES=default-scalar/default"/>
+            </LegendURL>
+        </Style>
+        <Style>
+            <Name>colored_contours/default</Name>
+            <Title>colored_contours/default</Title>
+            <Abstract>colored_contours style, using the default palette.  Available palettes can be found in the response to https://opendap.co-ops.nos.noaa.gov/thredds/wms/CBOFS/fmrc/Aggregated_7_day_CBOFS_Fields_Forecast_best.ncd?request=GetMetadata&amp;item=layerDetails&amp;layerName=Vwind</Abstract>
+            <LegendURL width="110" height="264">
+                <Format>image/png</Format>
+                <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://opendap.co-ops.nos.noaa.gov/thredds/wms/CBOFS/fmrc/Aggregated_7_day_CBOFS_Fields_Forecast_best.ncd?REQUEST=GetLegendGraphic&amp;PALETTE=default&amp;LAYERS=Vwind&amp;STYLES=colored_contours/default"/>
+            </LegendURL>
+        </Style>
+        <Style>
+            <Name>contours</Name>
+            <Title>contours</Title>
+            <Abstract>contours style</Abstract>
+        </Style>
+        <Style>
+            <Name>raster/default</Name>
+            <Title>raster/default</Title>
+            <Abstract>raster style, using the default palette.  Available palettes can be found in the response to https://opendap.co-ops.nos.noaa.gov/thredds/wms/CBOFS/fmrc/Aggregated_7_day_CBOFS_Fields_Forecast_best.ncd?request=GetMetadata&amp;item=layerDetails&amp;layerName=Vwind</Abstract>
+            <LegendURL width="110" height="264">
+                <Format>image/png</Format>
+                <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://opendap.co-ops.nos.noaa.gov/thredds/wms/CBOFS/fmrc/Aggregated_7_day_CBOFS_Fields_Forecast_best.ncd?REQUEST=GetLegendGraphic&amp;PALETTE=default&amp;LAYERS=Vwind&amp;STYLES=raster/default"/>
+            </LegendURL>
+        </Style>
+</Layer>
+    <Layer queryable="1">
+        <Name>Vwind:face</Name>
+        <Title>surface v-wind component (Unstaggered)</Title>
+        <Abstract>surface v-wind component</Abstract>
+        <LatLonBoundingBox minx="-81.09811401367188" maxx="-74.24929809570312" miny="36.2036025" maxy="39.61108"/>
+        <BoundingBox SRS="CRS:84" minx="-81.09811401367188" maxx="-74.24929809570312" miny="36.2036025" maxy="39.61108"/>
+        <Dimension name="time" units="unknown"/>
+    
+        <Extent name="time" multipleValues="1" current="1" default="2026-10-21T19:00:00.000Z">
+            2026-10-13T01:00:00.000Z/2026-10-23T12:00:00.000Z/PT1H
+        </Extent>
+        <Style>
+            <Name>default-scalar/default</Name>
+            <Title>default-scalar/default</Title>
+            <Abstract>default-scalar style, using the default palette.  Available palettes can be found in the response to https://opendap.co-ops.nos.noaa.gov/thredds/wms/CBOFS/fmrc/Aggregated_7_day_CBOFS_Fields_Forecast_best.ncd?request=GetMetadata&amp;item=layerDetails&amp;layerName=Vwind:face</Abstract>
+            <LegendURL width="110" height="264">
+                <Format>image/png</Format>
+                <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://opendap.co-ops.nos.noaa.gov/thredds/wms/CBOFS/fmrc/Aggregated_7_day_CBOFS_Fields_Forecast_best.ncd?REQUEST=GetLegendGraphic&amp;PALETTE=default&amp;LAYERS=Vwind:face&amp;STYLES=default-scalar/default"/>
+            </LegendURL>
+        </Style>
+        <Style>
+            <Name>colored_contours/default</Name>
+            <Title>colored_contours/default</Title>
+            <Abstract>colored_contours style, using the default palette.  Available palettes can be found in the response to https://opendap.co-ops.nos.noaa.gov/thredds/wms/CBOFS/fmrc/Aggregated_7_day_CBOFS_Fields_Forecast_best.ncd?request=GetMetadata&amp;item=layerDetails&amp;layerName=Vwind:face</Abstract>
+            <LegendURL width="110" height="264">
+                <Format>image/png</Format>
+                <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://opendap.co-ops.nos.noaa.gov/thredds/wms/CBOFS/fmrc/Aggregated_7_day_CBOFS_Fields_Forecast_best.ncd?REQUEST=GetLegendGraphic&amp;PALETTE=default&amp;LAYERS=Vwind:face&amp;STYLES=colored_contours/default"/>
+            </LegendURL>
+        </Style>
+        <Style>
+            <Name>contours</Name>
+            <Title>contours</Title>
+            <Abstract>contours style</Abstract>
+        </Style>
+        <Style>
+            <Name>raster/default</Name>
+            <Title>raster/default</Title>
+            <Abstract>raster style, using the default palette.  Available palettes can be found in the response to https://opendap.co-ops.nos.noaa.gov/thredds/wms/CBOFS/fmrc/Aggregated_7_day_CBOFS_Fields_Forecast_best.ncd?request=GetMetadata&amp;item=layerDetails&amp;layerName=Vwind:face</Abstract>
+            <LegendURL width="110" height="264">
+                <Format>image/png</Format>
+                <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://opendap.co-ops.nos.noaa.gov/thredds/wms/CBOFS/fmrc/Aggregated_7_day_CBOFS_Fields_Forecast_best.ncd?REQUEST=GetLegendGraphic&amp;PALETTE=default&amp;LAYERS=Vwind:face&amp;STYLES=raster/default"/>
+            </LegendURL>
+        </Style>
+</Layer>
+            </Layer>
+        </Layer>
+    </Capability>
+</WMT_MS_Capabilities>

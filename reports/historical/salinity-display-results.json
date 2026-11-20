@@ -1,0 +1,36 @@
+{
+  "origin": "http://127.0.0.1:61386",
+  "models": [
+    {
+      "model": "CBOFS",
+      "palette": "default",
+      "opacityChecked": true,
+      "status": "CBOFS salinity \u00b7 2026-10-21T18:00:00.000Z \u00b7 sigma -0.025",
+      "tiles": 8,
+      "opaquePixels": 56897,
+      "legendVisible": true,
+      "legendLoaded": true
+    },
+    {
+      "model": "CBOFS",
+      "palette": "psu-viridis",
+      "opacityChecked": true,
+      "status": "CBOFS salinity \u00b7 2026-10-21T18:00:00.000Z \u00b7 sigma -0.025",
+      "tiles": 8,
+      "opaquePixels": 56897,
+      "legendVisible": true,
+      "legendLoaded": true
+    },
+    {
+      "model": "CBOFS",
+      "palette": "psu-inferno",
+      "opacityChecked": true,
+      "status": "CBOFS salinity \u00b7 2026-10-21T18:00:00.000Z \u00b7 sigma -0.025",
+      "tiles": 8,
+      "opaquePixels": 56897,
+      "legendVisible": true,
+      "legendLoaded": true
+    }
+  ],
+  "mapReady": true
+}

@@ -1,0 +1,42 @@
+<!doctype html><meta charset="utf-8"><title>Salinity behavior checks</title>
+<pre id="results">RUNNING</pre>
+<script>
+var added, removed = 0, fail = false;
+var L = {
+ control: function () { return {addTo: function (map) { document.body.appendChild(this.onAdd(map)); }}; },
+ DomUtil: {create: function (tag) { return document.createElement(tag); }},
+ DomEvent: {disableClickPropagation: function () {}, disableScrollPropagation: function () {}},
+ tileLayer: {wms: function (url, options) {
+   added = {url: url, options: options};
+   return {on: function () {return this;}, addTo: function () {return this;}};
+ }}
+};
+var catalog = '<catalog><service name="all" serviceType="Compound"><service name="wms" serviceType="WMS" base="/thredds/wms/"/></service><dataset serviceName="all"><dataset urlPath="CBOFS/fmrc/test_best.ncd"/></dataset></catalog>';
+var caps = '<WMT_MS_Capabilities><Capability><Layer><Layer><Name>salt</Name><Style><Name>boxfill/rainbow</Name></Style><Dimension name="elevation" units="sigma"/><Extent name="elevation">-0.9,-0.5,-0.01</Extent><Extent name="time" default="2026-10-21T12:00:00Z">2026-10-21T12:00:00Z,2026-10-21T13:00:00Z</Extent></Layer></Layer></Capability></WMT_MS_Capabilities>';
+window.fetch = async function (url) {return {ok: !fail, status: 503, text: async function () {return String(url).includes('GetCapabilities') ? caps : catalog;}};};
+</script>
+<script src="../web/thredds-salinity.js"></script>
+<script>
+(async function () {
+ var results = [];
+ function check(value, message) {if (!value) throw Error(message); results.push('PASS: '+message);}
+ try {
+  addThreddsSalinity({removeLayer: function () {removed++;}});
+  var load = document.querySelector('button'), clear = document.querySelectorAll('button')[1];
+  await load.onclick();
+  check(added.url.endsWith('/thredds/wms/CBOFS/fmrc/test_best.ncd'), 'Discover inherited WMS service');
+  check(added.options.layers === 'salt' && added.options.elevation === -0.01, 'Select salt and top sigma layer');
+  check(added.options.time === '2026-10-21T12:00:00Z', 'Use advertised default time');
+  clear.onclick(); check(removed === 1, 'Clear overlay');
+  fail = true; await load.onclick();
+  check(document.querySelector('[role=status]').textContent.includes('503'), 'Display service outage');
+  fail = false; added = null;
+  document.querySelector('input').value = '2020-01-01T00:00'; await load.onclick();
+  check(!added && document.querySelector('[role=status]').textContent.includes('outside'), 'Reject unavailable time');
+  document.querySelector('input').value = '';
+  caps = caps.replace('-0.9,-0.5,-0.01', '1,10,100'); await load.onclick();
+  check(!added && document.querySelector('[role=status]').textContent.includes('vertical'), 'Reject unknown vertical convention');
+  document.getElementById('results').textContent = results.join('\n');
+ } catch (e) {document.getElementById('results').textContent = results.join('\n')+'\nFAIL: '+e.stack;}
+}());
+</script>

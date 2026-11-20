@@ -1,0 +1,516 @@
+{
+  "checks": [
+    {
+      "model": "CBOFS",
+      "field": "salt",
+      "rendering": "WMS",
+      "count": 70946,
+      "status": "CBOFS salinity | 2026-10-21T19:00:00.000Z | sigma -0.025"
+    },
+    {
+      "model": "CBOFS",
+      "field": "temp",
+      "rendering": "WMS",
+      "count": 70946,
+      "status": "CBOFS temperature | 2026-10-21T19:00:00.000Z | sigma -0.025"
+    },
+    {
+      "model": "CBOFS",
+      "field": "zeta",
+      "rendering": "WMS",
+      "count": 70946,
+      "status": "CBOFS water level | 2026-10-21T19:00:00.000Z"
+    },
+    {
+      "model": "CBOFS",
+      "field": "currents",
+      "rendering": "arrows",
+      "count": 213,
+      "status": "CBOFS currents | 2026-10-21T19:00:00Z | surface"
+    },
+    {
+      "model": "CBOFS",
+      "field": "wind",
+      "rendering": "arrows",
+      "count": 229,
+      "status": "CBOFS wind | 2026-10-21T19:00:00Z"
+    },
+    {
+      "model": "CIOFS",
+      "field": "salt",
+      "rendering": "WMS",
+      "count": 144727,
+      "status": "CIOFS salinity | 2026-10-21T19:00:00.000Z | sigma -0.016666666666666666"
+    },
+    {
+      "model": "CIOFS",
+      "field": "temp",
+      "rendering": "WMS",
+      "count": 144727,
+      "status": "CIOFS temperature | 2026-10-21T19:00:00.000Z | sigma -0.016666666666666666"
+    },
+    {
+      "model": "CIOFS",
+      "field": "zeta",
+      "rendering": "WMS",
+      "count": 462130,
+      "status": "CIOFS water level | 2026-10-21T19:00:00.000Z"
+    },
+    {
+      "model": "CIOFS",
+      "field": "currents",
+      "rendering": "arrows",
+      "count": 143,
+      "status": "CIOFS currents | 2026-10-21T19:00:00Z | surface"
+    },
+    {
+      "model": "CIOFS",
+      "field": "wind",
+      "rendering": "arrows",
+      "count": 161,
+      "status": "CIOFS wind | 2026-10-21T19:00:00Z"
+    },
+    {
+      "model": "DBOFS",
+      "field": "salt",
+      "rendering": "WMS",
+      "count": 89725,
+      "status": "DBOFS salinity | 2026-10-21T19:00:00.000Z | sigma -0.05"
+    },
+    {
+      "model": "DBOFS",
+      "field": "temp",
+      "rendering": "WMS",
+      "count": 89725,
+      "status": "DBOFS temperature | 2026-10-21T19:00:00.000Z | sigma -0.05"
+    },
+    {
+      "model": "DBOFS",
+      "field": "zeta",
+      "rendering": "WMS",
+      "count": 89725,
+      "status": "DBOFS water level | 2026-10-21T19:00:00.000Z"
+    },
+    {
+      "model": "DBOFS",
+      "field": "currents",
+      "rendering": "arrows",
+      "count": 61,
+      "status": "DBOFS currents | 2026-10-21T19:00:00Z | surface"
+    },
+    {
+      "model": "DBOFS",
+      "field": "wind",
+      "rendering": "arrows",
+      "count": 64,
+      "status": "DBOFS wind | 2026-10-21T19:00:00Z"
+    },
+    {
+      "model": "GOMOFS",
+      "field": "salt",
+      "rendering": "WMS",
+      "count": 108496,
+      "status": "GOMOFS salinity | 2026-10-21T18:00:00.000Z | sigma -0.016666666666666666"
+    },
+    {
+      "model": "GOMOFS",
+      "field": "temp",
+      "rendering": "WMS",
+      "count": 108496,
+      "status": "GOMOFS temperature | 2026-10-21T18:00:00.000Z | sigma -0.016666666666666666"
+    },
+    {
+      "model": "GOMOFS",
+      "field": "zeta",
+      "rendering": "WMS",
+      "count": 135757,
+      "status": "GOMOFS water level | 2026-10-21T18:00:00.000Z"
+    },
+    {
+      "model": "GOMOFS",
+      "field": "currents",
+      "rendering": "arrows",
+      "count": 232,
+      "status": "GOMOFS currents | 2026-10-21T18:00:00Z | surface"
+    },
+    {
+      "model": "GOMOFS",
+      "field": "wind",
+      "rendering": "arrows",
+      "count": 232,
+      "status": "GOMOFS wind | 2026-10-21T18:00:00Z"
+    },
+    {
+      "model": "LEOFS",
+      "field": "salt",
+      "rendering": "mesh",
+      "count": 31460,
+      "status": "LEOFS salinity | 2026-10-21T19:00:00Z"
+    },
+    {
+      "model": "LEOFS",
+      "field": "temp",
+      "rendering": "mesh",
+      "count": 31460,
+      "status": "LEOFS temperature | 2026-10-21T19:00:00Z"
+    },
+    {
+      "model": "LEOFS",
+      "field": "zeta",
+      "rendering": "mesh",
+      "count": 31460,
+      "status": "LEOFS water level | 2026-10-21T19:00:00Z"
+    },
+    {
+      "model": "LEOFS",
+      "field": "currents",
+      "rendering": "arrows",
+      "count": 81,
+      "status": "LEOFS currents | 2026-10-21T19:00:00Z | surface"
+    },
+    {
+      "model": "LEOFS",
+      "field": "wind",
+      "rendering": "arrows",
+      "count": 81,
+      "status": "LEOFS wind | 2026-10-21T19:00:00Z"
+    },
+    {
+      "model": "LMHOFS",
+      "field": "salt",
+      "rendering": "mesh",
+      "count": 39589,
+      "status": "LMHOFS salinity | 2026-10-21T19:00:00Z"
+    },
+    {
+      "model": "LMHOFS",
+      "field": "temp",
+      "rendering": "mesh",
+      "count": 39589,
+      "status": "LMHOFS temperature | 2026-10-21T19:00:00Z"
+    },
+    {
+      "model": "LMHOFS",
+      "field": "zeta",
+      "rendering": "mesh",
+      "count": 39589,
+      "status": "LMHOFS water level | 2026-10-21T19:00:00Z"
+    },
+    {
+      "model": "LMHOFS",
+      "field": "currents",
+      "rendering": "arrows",
+      "count": 109,
+      "status": "LMHOFS currents | 2026-10-21T19:00:00Z | surface"
+    },
+    {
+      "model": "LMHOFS",
+      "field": "wind",
+      "rendering": "arrows",
+      "count": 109,
+      "status": "LMHOFS wind | 2026-10-21T19:00:00Z"
+    },
+    {
+      "model": "LOOFS",
+      "field": "salt",
+      "rendering": "mesh",
+      "count": 24618,
+      "status": "LOOFS salinity | 2026-10-21T19:00:00Z"
+    },
+    {
+      "model": "LOOFS",
+      "field": "temp",
+      "rendering": "mesh",
+      "count": 24618,
+      "status": "LOOFS temperature | 2026-10-21T19:00:00Z"
+    },
+    {
+      "model": "LOOFS",
+      "field": "zeta",
+      "rendering": "mesh",
+      "count": 24618,
+      "status": "LOOFS water level | 2026-10-21T19:00:00Z"
+    },
+    {
+      "model": "LOOFS",
+      "field": "currents",
+      "rendering": "arrows",
+      "count": 66,
+      "status": "LOOFS currents | 2026-10-21T19:00:00Z | surface"
+    },
+    {
+      "model": "LOOFS",
+      "field": "wind",
+      "rendering": "arrows",
+      "count": 66,
+      "status": "LOOFS wind | 2026-10-21T19:00:00Z"
+    },
+    {
+      "model": "LSOFS",
+      "field": "salt",
+      "rendering": "mesh",
+      "count": 30714,
+      "status": "LSOFS salinity | 2026-10-21T19:00:00Z"
+    },
+    {
+      "model": "LSOFS",
+      "field": "temp",
+      "rendering": "mesh",
+      "count": 30714,
+      "status": "LSOFS temperature | 2026-10-21T19:00:00Z"
+    },
+    {
+      "model": "LSOFS",
+      "field": "zeta",
+      "rendering": "mesh",
+      "count": 30714,
+      "status": "LSOFS water level | 2026-10-21T19:00:00Z"
+    },
+    {
+      "model": "LSOFS",
+      "field": "currents",
+      "rendering": "arrows",
+      "count": 81,
+      "status": "LSOFS currents | 2026-10-21T19:00:00Z | surface"
+    },
+    {
+      "model": "LSOFS",
+      "field": "wind",
+      "rendering": "arrows",
+      "count": 81,
+      "status": "LSOFS wind | 2026-10-21T19:00:00Z"
+    },
+    {
+      "model": "NGOFS2",
+      "field": "salt",
+      "rendering": "mesh",
+      "count": 48843,
+      "status": "NGOFS2 salinity | 2026-10-21T18:00:00Z"
+    },
+    {
+      "model": "NGOFS2",
+      "field": "temp",
+      "rendering": "mesh",
+      "count": 48843,
+      "status": "NGOFS2 temperature | 2026-10-21T18:00:00Z"
+    },
+    {
+      "model": "NGOFS2",
+      "field": "zeta",
+      "rendering": "mesh",
+      "count": 48843,
+      "status": "NGOFS2 water level | 2026-10-21T18:00:00Z"
+    },
+    {
+      "model": "NGOFS2",
+      "field": "currents",
+      "rendering": "arrows",
+      "count": 120,
+      "status": "NGOFS2 currents | 2026-10-21T18:00:00Z | surface"
+    },
+    {
+      "model": "NGOFS2",
+      "field": "wind",
+      "rendering": "arrows",
+      "count": 120,
+      "status": "NGOFS2 wind | 2026-10-21T18:00:00Z"
+    },
+    {
+      "model": "NYOFS",
+      "field": "zeta",
+      "rendering": "mesh",
+      "count": 7512,
+      "status": "NYOFS water level | 2026-10-21T18:59:45.600000Z"
+    },
+    {
+      "model": "NYOFS",
+      "field": "currents",
+      "rendering": "arrows",
+      "count": 45,
+      "status": "NYOFS currents | 2026-10-21T18:59:45.600000Z | surface"
+    },
+    {
+      "model": "NYOFS",
+      "field": "wind",
+      "rendering": "arrows",
+      "count": 45,
+      "status": "NYOFS wind | 2026-10-21T18:59:45.600000Z"
+    },
+    {
+      "model": "SFBOFS",
+      "field": "salt",
+      "rendering": "mesh",
+      "count": 46014,
+      "status": "SFBOFS salinity | 2026-10-21T19:00:00Z"
+    },
+    {
+      "model": "SFBOFS",
+      "field": "temp",
+      "rendering": "mesh",
+      "count": 46014,
+      "status": "SFBOFS temperature | 2026-10-21T19:00:00Z"
+    },
+    {
+      "model": "SFBOFS",
+      "field": "zeta",
+      "rendering": "mesh",
+      "count": 46014,
+      "status": "SFBOFS water level | 2026-10-21T19:00:00Z"
+    },
+    {
+      "model": "SFBOFS",
+      "field": "currents",
+      "rendering": "arrows",
+      "count": 135,
+      "status": "SFBOFS currents | 2026-10-21T19:00:00Z | surface"
+    },
+    {
+      "model": "SFBOFS",
+      "field": "wind",
+      "rendering": "arrows",
+      "count": 135,
+      "status": "SFBOFS wind | 2026-10-21T19:00:00Z"
+    },
+    {
+      "model": "SJROFS",
+      "field": "salt",
+      "rendering": "mesh",
+      "count": 7475,
+      "status": "SJROFS salinity | 2026-10-21T18:30:14.400000Z"
+    },
+    {
+      "model": "SJROFS",
+      "field": "temp",
+      "rendering": "mesh",
+      "count": 7475,
+      "status": "SJROFS temperature | 2026-10-21T18:30:14.400000Z"
+    },
+    {
+      "model": "SJROFS",
+      "field": "zeta",
+      "rendering": "mesh",
+      "count": 7475,
+      "status": "SJROFS water level | 2026-10-21T18:30:14.400000Z"
+    },
+    {
+      "model": "SJROFS",
+      "field": "currents",
+      "rendering": "arrows",
+      "count": 44,
+      "status": "SJROFS currents | 2026-10-21T18:30:14.400000Z | surface"
+    },
+    {
+      "model": "SJROFS",
+      "field": "wind",
+      "rendering": "arrows",
+      "count": 44,
+      "status": "SJROFS wind | 2026-10-21T18:30:14.400000Z"
+    },
+    {
+      "model": "SSCOFS",
+      "field": "salt",
+      "rendering": "mesh",
+      "count": 33595,
+      "status": "SSCOFS salinity | 2026-10-21T19:00:00Z"
+    },
+    {
+      "model": "SSCOFS",
+      "field": "temp",
+      "rendering": "mesh",
+      "count": 33595,
+      "status": "SSCOFS temperature | 2026-10-21T19:00:00Z"
+    },
+    {
+      "model": "SSCOFS",
+      "field": "zeta",
+      "rendering": "mesh",
+      "count": 33595,
+      "status": "SSCOFS water level | 2026-10-21T19:00:00Z"
+    },
+    {
+      "model": "SSCOFS",
+      "field": "currents",
+      "rendering": "arrows",
+      "count": 119,
+      "status": "SSCOFS currents | 2026-10-21T19:00:00Z | surface"
+    },
+    {
+      "model": "SSCOFS",
+      "field": "wind",
+      "rendering": "arrows",
+      "count": 119,
+      "status": "SSCOFS wind | 2026-10-21T19:00:00Z"
+    },
+    {
+      "model": "TBOFS",
+      "field": "salt",
+      "rendering": "WMS",
+      "count": 66179,
+      "status": "TBOFS salinity | 2026-10-21T19:00:00.000Z | sigma -0.045454545454545456"
+    },
+    {
+      "model": "TBOFS",
+      "field": "temp",
+      "rendering": "WMS",
+      "count": 66179,
+      "status": "TBOFS temperature | 2026-10-21T19:00:00.000Z | sigma -0.045454545454545456"
+    },
+    {
+      "model": "TBOFS",
+      "field": "zeta",
+      "rendering": "WMS",
+      "count": 80412,
+      "status": "TBOFS water level | 2026-10-21T19:00:00.000Z"
+    },
+    {
+      "model": "TBOFS",
+      "field": "currents",
+      "rendering": "arrows",
+      "count": 149,
+      "status": "TBOFS currents | 2026-10-21T19:00:00Z | surface"
+    },
+    {
+      "model": "TBOFS",
+      "field": "wind",
+      "rendering": "arrows",
+      "count": 150,
+      "status": "TBOFS wind | 2026-10-21T19:00:00Z"
+    },
+    {
+      "model": "WCOFS",
+      "field": "salt",
+      "rendering": "WMS",
+      "count": 326559,
+      "status": "WCOFS salinity | 2026-10-21T18:00:00.000Z | sigma -0.0125"
+    },
+    {
+      "model": "WCOFS",
+      "field": "temp",
+      "rendering": "WMS",
+      "count": 326559,
+      "status": "WCOFS temperature | 2026-10-21T18:00:00.000Z | sigma -0.0125"
+    },
+    {
+      "model": "WCOFS",
+      "field": "zeta",
+      "rendering": "WMS",
+      "count": 326559,
+      "status": "WCOFS water level | 2026-10-21T18:00:00.000Z"
+    },
+    {
+      "model": "WCOFS",
+      "field": "currents",
+      "rendering": "arrows",
+      "count": 486,
+      "status": "WCOFS currents | 2026-10-21T18:00:00Z | surface"
+    },
+    {
+      "model": "WCOFS",
+      "field": "wind",
+      "rendering": "arrows",
+      "count": 489,
+      "status": "WCOFS wind | 2026-10-21T18:00:00Z"
+    }
+  ],
+  "errors": []
+}

@@ -1,0 +1,78 @@
+<!doctype html><meta charset="utf-8"><title>OFS station behavior tests</title>
+<pre id="results">RUNNING</pre>
+<script src="../web/display_ofsmap.js"></script>
+<script>
+// Dependency-free behavioral tests with controlled map and asynchronous requests.
+var requests = [], opened = [], messages = [], zoom = 4;
+function assert(ok, message) { if (!ok) throw Error(message); messages.push('PASS: ' + message); }
+function bounds(s, w, n, e) {
+  return {s:s,w:w,n:n,e:e,
+    contains:function(p) {return p[0]>=s && p[0]<=n && p[1]>=w && p[1]<=e;},
+    intersects:function(b) {return b.n>=s && b.s<=n && b.e>=w && b.w<=e;}};
+}
+var view = bounds(37,-123,39,-121);
+var L = {
+  latLngBounds:function(a,b) {return bounds(a[0],a[1],b[0],b[1]);},
+  icon:function(options) {return options;},
+  marker:function(position, options) {
+    return {position:position, options:options, events:{},
+      getLatLng:function() {return position;},
+      on:function(event, fn) {this.events[event]=fn;return this;},
+      bindLabel:function(text) {this.text=text;this.label={on:function(){}};return this;}};
+  }
+};
+var $ = {ajax:function(options) {
+  var request={options:options,done:function(fn){this.resolve=fn;return this;},
+    fail:function(fn){this.reject=fn;return this;}};
+  requests.push(request);return request;
+}};
+window.open=function(url) {opened.push(url);};
+map={getZoom:function(){return zoom;},getBounds:function(){return view;}};
+var visible = new Set();
+ofs_station_layer={clearLayers:function(){visible.clear();},hasLayer:function(m){return visible.has(m);},
+  addLayer:function(m){visible.add(m);},removeLayer:function(m){visible.delete(m);}};
+var station={stationID:'A',OFSStationName:'Bay & <Point>',lat:38,lng:-122,subdomain:'la_en'};
+function data(rows, status) {return {OFSStationList:rows,OFSDisseminationStatus:{diss_status:status||'on'}};}
+try {
+  // Restrict the region catalog for deterministic request ordering.
+  ofs_station_regions={sfb:[36,-124,39,-121],cb:[35,-78,40,-74]};
+  update_ofs_stations();
+  assert(requests.length===0 && visible.size===0,'national zoom makes no station requests');
+  zoom=9;update_ofs_stations();update_ofs_stations();
+  assert(requests.length===1,'overlapping zoom/move events share one pending regional request');
+  assert(requests[0].options.url.indexOf('type=sfbofs')>=0,'request uses SFBOFS MDAPI code');
+  zoom=4;requests[0].resolve(data([station]));
+  assert(visible.size===0,'late response cannot add markers after zooming out');
+  zoom=9;update_ofs_stations();
+  assert(visible.size===1 && requests.length===1,'zooming back reuses cached markers');
+  var marker=Array.from(visible)[0];marker.events.click();
+  var link=new URL(opened[0],'https://tidesandcurrents.noaa.gov');
+  assert(link.searchParams.get('stname')===station.OFSStationName && link.searchParams.get('subdomain')==='la',
+    'station links encode names and select an actual subdomain');
+  assert(marker.text==='Bay &amp; &lt;Point&gt;','labels escape metadata HTML');
+  view=bounds(36,-77,39,-75);update_ofs_stations();
+  assert(visible.size===0 && requests.length===2,'panning removes old stations and loads a new region');
+  requests[1].reject();update_ofs_stations();
+  assert(requests.length===2,'failed requests have a retry cooldown');
+  ofs_station_cache.cb.retryAfter=Date.now()-1;update_ofs_stations();
+  assert(requests.length===3,'failed regions can be retried');
+  requests[2].resolve(data([{stationID:'B',lat:38,lng:-76,subdomain:'0'}],'off'));
+  assert(visible.size===0,'dissemination-off regions do not show stations');
+  view=bounds(37,-123,39,-121);update_ofs_stations();update_ofs_stations();
+  assert(visible.size===1 && Array.from(visible)[0]===marker,'repeat navigation preserves one marker instance');
+  var rows=[station,station,
+    {lat:38,lng:-122,OFSStationName:'Missing ID one',subdomain:'en'},
+    {lat:38,lng:-122,OFSStationName:'Missing ID two',subdomain:'en'},
+    {lat:null,lng:-122},{lat:'',lng:-122},{lat:100,lng:-122}];
+  var markers=create_ofs_station_markers(rows,'sfb');
+  assert(markers.length===3,'deduplication preserves distinct missing-ID stations and rejects invalid coordinates');
+  markers[1].events.click();
+  assert(opened[1].indexOf('stnid=NULL')>=0,'missing ID follows regional station-link convention');
+  ofs_station_cache={};requests=[];update_ofs_stations();
+  requests[0].resolve({error:'unavailable'});
+  assert(ofs_station_cache.sfb.retryAfter>Date.now(),'invalid API responses remain retryable');
+  document.getElementById('results').textContent=messages.join('\n')+'\nALL TESTS PASSED';
+} catch(error) {
+  document.getElementById('results').textContent=messages.join('\n')+'\nFAIL: '+error.stack;
+}
+</script>

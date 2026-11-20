@@ -1,0 +1,15 @@
+Dataset {
+    Float32 time[time = 49];
+    Float32 lon[ny = 105][nx = 188];
+    Float32 lat[ny = 105][nx = 188];
+    Float32 mask[ny = 105][nx = 188];
+    Float32 depth[ny = 105][nx = 188];
+    Float32 sigma[sigma = 6];
+    Float32 zeta[time = 49][ny = 105][nx = 188];
+    Float32 air_u[time = 49][ny = 105][nx = 188];
+    Float32 air_v[time = 49][ny = 105][nx = 188];
+    Float32 u[time = 49][sigma = 6][ny = 105][nx = 188];
+    Float32 v[time = 49][sigma = 6][ny = 105][nx = 188];
+    Float32 temp[time = 49][sigma = 6][ny = 105][nx = 188];
+    Float32 salt[time = 49][sigma = 6][ny = 105][nx = 188];
+} NOAA/SJROFS/MODELS/2026/10/21/sjrofs.t17z.20261021.fields.forecast.nc;

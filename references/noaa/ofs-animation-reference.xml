@@ -1,0 +1,5791 @@
+<?xml version="1.0"?>
+<Operational_Forecast_System>
+
+<!-- St. John's River OFS -->
+
+<OFS_Animation>
+  <ofs_region>sj</ofs_region>
+  <subdomain>0</subdomain>
+  <type>cu</type>
+  <link_name>Nowcast</link_name>
+  <order_num>1</order_num>
+  <model_type>currents_nowcast</model_type>
+  <option_file>SJROFS_sj_all_cu_now_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>sj</ofs_region>
+  <subdomain>0</subdomain>
+  <type>cu</type>
+  <link_name>Forecast Guidance</link_name>
+  <order_num>2</order_num>
+  <model_type>currents_forecast</model_type>
+  <option_file>SJROFS_sj_all_cu_fore_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>sj</ofs_region>
+  <subdomain>0</subdomain>
+  <type>cu</type>
+  <link_name>JAX PORTS - Nowcast</link_name>
+  <order_num>3</order_num>
+  <model_type>currents_nowcast_jx</model_type>
+  <option_file>SJROFS_jports_cu_now_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>sj</ofs_region>
+  <subdomain>0</subdomain>
+  <type>cu</type>
+  <link_name>JAX PORTS - Forecast Guidance</link_name>
+  <order_num>4</order_num>
+  <model_type>currents_forecast_jx</model_type>
+  <option_file>SJROFS_jports_cu_fore_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>sj</ofs_region>
+  <subdomain>0</subdomain>
+  <type>wt</type>
+  <link_name>Nowcast</link_name>
+  <order_num>1</order_num>
+  <model_type>wtemp_nowcast</model_type>
+  <option_file>SJROFS_sj_all_temp_now_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>sj</ofs_region>
+  <subdomain>0</subdomain>
+  <type>wt</type>
+  <link_name>Forecast Guidance</link_name>
+  <order_num>2</order_num>
+  <model_type>wtemp_forecast</model_type>
+  <option_file>SJROFS_sj_all_temp_fore_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>sj</ofs_region>
+  <subdomain>0</subdomain>
+  <type>wt</type>
+  <link_name>JAX PORTS - Nowcast</link_name>
+  <order_num>3</order_num>
+  <model_type>wtemp_nowcast_jx</model_type>
+  <option_file>SJROFS_jports_temp_now_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>sj</ofs_region>
+  <subdomain>0</subdomain>
+  <type>wt</type>
+  <link_name>JAX PORTS - Forecast Guidance</link_name>
+  <order_num>4</order_num>
+  <model_type>wtemp_forecast_jx</model_type>
+  <option_file>SJROFS_jports_temp_fore_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>sj</ofs_region>
+  <subdomain>0</subdomain>
+  <type>wind</type>
+  <link_name>Nowcast</link_name>
+  <order_num>1</order_num>
+  <model_type>wind_nowcast</model_type>
+  <option_file>SJROFS_sj_all_wind_now_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>sj</ofs_region>
+  <subdomain>0</subdomain>
+  <type>wind</type>
+  <link_name>Forecast Guidance</link_name>
+  <order_num>2</order_num>
+  <model_type>wind_forecast</model_type>
+  <option_file>SJROFS_sj_all_wind_fore_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>sj</ofs_region>
+  <subdomain>0</subdomain>
+  <type>wind</type>
+  <link_name>JAX PORTS - Nowcast</link_name>
+  <order_num>3</order_num>
+  <model_type>wind_nowcast_jx</model_type>
+  <option_file>SJROFS_jports_wind_now_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>sj</ofs_region>
+  <subdomain>0</subdomain>
+  <type>wind</type>
+  <link_name>JAX PORTS - Forecast Guidance</link_name>
+  <order_num>4</order_num>
+  <model_type>wind_forecast_jx</model_type>
+  <option_file>SJROFS_jports_wind_fore_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>sj</ofs_region>
+  <subdomain>0</subdomain>
+  <type>wl</type>
+  <link_name>Nowcast</link_name>
+  <order_num>1</order_num>
+  <model_type>wl_nowcast</model_type>
+  <option_file>SJROFS_sj_all_wl_now_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>sj</ofs_region>
+  <subdomain>0</subdomain>
+  <type>wl</type>
+  <link_name>Forecast Guidance</link_name>
+  <order_num>2</order_num>
+  <model_type>wl_forecast</model_type>
+  <option_file>SJROFS_sj_all_wl_fore_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>sj</ofs_region>
+  <subdomain>0</subdomain>
+  <type>wl</type>
+  <link_name>JAX PORTS - Nowcast</link_name>
+  <order_num>3</order_num>
+  <model_type>wl_nowcast_jx</model_type>
+  <option_file>SJROFS_jports_wl_now_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>sj</ofs_region>
+  <subdomain>0</subdomain>
+  <type>wl</type>
+  <link_name>JAX PORTS - Forecast Guidance</link_name>
+  <order_num>4</order_num>
+  <model_type>wl_forecast_jx</model_type>
+  <option_file>SJROFS_jports_wl_fore_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>sj</ofs_region>
+  <subdomain>0</subdomain>
+  <type>sal</type>
+  <link_name>Nowcast</link_name>
+  <order_num>1</order_num>
+  <model_type>salinity_nowcast</model_type>
+  <option_file>SJROFS_sj_all_sa_now_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>sj</ofs_region>
+  <subdomain>0</subdomain>
+  <type>sal</type>
+  <link_name>Forecast Guidance</link_name>
+  <order_num>2</order_num>
+  <model_type>salinity_forecast</model_type>
+  <option_file>SJROFS_sj_all_sa_fore_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>sj</ofs_region>
+  <subdomain>0</subdomain>
+  <type>sal</type>
+  <link_name>JAX PORTS - Nowcast</link_name>
+  <order_num>3</order_num>
+  <model_type>salinity_nowcast_jx</model_type>
+  <option_file>SJROFS_jports_sa_now_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>sj</ofs_region>
+  <subdomain>0</subdomain>
+  <type>sal</type>
+  <link_name>JAX PORTS - Forecast Guidance</link_name>
+  <order_num>4</order_num>
+  <model_type>salinity_forecast_jx</model_type>
+  <option_file>SJROFS_jports_sa_fore_option</option_file>
+</OFS_Animation>
+
+<!-- Lake Erie OFS -->
+<OFS_Animation>
+  <ofs_region>le</ofs_region>
+  <subdomain>0</subdomain>
+  <type>wl</type>
+  <link_name>Nowcast</link_name>
+  <order_num>1</order_num>
+  <model_type>wl_nowcast</model_type>
+  <option_file>LEOFS_le_all_wl_now_option</option_file>
+</OFS_Animation>  
+  
+<OFS_Animation>
+  <ofs_region>le</ofs_region>
+  <subdomain>0</subdomain>
+  <type>wl</type>
+  <link_name>Forecast Guidance</link_name>
+  <order_num>2</order_num>
+  <model_type>wl_forecast</model_type>
+  <option_file>LEOFS_le_all_wl_fore_option</option_file>
+</OFS_Animation>  
+
+<OFS_Animation>
+  <ofs_region>le</ofs_region>
+  <subdomain>0</subdomain>
+  <type>cu</type>
+  <link_name>Nowcast</link_name>
+  <order_num>1</order_num>
+  <model_type>currents_nowcast</model_type>
+  <option_file>LEOFS_le_all_cu_now_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>le</ofs_region>
+  <subdomain>0</subdomain>
+  <type>cu</type>
+  <link_name>Forecast Guidance</link_name>
+  <order_num>2</order_num>
+  <model_type>currents_forecast</model_type>
+  <option_file>LEOFS_le_all_cu_fore_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>le</ofs_region>
+  <subdomain>0</subdomain>
+  <type>wind</type>
+  <link_name>Nowcast</link_name>
+  <order_num>1</order_num>
+  <model_type>wind_nowcast</model_type>
+  <option_file>LEOFS_le_all_wind_now_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>le</ofs_region>
+  <subdomain>0</subdomain>
+  <type>wind</type>
+  <link_name>Forecast Guidance</link_name>
+  <order_num>2</order_num>
+  <model_type>wind_forecast</model_type>
+  <option_file>LEOFS_le_all_wind_fore_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>le</ofs_region>
+  <subdomain>0</subdomain>
+  <type>wt</type>
+  <link_name>Nowcast</link_name>
+  <order_num>1</order_num>
+  <model_type>wtemp_nowcast</model_type>
+  <option_file>LEOFS_le_all_temp_now_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>le</ofs_region>
+  <subdomain>0</subdomain>
+  <type>wt</type>
+  <link_name>Forecast Guidance</link_name>
+  <order_num>2</order_num>
+  <model_type>wtemp_forecast</model_type>
+  <option_file>LEOFS_le_all_temp_fore_option</option_file>
+</OFS_Animation>
+
+<!-- Lake Huron OFS -->
+<OFS_Animation>
+  <ofs_region>lh</ofs_region>
+  <subdomain>0</subdomain>
+  <type>wl</type>
+  <link_name>Nowcast</link_name>
+  <order_num>1</order_num>
+  <model_type>wl_nowcast</model_type>
+  <option_file>LHOFS_lh_all_wl_now_option</option_file>
+</OFS_Animation>  
+  
+<OFS_Animation>
+  <ofs_region>lh</ofs_region>
+  <subdomain>0</subdomain>
+  <type>wl</type>
+  <link_name>Forecast Guidance</link_name>
+  <order_num>2</order_num>
+  <model_type>wl_forecast</model_type>
+  <option_file>LHOFS_lh_all_wl_fore_option</option_file>
+</OFS_Animation>  
+
+<OFS_Animation>
+  <ofs_region>lh</ofs_region>
+  <subdomain>0</subdomain>
+  <type>cu</type>
+  <link_name>Stations Nowcast</link_name>
+  <order_num>1</order_num>
+  <model_type>currents_stations_nowcast</model_type>
+  <option_file>LHOFS_lh_all_cularge_now_option</option_file>
+</OFS_Animation>
+  
+<OFS_Animation>
+  <ofs_region>lh</ofs_region>
+  <subdomain>0</subdomain>
+  <type>cu</type>
+  <link_name>Stations Forecast Guidance</link_name>
+  <order_num>2</order_num>
+  <model_type>currents_stations_forecast</model_type>
+  <option_file>LHOFS_lh_all_cularge_fore_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>lh</ofs_region>
+  <subdomain>0</subdomain>
+  <type>cu</type>
+  <link_name>Field Nowcast</link_name>
+  <order_num>3</order_num>
+  <model_type>currents_nowcast</model_type>
+  <option_file>LHOFS_lh_all_cu_now_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>lh</ofs_region>
+  <subdomain>0</subdomain>
+  <type>cu</type>
+  <link_name>Field Forecast Guidance</link_name>
+  <order_num>4</order_num>
+  <model_type>currents_forecast</model_type>
+  <option_file>LHOFS_lh_all_cu_fore_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>lh</ofs_region>
+  <subdomain>0</subdomain>
+  <type>wind</type>
+  <link_name>Nowcast</link_name>
+  <order_num>1</order_num>
+  <model_type>wind_nowcast</model_type>
+  <option_file>LHOFS_lh_all_wind_now_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>lh</ofs_region>
+  <subdomain>0</subdomain>
+  <type>wind</type>
+  <link_name>Forecast Guidance</link_name>
+  <order_num>2</order_num>
+  <model_type>wind_forecast</model_type>
+  <option_file>LHOFS_lh_all_wind_fore_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>lh</ofs_region>
+  <subdomain>0</subdomain>
+  <type>wt</type>
+  <link_name>Nowcast</link_name>
+  <order_num>1</order_num>
+  <model_type>wtemp_nowcast</model_type>
+  <option_file>LHOFS_lh_all_temp_now_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>lh</ofs_region>
+  <subdomain>0</subdomain>
+  <type>wt</type>
+  <link_name>Forecast Guidance</link_name>
+  <order_num>2</order_num>
+  <model_type>wtemp_forecast</model_type>
+  <option_file>LHOFS_lh_all_temp_fore_option</option_file>
+</OFS_Animation>
+
+<!-- Lake Michigan OFS -->
+<OFS_Animation>
+  <ofs_region>lm</ofs_region>
+  <subdomain>0</subdomain>
+  <type>wl</type>
+  <link_name>Nowcast</link_name>
+  <order_num>1</order_num>
+  <model_type>wl_nowcast</model_type>
+  <option_file>LMOFS_lm_all_wl_now_option</option_file>
+</OFS_Animation>  
+  
+<OFS_Animation>
+  <ofs_region>lm</ofs_region>
+  <subdomain>0</subdomain>
+  <type>wl</type>
+  <link_name>Forecast Guidance</link_name>
+  <order_num>2</order_num>
+  <model_type>wl_forecast</model_type>
+  <option_file>LMOFS_lm_all_wl_fore_option</option_file>
+</OFS_Animation>  
+
+<OFS_Animation>
+  <ofs_region>lm</ofs_region>
+  <subdomain>0</subdomain>
+  <type>cu</type>
+  <link_name>Stations Nowcast</link_name>
+  <order_num>1</order_num>
+  <model_type>currents_stations_nowcast</model_type>
+  <option_file>LMOFS_lm_all_cularge_now_option</option_file>
+</OFS_Animation>
+  
+<OFS_Animation>
+  <ofs_region>lm</ofs_region>
+  <subdomain>0</subdomain>
+  <type>cu</type>
+  <link_name>Stations Forecast Guidance</link_name>
+  <order_num>2</order_num>
+  <model_type>currents_stations_forecast</model_type>
+  <option_file>LMOFS_lm_all_cularge_fore_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>lm</ofs_region>
+  <subdomain>0</subdomain>
+  <type>cu</type>
+  <link_name>Field Nowcast</link_name>
+  <order_num>3</order_num>
+  <model_type>currents_nowcast</model_type>
+  <option_file>LMOFS_lm_all_cu_now_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>lm</ofs_region>
+  <subdomain>0</subdomain>
+  <type>cu</type>
+  <link_name>Field Forecast Guidance</link_name>
+  <order_num>4</order_num>
+  <model_type>currents_forecast</model_type>
+  <option_file>LMOFS_lm_all_cu_fore_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>lm</ofs_region>
+  <subdomain>0</subdomain>
+  <type>wind</type>
+  <link_name>Nowcast</link_name>
+  <order_num>1</order_num>
+  <model_type>wind_nowcast</model_type>
+  <option_file>LMOFS_lm_all_wind_now_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>lm</ofs_region>
+  <subdomain>0</subdomain>
+  <type>wind</type>
+  <link_name>Forecast Guidance</link_name>
+  <order_num>2</order_num>
+  <model_type>wind_forecast</model_type>
+  <option_file>LMOFS_lm_all_wind_fore_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>lm</ofs_region>
+  <subdomain>0</subdomain>
+  <type>wt</type>
+  <link_name>Nowcast</link_name>
+  <order_num>1</order_num>
+  <model_type>wtemp_nowcast</model_type>
+  <option_file>LMOFS_lm_all_temp_now_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>lm</ofs_region>
+  <subdomain>0</subdomain>
+  <type>wt</type>
+  <link_name>Forecast Guidance</link_name>
+  <order_num>2</order_num>
+  <model_type>wtemp_forecast</model_type>
+  <option_file>LMOFS_lm_all_temp_fore_option</option_file>
+</OFS_Animation>
+
+<!-- Lake Ontarino OFS -->
+<OFS_Animation>
+  <ofs_region>lo</ofs_region>
+  <subdomain>0</subdomain>
+  <type>wl</type>
+  <link_name>Nowcast</link_name>
+  <order_num>1</order_num>
+  <model_type>wl_nowcast</model_type>
+  <option_file>LOOFS_lo_all_wl_now_option</option_file>
+</OFS_Animation>  
+  
+<OFS_Animation>
+  <ofs_region>lo</ofs_region>
+  <subdomain>0</subdomain>
+  <type>wl</type>
+  <link_name>Forecast Guidance</link_name>
+  <order_num>2</order_num>
+  <model_type>wl_forecast</model_type>
+  <option_file>LOOFS_lo_all_wl_fore_option</option_file>
+</OFS_Animation>  
+
+<OFS_Animation>
+  <ofs_region>lo</ofs_region>
+  <subdomain>0</subdomain>
+  <type>cu</type>
+  <link_name>Stations Nowcast</link_name>
+  <order_num>1</order_num>
+  <model_type>currents_stations_nowcast</model_type>
+  <option_file>LOOFS_lo_all_cularge_now_option</option_file>
+</OFS_Animation>
+  
+<OFS_Animation>
+  <ofs_region>lo</ofs_region>
+  <subdomain>0</subdomain>
+  <type>cu</type>
+  <link_name>Stations Forecast Guidance</link_name>
+  <order_num>2</order_num>
+  <model_type>currents_stations_forecast</model_type>
+  <option_file>LOOFS_lo_all_cularge_fore_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>lo</ofs_region>
+  <subdomain>0</subdomain>
+  <type>cu</type>
+  <link_name>Field Nowcast</link_name>
+  <order_num>3</order_num>
+  <model_type>currents_nowcast</model_type>
+  <option_file>LOOFS_lo_all_cu_now_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>lo</ofs_region>
+  <subdomain>0</subdomain>
+  <type>cu</type>
+  <link_name>Field Forecast Guidance</link_name>
+  <order_num>4</order_num>
+  <model_type>currents_forecast</model_type>
+  <option_file>LOOFS_lo_all_cu_fore_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>lo</ofs_region>
+  <subdomain>0</subdomain>
+  <type>wind</type>
+  <link_name>Nowcast</link_name>
+  <order_num>1</order_num>
+  <model_type>wind_nowcast</model_type>
+  <option_file>LOOFS_lo_all_wind_now_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>lo</ofs_region>
+  <subdomain>0</subdomain>
+  <type>wind</type>
+  <link_name>Forecast Guidance</link_name>
+  <order_num>2</order_num>
+  <model_type>wind_forecast</model_type>
+  <option_file>LOOFS_lo_all_wind_fore_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>lo</ofs_region>
+  <subdomain>0</subdomain>
+  <type>wt</type>
+  <link_name>Nowcast</link_name>
+  <order_num>1</order_num>
+  <model_type>wtemp_nowcast</model_type>
+  <option_file>LOOFS_lo_all_temp_now_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>lo</ofs_region>
+  <subdomain>0</subdomain>
+  <type>wt</type>
+  <link_name>Forecast Guidance</link_name>
+  <order_num>2</order_num>
+  <model_type>wtemp_forecast</model_type>
+  <option_file>LOOFS_lo_all_temp_fore_option</option_file>
+</OFS_Animation>
+
+<!-- Lake Superior OFS -->
+<OFS_Animation>
+  <ofs_region>ls</ofs_region>
+  <subdomain>0</subdomain>
+  <type>wl</type>
+  <link_name>Nowcast</link_name>
+  <order_num>1</order_num>
+  <model_type>wl_nowcast</model_type>
+  <option_file>LSOFS_ls_all_wl_now_option</option_file>
+</OFS_Animation>  
+  
+<OFS_Animation>
+  <ofs_region>ls</ofs_region>
+  <subdomain>0</subdomain>
+  <type>wl</type>
+  <link_name>Forecast Guidance</link_name>
+  <order_num>2</order_num>
+  <model_type>wl_forecast</model_type>
+  <option_file>LSOFS_ls_all_wl_fore_option</option_file>
+</OFS_Animation>  
+
+<OFS_Animation>
+  <ofs_region>ls</ofs_region>
+  <subdomain>0</subdomain>
+  <type>cu</type>
+  <link_name>Stations Nowcast</link_name>
+  <order_num>1</order_num>
+  <model_type>currents_stations_nowcast</model_type>
+  <option_file>LSOFS_ls_all_cularge_now_option</option_file>
+</OFS_Animation>
+  
+<OFS_Animation>
+  <ofs_region>ls</ofs_region>
+  <subdomain>0</subdomain>
+  <type>cu</type>
+  <link_name>Stations Forecast Guidance</link_name>
+  <order_num>2</order_num>
+  <model_type>currents_stations_forecast</model_type>
+  <option_file>LSOFS_ls_all_cularge_fore_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>ls</ofs_region>
+  <subdomain>0</subdomain>
+  <type>cu</type>
+  <link_name>Field Nowcast</link_name>
+  <order_num>3</order_num>
+  <model_type>currents_nowcast</model_type>
+  <option_file>LSOFS_ls_all_cu_now_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>ls</ofs_region>
+  <subdomain>0</subdomain>
+  <type>cu</type>
+  <link_name>Field Forecast Guidance</link_name>
+  <order_num>4</order_num>
+  <model_type>currents_forecast</model_type>
+  <option_file>LSOFS_ls_all_cu_fore_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>ls</ofs_region>
+  <subdomain>0</subdomain>
+  <type>wind</type>
+  <link_name>Nowcast</link_name>
+  <order_num>1</order_num>
+  <model_type>wind_nowcast</model_type>
+  <option_file>LSOFS_ls_all_wind_now_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>ls</ofs_region>
+  <subdomain>0</subdomain>
+  <type>wind</type>
+  <link_name>Forecast Guidance</link_name>
+  <order_num>2</order_num>
+  <model_type>wind_forecast</model_type>
+  <option_file>LSOFS_ls_all_wind_fore_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>ls</ofs_region>
+  <subdomain>0</subdomain>
+  <type>wt</type>
+  <link_name>Nowcast</link_name>
+  <order_num>1</order_num>
+  <model_type>wtemp_nowcast</model_type>
+  <option_file>LSOFS_ls_all_temp_now_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>ls</ofs_region>
+  <subdomain>0</subdomain>
+  <type>wt</type>
+  <link_name>Forecast Guidance</link_name>
+  <order_num>2</order_num>
+  <model_type>wtemp_forecast</model_type>
+  <option_file>LSOFS_ls_all_temp_fore_option</option_file>
+</OFS_Animation>
+
+<!-- Chesapeake Bay River OFS -->
+<OFS_Animation>
+  <ofs_region>cb</ofs_region>
+  <subdomain>0</subdomain>
+  <type>wl</type>
+  <link_name>Nowcast</link_name>
+  <order_num>1</order_num>
+  <model_type>wl_nowcast</model_type>
+  <option_file>CBOFS2_cb_all_wl_now_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>cb</ofs_region>
+  <subdomain>0</subdomain>
+  <type>wl</type>
+  <link_name>Forecast Guidance</link_name>
+  <order_num>2</order_num>
+  <model_type>wl_forecast</model_type>
+  <option_file>CBOFS2_cb_all_wl_fore_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>cb</ofs_region>
+  <subdomain>0</subdomain>
+  <type>wind</type>
+  <link_name>Nowcast</link_name>
+  <order_num>1</order_num>
+  <model_type>wind_nowcast</model_type>
+  <option_file>CBOFS2_cb_all_wind_now_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>cb</ofs_region>
+  <subdomain>0</subdomain>
+  <type>wind</type>
+  <link_name>Forecast Guidance</link_name>
+  <order_num>2</order_num>
+  <model_type>wind_forecast</model_type>
+  <option_file>CBOFS2_cb_all_wind_fore_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>cb</ofs_region>
+  <subdomain>0</subdomain>
+  <type>cu</type>
+  <link_name>Nowcast</link_name>
+  <order_num>1</order_num>
+  <model_type>currents_nowcast</model_type>
+  <option_file>CBOFS2_cb_all_cu_now_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>cb</ofs_region>
+  <subdomain>0</subdomain>
+  <type>cu</type>
+  <link_name>Forecast Guidance</link_name>
+  <order_num>2</order_num>
+  <model_type>currents_forecast</model_type>
+  <option_file>CBOFS2_cb_all_cu_fore_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>cb</ofs_region>
+  <subdomain>0</subdomain>
+  <type>wt</type>
+  <link_name>Nowcast</link_name>
+  <order_num>1</order_num>
+  <model_type>wtemp_nowcast</model_type>
+  <option_file>CBOFS2_cb_all_temp_now_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>cb</ofs_region>
+  <subdomain>0</subdomain>
+  <type>wt</type>
+  <link_name>Forecast Guidance</link_name>
+  <order_num>2</order_num>
+  <model_type>wtemp_forecast</model_type>
+  <option_file>CBOFS2_cb_all_temp_fore_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>cb</ofs_region>
+  <subdomain>0</subdomain>
+  <type>sal</type>
+  <link_name>Nowcast</link_name>
+  <order_num>1</order_num>
+  <model_type>salinity_nowcast</model_type>
+  <option_file>CBOFS2_cb_all_sa_now_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>cb</ofs_region>
+  <subdomain>0</subdomain>
+  <type>sal</type>
+  <link_name>Forecast Guidance</link_name>
+  <order_num>2</order_num>
+  <model_type>salinity_forecast</model_type>
+  <option_file>CBOFS2_cb_all_sa_fore_option</option_file>
+</OFS_Animation>
+
+<!-- Delaware Bay and River OFS -->
+<OFS_Animation>
+  <ofs_region>db</ofs_region>
+  <subdomain>0</subdomain>
+  <type>wl</type>
+  <link_name>Nowcast</link_name>
+  <order_num>1</order_num>
+  <model_type>wl_nowcast</model_type>
+  <option_file>DBOFS_db_all_wl_now_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>db</ofs_region>
+  <subdomain>0</subdomain>
+  <type>wl</type>
+  <link_name>Forecast Guidance</link_name>
+  <order_num>2</order_num>
+  <model_type>wl_forecast</model_type>
+  <option_file>DBOFS_db_all_wl_fore_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>db</ofs_region>
+  <subdomain>0</subdomain>
+  <type>wind</type>
+  <link_name>Nowcast</link_name>
+  <order_num>1</order_num>
+  <model_type>wind_nowcast</model_type>
+  <option_file>DBOFS_db_all_wind_now_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>db</ofs_region>
+  <subdomain>0</subdomain>
+  <type>wind</type>
+  <link_name>Forecast Guidance</link_name>
+  <order_num>2</order_num>
+  <model_type>wind_forecast</model_type>
+  <option_file>DBOFS_db_all_wind_fore_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>db</ofs_region>
+  <subdomain>0</subdomain>
+  <type>cu</type>
+  <link_name>Nowcast</link_name>
+  <order_num>1</order_num>
+  <model_type>currents_nowcast</model_type>
+  <option_file>DBOFS_db_all_cu_now_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>db</ofs_region>
+  <subdomain>0</subdomain>
+  <type>cu</type>
+  <link_name>Forecast Guidance</link_name>
+  <order_num>2</order_num>
+  <model_type>currents_forecast</model_type>
+  <option_file>DBOFS_db_all_cu_fore_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>db</ofs_region>
+  <subdomain>0</subdomain>
+  <type>wt</type>
+  <link_name>Nowcast</link_name>
+  <order_num>1</order_num>
+  <model_type>wtemp_nowcast</model_type>
+  <option_file>DBOFS_db_all_temp_now_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>db</ofs_region>
+  <subdomain>0</subdomain>
+  <type>wt</type>
+  <link_name>Forecast Guidance</link_name>
+  <order_num>2</order_num>
+  <model_type>wtemp_forecast</model_type>
+  <option_file>DBOFS_db_all_temp_fore_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>db</ofs_region>
+  <subdomain>0</subdomain>
+  <type>sal</type>
+  <link_name>Nowcast</link_name>
+  <order_num>1</order_num>
+  <model_type>salinity_nowcast</model_type>
+  <option_file>DBOFS_db_all_sa_now_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>db</ofs_region>
+  <subdomain>0</subdomain>
+  <type>sal</type>
+  <link_name>Forecast Guidance</link_name>
+  <order_num>2</order_num>
+  <model_type>salinity_forecast</model_type>
+  <option_file>DBOFS_db_all_sa_fore_option</option_file>
+</OFS_Animation>
+
+<!-- Tampa Bay OFS -->
+<OFS_Animation>
+  <ofs_region>tb</ofs_region>
+  <subdomain>0</subdomain>
+  <type>wl</type>
+  <link_name>Nowcast</link_name>
+  <order_num>1</order_num>
+  <model_type>wl_nowcast</model_type>
+  <option_file>TBOFS_tb_all_wl_now_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>tb</ofs_region>
+  <subdomain>0</subdomain>
+  <type>wl</type>
+  <link_name>Forecast Guidance</link_name>
+  <order_num>2</order_num>
+  <model_type>wl_forecast</model_type>
+  <option_file>TBOFS_tb_all_wl_fore_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>tb</ofs_region>
+  <subdomain>0</subdomain>
+  <type>wind</type>
+  <link_name>Nowcast</link_name>
+  <order_num>1</order_num>
+  <model_type>wind_nowcast</model_type>
+  <option_file>TBOFS_tb_all_wind_now_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>tb</ofs_region>
+  <subdomain>0</subdomain>
+  <type>wind</type>
+  <link_name>Forecast Guidance</link_name>
+  <order_num>2</order_num>
+  <model_type>wind_forecast</model_type>
+  <option_file>TBOFS_tb_all_wind_fore_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>tb</ofs_region>
+  <subdomain>0</subdomain>
+  <type>cu</type>
+  <link_name>Nowcast</link_name>
+  <order_num>1</order_num>
+  <model_type>currents_nowcast</model_type>
+  <option_file>TBOFS_tb_all_cu_now_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>tb</ofs_region>
+  <subdomain>0</subdomain>
+  <type>cu</type>
+  <link_name>Forecast Guidance</link_name>
+  <order_num>2</order_num>
+  <model_type>currents_forecast</model_type>
+  <option_file>TBOFS_tb_all_cu_fore_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>tb</ofs_region>
+  <subdomain>0</subdomain>
+  <type>wt</type>
+  <link_name>Nowcast</link_name>
+  <order_num>1</order_num>
+  <model_type>wtemp_nowcast</model_type>
+  <option_file>TBOFS_tb_all_temp_now_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>tb</ofs_region>
+  <subdomain>0</subdomain>
+  <type>wt</type>
+  <link_name>Forecast Guidance</link_name>
+  <order_num>2</order_num>
+  <model_type>wtemp_forecast</model_type>
+  <option_file>TBOFS_tb_all_temp_fore_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>tb</ofs_region>
+  <subdomain>0</subdomain>
+  <type>sal</type>
+  <link_name>Nowcast</link_name>
+  <order_num>1</order_num>
+  <model_type>salinity_nowcast</model_type>
+  <option_file>TBOFS_tb_all_sa_now_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>tb</ofs_region>
+  <subdomain>0</subdomain>
+  <type>sal</type>
+  <link_name>Forecast Guidance</link_name>
+  <order_num>2</order_num>
+  <model_type>salinity_forecast</model_type>
+  <option_file>TBOFS_tb_all_sa_fore_option</option_file>
+</OFS_Animation>
+
+<!-- New York/New Jersey OFS -->
+<OFS_Animation>
+  <ofs_region>ny</ofs_region>
+  <subdomain>0</subdomain>
+  <type>wl</type>
+  <link_name>Nowcast</link_name>
+  <order_num>1</order_num>
+  <model_type>wl_nowcast</model_type>
+  <option_file>NYOFS_Harbor_wlcell_now_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>ny</ofs_region>
+  <subdomain>0</subdomain>
+  <type>wl</type>
+  <link_name>Forecast Guidance</link_name>
+  <order_num>2</order_num>
+  <model_type>wl_forecast</model_type>
+  <option_file>NYOFS_Harbor_wlcell_fore_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>ny</ofs_region>
+  <subdomain>0</subdomain>
+  <type>cu</type>
+  <link_name>Stations Nowcast</link_name>
+  <order_num>1</order_num>
+  <model_type>currents_stations_nowcast</model_type>
+  <option_file>NYOFS_Harbor_cularge_now_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>ny</ofs_region>
+  <subdomain>0</subdomain>
+  <type>cu</type>
+  <link_name>Stations Forecast Guidance</link_name>
+  <order_num>2</order_num>
+  <model_type>currents_stations_forecast</model_type>
+  <option_file>NYOFS_Harbor_cularge_fore_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>ny</ofs_region>
+  <subdomain>0</subdomain>
+  <type>cu</type>
+  <link_name>Field Nowcast (coarse grid)</link_name>
+  <order_num>3</order_num>
+  <model_type>currents_nowcast</model_type>
+  <option_file>NYOFS_Harbor_cu_now_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>ny</ofs_region>
+  <subdomain>0</subdomain>
+  <type>cu</type>
+  <link_name>Field Forecast Guidance (coarse grid)</link_name>
+  <order_num>4</order_num>
+  <model_type>currents_forecast</model_type>
+  <option_file>NYOFS_Harbor_cu_fore_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>ny</ofs_region>
+  <subdomain>0</subdomain>
+  <type>cu</type>
+  <link_name>Field Nowcast (fine grid)</link_name>
+  <order_num>5</order_num>
+  <model_type>currents_channel_nowcast</model_type>
+  <option_file>NYOFS_Channel_cu_now_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>ny</ofs_region>
+  <subdomain>0</subdomain>
+  <type>cu</type>
+  <link_name>Field Forecast Guidance (fine grid)</link_name>
+  <order_num>6</order_num>
+  <model_type>currents_channel_forecast</model_type>
+  <option_file>NYOFS_Channel_cu_fore_option</option_file>
+</OFS_Animation>
+
+<!-- Northern Gulf of America OFS (NGOFS2) -->
+<OFS_Animation>
+  <ofs_region>ng</ofs_region>
+  <subdomain>0</subdomain>
+  <type>wind</type>
+  <link_name>Nowcast</link_name>
+  <order_num>1</order_num>
+  <model_type>wind_nowcast</model_type>
+  <option_file>NGOFS2_gom_all_wind_now_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>ng</ofs_region>
+  <subdomain>0</subdomain>
+  <type>wind</type>
+  <link_name>Forecast Guidance</link_name>
+  <order_num>2</order_num>
+  <model_type>wind_forecast</model_type>
+  <option_file>NGOFS2_gom_all_wind_fore_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>ng</ofs_region>
+  <subdomain>0</subdomain>
+  <type>wl</type>
+  <link_name>Nowcast</link_name>
+  <order_num>1</order_num>
+  <model_type>wl_nowcast</model_type>
+  <option_file>NGOFS2_gom_all_wl_now_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>ng</ofs_region>
+  <subdomain>0</subdomain>
+  <type>wl</type>
+  <link_name>Forecast Guidance</link_name>
+  <order_num>2</order_num>
+  <model_type>wl_forecast</model_type>
+  <option_file>NGOFS2_gom_all_wl_fore_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>ng</ofs_region>
+  <subdomain>0</subdomain>
+  <type>wt</type>
+  <link_name>Nowcast</link_name>
+  <order_num>1</order_num>
+  <model_type>wtemp_nowcast</model_type>
+  <option_file>NGOFS2_gom_all_temp_now_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>ng</ofs_region>
+  <subdomain>0</subdomain>
+  <type>wt</type>
+  <link_name>Forecast Guidance</link_name>
+  <order_num>2</order_num>
+  <model_type>wtemp_forecast</model_type>
+  <option_file>NGOFS2_gom_all_temp_fore_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>ng</ofs_region>
+  <subdomain>0</subdomain>
+  <type>cu</type>
+  <link_name>Nowcast</link_name>
+  <order_num>1</order_num>
+  <model_type>currents_nowcast</model_type>
+  <option_file>NGOFS2_gom_all_cu_now_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>ng</ofs_region>
+  <subdomain>0</subdomain>
+  <type>cu</type>
+  <link_name>Forecast Guidance</link_name>
+  <order_num>2</order_num>
+  <model_type>currents_forecast</model_type>
+  <option_file>NGOFS2_gom_all_cu_fore_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>ng</ofs_region>
+  <subdomain>0</subdomain>
+  <type>sal</type>
+  <link_name>Nowcast</link_name>
+  <order_num>1</order_num>
+  <model_type>salinity_nowcast</model_type>
+  <option_file>NGOFS2_gom_all_sa_now_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>ng</ofs_region>
+  <subdomain>0</subdomain>
+  <type>sal</type>
+  <link_name>Forecast Guidance</link_name>
+  <order_num>2</order_num>
+  <model_type>salinity_forecast</model_type>
+  <option_file>NGOFS2_gom_all_sa_fore_option</option_file>
+</OFS_Animation>
+
+<!-- NGOFS2 subdomain: Calasieu - Lake Charles -->
+<OFS_Animation>
+  <ofs_region>ng</ofs_region>
+  <subdomain>cc</subdomain>
+  <type>wind</type>
+  <link_name>Nowcast</link_name>
+  <order_num>1</order_num>
+  <model_type>wind_nowcast</model_type>
+  <option_file>NGOFS2_lc_all_wind_now_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>ng</ofs_region>
+  <subdomain>cc</subdomain>
+  <type>wind</type>
+  <link_name>Forecast Guidance</link_name>
+  <order_num>2</order_num>
+  <model_type>wind_forecast</model_type>
+  <option_file>NGOFS2_lc_all_wind_fore_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>ng</ofs_region>
+  <subdomain>cc</subdomain>
+  <type>wl</type>
+  <link_name>Nowcast</link_name>
+  <order_num>1</order_num>
+  <model_type>wl_nowcast</model_type>
+  <option_file>NGOFS2_lc_all_wl_now_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>ng</ofs_region>
+  <subdomain>cc</subdomain>
+  <type>wl</type>
+  <link_name>Forecast Guidance</link_name>
+  <order_num>2</order_num>
+  <model_type>wl_forecast</model_type>
+  <option_file>NGOFS2_lc_all_wl_fore_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>ng</ofs_region>
+  <subdomain>cc</subdomain>
+  <type>wt</type>
+  <link_name>Nowcast</link_name>
+  <order_num>1</order_num>
+  <model_type>wtemp_nowcast</model_type>
+  <option_file>NGOFS2_lc_all_temp_now_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>ng</ofs_region>
+  <subdomain>cc</subdomain>
+  <type>wt</type>
+  <link_name>Forecast Guidance</link_name>
+  <order_num>2</order_num>
+  <model_type>wtemp_forecast</model_type>
+  <option_file>NGOFS2_lc_all_temp_fore_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>ng</ofs_region>
+  <subdomain>cc</subdomain>
+  <type>cu</type>
+  <link_name>Nowcast</link_name>
+  <order_num>1</order_num>
+  <model_type>currents_nowcast</model_type>
+  <option_file>NGOFS2_lc_all_cu_now_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>ng</ofs_region>
+  <subdomain>cc</subdomain>
+  <type>cu</type>
+  <link_name>Forecast Guidance</link_name>
+  <order_num>2</order_num>
+  <model_type>currents_forecast</model_type>
+  <option_file>NGOFS2_lc_all_cu_fore_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>ng</ofs_region>
+  <subdomain>cc</subdomain>
+  <type>sal</type>
+  <link_name>Nowcast</link_name>
+  <order_num>1</order_num>
+  <model_type>salinity_nowcast</model_type>
+  <option_file>NGOFS2_lc_all_sa_now_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>ng</ofs_region>
+  <subdomain>cc</subdomain>
+  <type>sal</type>
+  <link_name>Forecast Guidance</link_name>
+  <order_num>2</order_num>
+  <model_type>salinity_forecast</model_type>
+  <option_file>NGOFS2_lc_all_sa_fore_option</option_file>
+</OFS_Animation>
+
+<!-- NGOFS2 subdomain: Corpus Christi-->
+<OFS_Animation>
+  <ofs_region>ng</ofs_region>
+  <subdomain>co</subdomain>
+  <type>wind</type>
+  <link_name>Nowcast</link_name>
+  <order_num>1</order_num>
+  <model_type>wind_nowcast</model_type>
+  <option_file>NGOFS2_cc_all_wind_now_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>ng</ofs_region>
+  <subdomain>co</subdomain>
+  <type>wind</type>
+  <link_name>Forecast Guidance</link_name>
+  <order_num>2</order_num>
+  <model_type>wind_forecast</model_type>
+  <option_file>NGOFS2_cc_all_wind_fore_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>ng</ofs_region>
+  <subdomain>co</subdomain>
+  <type>wl</type>
+  <link_name>Nowcast</link_name>
+  <order_num>1</order_num>
+  <model_type>wl_nowcast</model_type>
+  <option_file>NGOFS2_cc_all_wl_now_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>ng</ofs_region>
+  <subdomain>co</subdomain>
+  <type>wl</type>
+  <link_name>Forecast Guidance</link_name>
+  <order_num>2</order_num>
+  <model_type>wl_forecast</model_type>
+  <option_file>NGOFS2_cc_all_wl_fore_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>ng</ofs_region>
+  <subdomain>co</subdomain>
+  <type>wt</type>
+  <link_name>Nowcast</link_name>
+  <order_num>1</order_num>
+  <model_type>wtemp_nowcast</model_type>
+  <option_file>NGOFS2_cc_all_temp_now_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>ng</ofs_region>
+  <subdomain>co</subdomain>
+  <type>wt</type>
+  <link_name>Forecast Guidance</link_name>
+  <order_num>2</order_num>
+  <model_type>wtemp_forecast</model_type>
+  <option_file>NGOFS2_cc_all_temp_fore_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>ng</ofs_region>
+  <subdomain>co</subdomain>
+  <type>cu</type>
+  <link_name>Nowcast</link_name>
+  <order_num>1</order_num>
+  <model_type>currents_nowcast</model_type>
+  <option_file>NGOFS2_cc_all_cu_now_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>ng</ofs_region>
+  <subdomain>co</subdomain>
+  <type>cu</type>
+  <link_name>Forecast Guidance</link_name>
+  <order_num>2</order_num>
+  <model_type>currents_forecast</model_type>
+  <option_file>NGOFS2_cc_all_cu_fore_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>ng</ofs_region>
+  <subdomain>co</subdomain>
+  <type>sal</type>
+  <link_name>Nowcast</link_name>
+  <order_num>1</order_num>
+  <model_type>salinity_nowcast</model_type>
+  <option_file>NGOFS2_cc_all_sa_now_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>ng</ofs_region>
+  <subdomain>co</subdomain>
+  <type>sal</type>
+  <link_name>Forecast Guidance</link_name>
+  <order_num>2</order_num>
+  <model_type>salinity_forecast</model_type>
+  <option_file>NGOFS2_cc_all_sa_fore_option</option_file>
+</OFS_Animation>
+
+<!-- NGOFS2 subdomain: Galveston Bay -->
+<OFS_Animation>
+  <ofs_region>ng</ofs_region>
+  <subdomain>gb</subdomain>
+  <type>cu</type>
+  <link_name>Nowcast</link_name>
+  <order_num>1</order_num>
+  <model_type>currents_nowcast</model_type>
+  <option_file>NGOFS2_gb_all_cu_now_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>ng</ofs_region>
+  <subdomain>gb</subdomain>
+  <type>cu</type>
+  <link_name>Forecast Guidance</link_name>
+  <order_num>2</order_num>
+  <model_type>currents_forecast</model_type>
+  <option_file>NGOFS2_gb_all_cu_fore_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>ng</ofs_region>
+  <subdomain>gb</subdomain>
+  <type>sal</type>
+  <link_name>Nowcast</link_name>
+  <order_num>1</order_num>
+  <model_type>salinity_nowcast</model_type>
+  <option_file>NGOFS2_gb_all_sa_now_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>ng</ofs_region>
+  <subdomain>gb</subdomain>
+  <type>sal</type>
+  <link_name>Forecast Guidance</link_name>
+  <order_num>2</order_num>
+  <model_type>salinity_forecast</model_type>
+  <option_file>NGOFS2_gb_all_sa_fore_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>ng</ofs_region>
+  <subdomain>gb</subdomain>
+  <type>wt</type>
+  <link_name>Nowcast</link_name>
+  <order_num>1</order_num>
+  <model_type>wtemp_nowcast</model_type>
+  <option_file>NGOFS2_gb_all_temp_now_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>ng</ofs_region>
+  <subdomain>gb</subdomain>
+  <type>wt</type>
+  <link_name>Forecast Guidance</link_name>
+  <order_num>2</order_num>
+  <model_type>wtemp_forecast</model_type>
+  <option_file>NGOFS2_gb_all_temp_fore_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>ng</ofs_region>
+  <subdomain>gb</subdomain>
+  <type>wind</type>
+  <link_name>Nowcast</link_name>
+  <order_num>1</order_num>
+  <model_type>wind_nowcast</model_type>
+  <option_file>NGOFS2_gb_all_wind_now_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>ng</ofs_region>
+  <subdomain>gb</subdomain>
+  <type>wind</type>
+  <link_name>Forecast Guidance</link_name>
+  <order_num>2</order_num>
+  <model_type>wind_forecast</model_type>
+  <option_file>NGOFS2_gb_all_wind_fore_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>ng</ofs_region>
+  <subdomain>gb</subdomain>
+  <type>wl</type>
+  <link_name>Nowcast</link_name>
+  <order_num>1</order_num>
+  <model_type>wl_nowcast</model_type>
+  <option_file>NGOFS2_gb_all_wl_now_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>ng</ofs_region>
+  <subdomain>gb</subdomain>
+  <type>wl</type>
+  <link_name>Forecast Guidance</link_name>
+  <order_num>2</order_num>
+  <model_type>wl_forecast</model_type>
+  <option_file>NGOFS2_gb_all_wl_fore_option</option_file>
+</OFS_Animation>
+
+<!-- NGOFS2 domain: Gulfport -->
+<OFS_Animation>
+  <ofs_region>ng</ofs_region>
+  <subdomain>gp</subdomain>
+  <type>wind</type>
+  <link_name>Nowcast</link_name>
+  <order_num>1</order_num>
+  <model_type>wind_nowcast</model_type>
+  <option_file>NGOFS2_gf_all_wind_now_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>ng</ofs_region>
+  <subdomain>gp</subdomain>
+  <type>wind</type>
+  <link_name>Forecast Guidance</link_name>
+  <order_num>2</order_num>
+  <model_type>wind_forecast</model_type>
+  <option_file>NGOFS2_gf_all_wind_fore_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>ng</ofs_region>
+  <subdomain>gp</subdomain>
+  <type>wl</type>
+  <link_name>Nowcast</link_name>
+  <order_num>1</order_num>
+  <model_type>wl_nowcast</model_type>
+  <option_file>NGOFS2_gf_all_wl_now_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>ng</ofs_region>
+  <subdomain>gp</subdomain>
+  <type>wl</type>
+  <link_name>Forecast Guidance</link_name>
+  <order_num>2</order_num>
+  <model_type>wl_forecast</model_type>
+  <option_file>NGOFS2_gf_all_wl_fore_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>ng</ofs_region>
+  <subdomain>gp</subdomain>
+  <type>wt</type>
+  <link_name>Nowcast</link_name>
+  <order_num>1</order_num>
+  <model_type>wtemp_nowcast</model_type>
+  <option_file>NGOFS2_gf_all_temp_now_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>ng</ofs_region>
+  <subdomain>gp</subdomain>
+  <type>wt</type>
+  <link_name>Forecast Guidance</link_name>
+  <order_num>2</order_num>
+  <model_type>wtemp_forecast</model_type>
+  <option_file>NGOFS2_gf_all_temp_fore_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>ng</ofs_region>
+  <subdomain>gp</subdomain>
+  <type>cu</type>
+  <link_name>Nowcast</link_name>
+  <order_num>1</order_num>
+  <model_type>currents_nowcast</model_type>
+  <option_file>NGOFS2_gf_all_cu_now_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>ng</ofs_region>
+  <subdomain>gp</subdomain>
+  <type>cu</type>
+  <link_name>Forecast Guidance</link_name>
+  <order_num>2</order_num>
+  <model_type>currents_forecast</model_type>
+  <option_file>NGOFS2_gf_all_cu_fore_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>ng</ofs_region>
+  <subdomain>gp</subdomain>
+  <type>sal</type>
+  <link_name>Nowcast</link_name>
+  <order_num>1</order_num>
+  <model_type>salinity_nowcast</model_type>
+  <option_file>NGOFS2_gf_all_sa_now_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>ng</ofs_region>
+  <subdomain>gp</subdomain>
+  <type>sal</type>
+  <link_name>Forecast Guidance</link_name>
+  <order_num>2</order_num>
+  <model_type>salinity_forecast</model_type>
+  <option_file>NGOFS2_gf_all_sa_fore_option</option_file>
+</OFS_Animation>
+
+<!-- NGOFS2 domain: Lake Pontchartrain -->
+<OFS_Animation>
+  <ofs_region>ng</ofs_region>
+  <subdomain>lp</subdomain>
+  <type>wind</type>
+  <link_name>Nowcast</link_name>
+  <order_num>1</order_num>
+  <model_type>wind_nowcast</model_type>
+  <option_file>NGOFS2_lp_all_wind_now_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>ng</ofs_region>
+  <subdomain>lp</subdomain>
+  <type>wind</type>
+  <link_name>Forecast Guidance</link_name>
+  <order_num>2</order_num>
+  <model_type>wind_forecast</model_type>
+  <option_file>NGOFS2_lp_all_wind_fore_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>ng</ofs_region>
+  <subdomain>lp</subdomain>
+  <type>wl</type>
+  <link_name>Nowcast</link_name>
+  <order_num>1</order_num>
+  <model_type>wl_nowcast</model_type>
+  <option_file>NGOFS2_lp_all_wl_now_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>ng</ofs_region>
+  <subdomain>lp</subdomain>
+  <type>wl</type>
+  <link_name>Forecast Guidance</link_name>
+  <order_num>2</order_num>
+  <model_type>wl_forecast</model_type>
+  <option_file>NGOFS2_lp_all_wl_fore_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>ng</ofs_region>
+  <subdomain>lp</subdomain>
+  <type>wt</type>
+  <link_name>Nowcast</link_name>
+  <order_num>1</order_num>
+  <model_type>wtemp_nowcast</model_type>
+  <option_file>NGOFS2_lp_all_temp_now_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>ng</ofs_region>
+  <subdomain>lp</subdomain>
+  <type>wt</type>
+  <link_name>Forecast Guidance</link_name>
+  <order_num>2</order_num>
+  <model_type>wtemp_forecast</model_type>
+  <option_file>NGOFS2_lp_all_temp_fore_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>ng</ofs_region>
+  <subdomain>lp</subdomain>
+  <type>cu</type>
+  <link_name>Nowcast</link_name>
+  <order_num>1</order_num>
+  <model_type>currents_nowcast</model_type>
+  <option_file>NGOFS2_lp_all_cu_now_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>ng</ofs_region>
+  <subdomain>lp</subdomain>
+  <type>cu</type>
+  <link_name>Forecast Guidance</link_name>
+  <order_num>2</order_num>
+  <model_type>currents_forecast</model_type>
+  <option_file>NGOFS2_lp_all_cu_fore_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>ng</ofs_region>
+  <subdomain>lp</subdomain>
+  <type>sal</type>
+  <link_name>Nowcast</link_name>
+  <order_num>1</order_num>
+  <model_type>salinity_nowcast</model_type>
+  <option_file>NGOFS2_lp_all_sa_now_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>ng</ofs_region>
+  <subdomain>lp</subdomain>
+  <type>sal</type>
+  <link_name>Forecast Guidance</link_name>
+  <order_num>2</order_num>
+  <model_type>salinity_forecast</model_type>
+  <option_file>NGOFS2_lp_all_sa_fore_option</option_file>
+</OFS_Animation>
+
+<!-- NGOFS domain: Magagorda Bay -->
+<OFS_Animation>
+  <ofs_region>ng</ofs_region>
+  <subdomain>ma</subdomain>
+  <type>wind</type>
+  <link_name>Nowcast</link_name>
+  <order_num>1</order_num>
+  <model_type>wind_nowcast</model_type>
+  <option_file>NGOFS2_ma_all_wind_now_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>ng</ofs_region>
+  <subdomain>ma</subdomain>
+  <type>wind</type>
+  <link_name>Forecast Guidance</link_name>
+  <order_num>2</order_num>
+  <model_type>wind_forecast</model_type>
+  <option_file>NGOFS2_ma_all_wind_fore_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>ng</ofs_region>
+  <subdomain>ma</subdomain>
+  <type>wl</type>
+  <link_name>Nowcast</link_name>
+  <order_num>1</order_num>
+  <model_type>wl_nowcast</model_type>
+  <option_file>NGOFS2_ma_all_wl_now_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>ng</ofs_region>
+  <subdomain>ma</subdomain>
+  <type>wl</type>
+  <link_name>Forecast Guidance</link_name>
+  <order_num>2</order_num>
+  <model_type>wl_forecast</model_type>
+  <option_file>NGOFS2_ma_all_wl_fore_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>ng</ofs_region>
+  <subdomain>ma</subdomain>
+  <type>wt</type>
+  <link_name>Nowcast</link_name>
+  <order_num>1</order_num>
+  <model_type>wtemp_nowcast</model_type>
+  <option_file>NGOFS2_ma_all_temp_now_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>ng</ofs_region>
+  <subdomain>ma</subdomain>
+  <type>wt</type>
+  <link_name>Forecast Guidance</link_name>
+  <order_num>2</order_num>
+  <model_type>wtemp_forecast</model_type>
+  <option_file>NGOFS2_ma_all_temp_fore_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>ng</ofs_region>
+  <subdomain>ma</subdomain>
+  <type>cu</type>
+  <link_name>Nowcast</link_name>
+  <order_num>1</order_num>
+  <model_type>currents_nowcast</model_type>
+  <option_file>NGOFS2_ma_all_cu_now_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>ng</ofs_region>
+  <subdomain>ma</subdomain>
+  <type>cu</type>
+  <link_name>Forecast Guidance</link_name>
+  <order_num>2</order_num>
+  <model_type>currents_forecast</model_type>
+  <option_file>NGOFS2_ma_all_cu_fore_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>ng</ofs_region>
+  <subdomain>ma</subdomain>
+  <type>sal</type>
+  <link_name>Nowcast</link_name>
+  <order_num>1</order_num>
+  <model_type>salinity_nowcast</model_type>
+  <option_file>NGOFS2_ma_all_sa_now_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>ng</ofs_region>
+  <subdomain>ma</subdomain>
+  <type>sal</type>
+  <link_name>Forecast Guidance</link_name>
+  <order_num>2</order_num>
+  <model_type>salinity_forecast</model_type>
+  <option_file>NGOFS2_ma_all_sa_fore_option</option_file>
+</OFS_Animation>
+
+<!-- NGOFS subdomain: Mobile Bay -->
+<OFS_Animation>
+  <ofs_region>ng</ofs_region>
+  <subdomain>mb</subdomain>
+  <type>wind</type>
+  <link_name>Nowcast</link_name>
+  <order_num>1</order_num>
+  <model_type>wind_nowcast</model_type>
+  <option_file>NGOFS2_mb_all_wind_now_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>ng</ofs_region>
+  <subdomain>mb</subdomain>
+  <type>wind</type>
+  <link_name>Forecast Guidance</link_name>
+  <order_num>2</order_num>
+  <model_type>wind_forecast</model_type>
+  <option_file>NGOFS2_mb_all_wind_fore_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>ng</ofs_region>
+  <subdomain>mb</subdomain>
+  <type>wl</type>
+  <link_name>Nowcast</link_name>
+  <order_num>1</order_num>
+  <model_type>wl_nowcast</model_type>
+  <option_file>NGOFS2_mb_all_wl_now_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>ng</ofs_region>
+  <subdomain>mb</subdomain>
+  <type>wl</type>
+  <link_name>Forecast Guidance</link_name>
+  <order_num>2</order_num>
+  <model_type>wl_forecast</model_type>
+  <option_file>NGOFS2_mb_all_wl_fore_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>ng</ofs_region>
+  <subdomain>mb</subdomain>
+  <type>wt</type>
+  <link_name>Nowcast</link_name>
+  <order_num>1</order_num>
+  <model_type>wtemp_nowcast</model_type>
+  <option_file>NGOFS2_mb_all_temp_now_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>ng</ofs_region>
+  <subdomain>mb</subdomain>
+  <type>wt</type>
+  <link_name>Forecast Guidance</link_name>
+  <order_num>2</order_num>
+  <model_type>wtemp_forecast</model_type>
+  <option_file>NGOFS2_mb_all_temp_fore_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>ng</ofs_region>
+  <subdomain>mb</subdomain>
+  <type>cu</type>
+  <link_name>Nowcast</link_name>
+  <order_num>1</order_num>
+  <model_type>currents_nowcast</model_type>
+  <option_file>NGOFS2_mb_all_cu_now_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>ng</ofs_region>
+  <subdomain>mb</subdomain>
+  <type>cu</type>
+  <link_name>Forecast Guidance</link_name>
+  <order_num>2</order_num>
+  <model_type>currents_forecast</model_type>
+  <option_file>NGOFS2_mb_all_cu_fore_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>ng</ofs_region>
+  <subdomain>mb</subdomain>
+  <type>sal</type>
+  <link_name>Nowcast</link_name>
+  <order_num>1</order_num>
+  <model_type>salinity_nowcast</model_type>
+  <option_file>NGOFS2_mb_all_sa_now_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>ng</ofs_region>
+  <subdomain>mb</subdomain>
+  <type>sal</type>
+  <link_name>Forecast Guidance</link_name>
+  <order_num>2</order_num>
+  <model_type>salinity_forecast</model_type>
+  <option_file>NGOFS2_mb_all_sa_fore_option</option_file>
+</OFS_Animation>
+
+<!-- NGOFS domain: Pascagoula Bay-->
+<OFS_Animation>
+  <ofs_region>ng</ofs_region>
+  <subdomain>ps</subdomain>
+  <type>wind</type>
+  <link_name>Nowcast</link_name>
+  <order_num>1</order_num>
+  <model_type>wind_nowcast</model_type>
+  <option_file>NGOFS2_pg_all_wind_now_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>ng</ofs_region>
+  <subdomain>ps</subdomain>
+  <type>wind</type>
+  <link_name>Forecast Guidance</link_name>
+  <order_num>2</order_num>
+  <model_type>wind_forecast</model_type>
+  <option_file>NGOFS2_pg_all_wind_fore_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>ng</ofs_region>
+  <subdomain>ps</subdomain>
+  <type>wl</type>
+  <link_name>Nowcast</link_name>
+  <order_num>1</order_num>
+  <model_type>wl_nowcast</model_type>
+  <option_file>NGOFS2_pg_all_wl_now_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>ng</ofs_region>
+  <subdomain>ps</subdomain>
+  <type>wl</type>
+  <link_name>Forecast Guidance</link_name>
+  <order_num>2</order_num>
+  <model_type>wl_forecast</model_type>
+  <option_file>NGOFS2_pg_all_wl_fore_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>ng</ofs_region>
+  <subdomain>ps</subdomain>
+  <type>wt</type>
+  <link_name>Nowcast</link_name>
+  <order_num>1</order_num>
+  <model_type>wtemp_nowcast</model_type>
+  <option_file>NGOFS2_pg_all_temp_now_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>ng</ofs_region>
+  <subdomain>ps</subdomain>
+  <type>wt</type>
+  <link_name>Forecast Guidance</link_name>
+  <order_num>2</order_num>
+  <model_type>wtemp_forecast</model_type>
+  <option_file>NGOFS2_pg_all_temp_fore_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>ng</ofs_region>
+  <subdomain>ps</subdomain>
+  <type>cu</type>
+  <link_name>Nowcast</link_name>
+  <order_num>1</order_num>
+  <model_type>currents_nowcast</model_type>
+  <option_file>NGOFS2_pg_all_cu_now_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>ng</ofs_region>
+  <subdomain>ps</subdomain>
+  <type>cu</type>
+  <link_name>Forecast Guidance</link_name>
+  <order_num>2</order_num>
+  <model_type>currents_forecast</model_type>
+  <option_file>NGOFS2_pg_all_cu_fore_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>ng</ofs_region>
+  <subdomain>ps</subdomain>
+  <type>sal</type>
+  <link_name>Nowcast</link_name>
+  <order_num>1</order_num>
+  <model_type>salinity_nowcast</model_type>
+  <option_file>NGOFS2_pg_all_sa_now_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>ng</ofs_region>
+  <subdomain>ps</subdomain>
+  <type>sal</type>
+  <link_name>Forecast Guidance</link_name>
+  <order_num>2</order_num>
+  <model_type>salinity_forecast</model_type>
+  <option_file>NGOFS2_pg_all_sa_fore_option</option_file>
+</OFS_Animation>
+
+<!-- NGOFS domain: Sabine Neches -->
+<OFS_Animation>
+  <ofs_region>ng</ofs_region>
+  <subdomain>sn</subdomain>
+  <type>wind</type>
+  <link_name>Nowcast</link_name>
+  <order_num>1</order_num>
+  <model_type>wind_nowcast</model_type>
+  <option_file>NGOFS2_sn_all_wind_now_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>ng</ofs_region>
+  <subdomain>sn</subdomain>
+  <type>wind</type>
+  <link_name>Forecast Guidance</link_name>
+  <order_num>2</order_num>
+  <model_type>wind_forecast</model_type>
+  <option_file>NGOFS2_sn_all_wind_fore_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>ng</ofs_region>
+  <subdomain>sn</subdomain>
+  <type>wl</type>
+  <link_name>Nowcast</link_name>
+  <order_num>1</order_num>
+  <model_type>wl_nowcast</model_type>
+  <option_file>NGOFS2_sn_all_wl_now_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>ng</ofs_region>
+  <subdomain>sn</subdomain>
+  <type>wl</type>
+  <link_name>Forecast Guidance</link_name>
+  <order_num>2</order_num>
+  <model_type>wl_forecast</model_type>
+  <option_file>NGOFS2_sn_all_wl_fore_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>ng</ofs_region>
+  <subdomain>sn</subdomain>
+  <type>wt</type>
+  <link_name>Nowcast</link_name>
+  <order_num>1</order_num>
+  <model_type>wtemp_nowcast</model_type>
+  <option_file>NGOFS2_sn_all_temp_now_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>ng</ofs_region>
+  <subdomain>sn</subdomain>
+  <type>wt</type>
+  <link_name>Forecast Guidance</link_name>
+  <order_num>2</order_num>
+  <model_type>wtemp_forecast</model_type>
+  <option_file>NGOFS2_sn_all_temp_fore_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>ng</ofs_region>
+  <subdomain>sn</subdomain>
+  <type>cu</type>
+  <link_name>Nowcast</link_name>
+  <order_num>1</order_num>
+  <model_type>currents_nowcast</model_type>
+  <option_file>NGOFS2_sn_all_cu_now_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>ng</ofs_region>
+  <subdomain>sn</subdomain>
+  <type>cu</type>
+  <link_name>Forecast Guidance</link_name>
+  <order_num>2</order_num>
+  <model_type>currents_forecast</model_type>
+  <option_file>NGOFS2_sn_all_cu_fore_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>ng</ofs_region>
+  <subdomain>sn</subdomain>
+  <type>sal</type>
+  <link_name>Nowcast</link_name>
+  <order_num>1</order_num>
+  <model_type>salinity_nowcast</model_type>
+  <option_file>NGOFS2_sn_all_sa_now_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>ng</ofs_region>
+  <subdomain>sn</subdomain>
+  <type>sal</type>
+  <link_name>Forecast Guidance</link_name>
+  <order_num>2</order_num>
+  <model_type>salinity_forecast</model_type>
+  <option_file>NGOFS2_sn_all_sa_fore_option</option_file>
+</OFS_Animation>
+
+<!-- Columbia River & Estuary OFS Subdomain: Offshore -->
+<OFS_Animation>
+  <ofs_region>cre</ofs_region>
+  <subdomain>of</subdomain>
+  <type>wind</type>
+  <link_name>Nowcast</link_name>
+  <order_num>1</order_num>
+  <model_type>wind_nowcast</model_type>
+  <option_file>CREOFS_cro_all_wind_now_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>cre</ofs_region>
+  <subdomain>of</subdomain>
+  <type>wind</type>
+  <link_name>Forecast Guidance</link_name>
+  <order_num>2</order_num>
+  <model_type>wind_forecast</model_type>
+  <option_file>CREOFS_cro_all_wind_fore_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>cre</ofs_region>
+  <subdomain>of</subdomain>
+  <type>wl</type>>
+  <link_name>Nowcast</link_name>
+  <order_num>1</order_num>
+  <model_type>wl_nowcast</model_type>
+  <option_file>CREOFS_cro_all_wl_now_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>cre</ofs_region>
+  <subdomain>of</subdomain>
+  <type>wl</type>
+  <link_name>Forecast Guidance</link_name>
+  <order_num>2</order_num>
+  <model_type>wl_forecast</model_type>
+  <option_file>CREOFS_cro_all_wl_fore_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>cre</ofs_region>
+  <subdomain>of</subdomain>
+  <type>wt</type>
+  <link_name>Nowcast</link_name>
+  <order_num>1</order_num>
+  <model_type>wtemp_nowcast</model_type>
+  <option_file>CREOFS_cro_all_temp_now_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>cre</ofs_region>
+  <subdomain>of</subdomain>
+  <type>wt</type>
+  <link_name>Forecast Guidance</link_name>
+  <order_num>2</order_num>
+  <model_type>wtemp_forecast</model_type>
+  <option_file>CREOFS_cro_all_temp_fore_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>cre</ofs_region>
+  <subdomain>of</subdomain>
+  <type>cu</type>
+  <link_name>Nowcast</link_name>
+  <order_num>1</order_num>
+  <model_type>currents_nowcast</model_type>
+  <option_file>CREOFS_cro_all_cu_now_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>cre</ofs_region>
+  <subdomain>of</subdomain>
+  <type>cu</type>
+  <link_name>Forecast Guidance</link_name>
+  <order_num>2</order_num>
+  <model_type>currents_forecast</model_type>
+  <option_file>CREOFS_cro_all_cu_fore_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>cre</ofs_region>
+  <subdomain>of</subdomain>
+  <type>sal</type>
+  <link_name>Nowcast</link_name>
+  <order_num>1</order_num>
+  <model_type>salinity_nowcast</model_type>
+  <option_file>CREOFS_cro_all_sa_now_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>cre</ofs_region>
+  <subdomain>of</subdomain>
+  <type>sal</type>
+  <link_name>Forecast Guidance</link_name>
+  <order_num>2</order_num>
+  <model_type>salinity_forecast</model_type>
+  <option_file>CREOFS_cro_all_sa_fore_option</option_file>
+</OFS_Animation>
+
+<!-- Columbia River & Estuary OFS Subdomain: Lower -->
+<OFS_Animation>
+  <ofs_region>cre</ofs_region>
+  <subdomain>lo</subdomain>
+  <type>wind</type>
+  <link_name>Nowcast</link_name>
+  <order_num>1</order_num>
+  <model_type>wind_nowcast</model_type>
+  <option_file>CREOFS_lcr_all_wind_now_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>cre</ofs_region>
+  <subdomain>lo</subdomain>
+  <type>wind</type>
+  <link_name>Forecast Guidance</link_name>
+  <order_num>2</order_num>
+  <model_type>wind_forecast</model_type>
+  <option_file>CREOFS_lcr_all_wind_fore_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>cre</ofs_region>
+  <subdomain>lo</subdomain>
+  <type>wl</type>
+  <link_name>Nowcast</link_name>
+  <order_num>1</order_num>
+  <model_type>wl_nowcast</model_type>
+  <option_file>CREOFS_lcr_all_wl_now_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>cre</ofs_region>
+  <subdomain>lo</subdomain>
+  <type>wl</type>
+  <link_name>Forecast Guidance</link_name>
+  <order_num>2</order_num>
+  <model_type>wl_forecast</model_type>
+  <option_file>CREOFS_lcr_all_wl_fore_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>cre</ofs_region>
+  <subdomain>lo</subdomain>
+  <type>wt</type>
+  <link_name>Nowcast</link_name>
+  <order_num>1</order_num>
+  <model_type>wtemp_nowcast</model_type>
+  <option_file>CREOFS_lcr_all_temp_now_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>cre</ofs_region>
+  <subdomain>lo</subdomain>
+  <type>wt</type>
+  <link_name>Forecast Guidance</link_name>
+  <order_num>2</order_num>
+  <model_type>wtemp_forecast</model_type>
+  <option_file>CREOFS_lcr_all_temp_fore_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>cre</ofs_region>
+  <subdomain>lo</subdomain>
+  <type>cu</type>
+  <link_name>Nowcast</link_name>
+  <order_num>1</order_num>
+  <model_type>currents_nowcast</model_type>
+  <option_file>CREOFS_lcr_all_cu_now_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>cre</ofs_region>
+  <subdomain>lo</subdomain>
+  <type>cu</type>
+  <link_name>Forecast Guidance</link_name>
+  <order_num>2</order_num>
+  <model_type>currents_forecast</model_type>
+  <option_file>CREOFS_lcr_all_cu_fore_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>cre</ofs_region>
+  <subdomain>lo</subdomain>
+  <type>sal</type>
+  <link_name>Nowcast</link_name>
+  <order_num>1</order_num>
+  <model_type>salinity_nowcast</model_type>
+  <option_file>CREOFS_lcr_all_sa_now_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>cre</ofs_region>
+  <subdomain>lo</subdomain>
+  <type>sal</type>
+  <link_name>Forecast Guidance</link_name>
+  <order_num>2</order_num>
+  <model_type>salinity_forecast</model_type>
+  <option_file>CREOFS_lcr_all_sa_fore_option</option_file>
+</OFS_Animation>
+
+<!-- Columbia River & Estuary OFS Subdomain: Upper -->
+<OFS_Animation>
+  <ofs_region>cre</ofs_region>
+  <subdomain>up</subdomain>
+  <type>wind</type>
+  <link_name>Nowcast</link_name>
+  <order_num>1</order_num>
+  <model_type>wind_nowcast</model_type>
+  <option_file>CREOFS_ucr_all_wind_now_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>cre</ofs_region>
+  <subdomain>up</subdomain>
+  <type>wind</type>
+  <link_name>Forecast Guidance</link_name>
+  <order_num>2</order_num>
+  <model_type>wind_forecast</model_type>
+  <option_file>CREOFS_ucr_all_wind_fore_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>cre</ofs_region>
+  <subdomain>up</subdomain>
+  <type>wl</type>
+  <link_name>Nowcast</link_name>
+  <order_num>1</order_num>
+  <model_type>wl_nowcast</model_type>
+  <option_file>CREOFS_ucr_all_wl_now_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>cre</ofs_region>
+  <subdomain>up</subdomain>
+  <type>wl</type>
+  <link_name>Forecast Guidance</link_name>
+  <order_num>2</order_num>
+  <model_type>wl_forecast</model_type>
+  <option_file>CREOFS_ucr_all_wl_fore_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>cre</ofs_region>
+  <subdomain>up</subdomain>
+  <type>wt</type>
+  <link_name>Nowcast</link_name>
+  <order_num>1</order_num>
+  <model_type>wtemp_nowcast</model_type>
+  <option_file>CREOFS_ucr_all_temp_now_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>cre</ofs_region>
+  <subdomain>up</subdomain>
+  <type>wt</type>
+  <link_name>Forecast Guidance</link_name>
+  <order_num>2</order_num>
+  <model_type>wtemp_forecast</model_type>
+  <option_file>CREOFS_ucr_all_temp_fore_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>cre</ofs_region>
+  <subdomain>up</subdomain>
+  <link_name>Nowcast</link_name>
+  <order_num>1</order_num>
+  <model_type>currents_nowcast</model_type>
+  <option_file>CREOFS_ucr_all_cu_now_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>cre</ofs_region>
+  <subdomain>up</subdomain>
+  <type>cu</type>
+  <link_name>Forecast Guidance</link_name>
+  <order_num>2</order_num>
+  <model_type>currents_forecast</model_type>
+  <option_file>CREOFS_ucr_all_cu_fore_option</option_file>
+</OFS_Animation>
+
+<!-- Columbia River & Estuary OFS Subdomain: Bar Entrance -->
+<OFS_Animation>
+  <ofs_region>cre</ofs_region>
+  <subdomain>ba</subdomain>
+  <type>wind</type>
+  <link_name>Nowcast</link_name>
+  <order_num>1</order_num>
+  <model_type>wind_nowcast</model_type>
+  <option_file>CREOFS_crb_all_wind_now_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>cre</ofs_region>
+  <subdomain>ba</subdomain>
+  <type>wind</type>
+  <link_name>Forecast Guidance</link_name>
+  <order_num>2</order_num>
+  <model_type>wind_forecast</model_type>
+  <option_file>CREOFS_crb_all_wind_fore_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>cre</ofs_region>
+  <subdomain>ba</subdomain>
+  <type>wl</type>
+  <link_name>Nowcast</link_name>
+  <order_num>1</order_num>
+  <model_type>wl_nowcast</model_type>
+  <option_file>CREOFS_crb_all_wl_now_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>cre</ofs_region>
+  <subdomain>ba</subdomain>
+  <type>wl</type>
+  <link_name>Forecast Guidance</link_name>
+  <order_num>2</order_num>
+  <model_type>wl_forecast</model_type>
+  <option_file>CREOFS_crb_all_wl_fore_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>cre</ofs_region>
+  <subdomain>ba</subdomain>
+  <type>wt</type>
+  <link_name>Nowcast</link_name>
+  <order_num>1</order_num>
+  <model_type>wtemp_nowcast</model_type>
+  <option_file>CREOFS_crb_all_temp_now_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>cre</ofs_region>
+  <subdomain>ba</subdomain>
+  <type>wt</type>
+  <link_name>Forecast Guidance</link_name>
+  <order_num>2</order_num>
+  <model_type>wtemp_forecast</model_type>
+  <option_file>CREOFS_crb_all_temp_fore_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>cre</ofs_region>
+  <subdomain>ba</subdomain>
+  <type>cu</type>
+  <link_name>Nowcast</link_name>
+  <order_num>1</order_num>
+  <model_type>currents_nowcast</model_type>
+  <option_file>CREOFS_crb_all_cu_now_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>cre</ofs_region>
+  <subdomain>ba</subdomain>
+  <type>cu</type>
+  <link_name>Forecast Guidance</link_name>
+  <order_num>2</order_num>
+  <model_type>currents_forecast</model_type>
+  <option_file>CREOFS_crb_all_cu_fore_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>cre</ofs_region>
+  <subdomain>ba</subdomain>
+  <type>sal</type>
+  <link_name>Nowcast</link_name>
+  <order_num>1</order_num>
+  <model_type>salinity_nowcast</model_type>
+  <option_file>CREOFS_crb_all_sa_now_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>cre</ofs_region>
+  <subdomain>ba</subdomain>
+  <type>sal</type>
+  <link_name>Forecast Guidance</link_name>
+  <order_num>2</order_num>
+  <model_type>salinity_forecast</model_type>
+  <option_file>CREOFS_crb_all_sa_fore_option</option_file>
+</OFS_Animation>
+
+<!-- Columbia River & Estuary OFS Subdomain: Middle -->
+<OFS_Animation>
+  <ofs_region>cre</ofs_region>
+  <subdomain>mi</subdomain>
+  <type>wind</type>
+  <link_name>Nowcast</link_name>
+  <order_num>1</order_num>
+  <model_type>wind_nowcast</model_type>
+  <option_file>CREOFS_mcr_all_wind_now_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>cre</ofs_region>
+  <subdomain>mi</subdomain>
+  <type>wind</type>
+  <link_name>Forecast Guidance</link_name>
+  <order_num>2</order_num>
+  <model_type>wind_forecast</model_type>
+  <option_file>CREOFS_mcr_all_wind_fore_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>cre</ofs_region>
+  <subdomain>mi</subdomain>
+  <type>wl</type>
+  <link_name>Nowcast</link_name>
+  <order_num>1</order_num>
+  <model_type>wl_nowcast</model_type>
+  <option_file>CREOFS_mcr_all_wl_now_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>cre</ofs_region>
+  <subdomain>mi</subdomain>
+  <link_name>Forecast Guidance</link_name>
+  <order_num>2</order_num>
+  <model_type>wl_forecast</model_type>
+  <option_file>CREOFS_mcr_all_wl_fore_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>cre</ofs_region>
+  <subdomain>mi</subdomain>
+  <type>wt</type>
+  <link_name>Nowcast</link_name>
+  <order_num>1</order_num>
+  <model_type>wtemp_nowcast</model_type>
+  <option_file>CREOFS_mcr_all_temp_now_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>cre</ofs_region>
+  <subdomain>mi</subdomain>
+  <type>wt</type>
+  <link_name>Forecast Guidance</link_name>
+  <order_num>2</order_num>
+  <model_type>wtemp_forecast</model_type>
+  <option_file>CREOFS_mcr_all_temp_fore_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>cre</ofs_region>
+  <subdomain>mi</subdomain>
+  <type>cu</type>
+  <link_name>Nowcast</link_name>
+  <order_num>1</order_num>
+  <model_type>currents_nowcast</model_type>
+  <option_file>CREOFS_mcr_all_cu_now_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>cre</ofs_region>
+  <subdomain>mi</subdomain>
+  <type>cu</type>
+  <link_name>Forecast Guidance</link_name>
+  <order_num>2</order_num>
+  <model_type>currents_forecast</model_type>
+  <option_file>CREOFS_mcr_all_cu_fore_option</option_file>
+</OFS_Animation>
+
+<!-- San Francisco Bay OFS -->
+
+<OFS_Animation>
+  <ofs_region>sfb</ofs_region>
+  <subdomain>la</subdomain>
+  <type>wl</type>
+  <link_name>Nowcast</link_name>
+  <order_num>1</order_num>
+  <model_type>wl_nowcast</model_type>
+  <option_file>SFBOFS_all_wl_now_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>sfb</ofs_region>
+  <subdomain>la</subdomain>
+  <type>wl</type>
+  <link_name>Forecast Guidance</link_name>
+  <order_num>2</order_num>
+  <model_type>wl_forecast</model_type>
+  <option_file>SFBOFS_all_wl_fore_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>sfb</ofs_region>
+  <subdomain>la</subdomain>
+  <type>wt</type>
+  <link_name>Nowcast</link_name>
+  <order_num>1</order_num>
+  <model_type>wtemp_nowcast</model_type>
+  <option_file>SFBOFS_all_temp_now_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>sfb</ofs_region>
+  <subdomain>la</subdomain>
+  <type>wt</type>
+  <link_name>Forecast Guidance</link_name>
+  <order_num>2</order_num>
+  <model_type>wtemp_forecast</model_type>
+  <option_file>SFBOFS_all_temp_fore_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>sfb</ofs_region>
+  <subdomain>la</subdomain>
+  <type>sal</type>
+  <link_name>Nowcast</link_name>
+  <order_num>1</order_num>
+  <model_type>salinity_nowcast</model_type>
+  <option_file>SFBOFS_all_sa_now_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>sfb</ofs_region>
+  <subdomain>la</subdomain>
+  <type>sal</type>
+  <link_name>Forecast Guidance</link_name>
+  <order_num>2</order_num>
+  <model_type>salinity_forecast</model_type>
+  <option_file>SFBOFS_all_sa_fore_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>sfb</ofs_region>
+  <subdomain>la</subdomain>
+  <type>wind</type>
+  <link_name>Nowcast</link_name>
+  <order_num>1</order_num>
+  <model_type>wind_nowcast</model_type>
+  <option_file>SFBOFS_all_wind_now_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>sfb</ofs_region>
+  <subdomain>la</subdomain>
+  <type>wind</type>
+  <link_name>Forecast Guidance</link_name>
+  <order_num>2</order_num>
+  <model_type>wind_forecast</model_type>
+  <option_file>SFBOFS_all_wind_fore_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>sfb</ofs_region>
+  <subdomain>la</subdomain>
+  <type>cu</type>
+  <link_name>Nowcast</link_name>
+  <order_num>1</order_num>
+  <model_type>currents_nowcast</model_type>
+  <option_file>SFBOFS_all_cu_now_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>sfb</ofs_region>
+  <subdomain>la</subdomain>
+  <type>cu</type>
+  <link_name>Forecast Guidance</link_name>
+  <order_num>2</order_num>
+  <model_type>currents_forecast</model_type>
+  <option_file>SFBOFS_all_cu_fore_option</option_file>
+</OFS_Animation>
+
+<!-- SFBOFS - SF Entrance -->
+
+<OFS_Animation>
+  <ofs_region>sfb</ofs_region>
+  <subdomain>en</subdomain>
+  <type>wl</type>
+  <link_name>Nowcast</link_name>
+  <order_num>1</order_num>
+  <model_type>wl_nowcast</model_type>
+  <option_file>SFBOFS_entrance_wl_now_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>sfb</ofs_region>
+  <subdomain>en</subdomain>
+  <type>wl</type>
+  <link_name>Forecast Guidance</link_name>
+  <order_num>2</order_num>
+  <model_type>wl_forecast</model_type>
+  <option_file>SFBOFS_entrance_wl_fore_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>sfb</ofs_region>
+  <subdomain>en</subdomain>
+  <type>wt</type>
+  <link_name>Nowcast</link_name>
+  <order_num>1</order_num>
+  <model_type>wtemp_nowcast</model_type>
+  <option_file>SFBOFS_entrance_temp_now_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>sfb</ofs_region>
+  <subdomain>en</subdomain>
+  <type>wt</type>
+  <link_name>Forecast Guidance</link_name>
+  <order_num>2</order_num>
+  <model_type>wtemp_forecast</model_type>
+  <option_file>SFBOFS_entrance_temp_fore_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>sfb</ofs_region>
+  <subdomain>en</subdomain>
+  <type>sal</type>
+  <link_name>Nowcast</link_name>
+  <order_num>1</order_num>
+  <model_type>salinity_nowcast</model_type>
+  <option_file>SFBOFS_entrance_sa_now_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>sfb</ofs_region>
+  <subdomain>en</subdomain>
+  <type>sal</type>
+  <link_name>Forecast Guidance</link_name>
+  <order_num>2</order_num>
+  <model_type>salinity_forecast</model_type>
+  <option_file>SFBOFS_entrance_sa_fore_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>sfb</ofs_region>
+  <subdomain>en</subdomain>
+  <type>wind</type>
+  <link_name>Nowcast</link_name>
+  <order_num>1</order_num>
+  <model_type>wind_nowcast</model_type>
+  <option_file>SFBOFS_entrance_wind_now_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>sfb</ofs_region>
+  <subdomain>en</subdomain>
+  <type>wind</type>
+  <link_name>Forecast Guidance</link_name>
+  <order_num>2</order_num>
+  <model_type>wind_forecast</model_type>
+  <option_file>SFBOFS_entrance_wind_fore_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>sfb</ofs_region>
+  <subdomain>en</subdomain>
+  <type>cu</type>
+  <link_name>Nowcast</link_name>
+  <order_num>1</order_num>
+  <model_type>currents_nowcast</model_type>
+  <option_file>SFBOFS_entrance_cu_now_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>sfb</ofs_region>
+  <subdomain>en</subdomain>
+  <type>cu</type>
+  <link_name>Forecast Guidance</link_name>
+  <order_num>2</order_num>
+  <model_type>currents_forecast</model_type>
+  <option_file>SFBOFS_entrance_cu_fore_option</option_file>
+</OFS_Animation>
+
+<!-- Gulf of Maine OFS -->
+<OFS_Animation>
+  <ofs_region>gom</ofs_region>
+  <subdomain>0</subdomain>
+  <type>cu</type>
+  <link_name>Nowcast</link_name>
+  <order_num>1</order_num>
+  <model_type>currents_nowcast</model_type>
+  <option_file>GoMOFS_gm_all_cu_now_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>gom</ofs_region>
+  <subdomain>0</subdomain>
+  <type>cu</type>
+  <link_name>Forecast Guidance</link_name>
+  <order_num>2</order_num>
+  <model_type>currents_forecast</model_type>
+  <option_file>GoMOFS_gm_all_cu_fore_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>gom</ofs_region>
+  <subdomain>0</subdomain>
+  <type>sal</type>
+  <link_name>Nowcast</link_name>
+  <order_num>1</order_num>
+  <model_type>salinity_nowcast</model_type>
+  <option_file>GoMOFS_gm_all_sa_now_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>gom</ofs_region>
+  <subdomain>0</subdomain>
+  <type>sal</type>
+  <link_name>Forecast Guidance</link_name>
+  <order_num>2</order_num>
+  <model_type>salinity_forecast</model_type>
+  <option_file>GoMOFS_gm_all_sa_fore_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>gom</ofs_region>
+  <subdomain>0</subdomain>
+  <type>wt</type>
+  <link_name>Nowcast</link_name>
+  <order_num>1</order_num>
+  <model_type>wtemp_nowcast</model_type>
+  <option_file>GoMOFS_gm_all_temp_now_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>gom</ofs_region>
+  <subdomain>0</subdomain>
+  <type>wt</type>
+  <link_name>Forecast Guidance</link_name>
+  <order_num>2</order_num>
+  <model_type>wtemp_forecast</model_type>
+  <option_file>GoMOFS_gm_all_temp_fore_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>gom</ofs_region>
+  <subdomain>0</subdomain>
+  <type>wind</type>
+  <link_name>Nowcast</link_name>
+  <order_num>1</order_num>
+  <model_type>wind_nowcast</model_type>
+  <option_file>GoMOFS_gm_all_wind_now_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>gom</ofs_region>
+  <subdomain>0</subdomain>
+  <type>wind</type>
+  <link_name>Forecast Guidance</link_name>
+  <order_num>2</order_num>
+  <model_type>wind_forecast</model_type>
+  <option_file>GoMOFS_gm_all_wind_fore_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>gom</ofs_region>
+  <subdomain>0</subdomain>
+  <type>wl</type>
+  <link_name>Nowcast</link_name>
+  <order_num>1</order_num>
+  <model_type>wl_nowcast</model_type>
+  <option_file>GoMOFS_gm_all_wl_now_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>gom</ofs_region>
+  <subdomain>0</subdomain>
+  <type>wl</type>
+  <link_name>Forecast Guidance</link_name>
+  <order_num>2</order_num>
+  <model_type>wl_forecast</model_type>
+  <option_file>GoMOFS_gm_all_wl_fore_option</option_file>
+</OFS_Animation>
+
+<!-- Cook Inlet OFS -->
+<OFS_Animation>
+  <ofs_region>ci</ofs_region>
+  <subdomain>0</subdomain>
+  <type>wl</type>
+  <link_name>Nowcast</link_name>
+  <order_num>1</order_num>
+  <model_type>wl_nowcast</model_type>
+  <option_file>CIOFS_ci_all_wl_now_option</option_file>
+</OFS_Animation>  
+  
+<OFS_Animation>
+  <ofs_region>ci</ofs_region>
+  <subdomain>0</subdomain>
+  <type>wl</type>
+  <link_name>Forecast Guidance</link_name>
+  <order_num>2</order_num>
+  <model_type>wl_forecast</model_type>
+  <option_file>CIOFS_ci_all_wl_fore_option</option_file>
+</OFS_Animation>  
+
+<OFS_Animation>
+  <ofs_region>ci</ofs_region>
+  <subdomain>0</subdomain>
+  <type>wind</type>
+  <link_name>Nowcast</link_name>
+  <order_num>1</order_num>
+  <model_type>wind_nowcast</model_type>
+  <option_file>CIOFS_ci_all_wind_now_option</option_file>
+</OFS_Animation>  
+  
+<OFS_Animation>
+  <ofs_region>ci</ofs_region>
+  <subdomain>0</subdomain>
+  <type>wind</type>
+  <link_name>Forecast Guidance</link_name>
+  <order_num>2</order_num>
+  <model_type>wind_forecast</model_type>
+  <option_file>CIOFS_ci_all_wind_fore_option</option_file>
+</OFS_Animation>  
+
+<OFS_Animation>
+  <ofs_region>ci</ofs_region>
+  <subdomain>0</subdomain>
+  <type>wt</type>
+  <link_name>Nowcast</link_name>
+  <order_num>1</order_num>
+  <model_type>wtemp_nowcast</model_type>
+  <option_file>CIOFS_ci_all_temp_now_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>ci</ofs_region>
+  <subdomain>0</subdomain>
+  <type>wt</type>
+  <link_name>Forecast Guidance</link_name>
+  <order_num>2</order_num>
+  <model_type>wtemp_forecast</model_type>
+  <option_file>CIOFS_ci_all_temp_fore_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>ci</ofs_region>
+  <subdomain>0</subdomain>
+  <type>sal</type>
+  <link_name>Nowcast</link_name>
+  <order_num>1</order_num>
+  <model_type>salinity_nowcast</model_type>
+  <option_file>CIOFS_ci_all_sa_now_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>ci</ofs_region>
+  <subdomain>0</subdomain>
+  <type>sal</type>
+  <link_name>Forecast Guidance</link_name>
+  <order_num>2</order_num>
+  <model_type>salinity_forecast</model_type>
+  <option_file>CIOFS_ci_all_sa_fore_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>ci</ofs_region>
+  <subdomain>0</subdomain>
+  <type>cu</type>
+  <link_name>Nowcast</link_name>
+  <order_num>1</order_num>
+  <model_type>currents_nowcast</model_type>
+  <option_file>CIOFS_ci_all_cu_now_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>ci</ofs_region>
+  <subdomain>0</subdomain>
+  <type>cu</type>
+  <link_name>Forecast Guidance</link_name>
+  <order_num>2</order_num>
+  <model_type>currents_forecast</model_type>
+  <option_file>CIOFS_ci_all_cu_fore_option</option_file>
+</OFS_Animation>
+
+<!-- Cook Inlet OFS: Upper Bay sub-domain-->
+<OFS_Animation>
+  <ofs_region>ci</ofs_region>
+  <subdomain>ub</subdomain>
+  <type>wl</type>
+  <link_name>Nowcast</link_name>
+  <order_num>1</order_num>
+  <model_type>wl_nowcast</model_type>
+  <option_file>CIOFS_ci_ub_wl_now_option</option_file>
+</OFS_Animation>  
+  
+<OFS_Animation>
+  <ofs_region>ci</ofs_region>
+  <subdomain>ub</subdomain>
+  <type>wl</type>
+  <link_name>Forecast Guidance</link_name>
+  <order_num>2</order_num>
+  <model_type>wl_forecast</model_type>
+  <option_file>CIOFS_ci_ub_wl_fore_option</option_file>
+</OFS_Animation>  
+
+<OFS_Animation>
+  <ofs_region>ci</ofs_region>
+  <subdomain>ub</subdomain>
+  <type>wind</type>
+  <link_name>Nowcast</link_name>
+  <order_num>1</order_num>
+  <model_type>wind_nowcast</model_type>
+  <option_file>CIOFS_ci_ub_wind_now_option</option_file>
+</OFS_Animation>  
+  
+<OFS_Animation>
+  <ofs_region>ci</ofs_region>
+  <subdomain>ub</subdomain>
+  <type>wind</type>
+  <link_name>Forecast Guidance</link_name>
+  <order_num>2</order_num>
+  <model_type>wind_forecast</model_type>
+  <option_file>CIOFS_ci_ub_wind_fore_option</option_file>
+</OFS_Animation>  
+
+<OFS_Animation>
+  <ofs_region>ci</ofs_region>
+  <subdomain>ub</subdomain>
+  <type>wt</type>
+  <link_name>Nowcast</link_name>
+  <order_num>1</order_num>
+  <model_type>wtemp_nowcast</model_type>
+  <option_file>CIOFS_ci_ub_temp_now_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>ci</ofs_region>
+  <subdomain>ub</subdomain>
+  <type>wt</type>
+  <link_name>Forecast Guidance</link_name>
+  <order_num>2</order_num>
+  <model_type>wtemp_forecast</model_type>
+  <option_file>CIOFS_ci_ub_temp_fore_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>ci</ofs_region>
+  <subdomain>ub</subdomain>
+  <type>sal</type>
+  <link_name>Nowcast</link_name>
+  <order_num>1</order_num>
+  <model_type>salinity_nowcast</model_type>
+  <option_file>CIOFS_ci_ub_sa_now_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>ci</ofs_region>
+  <subdomain>ub</subdomain>
+  <type>sal</type>
+  <link_name>Forecast Guidance</link_name>
+  <order_num>2</order_num>
+  <model_type>salinity_forecast</model_type>
+  <option_file>CIOFS_ci_ub_sa_fore_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>ci</ofs_region>
+  <subdomain>ub</subdomain>
+  <type>cu</type>
+  <link_name>Nowcast</link_name>
+  <order_num>1</order_num>
+  <model_type>currents_nowcast</model_type>
+  <option_file>CIOFS_ci_ub_cu_now_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>ci</ofs_region>
+  <subdomain>ub</subdomain>
+  <type>cu</type>
+  <link_name>Forecast Guidance</link_name>
+  <order_num>2</order_num>
+  <model_type>currents_forecast</model_type>
+  <option_file>CIOFS_ci_ub_cu_fore_option</option_file>
+</OFS_Animation>
+
+<!-- Lake Michigan and Huron OFS -->
+<!--LMHOFS WL-->
+<OFS_Animation>
+  <ofs_region>lmh</ofs_region>
+  <subdomain>0</subdomain>
+  <type>wl</type>
+  <link_name>Nowcast</link_name>
+  <order_num>1</order_num>
+  <model_type>wl_nowcast</model_type>
+  <option_file>LMHOFS_lmh_all_wl_now_option</option_file>
+</OFS_Animation>
+  
+<OFS_Animation>
+  <ofs_region>lmh</ofs_region>
+  <subdomain>0</subdomain>
+  <type>wl</type>
+  <link_name>Forecast Guidance</link_name>
+  <order_num>2</order_num>
+  <model_type>wl_forecast</model_type>
+  <option_file>LMHOFS_lmh_all_wl_fore_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>lmh</ofs_region>
+  <subdomain>0</subdomain>
+  <type>wl</type>
+  <link_name>Nowcast - Lake Michigan</link_name>
+  <order_num>3</order_num>
+  <model_type>wl_nowcast_lm</model_type>
+  <option_file>LMHOFS_lm_all_wl_now_option</option_file>
+</OFS_Animation>
+  
+<OFS_Animation>
+  <ofs_region>lmh</ofs_region>
+  <subdomain>0</subdomain>
+  <type>wl</type>
+  <link_name>Forecast Guidance - Lake Michigan</link_name>
+  <order_num>4</order_num>
+  <model_type>wl_forecast_lm</model_type>
+  <option_file>LMHOFS_lm_all_wl_fore_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>lmh</ofs_region>
+  <subdomain>0</subdomain>
+  <type>wl</type>
+  <link_name>Nowcast - Lake Huron</link_name>
+  <order_num>5</order_num>
+  <model_type>wl_nowcast_lh</model_type>
+  <option_file>LMHOFS_lh_all_wl_now_option</option_file>
+</OFS_Animation>
+  
+<OFS_Animation>
+  <ofs_region>lmh</ofs_region>
+  <subdomain>0</subdomain>
+  <type>wl</type>
+  <link_name>Forecast Guidance - Lake Huron</link_name>
+  <order_num>6</order_num>
+  <model_type>wl_forecast_lh</model_type>
+  <option_file>LMHOFS_lh_all_wl_fore_option</option_file>
+</OFS_Animation>  
+
+<OFS_Animation>
+  <ofs_region>lmh</ofs_region>
+  <subdomain>0</subdomain>
+  <type>wl</type>
+  <link_name>Nowcast - Mackinac Straits</link_name>
+  <order_num>7</order_num>
+  <model_type>wl_nowcast_ms</model_type>
+  <option_file>LMHOFS_ms_all_wl_now_option</option_file>
+</OFS_Animation>
+  
+<OFS_Animation>
+  <ofs_region>lmh</ofs_region>
+  <subdomain>0</subdomain>
+  <type>wl</type>
+  <link_name>Forecast Guidance - Mackinac Straits</link_name>
+  <order_num>8</order_num>
+  <model_type>wl_forecast_ms</model_type>
+  <option_file>LMHOFS_ms_all_wl_fore_option</option_file>
+</OFS_Animation>
+
+<!--LMHOFS currents -->
+<OFS_Animation>
+  <ofs_region>lmh</ofs_region>
+  <subdomain>0</subdomain>
+  <type>cu</type>
+  <link_name>Field Nowcast</link_name>
+  <order_num>1</order_num>
+  <model_type>currents_nowcast</model_type>
+  <option_file>LMHOFS_lmh_all_cu_now_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>lmh</ofs_region>
+  <subdomain>0</subdomain>
+  <type>cu</type>
+  <link_name>Field Forecast Guidance</link_name>
+  <order_num>2</order_num>
+  <model_type>currents_forecast</model_type>
+  <option_file>LMHOFS_lmh_all_cu_fore_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>lmh</ofs_region>
+  <subdomain>0</subdomain>
+  <type>cu</type>
+  <link_name>Field Nowcast - Lake Michigan</link_name>
+  <order_num>3</order_num>
+  <model_type>currents_nowcast_lm</model_type>
+  <option_file>LMHOFS_lm_all_cu_now_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>lmh</ofs_region>
+  <subdomain>0</subdomain>
+  <type>cu</type>
+  <link_name>Field Forecast Guidance - Lake Michigan</link_name>
+  <order_num>4</order_num>
+  <model_type>currents_forecast_lm</model_type>
+  <option_file>LMHOFS_lm_all_cu_fore_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>lmh</ofs_region>
+  <subdomain>0</subdomain>
+  <type>cu</type>
+  <link_name>Field Nowcast - Lake Huron</link_name>
+  <order_num>5</order_num>
+  <model_type>currents_nowcast_lh</model_type>
+  <option_file>LMHOFS_lh_all_cu_now_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>lmh</ofs_region>
+  <subdomain>0</subdomain>
+  <type>cu</type>
+  <link_name>Field Forecast Guidance - Lake Huron</link_name>
+  <order_num>6</order_num>
+  <model_type>currents_forecast_lh</model_type>
+  <option_file>LMHOFS_lh_all_cu_fore_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>lmh</ofs_region>
+  <subdomain>0</subdomain>
+  <type>cu</type>
+  <link_name>Field Nowcast - Mackinac Straits</link_name>
+  <order_num>7</order_num>
+  <model_type>currents_nowcast_ms</model_type>
+  <option_file>LMHOFS_ms_all_cu_now_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>lmh</ofs_region>
+  <subdomain>0</subdomain>
+  <type>cu</type>
+  <link_name>Field Forecast Guidance - Mackinac Straits</link_name>
+  <order_num>8</order_num>
+  <model_type>currents_forecast_ms</model_type>
+  <option_file>LMHOFS_ms_all_cu_fore_option</option_file>
+</OFS_Animation>
+
+<!-- LMHOFS wind -->
+<OFS_Animation>
+  <ofs_region>lmh</ofs_region>
+  <subdomain>0</subdomain>
+  <type>wind</type>
+  <link_name>Nowcast</link_name>
+  <order_num>1</order_num>
+  <model_type>wind_nowcast</model_type>
+  <option_file>LMHOFS_lmh_all_wind_now_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>lmh</ofs_region>
+  <subdomain>0</subdomain>
+  <type>wind</type>
+  <link_name>Forecast Guidance</link_name>
+  <order_num>2</order_num>
+  <model_type>wind_forecast</model_type>
+  <option_file>LMHOFS_lmh_all_wind_fore_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>lmh</ofs_region>
+  <subdomain>0</subdomain>
+  <type>wind</type>
+  <link_name>Nowcast - Lake Michigan</link_name>
+  <order_num>3</order_num>
+  <model_type>wind_nowcast_lm</model_type>
+  <option_file>LMHOFS_lm_all_wind_now_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>lmh</ofs_region>
+  <subdomain>0</subdomain>
+  <type>wind</type>
+  <link_name>Forecast Guidance - Lake Michigan</link_name>
+  <order_num>4</order_num>
+  <model_type>wind_forecast_lm</model_type>
+  <option_file>LMHOFS_lm_all_wind_fore_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>lmh</ofs_region>
+  <subdomain>0</subdomain>
+  <type>wind</type>
+  <link_name>Nowcast - Lake Huron</link_name>
+  <order_num>5</order_num>
+  <model_type>wind_nowcast_lh</model_type>
+  <option_file>LMHOFS_lh_all_wind_now_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>lmh</ofs_region>
+  <subdomain>0</subdomain>
+  <type>wind</type>
+  <link_name>Forecast Guidance - Lake Huron</link_name>
+  <order_num>6</order_num>
+  <model_type>wind_forecast_lh</model_type>
+  <option_file>LMHOFS_lh_all_wind_fore_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>lmh</ofs_region>
+  <subdomain>0</subdomain>
+  <type>wind</type>
+  <link_name>Nowcast - Mackinac Straits</link_name>
+  <order_num>7</order_num>
+  <model_type>wind_nowcast_ms</model_type>
+  <option_file>LMHOFS_ms_all_wind_now_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>lmh</ofs_region>
+  <subdomain>0</subdomain>
+  <type>wind</type>
+  <link_name>Forecast Guidance - Mackinac Straits</link_name>
+  <order_num>8</order_num>
+  <model_type>wind_forecast_ms</model_type>
+  <option_file>LMHOFS_ms_all_wind_fore_option</option_file>
+</OFS_Animation>
+
+<!-- LMHOFS Water Temperature -->
+<OFS_Animation>
+  <ofs_region>lmh</ofs_region>
+  <subdomain>0</subdomain>
+  <type>wt</type>
+  <link_name>Nowcast</link_name>
+  <order_num>1</order_num>
+  <model_type>wtemp_nowcast</model_type>
+  <option_file>LMHOFS_lmh_all_temp_now_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>lmh</ofs_region>
+  <subdomain>0</subdomain>
+  <type>wt</type>
+  <link_name>Forecast Guidance</link_name>
+  <order_num>2</order_num>
+  <model_type>wtemp_forecast</model_type>
+  <option_file>LMHOFS_lmh_all_temp_fore_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>lmh</ofs_region>
+  <subdomain>0</subdomain>
+  <type>wt</type>
+  <link_name>Nowcast - Lake Michigan</link_name>
+  <order_num>3</order_num>
+  <model_type>wtemp_nowcast_lm</model_type>
+  <option_file>LMHOFS_lm_all_temp_now_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>lmh</ofs_region>
+  <subdomain>0</subdomain>
+  <type>wt</type>
+  <link_name>Forecast Guidance - Lake Michigan</link_name>
+  <order_num>4</order_num>
+  <model_type>wtemp_forecast_lm</model_type>
+  <option_file>LMHOFS_lm_all_temp_fore_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>lmh</ofs_region>
+  <subdomain>0</subdomain>
+  <type>wt</type>
+  <link_name>Nowcast - Lake Huron</link_name>
+  <order_num>5</order_num>
+  <model_type>wtemp_nowcast_lh</model_type>
+  <option_file>LMHOFS_lh_all_temp_now_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>lmh</ofs_region>
+  <subdomain>0</subdomain>
+  <type>wt</type>
+  <link_name>Forecast Guidance - Lake Huron</link_name>
+  <order_num>6</order_num>
+  <model_type>wtemp_forecast_lh</model_type>
+  <option_file>LMHOFS_lh_all_temp_fore_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>lmh</ofs_region>
+  <subdomain>0</subdomain>
+  <type>wt</type>
+  <link_name>Nowcast - Mackinac Straits</link_name>
+  <order_num>7</order_num>
+  <model_type>wtemp_nowcast_ms</model_type>
+  <option_file>LMHOFS_ms_all_temp_now_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>lmh</ofs_region>
+  <subdomain>0</subdomain>
+  <type>wt</type>
+  <link_name>Forecast Guidance - Mackinac Straits</link_name>
+  <order_num>8</order_num>
+  <model_type>wtemp_forecast_ms</model_type>
+  <option_file>LMHOFS_ms_all_temp_fore_option</option_file>
+</OFS_Animation>
+
+<!-- West Coast OFS Map Plots List -->
+<OFS_Animation>
+  <ofs_region>wc</ofs_region>
+  <subdomain>0</subdomain>
+  <type>wl</type>
+  <link_name>Nowcast</link_name>
+  <order_num>1</order_num>
+  <model_type>wl_nowcast</model_type>
+  <option_file>WCOFS_wc_all_wl_now_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>wc</ofs_region>
+  <subdomain>0</subdomain>
+  <type>wl</type>
+  <link_name>Forecast Guidance</link_name>
+  <order_num>2</order_num>
+  <model_type>wl_forecast</model_type>
+  <option_file>WCOFS_wc_all_wl_fore_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>wc</ofs_region>
+  <subdomain>wa</subdomain>
+  <type>wl</type>
+  <link_name>Nowcast</link_name>
+  <order_num>1</order_num>
+  <model_type>wl_nowcast</model_type>
+  <option_file>WCOFS_wa_all_wl_now_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>wc</ofs_region>
+  <subdomain>wa</subdomain>
+  <type>wl</type>
+  <link_name>Forecast Guidance</link_name>
+  <order_num>2</order_num>
+  <model_type>wl_forecast</model_type>
+  <option_file>WCOFS_wa_all_wl_fore_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>wc</ofs_region>
+  <subdomain>nca</subdomain>
+  <type>wl</type>
+  <link_name>Nowcast</link_name>
+  <order_num>1</order_num>
+  <model_type>wl_nowcast</model_type>
+  <option_file>WCOFS_nca_all_wl_now_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>wc</ofs_region>
+  <subdomain>nca</subdomain>
+  <type>wl</type>
+  <link_name>Forecast Guidance</link_name>
+  <order_num>2</order_num>
+  <model_type>wl_forecast</model_type>
+  <option_file>WCOFS_nca_all_wl_fore_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>wc</ofs_region>
+  <subdomain>sca</subdomain>
+  <type>wl</type>
+  <link_name>Nowcast</link_name>
+  <order_num>1</order_num>
+  <model_type>wl_nowcast</model_type>
+  <option_file>WCOFS_sca_all_wl_now_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>wc</ofs_region>
+  <subdomain>sca</subdomain>
+  <type>wl</type>
+  <link_name>Forecast Guidance</link_name>
+  <order_num>2</order_num>
+  <model_type>wl_forecast</model_type>
+  <option_file>WCOFS_sca_all_wl_fore_option</option_file>
+</OFS_Animation>
+
+<!-- WCOFS Wind List -->
+<OFS_Animation>
+  <ofs_region>wc</ofs_region>
+  <subdomain>0</subdomain>
+  <type>wind</type>
+  <link_name>Nowcast</link_name>
+  <order_num>1</order_num>
+  <model_type>wind_nowcast</model_type>
+  <option_file>WCOFS_wc_all_wind_now_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>wc</ofs_region>
+  <subdomain>0</subdomain>
+  <type>wind</type>
+  <link_name>Forecast Guidance</link_name>
+  <order_num>2</order_num>
+  <model_type>wind_forecast</model_type>
+  <option_file>WCOFS_wc_all_wind_fore_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>wc</ofs_region>
+  <subdomain>wa</subdomain>
+  <type>wind</type>
+  <link_name>Nowcast</link_name>
+  <order_num>1</order_num>
+  <model_type>wind_nowcast</model_type>
+  <option_file>WCOFS_wa_all_wind_now_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>wc</ofs_region>
+  <subdomain>wa</subdomain>
+  <type>wind</type>
+  <link_name>Forecast Guidance</link_name>
+  <order_num>2</order_num>
+  <model_type>wind_forecast</model_type>
+  <option_file>WCOFS_wa_all_wind_fore_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>wc</ofs_region>
+  <subdomain>nca</subdomain>
+  <type>wind</type>
+  <link_name>Nowcast</link_name>
+  <order_num>1</order_num>
+  <model_type>wind_nowcast</model_type>
+  <option_file>WCOFS_nca_all_wind_now_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>wc</ofs_region>
+  <subdomain>nca</subdomain>
+  <type>wind</type>
+  <link_name>Forecast Guidance</link_name>
+  <order_num>2</order_num>
+  <model_type>wind_forecast</model_type>
+  <option_file>WCOFS_nca_all_wind_fore_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>wc</ofs_region>
+  <subdomain>sca</subdomain>
+  <type>wind</type>
+  <link_name>Nowcast</link_name>
+  <order_num>1</order_num>
+  <model_type>wind_nowcast</model_type>
+  <option_file>WCOFS_sca_all_wind_now_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>wc</ofs_region>
+  <subdomain>sca</subdomain>
+  <type>wind</type>
+  <link_name>Forecast Guidance</link_name>
+  <order_num>2</order_num>
+  <model_type>wind_forecast</model_type>
+  <option_file>WCOFS_sca_all_wind_fore_option</option_file>
+</OFS_Animation>
+
+<!--WCOFS Water Temperature Map Plots Animation List -->
+<OFS_Animation>
+  <ofs_region>wc</ofs_region>
+  <subdomain>0</subdomain>
+  <type>wt</type>
+  <link_name>Nowcast</link_name>
+  <order_num>1</order_num>
+  <model_type>wtemp_nowcast</model_type>
+  <option_file>WCOFS_wc_all_temp_now_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>wc</ofs_region>
+  <subdomain>0</subdomain>
+  <type>wt</type>
+  <link_name>Forecast Guidance</link_name>
+  <order_num>2</order_num>
+  <model_type>wtemp_forecast</model_type>
+  <option_file>WCOFS_wc_all_temp_fore_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>wc</ofs_region>
+  <subdomain>wa</subdomain>
+  <type>wt</type>
+  <link_name>Nowcast</link_name>
+  <order_num>1</order_num>
+  <model_type>wtemp_nowcast</model_type>
+  <option_file>WCOFS_wa_all_temp_now_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>wc</ofs_region>
+  <subdomain>wa</subdomain>
+  <type>wt</type>
+  <link_name>Forecast Guidance</link_name>
+  <order_num>2</order_num>
+  <model_type>wtemp_forecast</model_type>
+  <option_file>WCOFS_wa_all_temp_fore_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>wc</ofs_region>
+  <subdomain>nca</subdomain>
+  <type>wt</type>
+  <link_name>Nowcast</link_name>
+  <order_num>1</order_num>
+  <model_type>wtemp_nowcast</model_type>
+  <option_file>WCOFS_nca_all_temp_now_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>wc</ofs_region>
+  <subdomain>nca</subdomain>
+  <type>wt</type>
+  <link_name>Forecast Guidance</link_name>
+  <order_num>2</order_num>
+  <model_type>wtemp_forecast</model_type>
+  <option_file>WCOFS_nca_all_temp_fore_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>wc</ofs_region>
+  <subdomain>sca</subdomain>
+  <type>wt</type>
+  <link_name>Nowcast</link_name>
+  <order_num>1</order_num>
+  <model_type>wtemp_nowcast</model_type>
+  <option_file>WCOFS_sca_all_temp_now_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>wc</ofs_region>
+  <subdomain>sca</subdomain>
+  <type>wt</type>
+  <link_name>Forecast Guidance</link_name>
+  <order_num>2</order_num>
+  <model_type>wtemp_forecast</model_type>
+  <option_file>WCOFS_sca_all_temp_fore_option</option_file>
+</OFS_Animation>
+
+<!-- WCOFS Salinity Map Plots Animation List -->
+<OFS_Animation>
+  <ofs_region>wc</ofs_region>
+  <subdomain>0</subdomain>
+  <type>sal</type>
+  <link_name>Nowcast</link_name>
+  <order_num>1</order_num>
+  <model_type>salinity_nowcast</model_type>
+  <option_file>WCOFS_wc_all_sa_now_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>wc</ofs_region>
+  <subdomain>0</subdomain>
+  <type>sal</type>
+  <link_name>Forecast Guidance</link_name>
+  <order_num>2</order_num>
+  <model_type>salinity_forecast</model_type>
+  <option_file>WCOFS_wc_all_sa_fore_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>wc</ofs_region>
+  <subdomain>wa</subdomain>
+  <type>sal</type>
+  <link_name>Nowcast</link_name>
+  <order_num>1</order_num>
+  <model_type>salinity_nowcast</model_type>
+  <option_file>WCOFS_wa_all_sa_now_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>wc</ofs_region>
+  <subdomain>wa</subdomain>
+  <type>sal</type>
+  <link_name>Forecast Guidance</link_name>
+  <order_num>2</order_num>
+  <model_type>salinity_forecast</model_type>
+  <option_file>WCOFS_wa_all_sa_fore_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>wc</ofs_region>
+  <subdomain>nca</subdomain>
+  <type>sal</type>
+  <link_name>Nowcast</link_name>
+  <order_num>1</order_num>
+  <model_type>salinity_nowcast</model_type>
+  <option_file>WCOFS_nca_all_sa_now_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>wc</ofs_region>
+  <subdomain>nca</subdomain>
+  <type>sal</type>
+  <link_name>Forecast Guidance</link_name>
+  <order_num>2</order_num>
+  <model_type>salinity_forecast</model_type>
+  <option_file>WCOFS_nca_all_sa_fore_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>wc</ofs_region>
+  <subdomain>sca</subdomain>
+  <type>sal</type>
+  <link_name>Nowcast</link_name>
+  <order_num>1</order_num>
+  <model_type>salinity_nowcast</model_type>
+  <option_file>WCOFS_sca_all_sa_now_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>wc</ofs_region>
+  <subdomain>sca</subdomain>
+  <type>sal</type>
+  <link_name>Forecast Guidance</link_name>
+  <order_num>2</order_num>
+  <model_type>salinity_forecast</model_type>
+  <option_file>WCOFS_sca_all_sa_fore_option</option_file>
+</OFS_Animation>
+
+<!-- WCOFS Currents Map Plots Animation List -->
+<OFS_Animation>
+  <ofs_region>wc</ofs_region>
+  <subdomain>0</subdomain>
+  <type>cu</type>
+  <link_name>Nowcast</link_name>
+  <order_num>1</order_num>
+  <model_type>currents_nowcast</model_type>
+  <option_file>WCOFS_wc_all_cu_now_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>wc</ofs_region>
+  <subdomain>0</subdomain>
+  <type>cu</type>
+  <link_name>Forecast Guidance</link_name>
+  <order_num>2</order_num>
+  <model_type>currents_forecast</model_type>
+  <option_file>WCOFS_wc_all_cu_fore_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>wc</ofs_region>
+  <subdomain>wa</subdomain>
+  <type>cu</type>
+  <link_name>Nowcast</link_name>
+  <order_num>1</order_num>
+  <model_type>currents_nowcast</model_type>
+  <option_file>WCOFS_wa_all_cu_now_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>wc</ofs_region>
+  <subdomain>wa</subdomain>
+  <type>cu</type>
+  <link_name>Forecast Guidance</link_name>
+  <order_num>2</order_num>
+  <model_type>currents_forecast</model_type>
+  <option_file>WCOFS_wa_all_cu_fore_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>wc</ofs_region>
+  <subdomain>nca</subdomain>
+  <type>cu</type>
+  <link_name>Nowcast</link_name>
+  <order_num>1</order_num>
+  <model_type>currents_nowcast</model_type>
+  <option_file>WCOFS_nca_all_cu_now_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>wc</ofs_region>
+  <subdomain>nca</subdomain>
+  <type>cu</type>
+  <link_name>Forecast Guidance</link_name>
+  <order_num>2</order_num>
+  <model_type>currents_forecast</model_type>
+  <option_file>WCOFS_nca_all_cu_fore_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>wc</ofs_region>
+  <subdomain>sca</subdomain>
+  <type>cu</type>
+  <link_name>Nowcast</link_name>
+  <order_num>1</order_num>
+  <model_type>currents_nowcast</model_type>
+  <option_file>WCOFS_sca_all_cu_now_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>wc</ofs_region>
+  <subdomain>sca</subdomain>
+  <type>cu</type>
+  <link_name>Forecast Guidance</link_name>
+  <order_num>2</order_num>
+  <model_type>currents_forecast</model_type>
+  <option_file>WCOFS_sca_all_cu_fore_option</option_file>
+</OFS_Animation>
+
+<!-- Salish Sea and Columbia River OFS (main page) -->
+<OFS_Animation>
+  <ofs_region>ssc</ofs_region>
+  <subdomain>0</subdomain>
+  <type>wind</type>
+  <file_name>of_wind_nowcast.shtml</file_name>
+  <link_name>Nowcast</link_name>
+  <order_num>1</order_num>
+  <model_type>wind_nowcast</model_type>
+  <option_file>SSCOFS_ssc_all_wind_now_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>ssc</ofs_region>
+  <subdomain>0</subdomain>
+  <type>wind</type>
+  <file_name>of_wind_forecast.shtml</file_name>
+  <link_name>Forecast Guidance</link_name>
+  <order_num>2</order_num>
+  <model_type>wind_forecast</model_type>
+  <option_file>SSCOFS_ssc_all_wind_fore_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>ssc</ofs_region>
+  <subdomain>0</subdomain>
+  <type>wl</type>
+  <file_name>of_wl_nowcast.shtml</file_name>
+  <link_name>Nowcast</link_name>
+  <order_num>1</order_num>
+  <model_type>wl_nowcast</model_type>
+  <option_file>SSCOFS_ssc_all_wl_now_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>ssc</ofs_region>
+  <subdomain>0</subdomain>
+  <type>wl</type>
+  <file_name>of_wl_forecast.shtml</file_name>
+  <link_name>Forecast Guidance</link_name>
+  <order_num>2</order_num>
+  <model_type>wl_forecast</model_type>
+  <option_file>SSCOFS_ssc_all_wl_fore_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>ssc</ofs_region>
+  <subdomain>0</subdomain>
+  <type>wt</type>
+  <file_name>of_wtemp_nowcast.shtml</file_name>
+  <link_name>Nowcast</link_name>
+  <order_num>1</order_num>
+  <model_type>wtemp_nowcast</model_type>
+  <option_file>SSCOFS_ssc_all_temp_now_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>ssc</ofs_region>
+  <subdomain>0</subdomain>
+  <type>wt</type>
+  <file_name>of_wtemp_forecast.shtml</file_name>
+  <link_name>Forecast Guidance</link_name>
+  <order_num>2</order_num>
+  <model_type>wtemp_forecast</model_type>
+  <option_file>SSCOFS_ssc_all_temp_fore_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>ssc</ofs_region>
+  <subdomain>0</subdomain>
+  <type>cu</type>
+  <file_name>of_currents_nowcast.shtml</file_name>
+  <link_name>Nowcast</link_name>
+  <order_num>1</order_num>
+  <model_type>currents_nowcast</model_type>
+  <option_file>SSCOFS_ssc_all_cu_now_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>ssc</ofs_region>
+  <subdomain>0</subdomain>
+  <type>cu</type>
+  <file_name>of_currents_forecast.shtml</file_name>
+  <link_name>Forecast Guidance</link_name>
+  <order_num>2</order_num>
+  <model_type>currents_forecast</model_type>
+  <option_file>SSCOFS_ssc_all_cu_fore_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>ssc</ofs_region>
+  <subdomain>0</subdomain>
+  <type>sal</type>
+  <file_name>of_salinity_nowcast.shtml</file_name>
+  <link_name>Nowcast</link_name>
+  <order_num>1</order_num>
+  <model_type>salinity_nowcast</model_type>
+  <option_file>SSCOFS_ssc_all_sa_now_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>ssc</ofs_region>
+  <subdomain>0</subdomain>
+  <type>sal</type>
+  <file_name>of_salinity_forecast.shtml</file_name>
+  <link_name>Forecast Guidance</link_name>
+  <order_num>2</order_num>
+  <model_type>salinity_forecast</model_type>
+  <option_file>SSCOFS_ssc_all_sa_fore_option</option_file>
+</OFS_Animation>
+
+<!-- Salish Sea and Columbia River OFS Subdomain: Offshore Columbia River -->
+<OFS_Animation>
+  <ofs_region>ssc</ofs_region>
+  <subdomain>of</subdomain>
+  <type>wind</type>
+  <file_name>of_wind_nowcast.shtml</file_name>
+  <link_name>Nowcast</link_name>
+  <order_num>1</order_num>
+  <model_type>wind_nowcast</model_type>
+  <option_file>SSCOFS_cro_all_wind_now_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>ssc</ofs_region>
+  <subdomain>of</subdomain>
+  <type>wind</type>
+  <file_name>of_wind_forecast.shtml</file_name>
+  <link_name>Forecast Guidance</link_name>
+  <order_num>2</order_num>
+  <model_type>wind_forecast</model_type>
+  <option_file>SSCOFS_cro_all_wind_fore_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>ssc</ofs_region>
+  <subdomain>of</subdomain>
+  <type>wl</type>
+  <file_name>of_wl_nowcast.shtml</file_name>
+  <link_name>Nowcast</link_name>
+  <order_num>1</order_num>
+  <model_type>wl_nowcast</model_type>
+  <option_file>SSCOFS_cro_all_wl_now_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>ssc</ofs_region>
+  <subdomain>of</subdomain>
+  <type>wl</type>
+  <file_name>of_wl_forecast.shtml</file_name>
+  <link_name>Forecast Guidance</link_name>
+  <order_num>2</order_num>
+  <model_type>wl_forecast</model_type>
+  <option_file>SSCOFS_cro_all_wl_fore_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>ssc</ofs_region>
+  <subdomain>of</subdomain>
+  <type>wt</type>
+  <file_name>of_wtemp_nowcast.shtml</file_name>
+  <link_name>Nowcast</link_name>
+  <order_num>1</order_num>
+  <model_type>wtemp_nowcast</model_type>
+  <option_file>SSCOFS_cro_all_temp_now_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>ssc</ofs_region>
+  <subdomain>of</subdomain>
+  <type>wt</type>
+  <file_name>of_wtemp_forecast.shtml</file_name>
+  <link_name>Forecast Guidance</link_name>
+  <order_num>2</order_num>
+  <model_type>wtemp_forecast</model_type>
+  <option_file>SSCOFS_cro_all_temp_fore_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>ssc</ofs_region>
+  <subdomain>of</subdomain>
+  <type>cu</type>
+  <file_name>of_currents_nowcast.shtml</file_name>
+  <link_name>Nowcast</link_name>
+  <order_num>1</order_num>
+  <model_type>currents_nowcast</model_type>
+  <option_file>SSCOFS_cro_all_cu_now_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>ssc</ofs_region>
+  <subdomain>of</subdomain>
+  <type>cu</type>
+  <file_name>of_currents_forecast.shtml</file_name>
+  <link_name>Forecast Guidance</link_name>
+  <order_num>2</order_num>
+  <model_type>currents_forecast</model_type>
+  <option_file>SSCOFS_cro_all_cu_fore_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>ssc</ofs_region>
+  <subdomain>of</subdomain>
+  <type>sal</type>
+  <file_name>of_salinity_nowcast.shtml</file_name>
+  <link_name>Nowcast</link_name>
+  <order_num>1</order_num>
+  <model_type>salinity_nowcast</model_type>
+  <option_file>SSCOFS_cro_all_sa_now_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>ssc</ofs_region>
+  <subdomain>of</subdomain>
+  <type>sal</type>
+  <file_name>of_salinity_forecast.shtml</file_name>
+  <link_name>Forecast Guidance</link_name>
+  <order_num>2</order_num>
+  <model_type>salinity_forecast</model_type>
+  <option_file>SSCOFS_cro_all_sa_fore_option</option_file>
+</OFS_Animation>
+
+<!-- Salish Sea Columbia River OFS Subdomain: Lower Columbia River-->
+<OFS_Animation>
+  <ofs_region>ssc</ofs_region>
+  <subdomain>lo</subdomain>
+  <type>wind</type>
+  <file_name>lo_wind_nowcast.shtml</file_name>
+  <link_name>Nowcast</link_name>
+  <order_num>1</order_num>
+  <model_type>wind_nowcast</model_type>
+  <option_file>SSCOFS_lcr_all_wind_now_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>ssc</ofs_region>
+  <subdomain>lo</subdomain>
+  <type>wind</type>
+  <file_name>lo_wind_forecast.shtml</file_name>
+  <link_name>Forecast Guidance</link_name>
+  <order_num>2</order_num>
+  <model_type>wind_forecast</model_type>
+  <option_file>SSCOFS_lcr_all_wind_fore_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>ssc</ofs_region>
+  <subdomain>lo</subdomain>
+  <type>wl</type>
+  <file_name>lo_wl_nowcast.shtml</file_name>
+  <link_name>Nowcast</link_name>
+  <order_num>1</order_num>
+  <model_type>wl_nowcast</model_type>
+  <option_file>SSCOFS_lcr_all_wl_now_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>ssc</ofs_region>
+  <subdomain>lo</subdomain>
+  <type>wl</type>
+  <file_name>lo_wl_forecast.shtml</file_name>
+  <link_name>Forecast Guidance</link_name>
+  <order_num>2</order_num>
+  <model_type>wl_forecast</model_type>
+  <option_file>SSCOFS_lcr_all_wl_fore_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>ssc</ofs_region>
+  <subdomain>lo</subdomain>
+  <type>wt</type>
+  <file_name>lo_wtemp_nowcast.shtml</file_name>
+  <link_name>Nowcast</link_name>
+  <order_num>1</order_num>
+  <model_type>wtemp_nowcast</model_type>
+  <option_file>SSCOFS_lcr_all_temp_now_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>ssc</ofs_region>
+  <subdomain>lo</subdomain>
+  <type>wt</type>
+  <file_name>lo_wtemp_forecast.shtml</file_name>
+  <link_name>Forecast Guidance</link_name>
+  <order_num>2</order_num>
+  <model_type>wtemp_forecast</model_type>
+  <option_file>SSCOFS_lcr_all_temp_fore_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>ssc</ofs_region>
+  <subdomain>lo</subdomain>
+  <type>cu</type>
+  <file_name>lo_currents_nowcast.shtml</file_name>
+  <link_name>Nowcast</link_name>
+  <order_num>1</order_num>
+  <model_type>currents_nowcast</model_type>
+  <option_file>SSCOFS_lcr_all_cu_now_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>ssc</ofs_region>
+  <subdomain>lo</subdomain>
+  <type>cu</type>
+  <file_name>lo_currents_forecast.shtml</file_name>
+  <link_name>Forecast Guidance</link_name>
+  <order_num>2</order_num>
+  <model_type>currents_forecast</model_type>
+  <option_file>SSCOFS_lcr_all_cu_fore_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>ssc</ofs_region>
+  <subdomain>lo</subdomain>
+  <type>sal</type>
+  <file_name>lo_salinity_nowcast.shtml</file_name>
+  <link_name>Nowcast</link_name>
+  <order_num>1</order_num>
+  <model_type>salinity_nowcast</model_type>
+  <option_file>SSCOFS_lcr_all_sa_now_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>ssc</ofs_region>
+  <subdomain>lo</subdomain>
+  <type>sal</type>
+  <file_name>lo_salinity_forecast.shtml</file_name>
+  <link_name>Forecast Guidance</link_name>
+  <order_num>2</order_num>
+  <model_type>salinity_forecast</model_type>
+  <option_file>SSCOFS_lcr_all_sa_fore_option</option_file>
+</OFS_Animation>
+
+<!-- Salish Sea and Columbia River OFS Subdomain: Upper Columbia River-->
+<OFS_Animation>
+  <ofs_region>ssc</ofs_region>
+  <subdomain>up</subdomain>
+  <type>wind</type>
+  <file_name>up_wind_nowcast.shtml</file_name>
+  <link_name>Nowcast</link_name>
+  <order_num>1</order_num>
+  <model_type>wind_nowcast</model_type>
+  <option_file>SSCOFS_ucr_all_wind_now_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>ssc</ofs_region>
+  <subdomain>up</subdomain>
+  <type>wind</type>
+  <file_name>up_wind_forecast.shtml</file_name>
+  <link_name>Forecast Guidance</link_name>
+  <order_num>2</order_num>
+  <model_type>wind_forecast</model_type>
+  <option_file>SSCOFS_ucr_all_wind_fore_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>ssc</ofs_region>
+  <subdomain>up</subdomain>
+  <type>wl</type>
+  <file_name>up_wl_nowcast.shtml</file_name>
+  <link_name>Nowcast</link_name>
+  <order_num>1</order_num>
+  <model_type>wl_nowcast</model_type>
+  <option_file>SSCOFS_ucr_all_wl_now_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>ssc</ofs_region>
+  <subdomain>up</subdomain>
+  <type>wl</type>
+  <file_name>up_wl_forecast.shtml</file_name>
+  <link_name>Forecast Guidance</link_name>
+  <order_num>2</order_num>
+  <model_type>wl_forecast</model_type>
+  <option_file>SSCOFS_ucr_all_wl_fore_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>ssc</ofs_region>
+  <subdomain>up</subdomain>
+  <type>wt</type>
+  <file_name>up_wtemp_nowcast.shtml</file_name>
+  <link_name>Nowcast</link_name>
+  <order_num>1</order_num>
+  <model_type>wtemp_nowcast</model_type>
+  <option_file>SSCOFS_ucr_all_temp_now_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>ssc</ofs_region>
+  <subdomain>up</subdomain>
+  <type>wt</type>
+  <file_name>up_wtemp_forecast.shtml</file_name>
+  <link_name>Forecast Guidance</link_name>
+  <order_num>2</order_num>
+  <model_type>wtemp_forecast</model_type>
+  <option_file>SSCOFS_ucr_all_temp_fore_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>ssc</ofs_region>
+  <subdomain>up</subdomain>
+  <type>sal</type>
+  <link_name>Nowcast</link_name>
+  <order_num>1</order_num>
+  <model_type>salinity_nowcast</model_type>
+  <option_file>SSCOFS_ucr_all_sa_now_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>ssc</ofs_region>
+  <subdomain>up</subdomain>
+  <type>sal</type>
+  <link_name>Forecast Guidance</link_name>
+  <order_num>2</order_num>
+  <model_type>salinity_forecast</model_type>
+  <option_file>SSCOFS_ucr_all_sa_fore_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>ssc</ofs_region>
+  <subdomain>up</subdomain>
+  <type>cu</type>
+  <file_name>up_currents_nowcast.shtml</file_name>
+  <link_name>Nowcast</link_name>
+  <order_num>1</order_num>
+  <model_type>currents_nowcast</model_type>
+  <option_file>SSCOFS_ucr_all_cu_now_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>ssc</ofs_region>
+  <subdomain>up</subdomain>
+  <type>cu</type>
+  <file_name>up_currents_forecast.shtml</file_name>
+  <link_name>Forecast Guidance</link_name>
+  <order_num>2</order_num>
+  <model_type>currents_forecast</model_type>
+  <option_file>SSCOFS_ucr_all_cu_fore_option</option_file>
+</OFS_Animation>
+
+<!-- Salish Sea and Columbia River OFS Subdomain: Middle Columbia River -->
+<OFS_Animation>
+  <ofs_region>ssc</ofs_region>
+  <subdomain>mi</subdomain>
+  <type>wind</type>
+  <file_name>mi_wind_nowcast.shtml</file_name>
+  <link_name>Nowcast</link_name>
+  <order_num>1</order_num>
+  <model_type>wind_nowcast</model_type>
+  <option_file>SSCOFS_mcr_all_wind_now_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>ssc</ofs_region>
+  <subdomain>mi</subdomain>
+  <type>wind</type>
+  <file_name>mi_wind_forecast.shtml</file_name>
+  <link_name>Forecast Guidance</link_name>
+  <order_num>2</order_num>
+  <model_type>wind_forecast</model_type>
+  <option_file>SSCOFS_mcr_all_wind_fore_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>ssc</ofs_region>
+  <subdomain>mi</subdomain>
+  <type>wl</type>
+  <file_name>mi_wl_nowcast.shtml</file_name>
+  <link_name>Nowcast</link_name>
+  <order_num>1</order_num>
+  <model_type>wl_nowcast</model_type>
+  <option_file>SSCOFS_mcr_all_wl_now_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>ssc</ofs_region>
+  <subdomain>mi</subdomain>
+  <type>wl</type>
+  <file_name>mi_wl_forecast.shtml</file_name>
+  <link_name>Forecast Guidance</link_name>
+  <order_num>2</order_num>
+  <model_type>wl_forecast</model_type>
+  <option_file>SSCOFS_mcr_all_wl_fore_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>ssc</ofs_region>
+  <subdomain>mi</subdomain>
+  <type>wt</type>
+  <file_name>mi_wtemp_nowcast.shtml</file_name>
+  <link_name>Nowcast</link_name>
+  <order_num>1</order_num>
+  <model_type>wtemp_nowcast</model_type>
+  <option_file>SSCOFS_mcr_all_temp_now_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>ssc</ofs_region>
+  <subdomain>mi</subdomain>
+  <type>wt</type>
+  <file_name>mi_wtemp_forecast.shtml</file_name>
+  <link_name>Forecast Guidance</link_name>
+  <order_num>2</order_num>
+  <model_type>wtemp_forecast</model_type>
+  <option_file>SSCOFS_mcr_all_temp_fore_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>ssc</ofs_region>
+  <subdomain>mi</subdomain>
+  <type>sal</type>
+  <link_name>Nowcast</link_name>
+  <order_num>1</order_num>
+  <model_type>salinity_nowcast</model_type>
+  <option_file>SSCOFS_mcr_all_sa_now_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>ssc</ofs_region>
+  <subdomain>mi</subdomain>
+  <type>sal</type>
+  <link_name>Forecast Guidance</link_name>
+  <order_num>2</order_num>
+  <model_type>salinity_forecast</model_type>
+  <option_file>SSCOFS_mcr_all_sa_fore_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>ssc</ofs_region>
+  <subdomain>mi</subdomain>
+  <type>cu</type>
+  <file_name>mi_currents_nowcast.shtml</file_name>
+  <link_name>Nowcast</link_name>
+  <order_num>1</order_num>
+  <model_type>currents_nowcast</model_type>
+  <option_file>SSCOFS_mcr_all_cu_now_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>ssc</ofs_region>
+  <subdomain>mi</subdomain>
+  <type>cu</type>
+  <file_name>mi_currents_forecast.shtml</file_name>
+  <link_name>Forecast Guidance</link_name>
+  <order_num>2</order_num>
+  <model_type>currents_forecast</model_type>
+  <option_file>SSCOFS_mcr_all_cu_fore_option</option_file>
+</OFS_Animation>
+
+<!-- Salish Sea and Columbia River OFS Subdomain: Strait of Juan de Fuca -->
+<OFS_Animation>
+  <ofs_region>ssc</ofs_region>
+  <subdomain>jf</subdomain>
+  <type>wind</type>
+  <link_name>Nowcast</link_name>
+  <order_num>1</order_num>
+  <model_type>wind_nowcast</model_type>
+  <option_file>SSCOFS_juan_de_fuca_wind_now_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>ssc</ofs_region>
+  <subdomain>jf</subdomain>
+  <type>wind</type>
+  <link_name>Forecast Guidance</link_name>
+  <order_num>2</order_num>
+  <model_type>wind_forecast</model_type>
+  <option_file>SSCOFS_juan_de_fuca_wind_fore_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>ssc</ofs_region>
+  <subdomain>jf</subdomain>
+  <type>wl</type>
+  <link_name>Nowcast</link_name>
+  <order_num>1</order_num>
+  <model_type>wl_nowcast</model_type>
+  <option_file>SSCOFS_juan_de_fuca_wl_now_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>ssc</ofs_region>
+  <subdomain>jf</subdomain>
+  <type>wl</type>
+  <link_name>Forecast Guidance</link_name>
+  <order_num>2</order_num>
+  <model_type>wl_forecast</model_type>
+  <option_file>SSCOFS_juan_de_fuca_wl_fore_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>ssc</ofs_region>
+  <subdomain>jf</subdomain>
+  <type>wt</type>
+  <link_name>Nowcast</link_name>
+  <order_num>1</order_num>
+  <model_type>wtemp_nowcast</model_type>
+  <option_file>SSCOFS_juan_de_fuca_temp_now_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>ssc</ofs_region>
+  <subdomain>jf</subdomain>
+  <type>wt</type>
+  <file_name>mi_wtemp_forecast.shtml</file_name>
+  <link_name>Forecast Guidance</link_name>
+  <order_num>2</order_num>
+  <model_type>wtemp_forecast</model_type>
+  <option_file>SSCOFS_juan_de_fuca_temp_fore_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>ssc</ofs_region>
+  <subdomain>jf</subdomain>
+  <type>sal</type>
+  <link_name>Nowcast</link_name>
+  <order_num>1</order_num>
+  <model_type>salinity_nowcast</model_type>
+  <option_file>SSCOFS_juan_de_fuca_sa_now_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>ssc</ofs_region>
+  <subdomain>jf</subdomain>
+  <type>sal</type>
+  <link_name>Forecast Guidance</link_name>
+  <order_num>2</order_num>
+  <model_type>salinity_forecast</model_type>
+  <option_file>SSCOFS_juan_de_fuca_sa_fore_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>ssc</ofs_region>
+  <subdomain>jf</subdomain>
+  <type>cu</type>
+  <link_name>Nowcast</link_name>
+  <order_num>1</order_num>
+  <model_type>currents_nowcast</model_type>
+  <option_file>SSCOFS_juan_de_fuca_cu_now_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>ssc</ofs_region>
+  <subdomain>jf</subdomain>
+  <type>cu</type>
+  <link_name>Forecast Guidance</link_name>
+  <order_num>2</order_num>
+  <model_type>currents_forecast</model_type>
+  <option_file>SSCOFS_juan_de_fuca_cu_fore_option</option_file>
+</OFS_Animation>
+
+<!-- Salish Sea and Columbia River OFS Subdomain: Central Puget Sound -->
+<OFS_Animation>
+  <ofs_region>ssc</ofs_region>
+  <subdomain>cp</subdomain>
+  <type>wind</type>
+  <link_name>Nowcast</link_name>
+  <order_num>1</order_num>
+  <model_type>wind_nowcast</model_type>
+  <option_file>SSCOFS_central_puget_wind_now_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>ssc</ofs_region>
+  <subdomain>cp</subdomain>
+  <type>wind</type>
+  <link_name>Forecast Guidance</link_name>
+  <order_num>2</order_num>
+  <model_type>wind_forecast</model_type>
+  <option_file>SSCOFS_central_puget_wind_fore_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>ssc</ofs_region>
+  <subdomain>cp</subdomain>
+  <type>wl</type>
+  <link_name>Nowcast</link_name>
+  <order_num>1</order_num>
+  <model_type>wl_nowcast</model_type>
+  <option_file>SSCOFS_central_puget_wl_now_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>ssc</ofs_region>
+  <subdomain>cp</subdomain>
+  <type>wl</type>
+  <link_name>Forecast Guidance</link_name>
+  <order_num>2</order_num>
+  <model_type>wl_forecast</model_type>
+  <option_file>SSCOFS_central_puget_wl_fore_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>ssc</ofs_region>
+  <subdomain>cp</subdomain>
+  <type>wt</type>
+  <link_name>Nowcast</link_name>
+  <order_num>1</order_num>
+  <model_type>wtemp_nowcast</model_type>
+  <option_file>SSCOFS_central_puget_temp_now_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>ssc</ofs_region>
+  <subdomain>cp</subdomain>
+  <type>wt</type>
+  <link_name>Forecast Guidance</link_name>
+  <order_num>2</order_num>
+  <model_type>wtemp_forecast</model_type>
+  <option_file>SSCOFS_central_puget_temp_fore_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>ssc</ofs_region>
+  <subdomain>cp</subdomain>
+  <type>sal</type>
+  <link_name>Nowcast</link_name>
+  <order_num>1</order_num>
+  <model_type>salinity_nowcast</model_type>
+  <option_file>SSCOFS_central_puget_sa_now_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>ssc</ofs_region>
+  <subdomain>cp</subdomain>
+  <type>sal</type>
+  <link_name>Forecast Guidance</link_name>
+  <order_num>2</order_num>
+  <model_type>salinity_forecast</model_type>
+  <option_file>SSCOFS_central_puget_sa_fore_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>ssc</ofs_region>
+  <subdomain>cp</subdomain>
+  <type>cu</type>
+  <link_name>Nowcast</link_name>
+  <order_num>1</order_num>
+  <model_type>currents_nowcast</model_type>
+  <option_file>SSCOFS_central_puget_cu_now_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>ssc</ofs_region>
+  <subdomain>cp</subdomain>
+  <type>cu</type>
+  <link_name>Forecast Guidance</link_name>
+  <order_num>2</order_num>
+  <model_type>currents_forecast</model_type>
+  <option_file>SSCOFS_central_puget_cu_fore_option</option_file>
+</OFS_Animation>
+
+<!-- Salish Sea and Columbia River OFS Subdomain: Southern Puget Sound -->
+<OFS_Animation>
+  <ofs_region>ssc</ofs_region>
+  <subdomain>sp</subdomain>
+  <type>wind</type>
+  <link_name>Nowcast</link_name>
+  <order_num>1</order_num>
+  <model_type>wind_nowcast</model_type>
+  <option_file>SSCOFS_southern_puget_wind_now_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>ssc</ofs_region>
+  <subdomain>sp</subdomain>
+  <type>wind</type>
+  <link_name>Forecast Guidance</link_name>
+  <order_num>2</order_num>
+  <model_type>wind_forecast</model_type>
+  <option_file>SSCOFS_southern_puget_wind_fore_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>ssc</ofs_region>
+  <subdomain>sp</subdomain>
+  <type>wl</type>
+  <link_name>Nowcast</link_name>
+  <order_num>1</order_num>
+  <model_type>wl_nowcast</model_type>
+  <option_file>SSCOFS_southern_puget_wl_now_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>ssc</ofs_region>
+  <subdomain>sp</subdomain>
+  <type>wl</type>
+  <link_name>Forecast Guidance</link_name>
+  <order_num>2</order_num>
+  <model_type>wl_forecast</model_type>
+  <option_file>SSCOFS_southern_puget_wl_fore_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>ssc</ofs_region>
+  <subdomain>sp</subdomain>
+  <type>wt</type>
+  <link_name>Nowcast</link_name>
+  <order_num>1</order_num>
+  <model_type>wtemp_nowcast</model_type>
+  <option_file>SSCOFS_southern_puget_temp_now_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>ssc</ofs_region>
+  <subdomain>sp</subdomain>
+  <type>wt</type>
+  <link_name>Forecast Guidance</link_name>
+  <order_num>2</order_num>
+  <model_type>wtemp_forecast</model_type>
+  <option_file>SSCOFS_southern_puget_temp_fore_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>ssc</ofs_region>
+  <subdomain>sp</subdomain>
+  <type>sal</type>
+  <link_name>Nowcast</link_name>
+  <order_num>1</order_num>
+  <model_type>salinity_nowcast</model_type>
+  <option_file>SSCOFS_southern_puget_sa_now_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>ssc</ofs_region>
+  <subdomain>sp</subdomain>
+  <type>sal</type>
+  <link_name>Forecast Guidance</link_name>
+  <order_num>2</order_num>
+  <model_type>salinity_forecast</model_type>
+  <option_file>SSCOFS_southern_puget_sa_fore_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>ssc</ofs_region>
+  <subdomain>sp</subdomain>
+  <type>cu</type>
+  <link_name>Nowcast</link_name>
+  <order_num>1</order_num>
+  <model_type>currents_nowcast</model_type>
+  <option_file>SSCOFS_southern_puget_cu_now_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>ssc</ofs_region>
+  <subdomain>sp</subdomain>
+  <type>cu</type>
+  <link_name>Forecast Guidance</link_name>
+  <order_num>2</order_num>
+  <model_type>currents_forecast</model_type>
+  <option_file>SSCOFS_southern_puget_cu_fore_option</option_file>
+</OFS_Animation>
+
+<!-- Salish Sea and Columbia River OFS Subdomain: San Juan Islands -->
+<OFS_Animation>
+  <ofs_region>ssc</ofs_region>
+  <subdomain>sj</subdomain>
+  <type>wind</type>
+  <link_name>Nowcast</link_name>
+  <order_num>1</order_num>
+  <model_type>wind_nowcast</model_type>
+  <option_file>SSCOFS_us_canada_wind_now_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>ssc</ofs_region>
+  <subdomain>sj</subdomain>
+  <type>wind</type>
+  <link_name>Forecast Guidance</link_name>
+  <order_num>2</order_num>
+  <model_type>wind_forecast</model_type>
+  <option_file>SSCOFS_us_canada_wind_fore_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>ssc</ofs_region>
+  <subdomain>sj</subdomain>
+  <type>wl</type>
+  <link_name>Nowcast</link_name>
+  <order_num>1</order_num>
+  <model_type>wl_nowcast</model_type>
+  <option_file>SSCOFS_us_canada_wl_now_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>ssc</ofs_region>
+  <subdomain>sj</subdomain>
+  <type>wl</type>
+  <link_name>Forecast Guidance</link_name>
+  <order_num>2</order_num>
+  <model_type>wl_forecast</model_type>
+  <option_file>SSCOFS_us_canada_wl_fore_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>ssc</ofs_region>
+  <subdomain>sj</subdomain>
+  <type>wt</type>
+  <link_name>Nowcast</link_name>
+  <order_num>1</order_num>
+  <model_type>wtemp_nowcast</model_type>
+  <option_file>SSCOFS_us_canada_temp_now_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>ssc</ofs_region>
+  <subdomain>sj</subdomain>
+  <type>wt</type>
+  <link_name>Forecast Guidance</link_name>
+  <order_num>2</order_num>
+  <model_type>wtemp_forecast</model_type>
+  <option_file>SSCOFS_us_canada_temp_fore_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>ssc</ofs_region>
+  <subdomain>sj</subdomain>
+  <type>sal</type>
+  <link_name>Nowcast</link_name>
+  <order_num>1</order_num>
+  <model_type>salinity_nowcast</model_type>
+  <option_file>SSCOFS_us_canada_sa_now_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>ssc</ofs_region>
+  <subdomain>sj</subdomain>
+  <type>sal</type>
+  <link_name>Forecast Guidance</link_name>
+  <order_num>2</order_num>
+  <model_type>salinity_forecast</model_type>
+  <option_file>SSCOFS_us_canada_sa_fore_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>ssc</ofs_region>
+  <subdomain>sj</subdomain>
+  <type>cu</type>
+  <link_name>Nowcast</link_name>
+  <order_num>1</order_num>
+  <model_type>currents_nowcast</model_type>
+  <option_file>SSCOFS_us_canada_cu_now_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>ssc</ofs_region>
+  <subdomain>sj</subdomain>
+  <type>cu</type>
+  <link_name>Forecast Guidance</link_name>
+  <order_num>2</order_num>
+  <model_type>currents_forecast</model_type>
+  <option_file>SSCOFS_us_canada_cu_fore_option</option_file>
+</OFS_Animation>
+
+<!-- Salish Sea and Columbia River OFS Subdomain: Whidbey Basin -->
+<OFS_Animation>
+  <ofs_region>ssc</ofs_region>
+  <subdomain>wb</subdomain>
+  <type>wind</type>
+  <link_name>Nowcast</link_name>
+  <order_num>1</order_num>
+  <model_type>wind_nowcast</model_type>
+  <option_file>SSCOFS_whidbey_basin_wind_now_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>ssc</ofs_region>
+  <subdomain>wb</subdomain>
+  <type>wind</type>
+  <link_name>Forecast Guidance</link_name>
+  <order_num>2</order_num>
+  <model_type>wind_forecast</model_type>
+  <option_file>SSCOFS_whidbey_basin_wind_fore_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>ssc</ofs_region>
+  <subdomain>wb</subdomain>
+  <type>wl</type>
+  <link_name>Nowcast</link_name>
+  <order_num>1</order_num>
+  <model_type>wl_nowcast</model_type>
+  <option_file>SSCOFS_whidbey_basin_wl_now_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>ssc</ofs_region>
+  <subdomain>wb</subdomain>
+  <type>wl</type>
+  <link_name>Forecast Guidance</link_name>
+  <order_num>2</order_num>
+  <model_type>wl_forecast</model_type>
+  <option_file>SSCOFS_whidbey_basin_wl_fore_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>ssc</ofs_region>
+  <subdomain>wb</subdomain>
+  <type>wt</type>
+  <link_name>Nowcast</link_name>
+  <order_num>1</order_num>
+  <model_type>wtemp_nowcast</model_type>
+  <option_file>SSCOFS_whidbey_basin_temp_now_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>ssc</ofs_region>
+  <subdomain>wb</subdomain>
+  <type>wt</type>
+  <link_name>Forecast Guidance</link_name>
+  <order_num>2</order_num>
+  <model_type>wtemp_forecast</model_type>
+  <option_file>SSCOFS_whidbey_basin_temp_fore_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>ssc</ofs_region>
+  <subdomain>wb</subdomain>
+  <type>cu</type>
+  <link_name>Nowcast</link_name>
+  <order_num>1</order_num>
+  <model_type>currents_nowcast</model_type>
+  <option_file>SSCOFS_whidbey_basin_cu_now_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>ssc</ofs_region>
+  <subdomain>wb</subdomain>
+  <type>cu</type>
+  <link_name>Forecast Guidance</link_name>
+  <order_num>2</order_num>
+  <model_type>currents_forecast</model_type>
+  <option_file>SSCOFS_whidbey_basin_cu_fore_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>ssc</ofs_region>
+  <subdomain>wb</subdomain>
+  <type>sal</type>
+  <link_name>Nowcast</link_name>
+  <order_num>1</order_num>
+  <model_type>salinity_nowcast</model_type>
+  <option_file>SSCOFS_whidbey_basin_sa_now_option</option_file>
+</OFS_Animation>
+
+<OFS_Animation>
+  <ofs_region>ssc</ofs_region>
+  <subdomain>wb</subdomain>
+  <type>sal</type>
+  <link_name>Forecast Guidance</link_name>
+  <order_num>2</order_num>
+  <model_type>salinity_forecast</model_type>
+  <option_file>SSCOFS_whidbey_basin_sa_fore_option</option_file>
+</OFS_Animation>
+
+<!-- Water Level nowcast and forecast descriptions -->
+<OFS_Model_Description>
+  <model_type>wl_nowcast</model_type>
+  <ofs_regions>cb_db_ny_sj_ng_tb_le_lh_lm_lo_ls_cre_ci_gom_ssc</ofs_regions>
+  <anim_desc>This water level animation was created from the latest cofsnOFS nowcast for the ofsregion.
+    The nowcast is of the most recent water levels as simulated by cofsnOFS when it is forced by recent observations
+    and reanalysis products.
+  </anim_desc>
+</OFS_Model_Description>
+
+<OFS_Model_Description>
+  <model_type>wl_nowcast</model_type>
+  <ofs_regions>lmh</ofs_regions>
+  <anim_desc>This water level animation was created from the latest LMHOFS nowcast for the Lake Michigan and Huron.
+    The nowcast is of the most recent water levels as simulated by LMHOFS when it is forced by recent observations
+    and reanalysis products.
+  </anim_desc>
+</OFS_Model_Description>
+
+<OFS_Model_Description>
+  <model_type>wl_nowcast_lm</model_type>
+  <ofs_regions>lmh</ofs_regions>
+  <anim_desc>This water level animation was created from the latest LMHOFS nowcast for the Lake Michigan.
+    The nowcast is of the most recent water levels as simulated by LMHOFS when it is forced by recent observations
+    and reanalysis products.
+  </anim_desc>
+</OFS_Model_Description>
+
+<OFS_Model_Description>
+  <model_type>wl_nowcast_lh</model_type>
+  <ofs_regions>lmh</ofs_regions>
+  <anim_desc>This water level animation was created from the latest LMHOFS nowcast for the Lake Huron.
+    The nowcast is of the most recent water levels as simulated by LMHOFS when it is forced by recent observations
+    and reanalysis products.
+  </anim_desc>
+</OFS_Model_Description>
+
+<OFS_Model_Description>
+  <model_type>wl_nowcast_ms</model_type>
+  <ofs_regions>lmh</ofs_regions>
+  <anim_desc>This water level animation was created from the latest LMHOFS nowcast for the Mackinac Straits.
+    The nowcast is of the most recent water levels as simulated by LMHOFS when it is forced by recent observations
+    and reanalysis products.
+  </anim_desc>
+</OFS_Model_Description>
+
+<OFS_Model_Description>
+  <model_type>wl_nowcast_jx</model_type>
+  <ofs_regions>sj</ofs_regions>
+  <anim_desc>This water level animation was created from the latest cofsnOFS nowcast for the ofsregion.
+    The nowcast is of the most recent water levels as simulated by cofsnOFS when it is forced by recent observations
+    and reanalysis products.
+  </anim_desc>
+</OFS_Model_Description>
+
+<OFS_Model_Description>
+  <model_type>wl_nowcast</model_type>
+  <ofs_regions>sfb</ofs_regions>
+  <anim_desc>This water level animation was created from the latest cofsnOFS nowcast for the ofsregion. The nowcast
+    is of the most recent water level as simulated by cofsnOFS when the entire bay is forced by the forecast products
+    from the National Weather Service&#039;s 4 km nested North American Model (NAM), tides from the Oregon State
+    University Tidal Data Inversion, OTIS Regional Tide Solutions (2010) west coast tidal data WC2010 1/30(deg) ,
+    and the Global operational Real-Time Ocean Forecast System (RTOFS) adjusted by recently available real-time
+    observations.
+</anim_desc>
+</OFS_Model_Description>
+
+<OFS_Model_Description>
+  <model_type>wl_nowcast</model_type>
+  <ofs_regions>wc</ofs_regions>
+  <anim_desc>This water level animation was created from the latest cofsnOFS nowcast. The nowcast is of the
+    most recent water levels as simulated by cofsnOFS when it is forced by recent observations and reanalysis
+    products.
+  </anim_desc>
+</OFS_Model_Description>
+
+<!-- Water Level Forecast descriptions -->
+<OFS_Model_Description>
+  <model_type>wl_forecast</model_type>
+  <ofs_regions>cb_db_ny_ng_tb_cre_gom</ofs_regions>
+  <anim_desc>This water level animation was created from the latest cofsnOFS forecast guidance in the
+    ofsregion. The forecast is for the next 48 hours of water levels as simulated by cofsnOFS when it is forced by
+    forecast products from National Weather Service&#039;s 4km North American Model (NAM4) and the
+    Global operational Real-Time Ocean Forecast System (RTOFS).
+  </anim_desc>
+</OFS_Model_Description>
+
+<OFS_Model_Description>
+  <model_type>wl_forecast</model_type>
+  <ofs_regions>ci</ofs_regions>
+  <anim_desc>This water level animation was created from the latest cofsnOFS forecast guidance. The forecast guidance for the water
+  levels is simulated by CIOFS when it is forced by meteorological parameters that are predicted by the National Weather Service models.
+  </anim_desc>
+</OFS_Model_Description>
+
+<OFS_Model_Description>
+  <model_type>wl_forecast</model_type>
+  <ofs_regions>sj</ofs_regions>
+  <anim_desc>This water level animation was created from the latest SJROFS forecast guidance for the St. John&#039;
+    River. The forecast is for the next 48 hours of water levels as simulated by SJROFS when it is forced by
+    forecast products from National Weather Service&#039;s North American Model (NAM) and the
+    Extra Tropical Storm Surge (ETSS) and ocean boundary water temperature and salinity persisted from real-time
+    observation at Mayport.
+  </anim_desc>
+</OFS_Model_Description>
+
+<OFS_Model_Description>
+  <model_type>wl_forecast_jx</model_type>
+  <ofs_regions>sj</ofs_regions>
+  <anim_desc>This water level animation was created from the latest SJROFS forecast guidance for the St. John&#039;
+    River. The forecast is for the next 48 hours of water levels as simulated by SJROFS when it is forced by
+    forecast products from National Weather Service&#039;s North American Model (NAM) and the
+    Extra Tropical Storm Surge (ETSS) and ocean boundary water temperature and salinity persisted from real-time
+    observation at Mayport.
+  </anim_desc>
+</OFS_Model_Description>
+
+<OFS_Model_Description>
+  <model_type>wl_forecast</model_type>
+  <ofs_regions>lh_lm_lo_ls</ofs_regions>
+  <anim_desc>This water level animation was created with hourly plots from the latest cofsnOFS forecast guidance. The
+    forecast guidance is for the next 30 hours of water levels as simulated by the model when the ofsregion is forced
+    by meteorological parameters that are predicted by the National Weather Service models. The spatial pattern of the
+    highs and lows is due to meteorological forcing, mainly winds. Areas of red and orange (green and blue) show locations
+    of high (low) water which progresses through the Lake according to the wind speed and direction.
+  </anim_desc>
+</OFS_Model_Description>
+
+<OFS_Model_Description>
+  <model_type>wl_forecast</model_type>
+  <ofs_regions>le</ofs_regions>
+  <anim_desc>This water level animation was created from the latest LEOFS forecast guidance. The forecast guidance for the
+     water levels is simulated by LEOFS when it is forced by meteorological parameters that are predicted by the National
+     Weather Service models.
+  </anim_desc>
+</OFS_Model_Description>
+
+<OFS_Model_Description>
+  <model_type>wl_forecast</model_type>
+  <ofs_regions>lmh</ofs_regions>
+  <anim_desc>This water level animation was created from the latest LMHOFS forecast guidance in the Lake Michigan and Huron.
+     The forecast guidance is for the next 120 hours of water levels as simulated by LMHOFS when it is forced by meteorological
+     parameters that are predicted by the National Weather Service models.
+  </anim_desc>
+</OFS_Model_Description>
+
+<OFS_Model_Description>
+  <model_type>wl_forecast_lm</model_type>
+  <ofs_regions>lmh</ofs_regions>
+  <anim_desc>This water level animation was created from the latest LMHOFS forecast guidance in the Lake Michigan.
+     The forecast guidance is for the next 120 hours of water levels as simulated by LMHOFS when it is forced by meteorological
+     parameters that are predicted by the National Weather Service models.
+  </anim_desc>
+</OFS_Model_Description>
+
+<OFS_Model_Description>
+  <model_type>wl_forecast_lh</model_type>
+  <ofs_regions>lmh</ofs_regions>
+  <anim_desc>This water level animation was created from the latest LMHOFS forecast guidance in the Lake Huron.
+     The forecast guidance is for the next 120 hours of water levels as simulated by LMHOFS when it is forced by meteorological
+     parameters that are predicted by the National Weather Service models.
+  </anim_desc>
+</OFS_Model_Description>
+
+<OFS_Model_Description>
+  <model_type>wl_forecast_ms</model_type>
+  <ofs_regions>lmh</ofs_regions>
+  <anim_desc>This water level animation was created from the latest LMHOFS forecast guidance in the Mackinac Straits.
+     The forecast guidance is for the next 120 hours of water levels as simulated by LMHOFS when it is forced by meteorological
+     parameters that are predicted by the National Weather Service models.
+  </anim_desc>
+</OFS_Model_Description>
+
+<OFS_Model_Description>
+  <model_type>wl_forecast</model_type>
+  <ofs_regions>sfb</ofs_regions>
+  <anim_desc>This surface water level animation was created from the latest cofsnOFS forecast guidance in the
+    ofsregion. The forecast is for the next 48 hours of water levels as simulated by cofsnOFS when is forced by forecast
+    products from the National Weather Service&#039;s 4 km nested North American Model (NAM), tides from the
+    Oregon State University Tidal Data Inversion, OTIS Regional Tide Solutions (2010) west coast tidal data WC2010
+    1/30(deg), and the Global operational Real-Time Ocean Forecast System (RTOFS).
+  </anim_desc>
+</OFS_Model_Description>
+
+<OFS_Model_Description>
+  <model_type>wl_forecast</model_type>
+  <ofs_regions>wc</ofs_regions>
+  <anim_desc>This water level animation was created from the latest cofsnOFS forecast guidance. The
+    forecast is for the next 48 hours of water levels as simulated by cofsnOFS when it is forced by
+    forecast products from National Weather Service&#039;s 12-km North American Model (NAM) and the
+    Global Real-Time Ocean Forecast System (RTOFS).
+  </anim_desc>
+</OFS_Model_Description>
+
+<OFS_Model_Description>
+  <model_type>wl_forecast</model_type>
+  <ofs_regions>ssc</ofs_regions>
+  <anim_desc>This water level animation was created from the latest SSCOFS forecast guidance in the Salish Sea and
+    Columbia River. The forecast is for the next 48 hours of water levels as simulated by SSCOFS when it is forced
+    by forecast guidance products from National Weather Service&#039;s North American Model (NAM), ADCIRC (ENPAC2015),
+    and the Global Real-Time Ocean Forecast System (G-RTOFS).
+  </anim_desc>
+</OFS_Model_Description>
+
+<!-- Wind nowcast descriptions -->
+<OFS_Model_Description>
+  <model_type>wind_nowcast</model_type>
+  <ofs_regions>cb_db_ny_sfb_ng_tb_lh_lm_lo_ls_cre_gom_wc_ssc</ofs_regions>
+  <anim_desc>This wind animation was created from the latest cofsnOFS nowcast for the ofsregion.
+    The hourly fields were created by spatially and temporally interpolating the wind products from the
+    latest run of the National Weather Service&#039;s operational North American Mesoscale (NAM) weather
+    forecast model. These interpolated wind fields were used by cofsnOFS to generate oceanographic nowcasts.
+  </anim_desc>
+</OFS_Model_Description>
+
+<OFS_Model_Description>
+  <model_type>wind_nowcast</model_type>
+  <ofs_regions>ci</ofs_regions>
+  <anim_desc>This wind animation was created from the latest CIOFS field nowcast NetCDF files. The hourly wind
+     fields were created by spatially interpolating the wind products (10m above the water) from the latest run of the National Weather
+     Service&#039;s 12-km North American Mesoscale (NAM) weather forecast model. These interpolated wind fields were used as meteorological
+     forcing by CIOFS to generate oceanographic nowcasts.
+  </anim_desc>
+</OFS_Model_Description>
+
+<OFS_Model_Description>
+  <model_type>wind_nowcast</model_type>
+  <ofs_regions>le</ofs_regions>
+  <anim_desc>This wind animation was created from the latest LEOFS nowcast for the Lake Erie. The hourly fields were created
+    by spatially interpolating the wind products from the latest run of the National Weather Service&#039;s 3-km, hourly
+    updated High-Resolution Rapid Refresh (HRRR) atmospheric model. These interpolated wind fields were used by LEOFS to
+    generate oceanographic nowcasts.
+  </anim_desc>
+</OFS_Model_Description>
+
+<OFS_Model_Description>
+  <model_type>wind_nowcast</model_type>
+  <ofs_regions>sj</ofs_regions>
+  <anim_desc>This wind animation was created from the latest SJOFS nowcast for the St. John&#039;s River. The
+    hourly fields were created by spatially and temporally interpolating the wind products from the latest run of
+    the National Weather Service&#039;s operational North American Mesoscale (NAM) weather forecast model. These
+    interpolated wind fields were used by SJROFS to generate oceanographic nowcasts.
+  </anim_desc>
+</OFS_Model_Description>
+
+<OFS_Model_Description>
+  <model_type>wind_nowcast_jx</model_type>
+  <ofs_regions>sj</ofs_regions>
+  <anim_desc>This wind animation was created from the latest SJOFS nowcast for the St. John&#039;s River. The
+    hourly fields were created by spatially and temporally interpolating the wind products from the latest run
+    of the National Weather Service&#039;s operational North American Mesoscale (NAM) weather forecast model.
+    These interpolated wind fields were used by SJROFS to generate oceanographic nowcasts.
+  </anim_desc>
+</OFS_Model_Description>
+
+<OFS_Model_Description>
+  <model_type>wind_nowcast</model_type>
+  <ofs_regions>lmh</ofs_regions>
+  <anim_desc>This wind animation was created from the latest LMHOFS nowcast for the Lake Michigan and Huron. The
+    hourly fields were created by spatially and temporally interpolating the wind products from the latest run
+    of the National Weather Service&#039;s 3-km hourly updated High-Resolution Rapid Refresh (HRRR) atmospheric
+    model. These interpolated wind fields were used by LMHOFS to generate oceanographic nowcasts.
+  </anim_desc>
+</OFS_Model_Description>
+
+<OFS_Model_Description>
+  <model_type>wind_nowcast_lm</model_type>
+  <ofs_regions>lmh</ofs_regions>
+  <anim_desc>This wind animation was created from the latest LMHOFS nowcast for the Lake Michigan. The
+    hourly fields were created by spatially and temporally interpolating the wind products from the latest run
+    of the National Weather Service&#039;s 3-km hourly updated High-Resolution Rapid Refresh (HRRR) atmospheric
+    model. These interpolated wind fields were used by LMHOFS to generate oceanographic nowcasts.
+  </anim_desc>
+</OFS_Model_Description>
+
+<OFS_Model_Description>
+  <model_type>wind_nowcast_lh</model_type>
+  <ofs_regions>lmh</ofs_regions>
+  <anim_desc>This wind animation was created from the latest LMHOFS nowcast for the Lake Huron. The
+    hourly fields were created by spatially and temporally interpolating the wind products from the latest run
+    of the National Weather Service&#039;s 3-km hourly updated High-Resolution Rapid Refresh (HRRR) atmospheric
+    model. These interpolated wind fields were used by LMHOFS to generate oceanographic nowcasts.
+  </anim_desc>
+</OFS_Model_Description>
+
+<OFS_Model_Description>
+  <model_type>wind_nowcast_ms</model_type>
+  <ofs_regions>lmh</ofs_regions>
+  <anim_desc>This wind animation was created from the latest LMHOFS nowcast for the Mackinac Straits. The
+    hourly fields were created by spatially and temporally interpolating the wind products from the latest run
+    of the National Weather Service&#039;s 3-km hourly updated High-Resolution Rapid Refresh (HRRR) atmospheric
+    model. These interpolated wind fields were used by LMHOFS to generate oceanographic nowcasts.
+  </anim_desc>
+</OFS_Model_Description>
+
+<!-- Wind forecast descriptions -->
+<OFS_Model_Description>
+  <model_type>wind_forecast</model_type>
+  <ofs_regions>cb_db_ny_tb</ofs_regions>
+  <anim_desc>The surface wind animation depicts predicted hourly surface (33 ft [10m] above the water) winds
+    for the next 48 hours based on weather model forecast guidance from the NOAA/NWS North American Mesoscale
+    (NAM) Model or the Global Forecast System (GFS), if guidance from the NAM Model is not available. The hourly
+    wind fields are created by spatially and temporally interpolating the NWS wind forecast guidance onto the
+    cofsnOFS model grid. The original spatial and temporal resolutions of the NAM Model wind forecast guidance
+    are 7.5 miles (12 km) and 3 hours, respectively. These interpolated wind fields are used by cofsnOFS&#039;s forecast
+    cycle to generate oceanographic forecast guidance. The original wind products can be seen at the
+    &lt;a href="http://mag.ncep.noaa.gov" target="blank"&gt;NWS/National Centers for Environmental Prediction&lt;/a&gt;
+    web page.
+  </anim_desc>
+</OFS_Model_Description>
+
+<OFS_Model_Description>
+  <model_type>wind_forecast</model_type>
+  <ofs_regions>sj_lh_lm_lo_ls</ofs_regions>
+  <anim_desc>This wind animation depicts forecasted hourly surface (10m above the water) winds for the next 48
+    hours. The hourly wind fields were created by spatially and temporally interpolating wind forecast guidance
+    from the National Weather Service&#039;s operational NAM atmospheric forecast model. These hourly wind fields
+    were used by SJROFS to generate oceanographic forecast guidance for 48 hours.
+  </anim_desc>
+</OFS_Model_Description>
+
+<OFS_Model_Description>
+  <model_type>wind_forecast</model_type>
+  <ofs_regions>le</ofs_regions>
+  <anim_desc>This wind animation depicts forecasted hourly surface (10m above the water) winds. The hourly wind fields
+    were created by spatially and temporally interpolating wind forecast guidance from the National Weather Service&#039;s
+    National Digital Forecast Database (NDFD) on the 2.5-km CONUS grid. These hourly wind fields were used by LEOFS to
+    generate oceanographic forecast guidance.
+  </anim_desc>
+</OFS_Model_Description>
+
+<OFS_Model_Description>
+  <model_type>wind_forecast</model_type>
+  <ofs_regions>lmh</ofs_regions>
+  <anim_desc>This wind animation depicts forecasted hourly surface (10m above the water) winds for the Lake Michigan
+    and Huron. The hourly wind fields were created by spatially and temporally interpolating wind forecast guidance
+    from the National Weather Service&#039;s 0.25 Degree Global Forecast System (GFS). These hourly wind fields
+    were used by LMHOFS to generate oceanographic forecast guidance.
+  </anim_desc>
+</OFS_Model_Description>
+
+<OFS_Model_Description>
+  <model_type>wind_forecast_lm</model_type>
+  <ofs_regions>lmh</ofs_regions>
+  <anim_desc>This wind animation depicts forecasted hourly surface (10m above the water) winds for the Lake Michigan.
+    The hourly wind fields were created by spatially and temporally interpolating wind forecast guidance
+    from the National Weather Service&#039;s 0.25 Degree Global Forecast System (GFS). These hourly wind fields
+    were used by LMHOFS to generate oceanographic forecast guidance.
+  </anim_desc>
+</OFS_Model_Description>
+
+<OFS_Model_Description>
+  <model_type>wind_forecast_lh</model_type>
+  <ofs_regions>lmh</ofs_regions>
+  <anim_desc>This wind animation depicts forecasted hourly surface (10m above the water) winds for the Lake Huron.
+    The hourly wind fields were created by spatially and temporally interpolating wind forecast guidance
+    from the National Weather Service&#039;s 0.25 Degree Global Forecast System (GFS). These hourly wind fields
+    were used by LMHOFS to generate oceanographic forecast guidance.
+  </anim_desc>
+</OFS_Model_Description>
+
+<OFS_Model_Description>
+  <model_type>wind_forecast_ms</model_type>
+  <ofs_regions>lmh</ofs_regions>
+  <anim_desc>This wind animation depicts forecasted hourly surface (10m above the water) winds for the Mackinac Straits.
+    The hourly wind fields were created by spatially and temporally interpolating wind forecast guidance
+    from the National Weather Service&#039;s 0.25 Degree Global Forecast System (GFS). These hourly wind fields
+    were used by LMHOFS to generate oceanographic forecast guidance.
+  </anim_desc>
+</OFS_Model_Description>
+
+<OFS_Model_Description>
+  <model_type>wind_forecast_jx</model_type>
+  <ofs_regions>sj</ofs_regions>
+  <anim_desc>This wind animation depicts forecasted hourly surface (10m above the water) winds for the next 48
+    hours. The hourly wind fields were created by spatially and temporally interpolating wind forecast guidance
+    from the National Weather Service&#039;s operational NAM atmospheric forecast model. These hourly wind fields
+    were used by SJROFS to generate oceanographic forecast guidance for 48 hours.
+  </anim_desc>
+</OFS_Model_Description>
+
+<OFS_Model_Description>
+  <model_type>wind_forecast</model_type>
+  <ofs_regions>sfb_cre_gom_ssc</ofs_regions>
+  <anim_desc>This wind animation depicts forecasted hourly surface (33 ft [10m] above the water) winds for the
+    next 48 hours. The hourly wind fields were created by spatially and temporally interpolating wind forecasts
+    from the latest run of the National Weather Service&#039;s operational North American Mesoscale (NAM) weather
+    forecast model. The original spatial and temporal resolutions of the NAM wind forecast were 4 km and 3 hours,
+    respectively. These interpolated wind fields were used by cofsnOFS to generate oceanographic forecast guidance.
+  </anim_desc>
+</OFS_Model_Description>
+
+<OFS_Model_Description>
+  <model_type>wind_forecast</model_type>
+  <ofs_regions>ci</ofs_regions>
+  <anim_desc>This wind animation was created from the latest CIOFS field forecast NetCDF files. The hourly wind fields
+  were created by spatially interpolating the wind products (10m above the water) from the latest run of the National
+  Weather Service&#039;s 12-km North American Mesoscale (NAM) weather forecast model. These interpolated wind fields were
+  used as meteorological forcing by CIOFS to generate oceanographic forecast guidance.
+  </anim_desc>
+</OFS_Model_Description>
+
+<OFS_Model_Description>
+  <model_type>wind_forecast</model_type>
+  <ofs_regions>ng</ofs_regions>
+  <anim_desc>This wind animation depicts forecasted hourly surface (33 ft [10m] above the water) winds for the next 48 hours.
+  The hourly wind fields were created by spatially interpolating wind forecasts from the latest run of the National Weather
+  Service&#039;s North American Mesoscale (NAM) weather forecast model. The wind forecasts from the Global Forecast System (GFS)
+  are used as backup. These interpolated wind fields were used by NGOFS2 to generate oceanographic forecast guidance for
+  the NGOFS2 model domain.</anim_desc>
+</OFS_Model_Description>
+
+<OFS_Model_Description>
+  <model_type>wind_forecast</model_type>
+  <ofs_regions>wc</ofs_regions>
+  <anim_desc>This wind animation depicts forecasted hourly surface (33 ft [10m] above the water) winds for the next 48
+    hours. The hourly wind fields were created by spatially and temporally interpolating wind forecast guidance
+    from the National Weather Service&#039;s operational North American Mesoscale (NAM) weather forecast model. These interpolated wind fields
+    were used by cofsnOFS to generate oceanographic forecast guidance.
+  </anim_desc>
+</OFS_Model_Description>
+
+<!-- Water Temperature Nowcast descriptions -->
+<OFS_Model_Description>
+  <model_type>wtemp_nowcast</model_type>
+  <ofs_regions>cb_db_ny_sfb_ng_tb_le_lh_lm_lo_ls_cre_gom_wc_ssc</ofs_regions>
+  <anim_desc>This near surface water temperature animation was created from the latest cofsnOFS nowcast for
+    the ofsregion. The nowcast is of the most recent surface water temperature as simulated by cofsnOFS
+    when it is forced by recent observations and re-analyzed meteorological and oceanographic products.
+  </anim_desc>
+</OFS_Model_Description>
+
+<OFS_Model_Description>
+  <model_type>wtemp_nowcast</model_type>
+  <ofs_regions>ci</ofs_regions>
+  <anim_desc>This surface water temperature animation was created from the latest cofsnOFS nowcast for
+    the ofsregion. The nowcast is of the most recent surface water temperature as simulated by cofsnOFS
+    when it is forced by recent observations and re-analyzed meteorological and oceanographic products.
+  </anim_desc>
+</OFS_Model_Description>
+
+<OFS_Model_Description>
+  <model_type>wtemp_nowcast</model_type>
+  <ofs_regions>sj</ofs_regions>
+  <anim_desc>This near surface water temperature animation was created from the latest SJROFS nowcast for the
+    St. John&#039;s River. The nowcast is for the most recent surface water temperature as simulated by SJROFS
+    when it is forced by recent observations and re-analyzed meteorological and oceanographic products.
+  </anim_desc>
+</OFS_Model_Description>
+
+<OFS_Model_Description>
+  <model_type>wtemp_nowcast_jx</model_type>
+  <ofs_regions>sj</ofs_regions>
+  <anim_desc>This near surface water temperature animation was created from the latest SJROFS nowcast for the
+    St. John&#039;s River. The nowcast is for the most recent surface water temperature as simulated by SJROFS
+    when it is forced by recent observations and re-analyzed meteorological and oceanographic products.
+  </anim_desc>
+</OFS_Model_Description>
+
+<OFS_Model_Description>
+  <model_type>wtemp_nowcast</model_type>
+  <ofs_regions>lmh</ofs_regions>
+  <anim_desc>This near surface water temperature animation was created from the latest LMHOFS nowcast for the
+    Lake Michigan and Huron. The nowcast is for the most recent surface water temperature as simulated by LMHOFS
+    when it is forced by recent observations and reanalysis products.
+  </anim_desc>
+</OFS_Model_Description>
+
+<OFS_Model_Description>
+  <model_type>wtemp_nowcast_lm</model_type>
+  <ofs_regions>lmh</ofs_regions>
+  <anim_desc>This near surface water temperature animation was created from the latest LMHOFS nowcast for the
+    Lake Michigan. The nowcast is for the most recent surface water temperature as simulated by LMHOFS
+    when it is forced by recent observations and reanalysis products.
+  </anim_desc>
+</OFS_Model_Description>
+
+<OFS_Model_Description>
+  <model_type>wtemp_nowcast_lh</model_type>
+  <ofs_regions>lmh</ofs_regions>
+  <anim_desc>This near surface water temperature animation was created from the latest LMHOFS nowcast for the
+    Lake Huron. The nowcast is for the most recent surface water temperature as simulated by LMHOFS
+    when it is forced by recent observations and reanalysis products.
+  </anim_desc>
+</OFS_Model_Description>
+
+<OFS_Model_Description>
+  <model_type>wtemp_nowcast_ms</model_type>
+  <ofs_regions>lmh</ofs_regions>
+  <anim_desc>This near surface water temperature animation was created from the latest LMHOFS nowcast for the
+    Mackinac Straits. The nowcast is for the most recent surface water temperature as simulated by LMHOFS
+    when it is forced by recent observations and reanalysis products.
+  </anim_desc>
+</OFS_Model_Description>
+
+<!-- Water Temperature Forecast descriptions -->
+<OFS_Model_Description>
+  <model_type>wtemp_forecast</model_type>
+  <ofs_regions>cb_db_ny_tb_ng</ofs_regions>
+  <anim_desc>This near surface water temperature animation was created from the latest cofsnOFS forecast guidance
+    in the ofsregion. The forecast is for the next 48 hours of surface water temperature as simulated by cofsnOFS
+    when it is forced by forecast products from the National Weather Service&#039;s North American Model (NAM) and Extra
+    Tropical Storm Surge (ETSS), and the Global operational Real-Time Ocean Forecast System (RTOFS).
+  </anim_desc>
+</OFS_Model_Description>
+
+<OFS_Model_Description>
+  <model_type>wtemp_forecast</model_type>
+  <ofs_regions>lh_lm_lo_ls</ofs_regions>
+  <anim_desc>This water temperature animation depicts forecasted hourly surface water temperature for the next 30
+    hours. The hourly water temperature fields were created by spatially and temporally interpolating wind forecast
+    guidance from the National Weather Service&#039;s operational NAM atmospheric forecast model. These hourly water
+    temperature fields were used by cofsnOFS&#039; hydrodynamic model to generate oceanographic forecast guidance for
+    the ofsregion out to 30 hours.
+  </anim_desc>
+</OFS_Model_Description>
+
+<OFS_Model_Description>
+  <model_type>wtemp_forecast</model_type>
+  <ofs_regions>le</ofs_regions>
+  <anim_desc>This near surface water temperature animation was created from the latest LEOFS forecast guidance. The forecast
+    guidance for the water temperature is simulated by LEOFS when it is forced by meteorological parameters that are predicted
+    by the National Weather Service models.
+  </anim_desc>
+</OFS_Model_Description>
+
+<OFS_Model_Description>
+  <model_type>wtemp_forecast</model_type>
+  <ofs_regions>lmh</ofs_regions>
+  <anim_desc>This near surface water temperature animation was created from the latest LMHOFS forecast guidance in the Lake Michigan
+    and Huron. The forecast guidance is for the next 120 hours of surface water temperature as simulated by LMHOFS when it is forced
+    by meteorological parameters that are predicted by the National Weather Service models.
+  </anim_desc>
+</OFS_Model_Description>
+
+<OFS_Model_Description>
+  <model_type>wtemp_forecast_lm</model_type>
+  <ofs_regions>lmh</ofs_regions>
+  <anim_desc>This near surface water temperature animation was created from the latest LMHOFS forecast guidance in the Lake Michigan.
+    The forecast guidance is for the next 120 hours of surface water temperature as simulated by LMHOFS when it is forced
+    by meteorological parameters that are predicted by the National Weather Service models.
+  </anim_desc>
+</OFS_Model_Description>
+
+<OFS_Model_Description>
+  <model_type>wtemp_forecast_lh</model_type>
+  <ofs_regions>lmh</ofs_regions>
+  <anim_desc>This near surface water temperature animation was created from the latest LMHOFS forecast guidance in the Lake Huron.
+    The forecast guidance is for the next 120 hours of surface water temperature as simulated by LMHOFS when it is forced
+    by meteorological parameters that are predicted by the National Weather Service models.
+  </anim_desc>
+</OFS_Model_Description>
+
+<OFS_Model_Description>
+  <model_type>wtemp_forecast_ms</model_type>
+  <ofs_regions>lmh</ofs_regions>
+  <anim_desc>This near surface water temperature animation was created from the latest LMHOFS forecast guidance in the Mackinac Straits.
+    The forecast guidance is for the next 120 hours of surface water temperature as simulated by LMHOFS when it is forced
+    by meteorological parameters that are predicted by the National Weather Service models.
+  </anim_desc>
+</OFS_Model_Description>
+
+<OFS_Model_Description>
+  <model_type>wtemp_forecast</model_type>
+  <ofs_regions>ci</ofs_regions>
+  <anim_desc>This surface water temperature animation was created from the latest cofsnOFS forecast guidance in
+    the ofsregion. The forecast is for the next 48 hours of water temperature as simulated by cofsnOFS
+    when it is forced by forecast products from the National Weather Service&#039;s North American Model
+    (NAM) and the Global operational Real-Time Ocean Forecast System (RTOFS).
+  </anim_desc>
+</OFS_Model_Description>
+
+<OFS_Model_Description>
+  <model_type>wtemp_forecast</model_type>
+  <ofs_regions>sj</ofs_regions>
+  <anim_desc>This near surface water temperature animation was created from the latest SJROFS forecast guidance
+    for the St. John&#039;s River. The forecast is for the next 48 hours of surface water temperature as simulated
+    by SJROFS when it is forced by forecast products from the National Weather Service&#039;s North American Model
+    (NAM) and the Extra Tropical Storm Surge (ETSS) and ocean boundary water temperature and salinity persisted
+    from the real-time observation at Mayport.
+  </anim_desc>
+</OFS_Model_Description>
+
+<OFS_Model_Description>
+  <model_type>wtemp_forecast_jx</model_type>
+  <ofs_regions>sj</ofs_regions>
+  <anim_desc>This near surface water temperature animation was created from the latest SJROFS forecast guidance
+    for the St. John&#039;s River. The forecast is for the next 48 hours of surface water temperature as simulated
+    by SJROFS when it is forced by forecast products from the National Weather Service&#039;s North American Model
+    (NAM) and the Extra Tropical Storm Surge (ETSS) and ocean boundary water temperature and salinity persisted
+    from the real-time observation at Mayport.
+  </anim_desc>
+</OFS_Model_Description>
+
+<OFS_Model_Description>
+  <model_type>wtemp_forecast</model_type>
+  <ofs_regions>sfb_cre_gom_wc_ssc</ofs_regions>
+  <anim_desc>This near surface water temperature animation was created from the latest cofsnOFS forecast guidance in
+    the ofsregion. The forecast is for the next 48 hours of water temperature as simulated by cofsnOFS
+    when it is forced by forecast products from the National Weather Service&#039;s North American Model
+    (NAM) and the Global operational Real-Time Ocean Forecast System (RTOFS).
+  </anim_desc>
+</OFS_Model_Description>
+
+<!-- Salinity nowcast descriptions -->
+<OFS_Model_Description>
+  <model_type>salinity_nowcast</model_type>
+  <ofs_regions>cb_db_ny_sj_sfb_ng_tb_gom_wc_ssc</ofs_regions>
+  <anim_desc>This near surface water salinity animation was created from the latest cofsnOFS nowcast for the
+    ofsregion. The nowcast is for the most recent surface water salinity as simulated by cofsnOFS
+    when it is forced by recent observations and re-analyzed meteorological and oceanographic products.
+  </anim_desc>
+</OFS_Model_Description>
+
+<OFS_Model_Description>
+  <model_type>salinity_nowcast</model_type>
+  <ofs_regions>ci</ofs_regions>
+  <anim_desc>This surface water salinity animation was created from the latest cofsnOFS nowcast for the
+    ofsregion. The nowcast is for the most recent surface water salinity as simulated by cofsnOFS
+    when it is forced by recent observations and re-analyzed meteorological and oceanographic products.
+  </anim_desc>
+</OFS_Model_Description>
+
+<OFS_Model_Description>
+  <model_type>salinity_nowcast_jx</model_type>
+  <ofs_regions>sj</ofs_regions>
+  <anim_desc>This near surface water salinity animation was created from the latest cofsnOFS nowcast for the
+    ofsregion. The nowcast is for the most recent surface water salinity as simulated by cofsnOFS
+    when it is forced by recent observations and re-analyzed meteorological and oceanographic products.
+  </anim_desc>
+</OFS_Model_Description>
+
+<!-- Salinity forecast descriptions -->
+<OFS_Model_Description>
+  <model_type>salinity_forecast</model_type>
+  <ofs_regions>cb_db_ny_tb</ofs_regions>
+  <anim_desc>This near surface water salinity animation was created from the latest cofsnOFS forecast guidance
+    in the ofsregion. The forecast is for the next 48 hours of surface water salinity as simulated by cofsnOFS
+    when it is forced by forecast products from the National Weather Service&#039;s North American Model (NAM) and Extra
+    Tropical Storm Surge (ETSS), and the Global operational Real-Time Ocean Forecast System (RTOFS).
+  </anim_desc>
+</OFS_Model_Description>
+
+<OFS_Model_Description>
+  <model_type>salinity_forecast</model_type>
+  <ofs_regions>sj</ofs_regions>
+  <anim_desc>This near surface water salinity animation was created from the latest SJOFS forecast guidance in the
+    St. John&#039;s River. The forecast is for the next 48 hours of surface water salinity as simulated by SJOFS
+    when it is forced by forecast products from the National Weather Service&#039;s North American Model (NAM) and
+    Extra Tropical Storm Surge (ETSS) and ocean boundary water temperature and salinity persisted from real-time
+    observation at Mayport.
+  </anim_desc>
+</OFS_Model_Description>
+
+<OFS_Model_Description>
+  <model_type>salinity_forecast_jx</model_type>
+  <ofs_regions>sj</ofs_regions>
+  <anim_desc>This near surface water salinity animation was created from the latest SJOFS forecast guidance in the
+    St. John&#039;s River. The forecast is for the next 48 hours of surface water salinity as simulated by SJOFS
+    when it is forced by forecast products from the National Weather Service&#039;s North American Model (NAM) and
+    Extra Tropical Storm Surge (ETSS) and ocean boundary water temperature and salinity persisted from real-time
+    observation at Mayport.
+  </anim_desc>
+</OFS_Model_Description>
+
+<OFS_Model_Description>
+  <model_type>salinity_forecast</model_type>
+  <ofs_regions>sfb_ng_gom_wc</ofs_regions>
+  <anim_desc>This near surface water salinity animation was created from the latest cofsnOFS forecast guidance
+    in the ofsregion. The forecast is for the next 48 hours of surface water salinity as simulated by
+    cofsnOFS when it is forced by forecast products from the National Weather Service&#039;s North
+    American Model (NAM) and Global operational Real-Time Ocean Forecast System (RTOFS).
+  </anim_desc>
+</OFS_Model_Description>
+
+<OFS_Model_Description>
+  <model_type>salinity_forecast</model_type>
+  <ofs_regions>ci</ofs_regions>
+  <anim_desc>This surface water salinity animation was created from the latest cofsnOFS forecast guidance
+    in the ofsregion. The forecast is for the next 48 hours of surface water salinity as simulated by
+    cofsnOFS when it is forced by forecast products from the National Weather Service&#039;s North
+    American Model (NAM) and Global operational Real-Time Ocean Forecast System (RTOFS).
+  </anim_desc>
+</OFS_Model_Description>
+
+<OFS_Model_Description>
+  <model_type>salinity_forecast</model_type>
+  <ofs_regions>ssc</ofs_regions>
+  <anim_desc>This near surface water salinity animation was created from the latest SSCOFS forecast guidance in
+    the Salish Sea and Columbia River. The forecast is for the next 48 hours of surface water salinity as simulated
+    by SSCOFS when it is forced by forecast products from the National Weather Service&#039;s North American Model (NAM)
+    and the Global operational Real-Time Ocean Forecast System (RTOFS).
+  </anim_desc>
+</OFS_Model_Description>
+
+<!-- currents nowcast descriptions -->
+<OFS_Model_Description>
+  <model_type>currents_nowcast</model_type>
+  <ofs_regions>cb_db_sj_sfb_ny_ng_tb_le_lh_lm_lo_ls_gom_wc</ofs_regions>
+  <anim_desc>This near surface current velocity animation was created from the latest cofsnOFS nowcast for the
+    ofsregion. The nowcast is of the most recent current velocities as simulated by cofsnOFS when it is forced by recent
+    observations and re-analyzed meteorological and oceanographic products.
+  </anim_desc>
+</OFS_Model_Description>
+
+<OFS_Model_Description>
+  <model_type>currents_nowcast</model_type>
+  <ofs_regions>ssc</ofs_regions>
+  <anim_desc>This near surface current velocity animation was created from the latest SSCOFS nowcast for the Salish Sea and
+    Columbia River. The nowcast is of the most recent current velocities as simulated by SSCOFS when it is forced by recent
+    observations and re-analyzed meteorological and oceanographic products.
+  </anim_desc>
+</OFS_Model_Description>
+
+<OFS_Model_Description>
+  <model_type>currents_nowcast</model_type>
+  <ofs_regions>lmh</ofs_regions>
+  <anim_desc>This near surface current velocity animation was created from the latest LMHOFS nowcast for the
+    Lake Michigan and Huron. The nowcast is of the most recent current velocities as simulated by LMHOFS when it is forced by recent
+    observations and reanalysis products.
+  </anim_desc>
+</OFS_Model_Description>
+
+<OFS_Model_Description>
+  <model_type>currents_nowcast_lm</model_type>
+  <ofs_regions>lmh</ofs_regions>
+  <anim_desc>This near surface current velocity animation was created from the latest LMHOFS nowcast for the
+    Lake Michigan. The nowcast is of the most recent current velocities as simulated by LMHOFS when it is forced by recent
+    observations and reanalysis products.
+  </anim_desc>
+</OFS_Model_Description>
+
+<OFS_Model_Description>
+  <model_type>currents_nowcast_lh</model_type>
+  <ofs_regions>lmh</ofs_regions>
+  <anim_desc>This near surface current velocity animation was created from the latest LMHOFS nowcast for the
+    Lake Huron. The nowcast is of the most recent current velocities as simulated by LMHOFS when it is forced by recent
+    observations and reanalysis products.
+  </anim_desc>
+</OFS_Model_Description>
+
+<OFS_Model_Description>
+  <model_type>currents_nowcast_ms</model_type>
+  <ofs_regions>lmh</ofs_regions>
+  <anim_desc>This near surface current velocity animation was created from the latest LMHOFS nowcast for the
+    Mackinac Straits. The nowcast is of the most recent current velocities as simulated by LMHOFS when it is forced by recent
+    observations and reanalysis products.
+  </anim_desc>
+</OFS_Model_Description>
+
+<OFS_Model_Description>
+  <model_type>currents_nowcast</model_type>
+  <ofs_regions>ci</ofs_regions>
+  <anim_desc>This surface current velocity animation was created from the latest cofsnOFS nowcast for the
+    ofsregion. The nowcast is of the most recent current velocities as simulated by cofsnOFS when it is forced by recent
+    observations and re-analyzed meteorological and oceanographic products.
+  </anim_desc>
+</OFS_Model_Description>
+
+<OFS_Model_Description>
+  <model_type>currents_nowcast_jx</model_type>
+  <ofs_regions>sj</ofs_regions>
+  <anim_desc>This near surface current velocity animation was created from the latest cofsnOFS nowcast for the
+    ofsregion. The nowcast is of the most recent current velocities as simulated by cofsnOFS when it is forced by recent
+    observations and re-analyzed meteorological and oceanographic products.
+  </anim_desc>
+</OFS_Model_Description>
+
+<!-- currents forecast descriptions -->
+<OFS_Model_Description>
+  <model_type>currents_forecast</model_type>
+  <ofs_regions>cb_db_ny_tb</ofs_regions>
+  <anim_desc>This near surface currents velocity animation was created from the latest cofsnOFS forecast guidance
+    in the ofsregion. The forecast is for the next 48 hours of current velocities as simulated by cofsnOFS when it is forced
+    by forecast products from the National Weather Service&#039;s North American Model (NAM) and Extra Tropical
+    Storm Surge (ETSS), and the Global operational Real-Time Ocean Forecast System (RTOFS).
+  </anim_desc>
+</OFS_Model_Description>
+
+<OFS_Model_Description>
+  <model_type>currents_forecast</model_type>
+  <ofs_regions>lh_lm_lo_ls</ofs_regions>
+  <anim_desc>This near surface current velocity animation was created from the latest cofsnOFS forecast guidance.
+    The forecast guidance is for the next 30 hours of current velocities as simulated by the model when it
+    is forced by coastal water levels and winds that are predicted by National Weather Service models. Currents
+    through the deeper navigation channel are stronger than those in the shallower areas.
+  </anim_desc>
+</OFS_Model_Description>
+
+<OFS_Model_Description>
+  <model_type>currents_forecast</model_type>
+  <ofs_regions>le</ofs_regions>
+  <anim_desc>This near surface current velocity animation was created from the latest LEOFS forecast guidance. The forecast
+    guidance for the current velocities is simulated by LEOFS when it is forced by meteorological parameters that are predicted
+    by the National Weather Service models.
+  </anim_desc>
+</OFS_Model_Description>
+
+<OFS_Model_Description>
+  <model_type>currents_forecast</model_type>
+  <ofs_regions>lmh</ofs_regions>
+  <anim_desc>This near surface current velocity animation was created from the latest LMHOFS forecast guidance in
+    the Lake Michigan and Huron. The forecast guidance is for the next 120 hours of surface current velocities as
+    simulated by the LMHOFS when it is forced by meteorological parameters that are predicted by National Weather Service models.
+  </anim_desc>
+</OFS_Model_Description>
+
+<OFS_Model_Description>
+  <model_type>currents_forecast_lm</model_type>
+  <ofs_regions>lmh</ofs_regions>
+  <anim_desc>This near surface current velocity animation was created from the latest LMHOFS forecast guidance in
+    the Lake Michigan. The forecast guidance is for the next 120 hours of surface current velocities as
+    simulated by the LMHOFS when it is forced by meteorological parameters that are predicted by National Weather Service models.
+  </anim_desc>
+</OFS_Model_Description>
+
+<OFS_Model_Description>
+  <model_type>currents_forecast_lh</model_type>
+  <ofs_regions>lmh</ofs_regions>
+  <anim_desc>This near surface current velocity animation was created from the latest LMHOFS forecast guidance in
+    the Lake Huron. The forecast guidance is for the next 120 hours of surface current velocities as
+    simulated by the LMHOFS when it is forced by meteorological parameters that are predicted by National Weather Service models.
+  </anim_desc>
+</OFS_Model_Description>
+
+<OFS_Model_Description>
+  <model_type>currents_forecast_ms</model_type>
+  <ofs_regions>lmh</ofs_regions>
+  <anim_desc>This near surface current velocity animation was created from the latest LMHOFS forecast guidance in
+    the Mackinac Straits. The forecast guidance is for the next 120 hours of surface current velocities as
+    simulated by the LMHOFS when it is forced by meteorological parameters that are predicted by National Weather Service models.
+  </anim_desc>
+</OFS_Model_Description>
+
+<OFS_Model_Description>
+  <model_type>currents_forecast</model_type>
+  <ofs_regions>ssc</ofs_regions>
+  <anim_desc>This near surface current velocity animation was created from the latest SSCOFS forecast guidance for the Salish Sea and
+    Columbia River. The forecast is for the next 48 hours of current velocities as simulated by SSCOFS when it is forced by forecast
+    products from the National Weather Service&#039;s North American Model (NAM) and the Global operational Real-Time Ocean Forecast System (RTOFS).
+  </anim_desc>
+</OFS_Model_Description>
+
+<OFS_Model_Description>
+  <model_type>currents_forecast</model_type>
+  <ofs_regions>sj</ofs_regions>
+  <anim_desc>This near surface current velocity animation was created from the latest cofsnOFS forecast guidance.
+    The forecast guidance is for the next 48 hours of current velocities as simulated by the model when it
+    is forced by coastal water levels and winds that are predicted by National Weather Service models. Currents
+    through the deeper navigation channel are stronger than those in the shallower areas.
+  </anim_desc>
+</OFS_Model_Description>
+
+<OFS_Model_Description>
+  <model_type>currents_forecast_jx</model_type>
+  <ofs_regions>sj</ofs_regions>
+  <anim_desc>This near surface current velocity animation was created from the latest cofsnOFS forecast guidance.
+    The forecast guidance is for the next 48 hours of current velocities as simulated by the model when it
+    is forced by coastal water levels and winds that are predicted by National Weather Service models. Currents
+    through the deeper navigation channel are stronger than those in the shallower areas.
+  </anim_desc>
+</OFS_Model_Description>
+
+<OFS_Model_Description>
+  <model_type>currents_channel_nowcast</model_type>
+  <ofs_regions>ny</ofs_regions>
+  <anim_desc>This near surface current velocity animation was created from the latest NYOFS nowcasts for Kill
+    Van Kull and adjoining parts of Upper Bay, Newark Bay, and Arthur Kill. The nowcasts are for the most recent
+    water current velocities in the Channel area as simulated by the model when it is forced by recent observations of
+    coastal water levels and winds.</anim_desc>
+</OFS_Model_Description>
+
+<OFS_Model_Description>
+  <model_type>currents_channel_forecast</model_type>
+  <ofs_regions>ny</ofs_regions>
+  <anim_desc>This near surface current velocity animation was created from the latest NYOFS forecast guidance for Kill
+    Van Kull and adjoining parts of Upper Bay, Newark Bay, and Arthur Kill. The forecast guidance is for the near-future
+    water current velocities in the Channel area as simulated by the model when it is forced by coastal water levels and winds
+    that are predicted by National Weather Service models and CO-OPS tidal predictions.</anim_desc>
+</OFS_Model_Description>
+
+<OFS_Model_Description>
+  <model_type>currents_forecast</model_type>
+  <ofs_regions>sfb_ng_gom_wc</ofs_regions>
+  <anim_desc>This near surface currents velocity animation was created from the latest cofsnOFS forecast guidance
+    in the ofsregion. The forecast is for the next 48 hours of current velocities as simulated by cofsnOFS
+    when it is forced by forecast products from the National Weather Service&#039;s North American Model
+    (NAM) and Global operational Real-Time Ocean Forecast System (RTOFS).
+  </anim_desc>
+</OFS_Model_Description>
+
+<OFS_Model_Description>
+  <model_type>currents_forecast</model_type>
+  <ofs_regions>ci</ofs_regions>
+  <anim_desc>This surface currents velocity animation was created from the latest cofsnOFS forecast guidance
+    in the ofsregion. The forecast is for the next 48 hours of current velocities as simulated by cofsnOFS
+    when it is forced by forecast products from the National Weather Service&#039;s North American Model
+    (NAM) and Global operational Real-Time Ocean Forecast System (RTOFS).
+  </anim_desc>
+</OFS_Model_Description>
+
+<OFS_Model_Description>
+  <model_type>currents_stations_nowcast</model_type>
+  <ofs_regions>ny_sj_ng_le_lh_lm_lo_ls</ofs_regions>
+  <anim_desc>This near surface current velocity animation was created from the latest cofsnOFS nowcast for the
+    ofsregion. The nowcast is of the most recent current velocities as simulated by cofsnOFS when it is forced by recent
+    observations and re-analyzed meteorological and oceanographic products.
+  </anim_desc>
+</OFS_Model_Description>
+
+<OFS_Model_Description>
+  <model_type>currents_stations_forecast</model_type>
+  <ofs_regions>ny_ng</ofs_regions>
+  <anim_desc>This near surface currents velocity animation was created from the latest cofsnOFS forecast guidance
+    in the ofsregion. The forecast is for the next 48 hours of current velocities as simulated by cofsnOFS when it is forced
+    by forecast products from the National Weather Service&#039;s North American Model (NAM) and the Global operational
+    Real-Time Ocean Forecast System (RTOFS).
+  </anim_desc>
+</OFS_Model_Description>
+
+<OFS_Model_Description>
+  <model_type>currents_stations_forecast</model_type>
+  <ofs_regions>sj_le_lh_lm_lo_ls</ofs_regions>
+  <anim_desc>This near surface current velocity animation was created with hourly plots from the latest cofsnOFS forecast guidance.
+    The forecast guidance is for the next 30 hours of current velocities as simulated by the model when it is forced by
+    coastal water levels and winds that are predicted by National Weather Service models. Currents through the deeper navigation
+    channel are stronger than those in the shallower areas.
+  </anim_desc>
+</OFS_Model_Description>
+
+</Operational_Forecast_System>
+
+<!-- Samples below to quick-copy and paste
+
+<OFS_Model_Description>
+  <model_type></model_type>
+  <ofs_regions></ofs_regions>
+  <anim_desc></anim_desc>
+</OFS_Model_Description>
+
+<OFS_Animation>
+  <ofs_region></ofs_region>
+  <subdomain></subdomain>
+  <type></type>
+  <link_name></link_name>
+  <order_num></order_num>
+  <model_type></model_type>
+  <option_file></option_file>
+</OFS_Animation>
+-->

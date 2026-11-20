@@ -1,0 +1,54 @@
+{
+  "LEOFS": "HTTP Error 400: Bad Request",
+  "LMHOFS": "HTTP Error 400: Bad Request",
+  "LOOFS": "HTTP Error 400: Bad Request",
+  "LSOFS": "HTTP Error 400: Bad Request",
+  "NGOFS2": "HTTP Error 400: Bad Request",
+  "NYOFS": "HTTP Error 400: Bad Request",
+  "SFBOFS": "HTTP Error 400: Bad Request",
+  "SJROFS": "HTTP Error 400: Bad Request",
+  "SSCOFS": "HTTP Error 400: Bad Request",
+  "WCOFS": [
+    {
+      "name": "zeta",
+      "dims": [
+        "<Dimension name=\"time\" units=\"unknown\" />\n    \n        ",
+        "<Extent name=\"time\" multipleValues=\"1\" current=\"1\" default=\"2026-10-24T03:00:00.000Z\">\n            2026-10-24T03:00:00.000Z\n        </Extent>\n        "
+      ]
+    },
+    {
+      "name": "u",
+      "dims": [
+        "<Dimension name=\"time\" units=\"unknown\" />\n        ",
+        "<Dimension name=\"elevation\" units=\"$zDomain.verticalCrs.units\" />\n    \n        ",
+        "<Extent name=\"time\" multipleValues=\"1\" current=\"1\" default=\"2026-10-24T03:00:00.000Z\">\n            2026-10-24T03:00:00.000Z\n        </Extent>\n        ",
+        "<Dimension name=\"elevation\" units=\"ncwms:height\" unitSymbol=\"\" default=\"-0.0125\">\n            -0.9875,\n            -0.9625,\n            -0.9375,\n            -0.9125000000000001,\n            -0.8875000000000001,\n            -0.8625,\n            -0.8375,\n            -0.8125,\n            -0.7875000000000001,\n            -0.7625000000000001,\n            -0.7375,\n            -0.7125,\n            -0.6875,\n            -0.6625000000000001,\n            -0.6375000000000001,\n            -0.6125,\n            -0.5875,\n            -0.5625,\n            -0.5375,\n            -0.5125000000000001,\n            -0.48750000000000004,\n            -0.4625,\n            -0.4375,\n            -0.41250000000000003,\n            -0.3875,\n            -0.36250000000000004,\n            -0.3375,\n            -0.3125,\n            -0.28750000000000003,\n            -0.2625,\n            -0.23750000000000002,\n            -0.21250000000000002,\n            -0.1875,\n            -0.1625,\n            -0.1375,\n            -0.1125,\n            -0.08750000000000001,\n            -0.0625,\n            -0.037500000000000006,\n            -0.0125\n        </Dimension>\n        "
+      ]
+    },
+    {
+      "name": "temp",
+      "dims": [
+        "<Dimension name=\"time\" units=\"unknown\" />\n        ",
+        "<Dimension name=\"elevation\" units=\"\" />\n    \n        ",
+        "<Extent name=\"time\" multipleValues=\"1\" current=\"1\" default=\"2026-10-24T03:00:00.000Z\">\n            2026-10-24T03:00:00.000Z\n        </Extent>\n        ",
+        "<Dimension name=\"elevation\" units=\"ncwms:height\" unitSymbol=\"\" default=\"-0.0125\">\n            -0.9875,\n            -0.9625,\n            -0.9375,\n            -0.9125000000000001,\n            -0.8875000000000001,\n            -0.8625,\n            -0.8375,\n            -0.8125,\n            -0.7875000000000001,\n            -0.7625000000000001,\n            -0.7375,\n            -0.7125,\n            -0.6875,\n            -0.6625000000000001,\n            -0.6375000000000001,\n            -0.6125,\n            -0.5875,\n            -0.5625,\n            -0.5375,\n            -0.5125000000000001,\n            -0.48750000000000004,\n            -0.4625,\n            -0.4375,\n            -0.41250000000000003,\n            -0.3875,\n            -0.36250000000000004,\n            -0.3375,\n            -0.3125,\n            -0.28750000000000003,\n            -0.2625,\n            -0.23750000000000002,\n            -0.21250000000000002,\n            -0.1875,\n            -0.1625,\n            -0.1375,\n            -0.1125,\n            -0.08750000000000001,\n            -0.0625,\n            -0.037500000000000006,\n            -0.0125\n        </Dimension>\n        "
+      ]
+    },
+    {
+      "name": "salt",
+      "dims": [
+        "<Dimension name=\"time\" units=\"unknown\" />\n        ",
+        "<Dimension name=\"elevation\" units=\"\" />\n    \n        ",
+        "<Extent name=\"time\" multipleValues=\"1\" current=\"1\" default=\"2026-10-24T03:00:00.000Z\">\n            2026-10-24T03:00:00.000Z\n        </Extent>\n        ",
+        "<Dimension name=\"elevation\" units=\"ncwms:height\" unitSymbol=\"\" default=\"-0.0125\">\n            -0.9875,\n            -0.9625,\n            -0.9375,\n            -0.9125000000000001,\n            -0.8875000000000001,\n            -0.8625,\n            -0.8375,\n            -0.8125,\n            -0.7875000000000001,\n            -0.7625000000000001,\n            -0.7375,\n            -0.7125,\n            -0.6875,\n            -0.6625000000000001,\n            -0.6375000000000001,\n            -0.6125,\n            -0.5875,\n            -0.5625,\n            -0.5375,\n            -0.5125000000000001,\n            -0.48750000000000004,\n            -0.4625,\n            -0.4375,\n            -0.41250000000000003,\n            -0.3875,\n            -0.36250000000000004,\n            -0.3375,\n            -0.3125,\n            -0.28750000000000003,\n            -0.2625,\n            -0.23750000000000002,\n            -0.21250000000000002,\n            -0.1875,\n            -0.1625,\n            -0.1375,\n            -0.1125,\n            -0.08750000000000001,\n            -0.0625,\n            -0.037500000000000006,\n            -0.0125\n        </Dimension>\n        "
+      ]
+    },
+    {
+      "name": "Uwind",
+      "dims": [
+        "<Dimension name=\"time\" units=\"unknown\" />\n    \n        ",
+        "<Extent name=\"time\" multipleValues=\"1\" current=\"1\" default=\"2026-10-24T03:00:00.000Z\">\n            2026-10-24T03:00:00.000Z\n        </Extent>\n        "
+      ]
+    }
+  ]
+}
